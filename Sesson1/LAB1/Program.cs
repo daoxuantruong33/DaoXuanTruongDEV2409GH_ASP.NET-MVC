@@ -1,4 +1,4 @@
-namespace LAB1
+﻿namespace LAB1
 {
     public class Program
     {
@@ -29,7 +29,10 @@ namespace LAB1
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
-
+            //các router mới phải được khai báo trên router mặc định
+            app.MapControllerRoute(
+                name: "account",
+                pattern: "{controller=Account}/{action=Index}/{id?}");
             app.Run();
         }
     }

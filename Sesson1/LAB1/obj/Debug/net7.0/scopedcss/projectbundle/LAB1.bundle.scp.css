@@ -1,0 +1,49 @@
+/* _content/LAB1/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-gis9v23blv] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-gis9v23blv] {
+  color: #0077cc;
+}
+
+.btn-primary[b-gis9v23blv] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-gis9v23blv], .nav-pills .show > .nav-link[b-gis9v23blv] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-gis9v23blv] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-gis9v23blv] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-gis9v23blv] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-gis9v23blv] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-gis9v23blv] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
