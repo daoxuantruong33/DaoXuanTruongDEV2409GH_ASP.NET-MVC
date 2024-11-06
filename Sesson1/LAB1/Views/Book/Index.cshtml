@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Index";
+}
+<h2>Danh sách các cuốn sách</h2>
+<!--hiển thị các comboobox trên from-->
+<from action="" method="POST" class="form-inline" role="form">
+    <div class="form-group">
+        <select name="AuthorId" class="form-control" asp-items="ViewBag.authors">
+            <option value ="">Chọn tác giả</option>
+        </select>
+        <select name="GenreId" class="form-control" asp-items="ViewBag.genres">
+            <option value="">Chọn thể loại</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    <a asp-action="Create" class="btn btn-danger">Thêm mới</a>
+</from>
+<hr />
+<!--hiển thị danh sách các cuốn sách-->
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Tiêu đề</th>
+            <th>Tác giả</th>
+            <th>Thể loại</th>
+            <th>Gía</th>
+            <th>Hình ảnh</th>
+            <th></th>
+        </tr>   
+    </thead>
+
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.AuthorId</td>
+                <td>@book.GenreId</td>
+                <td>@book.Price</td>
+                <td>
+                    <img src="@book.Image" alt="@book.Image" width="40"/>
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@book.Id" class="btn tbn-sm btn-primary">Sửa</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
