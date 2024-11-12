@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NetCoreMVCLab03.props" />
+</Project>

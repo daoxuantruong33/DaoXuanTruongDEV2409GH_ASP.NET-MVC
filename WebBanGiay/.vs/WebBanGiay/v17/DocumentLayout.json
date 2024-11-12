@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webbangiay\\webbangiay\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|solutionrelative:webbangiay\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webbangiay\\webbangiay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|solutionrelative:webbangiay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webbangiay\\webbangiay\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|solutionrelative:webbangiay\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webbangiay\\webbangiay\\areas\\qladmin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|solutionrelative:webbangiay\\areas\\qladmin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webbangiay\\webbangiay\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|solutionrelative:webbangiay\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webbangiay\\webbangiay\\models\\qlbanhangcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D235997-0158-4F2D-BB67-C52DFCF05F79}|WebBanGiay\\WebBanGiay.csproj|solutionrelative:webbangiay\\models\\qlbanhangcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebBanGiay\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebBanGiay\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T09:38:56.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Program.cs",
+              "RelativeDocumentMoniker": "WebBanGiay\\Program.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Program.cs",
+              "RelativeToolTip": "WebBanGiay\\Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T09:36:36.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "WebBanGiay\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "WebBanGiay\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T09:34:42.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Areas\\QLAdmin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebBanGiay\\Areas\\QLAdmin\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Areas\\QLAdmin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WebBanGiay\\Areas\\QLAdmin\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T09:30:50.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "WebBanGiay\\ScaffoldingReadMe.txt",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "WebBanGiay\\ScaffoldingReadMe.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-06T09:25:07.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QlBanHangContext.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Models\\QlBanHangContext.cs",
+              "RelativeDocumentMoniker": "WebBanGiay\\Models\\QlBanHangContext.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebBanGiay\\WebBanGiay\\Models\\QlBanHangContext.cs",
+              "RelativeToolTip": "WebBanGiay\\Models\\QlBanHangContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T01:22:57.569Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

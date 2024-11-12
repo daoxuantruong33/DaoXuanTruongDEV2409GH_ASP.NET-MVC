@@ -1,0 +1,53 @@
+﻿@model IEnumerable<NetCoreMVCLab03.Models.Book>
+@{
+    ViewData["Title"] = "Index";
+}
+<h2>Danh sách các cuốn sách</h2>
+<!-- Hiển thị các comboobox trên form-->
+
+<form action="" method="POST" class="form-inline" role="form">
+    <div class="form-group">
+        <select name="AuthorId" class="form-control" asp-items="@ViewBag.authors">
+            <option value="">Chọn tác giả</option>
+        </select>
+        <select name="GenreId" class="form-control" asp-items="@ViewBag.authors">
+            <option value="">Chọn thể loại</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    <a asp-action="Create" class="btn btn-danger">Thêm mới</a>
+</form>
+<hr />
+<!--Hiển thị danh sách các cuốn sách-->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Tiêu đề</th>
+            <th>Tác giả</th>
+            <th>Thể loại</th>
+            <th>Giá</th>
+            <th>Hình ảnh</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.AuthorId</td>
+                <td>@book.GenreId</td>
+                <td>@book.Price</td>
+                <td>
+                    <img src="@book.Image" alt="@book.Title" width="40" />
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@book.Id" class="btn btn-sm btn-primary">sửa</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
