@@ -54,8 +54,7 @@
               "RelativeToolTip": "NetCoreMVCLab04\\Controllers\\PeopleController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T02:03:44.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T02:03:44.173Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "NetCoreMVCLab04\\Models\\DataLocal.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T01:47:49.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T01:47:49.418Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "NetCoreMVCLab04\\Views\\People\\Details.cshtml",
               "ViewState": "AgIAADwAAAAAAAAAAADwvzwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T02:22:09.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T02:22:09.671Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "NetCoreMVCLab04\\Views\\People\\Edit.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T03:01:49.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T03:01:49.724Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "NetCoreMVCLab04\\Views\\People\\Delete.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T03:10:37.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T03:10:37.305Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "NetCoreMVCLab04\\Models\\People.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAqwAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T01:43:21.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T01:43:21.142Z"
             },
             {
               "$type": "Document",
@@ -145,8 +139,7 @@
               "RelativeToolTip": "NetCoreMVCLab04\\Views\\People\\Create.cshtml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T02:29:11.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T02:29:11.802Z"
             }
           ]
         }
