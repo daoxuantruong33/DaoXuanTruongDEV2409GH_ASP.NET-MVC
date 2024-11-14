@@ -1,0 +1,547 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\customerusers\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\customerusers\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\customerusers\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\customerusers\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\customerusers\\models\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\customerusers\\models\\loginuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\customerusers\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\customerusers\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\customerusers\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\customerusers\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\customerusers\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\customerusers\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\shared\\_preloader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\shared\\_preloader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\adminql\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\adminql\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\models\\qlbanhangcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\models\\qlbanhangcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "WebGiay\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T08:58:06.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\CustomerUsers\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\CustomerUsers\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T08:57:00.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\CustomerUsers\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\CustomerUsers\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:47:50.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\CustomerUsers\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\CustomerUsers\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:47:21.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\CustomerUsers\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\CustomerUsers\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T08:45:18.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginUser.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Models\\LoginUser.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\CustomerUsers\\Models\\LoginUser.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Models\\LoginUser.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\CustomerUsers\\Models\\LoginUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:26:36.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebGiay\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:23:59.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\CustomerUsers\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUsers\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\CustomerUsers\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:23:50.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:32:40.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderDetailsController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\OrderDetailsController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Controllers\\OrderDetailsController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\OrderDetailsController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Controllers\\OrderDetailsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:02:04.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:02:50.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Models\\Login.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Models\\Login.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:34:32.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\Admin.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\Admin.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\Admin.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\Admin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T06:21:36.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAwwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:01:14.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:46:10.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\Users\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T07:47:02.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "WebGiay\\ScaffoldingReadMe.txt",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "WebGiay\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-12T06:19:50.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:44:17.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:04:07.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:30:24.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T07:27:31.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_SideBar.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\_SideBar.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\_SideBar.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T07:26:39.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_Preloader.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\_Preloader.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\_Preloader.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\_Preloader.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\_Preloader.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T07:26:16.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_NavBar.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\_NavBar.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\Shared\\_NavBar.cshtml",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T07:25:26.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T06:29:11.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Program.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Program.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Program.cs",
+              "RelativeToolTip": "WebGiay\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:15:06.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T06:31:11.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\appsettings.json",
+              "RelativeDocumentMoniker": "WebGiay\\appsettings.json",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\appsettings.json",
+              "RelativeToolTip": "WebGiay\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-12T06:13:23.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T06:42:23.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "WebGiay\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T06:45:43.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "QlBanHangContext.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Models\\QlBanHangContext.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Models\\QlBanHangContext.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Models\\QlBanHangContext.cs",
+              "RelativeToolTip": "WebGiay\\Models\\QlBanHangContext.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA2wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T06:13:01.568Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+﻿@model WebGiay.Areas.AdminQL.Models.Login
+@{
+    Layout = null;
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger mt-3">
+        <ul>
+            @foreach (var modelState in ViewData.ModelState.Values)
+            {
+                foreach (var error in modelState.Errors)
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            }
+        </ul>
+    </div>
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Login</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+    <style>
+        .login-box {
+            width: 400px;
+            margin: auto;
+            margin-top: 80px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .login-title {
+            font-weight: 700;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .custom-input {
+            border-radius: 8px;
+            margin-top: 10px;
+            height: 45px;
+            margin-left:14px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .alert {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="hold-transition login-page">
+
+    <div class="login-box">
+        <div class="login-title">Đăng nhập Admin</div>
+        <form asp-action="Index" method="post">
+            <!-- Email input -->
+            <input asp-for="Email" type="email" class="custom-input form-control form-control-lg"
+                   placeholder="Email" />
+
+            <!-- Password input -->
+            <input asp-for="Password" type="password" class="custom-input form-control form-control-lg"
+                   placeholder="Mật khẩu" required />
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary ">Đăng nhập</button>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/adminlte.min.js"></script>
+</body>
+</html>
