@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab06\\netcoremvclab06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|solutionrelative:netcoremvclab06\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab06\\netcoremvclab06\\entities\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|solutionrelative:netcoremvclab06\\entities\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab06\\netcoremvclab06\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|solutionrelative:netcoremvclab06\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab06\\netcoremvclab06\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|solutionrelative:netcoremvclab06\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab06\\netcoremvclab06\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F8424306-9EDE-4461-9F92-E84E0C00DD8B}|NetCoreMVCLab06\\NetCoreMVCLab06.csproj|solutionrelative:netcoremvclab06\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\Program.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab06\\Program.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\Program.cs",
+              "RelativeToolTip": "NetCoreMVCLab06\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:09:02.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\Entities\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab06\\Entities\\AppDbContext.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\Entities\\AppDbContext.cs",
+              "RelativeToolTip": "NetCoreMVCLab06\\Entities\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:06:56.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab06\\Models\\Product.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\Models\\Product.cs",
+              "RelativeToolTip": "NetCoreMVCLab06\\Models\\Product.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:04:00.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab06\\Models\\Category.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\Models\\Category.cs",
+              "RelativeToolTip": "NetCoreMVCLab06\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:03:38.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\appsettings.json",
+              "RelativeDocumentMoniker": "NetCoreMVCLab06\\appsettings.json",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab06\\NetCoreMVCLab06\\appsettings.json",
+              "RelativeToolTip": "NetCoreMVCLab06\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-15T04:00:14.28Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

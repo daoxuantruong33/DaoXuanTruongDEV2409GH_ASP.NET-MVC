@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Sesson06.TheoryCF8.props" />
+</Project>
