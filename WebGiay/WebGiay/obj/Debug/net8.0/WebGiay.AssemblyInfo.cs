@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebGiay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c3073309cc0b3c4b3aa943eca265669246c99d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2abef97274c545001fe19a0ba4bcfae7fda8722a")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebGiay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebGiay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

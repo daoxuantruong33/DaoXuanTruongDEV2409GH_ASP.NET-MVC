@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using WebGiay.Models;
 using WebGiay.Areas.AdminQL.Models;
-namespace LuxuryLife.Areas.AdminQL.Controllers
+namespace WebGiay.Areas.AdminQL.Controllers
 {
     [Area("AdminQL")]
     public class LoginController : Controller

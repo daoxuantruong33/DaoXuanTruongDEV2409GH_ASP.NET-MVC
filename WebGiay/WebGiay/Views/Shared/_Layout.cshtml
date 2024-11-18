@@ -26,7 +26,15 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
-                    <partial name="_LoginPartial" />
+                    <div class="dropdow">
+                        <a href="#" class="header-auth-text account">
+                            <i class="fa-regular fa-user " style="font-size:28px; color:black;"></i>
+                        </a>
+                        <ul class="dropdow-list" style="background:none;">
+                            <li><a class="dropdown-item" asp-area="CustomerUser" asp-controller="Users" asp-action="Create">Đăng ký</a></li>
+                            <li><a class="dropdown-item" asp-area="CustomerUser" asp-controller="Login" asp-action="Index">Đăng nhập</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>

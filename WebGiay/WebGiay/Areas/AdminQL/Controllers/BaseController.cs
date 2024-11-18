@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace WebGiay.Areas.AdminQL.Controllers
 {
+    [Area("AdminQL")]
     public class BaseController : Controller, IActionFilter
     {
         public override void OnActionExecuted(ActionExecutedContext context)
