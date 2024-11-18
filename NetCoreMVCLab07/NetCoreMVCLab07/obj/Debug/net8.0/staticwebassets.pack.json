@@ -121,150 +121,6 @@
       "PackagePath": "staticwebassets\\dist\\css\\alt\\adminlte.plugins.min.css.map"
     },
     {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\AdminLTELogo.png",
-      "PackagePath": "staticwebassets\\dist\\img\\AdminLTELogo.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\avatar.png",
-      "PackagePath": "staticwebassets\\dist\\img\\avatar.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\avatar2.png",
-      "PackagePath": "staticwebassets\\dist\\img\\avatar2.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\avatar3.png",
-      "PackagePath": "staticwebassets\\dist\\img\\avatar3.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\avatar4.png",
-      "PackagePath": "staticwebassets\\dist\\img\\avatar4.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\avatar5.png",
-      "PackagePath": "staticwebassets\\dist\\img\\avatar5.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\boxed-bg.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\boxed-bg.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\boxed-bg.png",
-      "PackagePath": "staticwebassets\\dist\\img\\boxed-bg.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\credit\\american-express.png",
-      "PackagePath": "staticwebassets\\dist\\img\\credit\\american-express.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\credit\\cirrus.png",
-      "PackagePath": "staticwebassets\\dist\\img\\credit\\cirrus.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\credit\\mastercard.png",
-      "PackagePath": "staticwebassets\\dist\\img\\credit\\mastercard.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\credit\\paypal.png",
-      "PackagePath": "staticwebassets\\dist\\img\\credit\\paypal.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\credit\\paypal2.png",
-      "PackagePath": "staticwebassets\\dist\\img\\credit\\paypal2.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\credit\\visa.png",
-      "PackagePath": "staticwebassets\\dist\\img\\credit\\visa.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\default-150x150.png",
-      "PackagePath": "staticwebassets\\dist\\img\\default-150x150.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\icons.png",
-      "PackagePath": "staticwebassets\\dist\\img\\icons.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\logo.png",
-      "PackagePath": "staticwebassets\\dist\\img\\logo.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\logo1.png",
-      "PackagePath": "staticwebassets\\dist\\img\\logo1.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\logologin.png",
-      "PackagePath": "staticwebassets\\dist\\img\\logologin.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\photo1.png",
-      "PackagePath": "staticwebassets\\dist\\img\\photo1.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\photo2.png",
-      "PackagePath": "staticwebassets\\dist\\img\\photo2.png"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\photo3.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\photo3.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\photo4.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\photo4.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\prod-1.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\prod-1.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\prod-2.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\prod-2.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\prod-3.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\prod-3.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\prod-4.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\prod-4.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\prod-5.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\prod-5.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\user1-128x128.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\user1-128x128.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\user2-160x160.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\user2-160x160.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\user3-128x128.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\user3-128x128.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\user4-128x128.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\user4-128x128.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\user5-128x128.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\user5-128x128.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\user6-128x128.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\user6-128x128.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\user7-128x128.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\user7-128x128.jpg"
-    },
-    {
-      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\img\\user8-128x128.jpg",
-      "PackagePath": "staticwebassets\\dist\\img\\user8-128x128.jpg"
-    },
-    {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\dist\\js\\.eslintrc.json",
       "PackagePath": "staticwebassets\\dist\\js\\.eslintrc.json"
     },
@@ -303,6 +159,130 @@
     {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\AdminLTELogo.png",
+      "PackagePath": "staticwebassets\\img\\AdminLTELogo.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\img\\avatar.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\avatar2.png",
+      "PackagePath": "staticwebassets\\img\\avatar2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\avatar3.png",
+      "PackagePath": "staticwebassets\\img\\avatar3.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\avatar4.png",
+      "PackagePath": "staticwebassets\\img\\avatar4.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\avatar5.png",
+      "PackagePath": "staticwebassets\\img\\avatar5.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\boxed-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\boxed-bg.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\boxed-bg.png",
+      "PackagePath": "staticwebassets\\img\\boxed-bg.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\category\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\category\\1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\default-150x150.png",
+      "PackagePath": "staticwebassets\\img\\default-150x150.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\icons.png",
+      "PackagePath": "staticwebassets\\img\\icons.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\logo1.png",
+      "PackagePath": "staticwebassets\\img\\logo1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\logologin.png",
+      "PackagePath": "staticwebassets\\img\\logologin.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\photo1.png",
+      "PackagePath": "staticwebassets\\img\\photo1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\photo2.png",
+      "PackagePath": "staticwebassets\\img\\photo2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\photo3.jpg",
+      "PackagePath": "staticwebassets\\img\\photo3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\photo4.jpg",
+      "PackagePath": "staticwebassets\\img\\photo4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\prod-1.jpg",
+      "PackagePath": "staticwebassets\\img\\prod-1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\prod-2.jpg",
+      "PackagePath": "staticwebassets\\img\\prod-2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\prod-3.jpg",
+      "PackagePath": "staticwebassets\\img\\prod-3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\prod-4.jpg",
+      "PackagePath": "staticwebassets\\img\\prod-4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\prod-5.jpg",
+      "PackagePath": "staticwebassets\\img\\prod-5.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\user1-128x128.jpg",
+      "PackagePath": "staticwebassets\\img\\user1-128x128.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\user2-160x160.jpg",
+      "PackagePath": "staticwebassets\\img\\user2-160x160.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\user3-128x128.jpg",
+      "PackagePath": "staticwebassets\\img\\user3-128x128.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\user4-128x128.jpg",
+      "PackagePath": "staticwebassets\\img\\user4-128x128.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\user5-128x128.jpg",
+      "PackagePath": "staticwebassets\\img\\user5-128x128.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\user6-128x128.jpg",
+      "PackagePath": "staticwebassets\\img\\user6-128x128.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\user7-128x128.jpg",
+      "PackagePath": "staticwebassets\\img\\user7-128x128.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\img\\user8-128x128.jpg",
+      "PackagePath": "staticwebassets\\img\\user8-128x128.jpg"
     },
     {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\wwwroot\\js\\site.js",

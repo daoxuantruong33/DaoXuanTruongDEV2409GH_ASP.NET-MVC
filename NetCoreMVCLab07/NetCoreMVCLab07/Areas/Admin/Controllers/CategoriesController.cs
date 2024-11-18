@@ -20,9 +20,16 @@ namespace NetCoreMVCLab07.Areas.Admin.Controllers
         }
 
         // GET: Admin/Categories
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string name)
         {
-            return View(await _context.Categories.ToListAsync());
+            var category = await _context.Categories.ToListAsync();
+            // nếu có tham số name trên url
+            if (!String.IsNullOrEmpty(name))
+            {
+                category = await _context.Categories.Where(c => c.Name.Contains(name)).ToListAsync();
+            }
+            ViewBag.keyword = name;
+            return View(category);
         }
 
         // GET: Admin/Categories/Details/5
@@ -56,13 +63,29 @@ namespace NetCoreMVCLab07.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("CategoryId,Name,Status,CreatedDate,Image,Description")] Category category)
         {
-            if (ModelState.IsValid)
+            try
             {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Count() > 0 && files[0].Length > 0)
+                {
+                    var file = files[0];
+                    var FileName = file.FileName;
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\img\\category", FileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        category.Image = "/img/category/" + FileName;
+                    }
+                }
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            catch (Exception ex)
+            {
+                ViewBag.error = ex.Message;
+                return View(category);
+            }
         }
 
         // GET: Admin/Categories/Edit/5
@@ -97,6 +120,18 @@ namespace NetCoreMVCLab07.Areas.Admin.Controllers
             {
                 try
                 {
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Count() > 0 && files[0].Length > 0)
+                    {
+                        var file = files[0];
+                        var FileName = file.FileName;
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\img\\category", FileName);
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                            category.Image = "/img/category/" + FileName;
+                        }
+                    }
                     _context.Update(category);
                     await _context.SaveChangesAsync();
                 }
@@ -113,6 +148,7 @@ namespace NetCoreMVCLab07.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryId", category.CategoryId);
             return View(category);
         }
 
