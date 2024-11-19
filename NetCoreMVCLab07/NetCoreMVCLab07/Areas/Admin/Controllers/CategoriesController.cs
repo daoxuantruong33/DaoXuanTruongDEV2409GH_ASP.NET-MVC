@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using NetCoreMVCLab07.Models;
+using X.PagedList;
 
 namespace NetCoreMVCLab07.Areas.Admin.Controllers
 {
@@ -20,13 +21,17 @@ namespace NetCoreMVCLab07.Areas.Admin.Controllers
         }
 
         // GET: Admin/Categories
-        public async Task<IActionResult> Index(string name)
+        public async Task<IActionResult> Index(string name, int page=1)
         {
-            var category = await _context.Categories.ToListAsync();
+            //số bản ghi trên 1 trang
+            int limit = 5;
+
+            // var category = await _context.Categories.ToListAsync();
+            var category = await _context.Categories.OrderBy(c => c.CategoryId).ToPagedListAsync(page, limit);
             // nếu có tham số name trên url
             if (!String.IsNullOrEmpty(name))
             {
-                category = await _context.Categories.Where(c => c.Name.Contains(name)).ToListAsync();
+                category = await _context.Categories.Where(c => c.Name.Contains(name)).OrderBy(c => c.CategoryId).ToPagedListAsync(page, limit);
             }
             ViewBag.keyword = name;
             return View(category);

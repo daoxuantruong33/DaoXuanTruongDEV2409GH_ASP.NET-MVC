@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\DashboardController.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\DashboardController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\DashboardController.cs",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:09:21.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:05:57.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T03:59:37.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T03:55:53.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\Models\\Login.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Models\\Login.cs",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T03:54:50.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\appsettings.json",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\appsettings.json",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\appsettings.json",
+              "RelativeToolTip": "NetCoreMVCLab09\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-19T03:35:28.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_SideBar.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\Views\\Shared\\_SideBar.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Views\\Shared\\_SideBar.cshtml*",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\Views\\Shared\\_SideBar.cshtml*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T03:32:25.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Program.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Program.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Program.cs",
+              "RelativeToolTip": "NetCoreMVCLab09\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T03:27:35.088Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
