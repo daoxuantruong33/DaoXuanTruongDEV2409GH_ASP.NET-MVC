@@ -1,6 +1,7 @@
 ﻿using NetCoreMVCLab09.Areas.Admin.Models;
 using NetCoreMVCLab09.Models;
 using Microsoft.AspNetCore.Mvc;
+using Login = NetCoreMVCLab09.Areas.Admin.Models.Login;
 
 
 namespace NetCoreMVCLab09.Areas.Admin.Controllers

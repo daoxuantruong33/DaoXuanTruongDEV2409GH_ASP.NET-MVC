@@ -1,0 +1,23 @@
+﻿@model IEnumerable<NetCoreMVCLab09.Models.Product>
+@{
+    ViewData["Title"] = "Danh sách sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row bg-white">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="product-card">
+                <img src="@item.Image" alt="@item.Title" class="product-card-img">  <div class="product-card-content">
+                    <h6><a href="/product/@item.Id">@item.Title</a></h6>  
+                    <p class="old-price">@string.Format("{0:#,##0}", @item.PriceOld)  VND</p>
+                    <p class="new-price">@string.Format("{0:#,##0}", @item.PriceNew)  VND</p>
+                    <a asp-controller="Cart" asp-action="Add" asp-route-id="@item.Id">  
+                        <i class="fi fi-bs-shopping-bag">&nbsp; Mua hàng</i>  </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

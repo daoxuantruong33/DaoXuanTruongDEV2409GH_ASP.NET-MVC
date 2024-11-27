@@ -25,6 +25,8 @@ public partial class DevXuongMocContext : DbContext
 
     public virtual DbSet<Contact> Contacts { get; set; }
 
+    public virtual DbSet<Customer> Customers { get; set; }
+
     public virtual DbSet<Extension> Extensions { get; set; }
 
     public virtual DbSet<InforCompany> InforCompanies { get; set; }
@@ -35,7 +37,13 @@ public partial class DevXuongMocContext : DbContext
 
     public virtual DbSet<News> News { get; set; }
 
+    public virtual DbSet<Order> Orders { get; set; }
+
+    public virtual DbSet<OrdersDetail> OrdersDetails { get; set; }
+
     public virtual DbSet<Partner> Partners { get; set; }
+
+    public virtual DbSet<PaymentMethod> PaymentMethods { get; set; }
 
     public virtual DbSet<Product> Products { get; set; }
 
@@ -289,6 +297,57 @@ public partial class DevXuongMocContext : DbContext
             entity.Property(e => e.UpdatedDate)
                 .HasColumnType("datetime")
                 .HasColumnName("UPDATED_DATE");
+        });
+
+        modelBuilder.Entity<Customer>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__CUSTOMER__3214EC273DCDA2D2");
+
+            entity.ToTable("CUSTOMER");
+
+            entity.HasIndex(e => e.Username, "UQ__CUSTOMER__B15BE12E0B31281A").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Address)
+                .HasMaxLength(500)
+                .HasColumnName("ADDRESS");
+            entity.Property(e => e.Avatar)
+                .HasMaxLength(255)
+                .HasColumnName("AVATAR");
+            entity.Property(e => e.CreatedBy)
+                .HasMaxLength(100)
+                .HasColumnName("CREATED_BY");
+            entity.Property(e => e.CreatedDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("CREATED_DATE");
+            entity.Property(e => e.Email)
+                .HasMaxLength(255)
+                .HasColumnName("EMAIL");
+            entity.Property(e => e.Isactive)
+                .HasDefaultValue(true)
+                .HasColumnName("ISACTIVE");
+            entity.Property(e => e.Isdelete)
+                .HasDefaultValue(false)
+                .HasColumnName("ISDELETE");
+            entity.Property(e => e.Name)
+                .HasMaxLength(255)
+                .HasColumnName("NAME");
+            entity.Property(e => e.Password)
+                .HasMaxLength(255)
+                .HasColumnName("PASSWORD");
+            entity.Property(e => e.Phone)
+                .HasMaxLength(15)
+                .HasColumnName("PHONE");
+            entity.Property(e => e.UpdatedBy)
+                .HasMaxLength(100)
+                .HasColumnName("UPDATED_BY");
+            entity.Property(e => e.UpdatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("UPDATED_DATE");
+            entity.Property(e => e.Username)
+                .HasMaxLength(100)
+                .HasColumnName("USERNAME");
         });
 
         modelBuilder.Entity<Extension>(entity =>
@@ -550,6 +609,85 @@ public partial class DevXuongMocContext : DbContext
             entity.Property(e => e.Views).HasColumnName("VIEWS");
         });
 
+        modelBuilder.Entity<Order>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__ORDERS__3214EC27993EE4AE");
+
+            entity.ToTable("ORDERS");
+
+            entity.HasIndex(e => e.Idorders, "UQ__ORDERS__99356D843C30ABDF").IsUnique();
+
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Address)
+                .HasMaxLength(500)
+                .HasColumnName("ADDRESS");
+            entity.Property(e => e.Email)
+                .HasMaxLength(255)
+                .HasColumnName("EMAIL");
+            entity.Property(e => e.Idcustomer).HasColumnName("IDCUSTOMER");
+            entity.Property(e => e.Idorders)
+                .HasMaxLength(100)
+                .HasColumnName("IDORDERS");
+            entity.Property(e => e.Idpayment).HasColumnName("IDPAYMENT");
+            entity.Property(e => e.Isactive)
+                .HasDefaultValue(true)
+                .HasColumnName("ISACTIVE");
+            entity.Property(e => e.Isdelete)
+                .HasDefaultValue(false)
+                .HasColumnName("ISDELETE");
+            entity.Property(e => e.NameReceiver)
+                .HasMaxLength(255)
+                .HasColumnName("NAME_RECEIVER");
+            entity.Property(e => e.Notes).HasColumnName("NOTES");
+            entity.Property(e => e.OrdersDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("ORDERS_DATE");
+            entity.Property(e => e.Phone)
+                .HasMaxLength(15)
+                .HasColumnName("PHONE");
+            entity.Property(e => e.TotalMoney)
+                .HasColumnType("decimal(18, 2)")
+                .HasColumnName("TOTAL_MONEY");
+
+            entity.HasOne(d => d.IdcustomerNavigation).WithMany(p => p.Orders)
+                .HasForeignKey(d => d.Idcustomer)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__ORDERS__IDCUSTOM__0E6E26BF");
+        });
+
+        modelBuilder.Entity<OrdersDetail>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__ORDERS_D__3214EC27394477F4");
+
+            entity.ToTable("ORDERS_DETAILS");
+
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.Idord).HasColumnName("IDORD");
+            entity.Property(e => e.Idproduct).HasColumnName("IDPRODUCT");
+            entity.Property(e => e.Price)
+                .HasColumnType("decimal(18, 2)")
+                .HasColumnName("PRICE");
+            entity.Property(e => e.Qty).HasColumnName("QTY");
+            entity.Property(e => e.ReturnQty)
+                .HasDefaultValue(0)
+                .HasColumnName("RETURN_QTY");
+            entity.Property(e => e.Total)
+                .HasComputedColumnSql("([PRICE]*[QTY])", true)
+                .HasColumnType("decimal(29, 2)")
+                .HasColumnName("TOTAL");
+
+            entity.HasOne(d => d.IdordNavigation).WithMany(p => p.OrdersDetails)
+                .HasForeignKey(d => d.Idord)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__ORDERS_DE__IDORD__123EB7A3");
+
+            entity.HasOne(d => d.IdproductNavigation).WithMany(p => p.OrdersDetails)
+                .HasForeignKey(d => d.Idproduct)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__ORDERS_DE__IDPRO__1332DBDC");
+        });
+
         modelBuilder.Entity<Partner>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__PARTNER__3214EC27FF6F5E7C");
@@ -591,6 +729,29 @@ public partial class DevXuongMocContext : DbContext
             entity.Property(e => e.Url)
                 .HasMaxLength(255)
                 .HasColumnName("URL");
+        });
+
+        modelBuilder.Entity<PaymentMethod>(entity =>
+        {
+            entity.ToTable("PAYMENT_METHOD");
+
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("ID");
+            entity.Property(e => e.CreatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("CREATED_DATE");
+            entity.Property(e => e.Isactive).HasColumnName("ISACTIVE");
+            entity.Property(e => e.Isdelete).HasColumnName("ISDELETE");
+            entity.Property(e => e.Name)
+                .HasMaxLength(250)
+                .HasColumnName("NAME");
+            entity.Property(e => e.Notes)
+                .HasColumnType("ntext")
+                .HasColumnName("NOTES");
+            entity.Property(e => e.UpdatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("UPDATED_DATE");
         });
 
         modelBuilder.Entity<Product>(entity =>

@@ -58,12 +58,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/NetCoreMVCLab09/NetCoreMVCLab09/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/NetCoreMVCLab09/NetCoreMVCLab09/Views/Cart/Orders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/NetCoreMVCLab09/NetCoreMVCLab09/Views/CustomerMember/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJNZW1iZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/NetCoreMVCLab09/NetCoreMVCLab09/Views/CustomerMember/Registy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJNZW1iZXJcUmVnaXN0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/NetCoreMVCLab09/NetCoreMVCLab09/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/NetCoreMVCLab09/NetCoreMVCLab09/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/NetCoreMVCLab09/NetCoreMVCLab09/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/NetCoreMVCLab09/NetCoreMVCLab09/Views/Shared/Error.cshtml]

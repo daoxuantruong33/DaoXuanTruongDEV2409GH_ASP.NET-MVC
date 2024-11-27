@@ -14,7 +14,9 @@
                             Giá: @string.Format("{0:N0}", product.Price) VND <br />
                         </p>
                         <p>@product.Quantity</p>
-                        <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                        <a asp-area="CustomerUser" asp-controller="Carts" asp-action="Add" asp-route-id="@product.ProductId" asp-route-userId="@Context.Session.GetInt32("UserId")">
+                            <i class="fi fi-bs-shopping-bag">Mua hàng</i>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -54,4 +54,6 @@ public partial class Product
     public byte? Status { get; set; }
 
     public bool? Isdelete { get; set; }
+
+    public virtual ICollection<OrdersDetail> OrdersDetails { get; set; } = new List<OrdersDetail>();
 }

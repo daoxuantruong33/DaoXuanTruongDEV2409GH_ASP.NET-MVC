@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\NetCoreMVCLab09.bundle.scp.css"
     },
     {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\css\\fonts.css",
+      "PackagePath": "staticwebassets\\css\\fonts.css"
+    },
+    {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -159,6 +163,550 @@
     {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\Gotham-Black.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-Black.otf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\Gotham-Bold.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-Bold.otf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\Gotham-BookItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-BookItalic.otf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\Gotham-Light.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-Light.otf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\Gotham-Thin.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-Thin.otf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\Gotham-ThinItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-ThinItalic.otf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\Gotham-UltraItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-UltraItalic.otf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\Gotham-XLight.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-XLight.otf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\Gotham-XLightItalic.otf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham-XLightItalic.otf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\GothamBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\GothamBold.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\GothamBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\GothamBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\GothamBook.ttf",
+      "PackagePath": "staticwebassets\\fonts\\GothamBook.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\GothamBookItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\GothamBookItalic.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\GothamLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\GothamLight.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\GothamLightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\GothamLightItalic.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\GothamMedium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\GothamMedium.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\GothamMediumItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\GothamMediumItalic.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\GothamMedium_1.ttf",
+      "PackagePath": "staticwebassets\\fonts\\GothamMedium_1.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\fonts\\freefontsfamily.com.txt",
+      "PackagePath": "staticwebassets\\fonts\\freefontsfamily.com.txt"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\DOITAC.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\DOITAC.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\GIOITHIEU.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\GIOITHIEU.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\LIENHE.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\LIENHE.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner.html",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner.html"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\01.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\01.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\02.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\02.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\05.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\05.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\06.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\06.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\all.min.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\all.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\bao-hanh.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\bao-hanh.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\bootstrap.bundle.min.js.download",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\bootstrap.bundle.min.js.download"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\chat-luong.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\chat-luong.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\chatluong.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\chatluong.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\chinh-sach.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\chinh-sach.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\ghe.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ghe.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon-cau-thang.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-cau-thang.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon-do-trang-tri.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-do-trang-tri.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon-phong-bep.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-phong-bep.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon-phong-khach.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-phong-khach.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon-phong-ngu.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-phong-ngu.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon-phong-tam.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-phong-tam.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon-tre-em.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-tre-em.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon-van-phong.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon-van-phong.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon_email_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon_email_pro.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon_fb_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon_fb_pro.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\icon_zalo_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\icon_zalo_pro.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\jquery.slim.min.js.download",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\jquery.slim.min.js.download"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\logo.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\main.1c2a357f.js.download",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\main.1c2a357f.js.download"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\main.a567d279.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\main.a567d279.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\marvella.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\marvella.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\melissa.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\melissa.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\muong-thanh.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\muong-thanh.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\san-pham.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\san-pham.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\sheraton.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\sheraton.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\slick-theme.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\slick-theme.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\slick.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\slick.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\style.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\style.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\sunrise-sapa.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\sunrise-sapa.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\the-coffee-house.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\the-coffee-house.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\uicons-bold-straight.css",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\uicons-bold-straight.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi-1.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi-1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi-2.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi-2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi-3.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi-3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi-4.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi-4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\ve-chung-toi.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\ve-chung-toi.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\banner_files\\vinpearl.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\banner_files\\vinpearl.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\bao-hanh.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\bao-hanh.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\bg-about-us.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\bg-about-us.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\bgr.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\bgr.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\chat-luong.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\chat-luong.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\chatluong.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\chatluong.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\chinh-sach.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\chinh-sach.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\ghe.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ghe.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon-cau-thang.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-cau-thang.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon-do-trang-tri.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-do-trang-tri.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon-phong-bep.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-phong-bep.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon-phong-khach.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-phong-khach.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon-phong-ngu.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-phong-ngu.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon-phong-tam.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-phong-tam.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon-van-phong.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon-van-phong.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon_email_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon_email_pro.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon_fb_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon_fb_pro.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\icon_zalo_pro.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\icon_zalo_pro.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\lienhe-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\lienhe-bg.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\logo.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\logo.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\marvella.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\marvella.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\muong-thanh.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\muong-thanh.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\san-pham.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\san-pham.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\sheraton (1).png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\sheraton (1).png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\sheraton.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\sheraton.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\sp2.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\sp2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\su-menh1.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\su-menh1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\su-menh2.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\su-menh2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\su-menh3.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\su-menh3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\su-menh4.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\su-menh4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\sunrise-sapa.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\sunrise-sapa.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\tamnhin.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\tamnhin.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\thanhlap.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\thanhlap.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\the-coffee-house.png",
+      "PackagePath": "staticwebassets\\images\\anhcat\\the-coffee-house.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\trai-nghiem1.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\trai-nghiem1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\ve-chung-toi-1.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi-1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\ve-chung-toi-2.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi-2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\ve-chung-toi-3.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi-3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\ve-chung-toi-4.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi-4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\anhcat\\ve-chung-toi.jpg",
+      "PackagePath": "staticwebassets\\images\\anhcat\\ve-chung-toi.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\cau-thang\\019.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\cau-thang\\019.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\do-trang-tri\\020.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\do-trang-tri\\020.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-bep\\004.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-bep\\004.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-bep\\009.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-bep\\009.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\001.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\001a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001a.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\001b.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001b.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\001c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001c.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\001d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001d.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\001e.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\001e.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\002.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\002.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\008.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\008.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\009.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\009.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\011.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\011.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\012.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\012.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\014.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\014.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-khach\\015.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-khach\\015.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-ngu\\003.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-ngu\\003.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-ngu\\004.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-ngu\\004.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-ngu\\007.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-ngu\\007.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-ngu\\013.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-ngu\\013.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-tam\\005.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-tam\\005.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-tam\\006.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-tam\\006.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-tam\\007.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-tam\\007.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\phong-tam\\008.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\phong-tam\\008.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\tre-em\\016.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\tre-em\\016.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\tre-em\\017.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\tre-em\\017.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\tre-em\\018.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\tre-em\\018.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\images\\products\\van-phong\\018.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\van-phong\\018.jpg"
     },
     {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\img\\AdminLTELogo.png",

@@ -9,7 +9,7 @@ using WebGiay.Models;
 
 namespace WebGiay.Areas.AdminQL.Controllers
 {
-    public class OrderDetailsController : Controller
+    public class OrderDetailsController : BaseController
     {
         private readonly QlBanHangContext _context;
 

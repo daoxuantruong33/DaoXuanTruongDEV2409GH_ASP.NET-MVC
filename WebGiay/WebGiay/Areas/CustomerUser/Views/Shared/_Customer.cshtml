@@ -32,6 +32,14 @@
                         </a>
                         <ul class="dropdow-list" style="background:none;">
                             <li><a class="dropdown-item" asp-area="CustomerUser" asp-controller="Users" asp-action="Details" asp-route-userId="@Context.Session.GetInt32("UserId")">Thông tin cá nhân</a></li>
+                            <li>
+                                <div class="header-cart" style="background:none;">
+                                    <a asp-area="CustomerUser" asp-controller="Carts" asp-route-userId="@Context.Session.GetInt32("UserId") asp-action="Index" class="header-cart-submit" style="color:black;">
+                                        <i class="fa-solid fa-cart-shopping header-cart-icon"></i>
+                                        Giỏ hàng
+                                    </a>
+                                </div>
+                            </li>
                             <li><a class="dropdown-item" asp-area="CustomerUser" asp-controller="Login" asp-action="Logout">Đăng xuất</a></li>
                         </ul>
                     </div>

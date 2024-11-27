@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewData["Title"] = "Thông tin đơn hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var customer = ViewBag.Customer as NetCoreMVCLab09.Models.Customer;
+}
+<style>
+    .input-group-text {
+        width: 100px !important;
+    }
+</style>
+<form asp-action="OrderPay" asp-controller="Cart" method="post">
+    <div class="row cart py-2">
+        <h2 class="text-center my-2 py-2">ĐƠN HÀNG CỦA BẠN</h2>
+        <div class="col-md-6 ">
+            <div class="border p-2">
+                <h2>Thông tin người đặt hàng</h2>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Name</span>  <input type="text" class="form-control" readonly value="@customer.Name">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Email</span>  <input type="text" class="form-control" readonly value="@customer.Email">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Phone</span>  <input type="text" class="form-control" readonly value="@customer.Phone">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Address</span>  <textarea class="form-control" readonly aria-label="With  textarea">@customer.Address</textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 ">
+            <div class="border p-2">
+                <h2>Thông tin người nhận hàng</h2>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Name</span>  <input type="text" class="form-control" name="NameReciver" value="@customer.Name">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Email</span>
+                    <input type="text" class="form-control" name="Email" value="@customer.Email">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Phone</span>
+                    <input type="text" class="form-control" name="Phone" value="@customer.Phone">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Address</span>
+                    <textarea class="form-control" name="Address" aria-label="With  textarea">@customer.Address</textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Note</span>
+                    <textarea class="form-control" name="Notes" aria-label="With  textarea">  </textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Payment</span>
+                    <select name="Idpayment" class="form-control" asp-items="ViewBag.IdPayment"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row cart cart">
+        <div class="col-md-12">
+            <h2 class="text-center my-2 py-2">THÔNG TIN SẢN PHẨM ĐẶT MUA</h2>  <div class="box-cart">
+                <div class="box-cart-item-box">
+                    @foreach (var item in Model)
+                    {
+                        var money = item.Price * item.Quantity;
+                        <div class="box-cart-border-bottom d-flex justify-content-between  align-items-center">
+                            <div class="box-cart-item d-flex justify-content-start align items-center">
+                                <img src="@item.Image" alt="@item.Name" class="box-cart-item-img" />
+                                <div class="d-flex flex-column">
+                                    <h5>@item.Name</h5>
+                                    <div class="box-cart-item-btn">
+                                        <button class="btn qty_btn"><i class="fa fa minus">-</i></button>
+                                        <input type="number" class="qty_input" style="margin-left:0.2rem;margin-right:0.2rem" value="@item.Quantity" />
+                                        <button class="btn qty_btn"><i class="fa fa plus">+</i></button>
+                                    </div>
+                                    <p data-price="@item.Price">
+                                        Giá:
+                                        <span>@string.Format("{0:#,##0}", @item.Price)</span>VND
+                                    </p>
+                                    <p data-money="@money" class="total-money">Thành tiền:  <span id="money">@string.Format("{0:#,##0}", @money)</span>VND</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="box-cart-bill">
+                    <h3> Tóm tắt đơn hàng </h3>
+                    <p>
+                        Tổng thành tiền:<span id="totalMoney">
+                            @string.Format("{0:#,##0}", ViewBag.total)
+                        </span> VND
+                    </p>
+                    <p>
+                        Phí vận chuyển: <span class="ship-money">Free Ship</span><br>  
+                        <small>( Miễn phí vận chuyển với đơn hàng trên 10 triệu )</small>
+                    </p>
+                    <p>
+                        Thông tin vận chuyển: Sản phẩm sẽ được Hoàng Hoan giao trong vòng  2-7 ngày.
+                        Chi tiết liên hệ
+                        <a href="tel:0978611889">0978 611 889</a>
+                    </p>
+                    <div class="cart-box cart-layout">
+                        <div>
+                            Tổng tiền :<span id="totalMoneyPay">
+                                @string.Format("{0:#,##0}", ViewBag.total)
+                            </span> VND
+                        </div>
+                        </br>
+                        <div class="group-btn">
+                            <a href="/product" class="btn">Tiếp tục mua hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Thanh toán</button>
+        </div>
+    </div>
+</form>
+

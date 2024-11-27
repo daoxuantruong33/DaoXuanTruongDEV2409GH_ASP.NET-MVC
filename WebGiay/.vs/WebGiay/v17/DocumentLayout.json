@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webgiay\\webgiay\\areas\\customeruser\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{916FD08A-7C5B-4C07-A0E1-4B0DD639D453}|WebGiay\\WebGiay.csproj|solutionrelative:webgiay\\areas\\customeruser\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartsController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUser\\Controllers\\CartsController.cs",
+              "RelativeDocumentMoniker": "WebGiay\\Areas\\CustomerUser\\Controllers\\CartsController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebGiay\\WebGiay\\Areas\\CustomerUser\\Controllers\\CartsController.cs",
+              "RelativeToolTip": "WebGiay\\Areas\\CustomerUser\\Controllers\\CartsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:43:55.278Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
