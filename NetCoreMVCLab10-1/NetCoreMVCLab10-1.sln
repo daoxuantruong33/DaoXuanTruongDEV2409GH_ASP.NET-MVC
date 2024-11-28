@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMVCLab10-1", "NetCoreMVCLab10-1\NetCoreMVCLab10-1.csproj", "{0E89727B-C7D4-461C-8816-3351706570B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMVCLab10-1.CustomAuthorize", "NetCoreMVCLab10-1.CustomAuthorize\NetCoreMVCLab10-1.CustomAuthorize.csproj", "{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E89727B-C7D4-461C-8816-3351706570B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E89727B-C7D4-461C-8816-3351706570B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E89727B-C7D4-461C-8816-3351706570B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E89727B-C7D4-461C-8816-3351706570B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58B070F2-0171-42AA-BE67-22A633A74CBD}
+	EndGlobalSection
+EndGlobal

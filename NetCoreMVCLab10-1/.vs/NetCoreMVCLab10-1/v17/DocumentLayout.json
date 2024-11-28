@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E89727B-C7D4-461C-8816-3351706570B1}|NetCoreMVCLab10-1\\NetCoreMVCLab10-1.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E89727B-C7D4-461C-8816-3351706570B1}|NetCoreMVCLab10-1\\NetCoreMVCLab10-1.csproj|solutionrelative:netcoremvclab10-1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1.customauthorize\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{53BCF8BE-985C-4B6F-BDBC-1A1C142A86CD}|NetCoreMVCLab10-1.CustomAuthorize\\NetCoreMVCLab10-1.CustomAuthorize.csproj|solutionrelative:netcoremvclab10-1.customauthorize\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E89727B-C7D4-461C-8816-3351706570B1}|NetCoreMVCLab10-1\\NetCoreMVCLab10-1.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab10-1\\netcoremvclab10-1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0E89727B-C7D4-461C-8816-3351706570B1}|NetCoreMVCLab10-1\\NetCoreMVCLab10-1.csproj|solutionrelative:netcoremvclab10-1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T04:10:47.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T02:16:33.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\appsettings.json",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\appsettings.json",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\appsettings.json",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T03:10:23.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T02:35:17.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Program.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\Program.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Program.cs",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T02:19:42.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T02:15:45.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T02:14:40.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Home\\Login.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-28T02:10:30.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T02:09:36.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1.CustomAuthorize\\Models\\Login.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1.CustomAuthorize\\Models\\Login.cs",
+              "RelativeToolTip": "NetCoreMVCLab10-1.CustomAuthorize\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T02:06:10.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1\\Program.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1\\Program.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1\\Program.cs",
+              "RelativeToolTip": "NetCoreMVCLab10-1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T01:57:03.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1\\appsettings.json",
+              "RelativeDocumentMoniker": "NetCoreMVCLab10-1\\appsettings.json",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab10-1\\NetCoreMVCLab10-1\\appsettings.json",
+              "RelativeToolTip": "NetCoreMVCLab10-1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T01:47:36.464Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

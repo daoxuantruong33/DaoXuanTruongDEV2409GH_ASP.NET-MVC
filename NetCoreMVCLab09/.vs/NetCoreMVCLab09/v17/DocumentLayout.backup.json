@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\views\\cart\\oderpay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\views\\cart\\oderpay.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -58,24 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Oderpay.cshtml",
-              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Cart\\Oderpay.cshtml",
-              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\Cart\\Oderpay.cshtml",
-              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Cart\\Oderpay.cshtml",
-              "RelativeToolTip": "NetCoreMVCLab09\\Views\\Cart\\Oderpay.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T13:32:27.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "OrdersDetail.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Models\\OrdersDetail.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Models\\OrdersDetail.cs",
@@ -88,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PaymentMethod.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Models\\PaymentMethod.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Models\\PaymentMethod.cs",
@@ -101,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "site.css",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\wwwroot\\css\\site.css",
@@ -114,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\Product\\Index.cshtml",
@@ -127,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\CustomerMember\\Index.cshtml",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\CustomerMember\\Index.cshtml",
@@ -140,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\Cart\\Index.cshtml",
@@ -153,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Cart.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Models\\Cart.cs",
@@ -166,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Orders.cshtml",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Cart\\Orders.cshtml",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\Cart\\Orders.cshtml",
@@ -179,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Models\\Order.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Models\\Order.cs",
@@ -192,20 +175,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CartController.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Controllers\\CartController.cs",
               "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Controllers\\CartController.cs",
               "RelativeToolTip": "NetCoreMVCLab09\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAmwNQAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAA2wM0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T10:34:23.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "CustomerMemberController.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Controllers\\CustomerMemberController.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Controllers\\CustomerMemberController.cs",

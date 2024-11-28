@@ -1,0 +1,24 @@
+﻿@model NetCoreMVCLab10_1.CustomAuthorize.Models.Login
+@{
+    ViewData["Title"] = "Login Information";
+}
+
+<div class="border p-3">
+    <h2>Login Information</h2>
+    <form asp-action="Login" asp-controller="Home" method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" asp-for="Email" placeholder="name@devmaster.edu.vn" />
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" asp-for="Password" placeholder="" />
+            <span asp-validation-for="Password"></span>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+</div>

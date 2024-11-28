@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\NetCoreMVCLab10-1.CustomAuthorize.props" />
+</Project>
