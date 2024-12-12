@@ -86,6 +86,7 @@ namespace NetCoreMVCLab07.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             catch (Exception ex)
             {
                 ViewBag.error = ex.Message;

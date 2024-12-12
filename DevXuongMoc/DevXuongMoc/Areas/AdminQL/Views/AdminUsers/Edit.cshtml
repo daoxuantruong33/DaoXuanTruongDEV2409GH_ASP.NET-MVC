@@ -1,0 +1,150 @@
+﻿@model DevXuongMoc.Models.AdminUser
+
+@{
+    ViewData["Title"] = "Chỉnh Sửa";
+    Layout = "~/Areas/AdminQL/Views/Shared/Admin.cshtml";
+}
+
+<h1 class="display-4 text-center mt-4">Chỉnh Sửa Thông Tin</h1>
+<hr class="my-4">
+<div class="row">
+    <!-- Bên trái (Cột 1) -->
+    <div class="col-md-6">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-4"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <!-- Tài Khoản -->
+            <div class="form-group">
+                <label asp-for="Account" class="control-label">Tài Khoản</label>
+                <input asp-for="Account" class="form-control" placeholder="Nhập tài khoản" />
+                <span asp-validation-for="Account" class="text-danger"></span>
+            </div>
+
+            <!-- Mật Khẩu -->
+            <div class="form-group">
+                <label asp-for="Password" class="control-label">Mật Khẩu</label>
+                <input asp-for="Password" class="form-control" type="password" placeholder="Nhập mật khẩu" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <!-- Mã Nhân Sự -->
+            <div class="form-group">
+                <label asp-for="MaNhanSu" class="control-label">Mã Nhân Sự</label>
+                <input asp-for="MaNhanSu" class="form-control" placeholder="Nhập mã nhân sự" />
+                <span asp-validation-for="MaNhanSu" class="text-danger"></span>
+            </div>
+
+            <!-- Tên -->
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">Tên</label>
+                <input asp-for="Name" class="form-control" placeholder="Nhập tên" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <!-- Số Điện Thoại -->
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label">Số Điện Thoại</label>
+                <input asp-for="Phone" class="form-control" placeholder="Nhập số điện thoại" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" placeholder="Nhập email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <!-- Avatar -->
+            <div class="form-group">
+                <label asp-for="Avatar" class="control-label">Ảnh Đại Diện</label>
+                <input asp-for="Avatar" class="form-control" placeholder="Nhập đường dẫn ảnh đại diện" />
+                <span asp-validation-for="Avatar" class="text-danger"></span>
+            </div>
+            <!-- Trạng Thái -->
+
+            <div class="form-group">
+                <label asp-for="TrangThai" class="control-label">Trạng Thái</label>
+                <input asp-for="TrangThai" class="form-control" placeholder="Nhập trạng thái" />
+                <span asp-validation-for="TrangThai" class="text-danger"></span>
+            </div>
+
+               <!-- ID Phòng Ban -->
+            <div class="form-group">
+                <label asp-for="IdPhongBan" class="control-label">ID Phòng Ban</label>
+                <input asp-for="IdPhongBan" class="form-control" placeholder="Nhập ID phòng ban" />
+                <span asp-validation-for="IdPhongBan" class="text-danger"></span>
+            </div>
+
+            <!-- Ngày Tạo -->
+            <div class="form-group">
+                <label asp-for="NgayTao" class="control-label">Ngày Tạo</label>
+                <input asp-for="NgayTao" class="form-control" type="date" />
+                <span asp-validation-for="NgayTao" class="text-danger"></span>
+            </div>
+
+            <!-- Người Tạo -->
+            <div class="form-group">
+                <label asp-for="NguoiTao" class="control-label">Người Tạo</label>
+                <input asp-for="NguoiTao" class="form-control" placeholder="Nhập người tạo" />
+                <span asp-validation-for="NguoiTao" class="text-danger"></span>
+            </div>
+
+            <!-- Ngày Cập Nhật -->
+            <div class="form-group">
+                <label asp-for="NgayCapNhat" class="control-label">Ngày Cập Nhật</label>
+                <input asp-for="NgayCapNhat" class="form-control" type="date" />
+                <span asp-validation-for="NgayCapNhat" class="text-danger"></span>
+            </div>
+
+            <!-- Người Cập Nhật -->
+            <div class="form-group">
+                <label asp-for="NguoiCapNhat" class="control-label">Người Cập Nhật</label>
+                <input asp-for="NguoiCapNhat" class="form-control" placeholder="Nhập người cập nhật" />
+                <span asp-validation-for="NguoiCapNhat" class="text-danger"></span>
+            </div>
+
+            <!-- Session Token -->
+            <div class="form-group">
+                <label asp-for="SessionToken" class="control-label">Session Token</label>
+                <input asp-for="SessionToken" class="form-control" placeholder="Nhập session token" />
+                <span asp-validation-for="SessionToken" class="text-danger"></span>
+            </div>
+
+            <!-- Salt -->
+            <div class="form-group">
+                <label asp-for="Salt" class="control-label">Salt</label>
+                <input asp-for="Salt" class="form-control" placeholder="Nhập salt" />
+                <span asp-validation-for="Salt" class="text-danger"></span>
+            </div>
+
+            <!-- Quyền Admin -->
+            <div class="form-group">
+                <label asp-for="IsAdmin" class="control-label">Là Quản Trị Viên</label>
+                <input asp-for="IsAdmin" class="form-control" type="" />
+                <span asp-validation-for="IsAdmin" class="text-danger"></span>
+            </div>
+
+            <!-- Xóa -->
+            <div class="form-group">
+                <label asp-for="IsDelete" class="control-label">Đã Xóa</label>
+                <input asp-for="IsDelete" class="form-control" type="" />
+                <span asp-validation-for="IsDelete" class="text-danger"></span>
+            </div>
+            <!-- Nút Lưu -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-warning">Lưu</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

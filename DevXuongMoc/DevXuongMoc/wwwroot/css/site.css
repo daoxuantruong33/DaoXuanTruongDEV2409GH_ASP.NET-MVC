@@ -1,0 +1,67 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+<style >
+/* ??m b?o sidebar luôn c? ??nh chi?u r?ng */
+.main-sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* N?i dung chính t? ??ng ?i?u ch?nh không gian */
+.content-wrapper {
+    margin-left: 250px; /* Cùng kích th??c v?i sidebar */
+    padding: 20px;
+    overflow: auto;
+}
+
+/* ??m b?o các m?c trong sidebar không tràn */
+.sidebar nav ul li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ??t chi?u cao t? ??ng cho sidebar */
+.sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ??m b?o không gian ?? cho user panel */
+.user-panel {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+/* ??t sidebar menu có kho?ng cách h?p lý */
+.nav-link {
+    padding: 10px 15px;
+}
+
+</style >

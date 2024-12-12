@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PET_DOGCAT.props" />
+</Project>

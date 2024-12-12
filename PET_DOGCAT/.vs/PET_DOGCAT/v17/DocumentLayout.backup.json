@@ -1,0 +1,229 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\views\\pets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\views\\pets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\views\\admins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\views\\admins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\views\\pets\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\views\\pets\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\models\\petsdogcatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\models\\petsdogcatcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\pet_dogcat\\pet_dogcat\\areas\\adminql\\controllers\\petscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1890A971-777E-4E26-B49D-143F6A16795F}|PET_DOGCAT\\PET_DOGCAT.csproj|solutionrelative:pet_dogcat\\areas\\adminql\\controllers\\petscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Pets\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Pets\\Edit.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Pets\\Edit.cshtml",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Pets\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T04:23:26.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Admins\\Index.cshtml",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Admins\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Admins\\Index.cshtml",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Admins\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T04:21:34.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Shared\\Admin.cshtml",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Shared\\Admin.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Shared\\Admin.cshtml",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Shared\\Admin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T04:19:34.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAQwIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T03:31:28.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PetsDogcatContext.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Models\\PetsDogcatContext.cs",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Models\\PetsDogcatContext.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Models\\PetsDogcatContext.cs",
+              "RelativeToolTip": "PET_DOGCAT\\Models\\PetsDogcatContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T03:27:39.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T03:22:41.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Models\\Login.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Models\\Login.cs",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T03:21:30.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\appsettings.json",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\appsettings.json",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\appsettings.json",
+              "RelativeToolTip": "PET_DOGCAT\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-09T03:16:32.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Program.cs",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Program.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Program.cs",
+              "RelativeToolTip": "PET_DOGCAT\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAcwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T03:14:55.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T03:10:48.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Pets\\Index.cshtml",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Pets\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Views\\Pets\\Index.cshtml",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Views\\Pets\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-06T02:32:21.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminsController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Controllers\\AdminsController.cs",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Controllers\\AdminsController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Controllers\\AdminsController.cs",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Controllers\\AdminsController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T02:32:15.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PetsController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Controllers\\PetsController.cs",
+              "RelativeDocumentMoniker": "PET_DOGCAT\\Areas\\AdminQL\\Controllers\\PetsController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\PET_DOGCAT\\PET_DOGCAT\\Areas\\AdminQL\\Controllers\\PetsController.cs",
+              "RelativeToolTip": "PET_DOGCAT\\Areas\\AdminQL\\Controllers\\PetsController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAswLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T02:31:33.529Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

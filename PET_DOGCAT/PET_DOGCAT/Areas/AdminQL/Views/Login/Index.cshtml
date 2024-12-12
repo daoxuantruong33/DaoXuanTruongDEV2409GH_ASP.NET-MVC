@@ -1,0 +1,130 @@
+﻿@model PET_DOGCAT.Areas.AdminQL.Models.Login
+@{
+    Layout = null;
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger mt-3">
+        <ul>
+            @foreach (var modelState in ViewData.ModelState.Values)
+            {
+                foreach (var error in modelState.Errors)
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            }
+        </ul>
+    </div>
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Login</title>
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+
+    <style>
+        body {
+            background: url('https://haycafe.vn/wp-content/uploads/2022/03/Anh-meo-cute-doi-mu-tai-tho.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+
+        .login-box {
+            width: 380px;
+            margin: auto;
+            margin-top: 80px;
+            background: rgba(255, 255, 255, 0.9); /* Nền trắng mờ */
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 30px 25px;
+        }
+
+        .login-title {
+            font-weight: bold;
+            font-size: 24px;
+            color: #2d3436;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            height: 50px;
+            margin-bottom: 20px;
+            border: 1px solid #dcdde1;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            border-radius: 8px;
+            height: 45px;
+            font-weight: 500;
+            background-color: #0984e3;
+            border-color: #0984e3;
+        }
+
+            .btn-primary:hover {
+                background-color: #74b9ff;
+                border-color: #74b9ff;
+            }
+
+        .alert {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .login-footer {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #636e72;
+        }
+
+            .login-footer a {
+                color: #0984e3;
+                text-decoration: none;
+            }
+
+                .login-footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body class="hold-transition login-page">
+
+    <div class="login-box">
+        <div class="login-title">Đăng nhập Admin</div>
+        <form asp-action="Index" method="post">
+            <!-- Email Input -->
+            <input asp-for="Email" type="email" class="form-control" placeholder="Email" required />
+
+            <!-- Password Input -->
+            <input asp-for="Password" type="password" class="form-control" placeholder="Mật khẩu" required />
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Đăng nhập</button>
+        </form>
+
+        <!-- Footer -->
+        <div class="login-footer">
+            <p>Quên mật khẩu? <a href="#">Khôi phục ngay</a></p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+</body>
+</html>

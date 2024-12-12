@@ -1,0 +1,164 @@
+﻿﻿﻿@using Microsoft.AspNetCore.Http;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="~/adminql" class="brand-link d-flex align-items-center">
+        <img src="~/dist/img/logo2.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-bold ms-2" style="font-size: 1.5rem; color:white; text-transform: uppercase; letter-spacing: 0.1rem;">
+            XUONG MOC
+        </span>
+    </a>
+
+
+    <!-- Sidebar -->
+    <div class="sidebar" style="height:">
+        <!-- Sidebar user panel (optional) -->
+       
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a href="~/adminql" class="nav-link">
+                        <i class="fa-solid fa-house"></i>&ensp;
+                        <p>
+                            Trang Chủ
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/adminql/AdminUsers" class="nav-link">
+                        <i class="fa-solid fa-user"></i>&ensp;  
+                        <p>
+                            Tài khoản Admin
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/adminql/categories" class="nav-link">
+                        <i class="fa-solid fa-circle-user"></i>&ensp; 
+                        <p>
+                            Quản lý danh mục
+                        </p>
+                    </a>
+                </li>
+                @* <li class="nav-item">
+                    <a href="/adminql/Banners" class="nav-link">
+                        <i class="fa-solid fa-user-group"></i>&ensp;
+                        <p>
+                            Quản lý banner
+                        </p>
+                    </a>
+
+                </li> *@
+                <li class="nav-item">
+                    <a href="/adminql/Contacts" class="nav-link">
+                        <i class="fa-solid fa-paw"></i>&ensp;
+                        <p>
+                            Liên hệ
+                        </p>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="/adminql/news" class="nav-link">
+                        <i class="fa-solid fa-layer-group"></i>&ensp;
+                        <p>
+                            Tin tức
+                        </p>
+                    </a>
+
+                </li><li class="nav-item">
+                    <a href="/adminql/partners" class="nav-link">
+                        <i class="fa-solid fa-pen"></i>&ensp;
+                        <p>
+                            Quản lí đối tác
+                        </p>
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="/adminql/products" class="nav-link">
+                        <i class="fa-solid fa-cart-plus"></i>&ensp;
+                        <p>
+                            Quản lí sản phẩm
+                        </p>
+                    </a>
+
+                </li>  <li class="nav-item">
+                    <a href="/adminql/materials" class="nav-link">
+                        <i class="fa-solid fa-bag-shopping"></i>&ensp;
+                        <p>
+                            Quản lí vật liệu
+                        </p>
+                    </a>
+
+                </li>
+
+
+                <!--    <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>
+                            Quản lý sản phẩm
+                            <i class="fas fa-angle-left right"></i>
+                            <span class="badge badge-info right"></span>
+                        </p>
+                    </a>
+                   <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="~/admins/products" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Thức ăn</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/admins/productextensions" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Đồ chơi</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/admins/productimages" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Thuốc</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="~/admins/productmaterials" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Quần áo cho thú cưng</p>
+                            </a>
+                        </li>
+                      </ul>-->
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    <!-- /.sidebar-menu -->
+<div class="user-panel mt-3 pb-3 mb-3 d-flex">
+    <div class="image">
+        <img src="~/dist/img/logo2.jpg" class="img-circle elevation-2" alt="User Image">
+    </div>
+    <div class="info">
+        @{
+            if (HttpContextAccessor.HttpContext.Session.GetString("AdminLogin") != null)
+            {
+                <!-- Chỉ hiển thị nút "Đăng xuất" -->
+                <a asp-action="Logout" asp-controller="Login" class="d-block">Đăng Xuất</a>
+            }
+            else
+            {
+                <a href="~/adminql/login" class="d-block">Đăng Nhập</a>
+            }
+        }
+    </div>
+</div>
+
+
+    </div>
+    <!-- /.sidebar -->
+
+
+
+</aside>

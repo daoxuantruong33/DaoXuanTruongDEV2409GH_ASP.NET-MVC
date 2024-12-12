@@ -1,0 +1,61 @@
+﻿@model PET_DOGCAT.Models.Pet
+
+@{
+    ViewData["Title"] = "Thêm Thú Cưng";
+    Layout = "~/Areas/AdminQL/Views/Shared/Admin.cshtml";
+}
+
+<div class="container mt-5">
+    <h1 class=" mb-4" style="color:black">THÊM MỚI</h1>
+    <div class="card" style="width:400px; height:430px">
+        <div class="card-body" >
+            <form asp-action="Create">
+                <!-- Hiển thị lỗi nếu có -->
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                <!-- Chọn Khách Hàng -->
+                <div class="mb-3">
+                    <label asp-for="CustomerId" class="form-label">Khách Hàng</label>
+                    <select asp-for="CustomerId" class="form-select" asp-items="ViewBag.CustomerId"></select>
+                </div>
+
+                <!-- Nhập Tên Thú Cưng -->
+                <div class="mb-3">
+                    <label asp-for="PetName" class="form-label">Tên Thú Cưng</label>
+                    <input asp-for="PetName" class="form-control" placeholder="Nhập tên thú cưng..." />
+                    <span asp-validation-for="PetName" class="text-danger"></span>
+                </div>
+
+                <!-- Nhập Giống Loài -->
+                <div class="mb-3">
+                    <label asp-for="Breed" class="form-label">Giống Loài</label>
+                    <input asp-for="Breed" class="form-control" placeholder="Nhập giống loài..." />
+                    <span asp-validation-for="Breed" class="text-danger"></span>
+                </div>
+
+                <!-- Nhập Ngày Sinh -->
+                <div class="mb-3">
+                    <label asp-for="BirthDate" class="form-label">Ngày Sinh</label>
+                    <input asp-for="BirthDate" type="date" class="form-control" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>
+
+                <!-- Nút hành động -->
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-check-circle"></i> Lưu
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Quay lại danh sách
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

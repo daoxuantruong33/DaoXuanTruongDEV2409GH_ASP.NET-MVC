@@ -1,12 +1,229 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\areas\\adminql\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\areas\\adminql\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\areas\\adminql\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\areas\\adminql\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\areas\\adminql\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\areas\\adminql\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\areas\\adminql\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\areas\\adminql\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\models\\qlskmscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\models\\qlskmscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\areas\\adminql\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\areas\\adminql\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\areas\\adminql\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\areas\\adminql\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\areas\\adminql\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\areas\\adminql\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\areas\\adminql\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\areas\\adminql\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\webquanlysukienamnhac\\webquanlysukienamnhac\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9A448BF8-F897-4E62-A9ED-C4C3558722F4}|WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac.csproj|solutionrelative:webquanlysukienamnhac\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:32:02.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T04:21:51.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:19:59.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Models\\Ticket.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Models\\Ticket.cs",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Models\\Ticket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:15:12.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Models\\Login.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Models\\Login.cs",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:09:15.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T03:14:10.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T03:11:32.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T03:09:58.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T03:08:36.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Areas\\AdminQL\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T03:08:11.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Program.cs",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Program.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Program.cs",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T07:27:26.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\appsettings.json",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\appsettings.json",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\appsettings.json",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-28T07:26:40.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QlskmsContext.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Models\\QlskmsContext.cs",
+              "RelativeDocumentMoniker": "WebQuanLySuKienAmNhac\\Models\\QlskmsContext.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\WebQuanLySuKienAmNhac\\WebQuanLySuKienAmNhac\\Models\\QlskmsContext.cs",
+              "RelativeToolTip": "WebQuanLySuKienAmNhac\\Models\\QlskmsContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T07:26:01.465Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,83 @@
+﻿@model X.PagedList.IPagedList<PET_DOGCAT.Models.Pet>
+@using X.PagedList.Mvc.Core;
+@{
+    ViewData["Title"] = "Quản Lý Thú Cưng";
+    Layout = "~/Areas/AdminQL/Views/Shared/Admin.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center ">
+        <!-- Tiêu đề -->
+        <h1 class="text-left" style="color:black;margin-right:10rem">QUẢN LÝ THÚ CƯNG</h1>
+
+        <!-- Thanh tìm kiếm -->
+        <div class="d-flex gap-2" style="margin-top:1rem">
+            <form action="" method="get" class="d-flex align-items-center">
+                <input type="text" name="name" id="keyword" class="form-control me-2" placeholder="Nhập tên thú cưng cần tìm..." value="@ViewData["CurrentFilter"]">
+                <button type="submit" style="width:2.4rem;height:2.4rem" class="btn btn-primary">
+                    <i class="bi bi-search"></i> <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <a asp-action="Create" class="btn btn-success" style="height:2.4rem">
+                <i class="bi bi-plus-circle"></i> Thêm Mới
+            </a>
+        </div>
+    </div>
+
+   
+</div>
+
+
+    <!-- Bảng dữ liệu -->
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Tên Thú Cưng</th>
+                <th>Giống Loài</th>
+                <th>Ngày Sinh</th>
+                <th>Khách Hàng</th>
+                <th class="text-center">Hành Động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.PetName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Breed)</td>
+                        <td>@Html.DisplayFor(modelItem => item.BirthDate)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Customer.CustomerId)</td>
+                        <td class="text-center">
+                            <a asp-action="Edit" asp-route-id="@item.PetId" class="btn btn-primary btn-sm me-1">
+                                <i class="bi bi-pencil"></i> Sửa
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.PetId" class="btn btn-info btn-sm me-1">
+                                <i class="bi bi-info-circle"></i> Chi Tiết
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.PetId" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash"></i> Xóa
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted">Không tìm thấy thú cưng nào.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Phân trang -->
+    <div class="d-flex justify-content-center mt-4">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page, searchString = ViewData["CurrentFilter"] }), new PagedListRenderOptions
+   {
+       LiElementClasses = new string[] { "page-item" },
+       PageClasses = new string[] { "page-link" }
+   })
+    </div>
+</div>

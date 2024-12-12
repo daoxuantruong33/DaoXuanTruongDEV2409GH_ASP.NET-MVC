@@ -1,0 +1,125 @@
+﻿@model DevXuongMoc.Models.Banner
+
+@{
+    ViewData["Title"] = "Tạo Mới";
+    Layout = "~/Areas/AdminQL/Views/Shared/Admin.cshtml";
+}
+
+<h1 class="display-4 text-center mt-4">Tạo Banner</h1>
+<hr class="my-4">
+
+<div class="row">
+    <!-- Bên trái (cột 1) -->
+    <div class="col-md-6">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-4"></div>
+
+            <!-- Hình ảnh -->
+            <div class="form-group">
+                <label asp-for="Image" class="control-label">Đường Dẫn Hình Ảnh</label>
+                <input asp-for="Image" type="file" class="form-control" placeholder="Nhập đường dẫn hình ảnh" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+
+            <!-- Tiêu Đề -->
+            <div class="form-group">
+                <label asp-for="Title" class="control-label">Tiêu Đề</label>
+                <input asp-for="Title" class="form-control" placeholder="Nhập tiêu đề banner" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <!-- Phụ Đề -->
+            <div class="form-group">
+                <label asp-for="SubTitle" class="control-label">Phụ Đề</label>
+                <input asp-for="SubTitle" class="form-control" placeholder="Nhập phụ đề banner" />
+                <span asp-validation-for="SubTitle" class="text-danger"></span>
+            </div>
+
+            <!-- URL -->
+            <div class="form-group">
+                <label asp-for="Urls" class="control-label">URL</label>
+                <input asp-for="Urls" class="form-control" placeholder="Nhập URL" />
+                <span asp-validation-for="Urls" class="text-danger"></span>
+            </div>
+
+            <!-- Thứ Tự -->
+            <div class="form-group">
+                <label asp-for="Orders" class="control-label">Thứ Tự</label>
+                <input asp-for="Orders" class="form-control" placeholder="Nhập thứ tự hiển thị" />
+                <span asp-validation-for="Orders" class="text-danger"></span>
+            </div>
+
+            <!-- Loại -->
+            <div class="form-group">
+                <label asp-for="Type" class="control-label">Loại Banner</label>
+                <input asp-for="Type" class="form-control" placeholder="Nhập loại banner" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bên phải (cột 2) -->
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <!-- Ngày Tạo -->
+            <div class="form-group">
+                <label asp-for="CreatedDate" class="control-label">Ngày Tạo</label>
+                <input asp-for="CreatedDate" class="form-control" type="date" />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+
+            <!-- Ngày Cập Nhật -->
+            <div class="form-group">
+                <label asp-for="UpdatedDate" class="control-label">Ngày Cập Nhật</label>
+                <input asp-for="UpdatedDate" class="form-control" type="date" />
+                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+            </div>
+
+            <!-- Người Tạo -->
+            <div class="form-group">
+                <label asp-for="AdminCreated" class="control-label">Người Tạo</label>
+                <input asp-for="AdminCreated" class="form-control" placeholder="Nhập tên người tạo" />
+                <span asp-validation-for="AdminCreated" class="text-danger"></span>
+            </div>
+
+            <!-- Người Cập Nhật -->
+            <div class="form-group">
+                <label asp-for="AdminUpdated" class="control-label">Người Cập Nhật</label>
+                <input asp-for="AdminUpdated" class="form-control" placeholder="Nhập tên người cập nhật" />
+                <span asp-validation-for="AdminUpdated" class="text-danger"></span>
+            </div>
+
+            <!-- Ghi Chú -->
+            <div class="form-group">
+                <label asp-for="Notes" class="control-label">Ghi Chú</label>
+                <textarea asp-for="Notes" class="form-control" placeholder="Nhập ghi chú" rows="4"></textarea>
+                <span asp-validation-for="Notes" class="text-danger"></span>
+            </div>
+
+            <!-- Trạng Thái -->
+            <div class="form-group">
+                <label asp-for="Status" class="control-label">Trạng Thái</label>
+                <input asp-for="Status" class="form-control" placeholder="Nhập trạng thái banner" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <!-- Checkbox Xóa -->
+            <div class="form-group form-check">
+                <input class="form-check-input" asp-for="Isdelete" />
+                <label class="form-check-label" for="Isdelete">@Html.DisplayNameFor(model => model.Isdelete)</label>
+            </div>
+<div class="form-group mb-3 text-center">
+         <button type="submit" class="btn btn-primary" style="width:154.11px">Tạo Banner</button>
+         <a asp-action="Index" class="btn btn-secondary">Quay lại Danh Sách</a>
+   </div
+        </form>  
+        <!-- Nút Tạo -->
+    </div> 
+    
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

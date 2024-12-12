@@ -1,0 +1,162 @@
+﻿@model DevXuongMoc.Models.AdminUser
+
+@{
+    ViewData["Title"] = "Chi Tiết Người Dùng Admin";
+    Layout = "~/Areas/AdminQL/Views/Shared/Admin.cshtml";
+}
+
+<h1 class="text-center my-4">Thông Tin Người Dùng</h1>
+
+<div class="container bg-light p-4 rounded shadow-sm">
+    <hr class="mb-4" />
+    <div class="row">
+        <div class="col-md-6">
+            <dl class="row gy-3">
+                <!-- Tài Khoản -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.Account)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Account)
+                </dd>
+
+                <!-- Mật Khẩu -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Password)
+                </dd>
+
+                <!-- Mã Nhân Sự -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.MaNhanSu)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.MaNhanSu)
+                </dd>
+
+                <!-- Tên -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <!-- Số Điện Thoại -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.Phone)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Phone)
+                </dd>
+
+                <!-- Email -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <!-- Avatar -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.Avatar)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Avatar)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-6">
+            <dl class="row gy-3">
+                <!-- ID Phòng Ban -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.IdPhongBan)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.IdPhongBan)
+                </dd>
+
+                <!-- Ngày Tạo -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.NgayTao)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.NgayTao)
+                </dd>
+
+                <!-- Người Tạo -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.NguoiTao)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.NguoiTao)
+                </dd>
+
+                <!-- Ngày Cập Nhật -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.NgayCapNhat)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.NgayCapNhat)
+                </dd>
+
+                <!-- Người Cập Nhật -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.NguoiCapNhat)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.NguoiCapNhat)
+                </dd>
+
+                <!-- Session Token -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.SessionToken)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.SessionToken)
+                </dd>
+
+                <!-- Salt -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.Salt)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Salt)
+                </dd>
+
+                <!-- Quyền Admin -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.IsAdmin)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.IsAdmin)
+                </dd>
+
+                <!-- Trạng Thái -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.TrangThai)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.TrangThai)
+                </dd>
+
+                <!-- Xóa -->
+                <dt class="col-sm-3 fw-bold">
+                    @Html.DisplayNameFor(model => model.IsDelete)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.IsDelete)
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- Nút Chỉnh Sửa và Quay Lại -->
+    <div class="text-center mt-5">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning mx-2">Chỉnh Sửa</a>
+        <a asp-action="Index" class="btn btn-secondary mx-2">Quay Lại Danh Sách</a>
+    </div>
+</div>

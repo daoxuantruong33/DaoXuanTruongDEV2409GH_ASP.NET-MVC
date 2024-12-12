@@ -3,6 +3,50 @@
   "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\models\\ordersdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\models\\ordersdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\controllers\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\areas\\admin\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\areas\\admin\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,18 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\models\\ordersdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\models\\ordersdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|solutionrelative:netcoremvclab09\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D006B231-641B-4DA6-9FED-454AEDF30A7B}|NetCoreMVCLab09\\NetCoreMVCLab09.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab09\\netcoremvclab09\\views\\customermember\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -54,24 +86,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab09\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAACgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T03:46:30.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\Controllers\\BaseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:34:21.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\Models\\Login.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Models\\Login.cs",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T04:09:37.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Program.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Program.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Program.cs",
+              "RelativeToolTip": "NetCoreMVCLab09\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T03:55:01.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T03:17:39.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\_ViewImports.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T03:09:55.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\_ViewStart.cshtml",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-02T03:09:50.982Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "NetCoreMVCLab09\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "NetCoreMVCLab09\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T03:09:49.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "OrdersDetail.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Models\\OrdersDetail.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Models\\OrdersDetail.cs",
               "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Models\\OrdersDetail.cs",
               "RelativeToolTip": "NetCoreMVCLab09\\Models\\OrdersDetail.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T13:13:06.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T13:13:06.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "PaymentMethod.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Models\\PaymentMethod.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Models\\PaymentMethod.cs",
@@ -79,38 +208,37 @@
               "RelativeToolTip": "NetCoreMVCLab09\\Models\\PaymentMethod.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T13:12:52.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T13:12:52.478Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "site.css",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\wwwroot\\css\\site.css",
               "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\wwwroot\\css\\site.css",
               "RelativeToolTip": "NetCoreMVCLab09\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEcAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-11-27T12:01:52.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\Product\\Index.cshtml",
               "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Product\\Index.cshtml",
               "RelativeToolTip": "NetCoreMVCLab09\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-27T12:00:44.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\CustomerMember\\Index.cshtml",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\CustomerMember\\Index.cshtml",
@@ -118,12 +246,11 @@
               "RelativeToolTip": "NetCoreMVCLab09\\Views\\CustomerMember\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T11:43:19.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T11:43:19.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\Cart\\Index.cshtml",
@@ -131,12 +258,11 @@
               "RelativeToolTip": "NetCoreMVCLab09\\Views\\Cart\\Index.cshtml",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T11:08:27.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T11:08:27.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "Cart.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Models\\Cart.cs",
@@ -144,12 +270,11 @@
               "RelativeToolTip": "NetCoreMVCLab09\\Models\\Cart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T11:08:23.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T11:08:23.819Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "Orders.cshtml",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Views\\Cart\\Orders.cshtml",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Views\\Cart\\Orders.cshtml",
@@ -157,12 +282,11 @@
               "RelativeToolTip": "NetCoreMVCLab09\\Views\\Cart\\Orders.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T10:41:59.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T10:41:59.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Models\\Order.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Models\\Order.cs",
@@ -170,25 +294,23 @@
               "RelativeToolTip": "NetCoreMVCLab09\\Models\\Order.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA1wA8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:41:56.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T10:41:56.625Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "CartController.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Controllers\\CartController.cs",
               "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Controllers\\CartController.cs",
               "RelativeToolTip": "NetCoreMVCLab09\\Controllers\\CartController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA2wM0AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAM0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:34:23.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T10:34:23.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "CustomerMemberController.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab09\\NetCoreMVCLab09\\Controllers\\CustomerMemberController.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab09\\Controllers\\CustomerMemberController.cs",
@@ -196,8 +318,7 @@
               "RelativeToolTip": "NetCoreMVCLab09\\Controllers\\CustomerMemberController.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAgwDwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T10:33:59.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T10:33:59.121Z"
             }
           ]
         }

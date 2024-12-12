@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using WebQuanLySuKienAmNhac.Models;
+
 namespace WebQuanLySuKienAmNhac
 {
     public class Program
@@ -8,6 +11,17 @@ namespace WebQuanLySuKienAmNhac
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddDbContext<QlskmsContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            // C?u hình s? d?ng session
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(60);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+                options.Cookie.Name = "DevXuongMoc";
+            });
 
             var app = builder.Build();
 
@@ -26,7 +40,12 @@ namespace WebQuanLySuKienAmNhac
 
             app.UseAuthorization();
 
+            app.UseSession();
+
             app.MapControllerRoute(
+                name: "areas",
+                pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 

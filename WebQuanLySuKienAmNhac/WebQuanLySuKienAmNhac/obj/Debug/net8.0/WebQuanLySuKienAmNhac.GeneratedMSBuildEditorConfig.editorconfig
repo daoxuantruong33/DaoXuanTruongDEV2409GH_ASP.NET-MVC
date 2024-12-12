@@ -1,11 +1,19 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebQuanLySuKienAmNhac
 build_property.RootNamespace = WebQuanLySuKienAmNhac
@@ -17,6 +25,38 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = D:\Devmaster\DaoXuanTruongDEV2409GH_ASP.NET-MVC\WebQuanLySuKienAmNhac\WebQuanLySuKienAmNhac
 build_property._RazorSourceGeneratorDebug = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebQuanLySuKienAmNhac/WebQuanLySuKienAmNhac/Areas/AdminQL/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xEYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebQuanLySuKienAmNhac/WebQuanLySuKienAmNhac/Areas/AdminQL/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xMb2dpblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebQuanLySuKienAmNhac/WebQuanLySuKienAmNhac/Areas/AdminQL/Views/Shared/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebQuanLySuKienAmNhac/WebQuanLySuKienAmNhac/Areas/AdminQL/Views/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX05hdkJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebQuanLySuKienAmNhac/WebQuanLySuKienAmNhac/Areas/AdminQL/Views/Shared/_Preloader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX1ByZWxvYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebQuanLySuKienAmNhac/WebQuanLySuKienAmNhac/Areas/AdminQL/Views/Shared/_SideBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX1NpZGVCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebQuanLySuKienAmNhac/WebQuanLySuKienAmNhac/Areas/AdminQL/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebQuanLySuKienAmNhac/WebQuanLySuKienAmNhac/Areas/AdminQL/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebQuanLySuKienAmNhac/WebQuanLySuKienAmNhac/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=

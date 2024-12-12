@@ -1,0 +1,99 @@
+﻿@model DevXuongMoc.Models.News
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/AdminQL/Views/Shared/Admin.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>News</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Code" class="control-label"></label>
+                <input asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Content" class="control-label"></label>
+                <input asp-for="Content" class="form-control" />
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MetaTitle" class="control-label"></label>
+                <input asp-for="MetaTitle" class="form-control" />
+                <span asp-validation-for="MetaTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MainKeyword" class="control-label"></label>
+                <input asp-for="MainKeyword" class="form-control" />
+                <span asp-validation-for="MainKeyword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MetaKeyword" class="control-label"></label>
+                <input asp-for="MetaKeyword" class="form-control" />
+                <span asp-validation-for="MetaKeyword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MetaDescription" class="control-label"></label>
+                <input asp-for="MetaDescription" class="form-control" />
+                <span asp-validation-for="MetaDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Slug" class="control-label"></label>
+                <input asp-for="Slug" class="form-control" />
+                <span asp-validation-for="Slug" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Views" class="control-label"></label>
+                <input asp-for="Views" class="form-control" />
+                <span asp-validation-for="Views" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Likes" class="control-label"></label>
+                <input asp-for="Likes" class="form-control" />
+                <span asp-validation-for="Likes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Star" class="control-label"></label>
+                <input asp-for="Star" class="form-control" />
+                <span asp-validation-for="Star" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminCreated" class="control-label"></label>
+                <input asp-for="AdminCreated" class="form-control" />
+                <span asp-validation-for="AdminCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminUpdated" class="control-label"></label>
+                <input asp-for="AdminUpdated" class="form-control" />
+                <span asp-validation-for="AdminUpdated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

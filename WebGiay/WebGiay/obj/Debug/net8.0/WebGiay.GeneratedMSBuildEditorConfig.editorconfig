@@ -118,16 +118,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/AdminQL/Views/Shared/_NavBar - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX05hdkJhciAtIENvcHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/AdminQL/Views/Shared/_NavBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX05hdkJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/AdminQL/Views/Shared/_Preloader - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX1ByZWxvYWRlciAtIENvcHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/AdminQL/Views/Shared/_Preloader.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX1ByZWxvYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/AdminQL/Views/Shared/_SideBar - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX1NpZGVCYXIgLSBDb3B5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/AdminQL/Views/Shared/_SideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX1NpZGVCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/AdminQL/Views/Shared/_ValidationScriptsPartial - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5RTFxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbCAtIENvcHkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/AdminQL/Views/Shared/_ValidationScriptsPartial.cshtml]
@@ -186,8 +202,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Login/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXExvZ2luXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXExvZ2luXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Login/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXExvZ2luXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Login/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXExvZ2luXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Shared/Carts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXFNoYXJlZFxDYXJ0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Shared/Carts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXFNoYXJlZFxDYXJ0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Shared/Carts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXFNoYXJlZFxDYXJ0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Shared/Carts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXFNoYXJlZFxDYXJ0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Shared/Carts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXFNoYXJlZFxDYXJ0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Shared/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXFNoYXJlZFxEYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Shared/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ3VzdG9tZXJVc2VyXFZpZXdzXFNoYXJlZFxMb2dpblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/WebGiay/WebGiay/Areas/CustomerUser/Views/Shared/_Customer.cshtml]
