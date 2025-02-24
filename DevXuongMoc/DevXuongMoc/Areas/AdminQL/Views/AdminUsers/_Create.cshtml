@@ -1,0 +1,125 @@
+﻿@model DevXuongMoc.Models.AdminUser
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+
+
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card shadow-lg">
+            <div class="card-body">
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <!-- Chia giao diện thành 2 cột -->
+                    <div class="row">
+                        <h class="display-8 text-center mt-4" style="font-size:28px; margin-bottom:2rem;">Tạo Người Dùng Quản Trị</h>
+                     
+                        <!-- Cột bên trái -->
+                        <div class="col-md-6" >
+                            <div class="from-group">
+                                <label asp-for="Account" class="form-label">Tài Khoản</label>
+                                <input asp-for="Account" class="form-control" />
+                                <span asp-validation-for="Account" class="text-danger"></span>
+                            </div>
+
+                            <div class="from-group">
+                                <label asp-for="Password" class="form-label">Mật Khẩu</label>
+                                <input asp-for="Password" type="password" class="form-control" />
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+
+                            <div class="from-group">
+                                <label asp-for="MaNhanSu" class="form-label">Mã Nhân Sự</label>
+                                <input asp-for="MaNhanSu" class="form-control" />
+                                <span asp-validation-for="MaNhanSu" class="text-danger"></span>
+                            </div>
+
+                            <div class="from-group">
+                                <label asp-for="Phone" class="form-label">Số Điện Thoại</label>
+                                <input asp-for="Phone" class="form-control" />
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+
+                            <div class="from-group">
+                                <label asp-for="Avatar" class="form-label">Ảnh Đại Diện</label>
+                                <input asp-for="Avatar" type="file" class="form-control" />
+                                <span asp-validation-for="Avatar" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Cột bên phải -->
+                        <div class="col-md-6">
+                            <div class="from-group">
+                                <label asp-for="Name" class="form-label">Họ và Tên</label>
+                                <input asp-for="Name" class="form-control" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="from-group">
+                                <label asp-for="Email" class="form-label">Email</label>
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="from-group">
+                                <label asp-for="IdPhongBan" class="form-label">Phòng Ban</label>
+                                <input asp-for="IdPhongBan" class="form-control" />
+                                <span asp-validation-for="IdPhongBan" class="text-danger"></span>
+                            </div>
+
+                            <div class="from-group">
+                                <label asp-for="NgayTao" class="form-label">Ngày Tạo</label>
+                                <input asp-for="NgayTao" class="form-control" />
+                                <span asp-validation-for="NgayTao" class="text-danger"></span>
+                            </div>
+
+                            <div class="from-group">
+                                <label asp-for="NguoiTao" class="form-label">Người Tạo</label>
+                                <input asp-for="NguoiTao" class="form-control" />
+                                <span asp-validation-for="NguoiTao" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dòng cuối form -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="from-group">
+                                <label asp-for="TrangThai" class="form-label">Trạng thái</label>
+                                <select asp-for="TrangThai" class="form-control">
+                                    <option value="0">Hoạt động</option>
+                                    <option value="1">Không hoạt động</option>
+                                </select>
+                                <span asp-validation-for="TrangThai" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="from-group">
+                                <label asp-for="IsDelete" class="form-label">Đã Xóa?</label>
+                                <input asp-for="IsDelete" class="form-control" />
+                                <span asp-validation-for="IsDelete" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nút Gửi -->
+                    <div class="from-group text-center">
+                        <button type="submit" class="btn btn-info btn-lg px-4 mt-3">Tạo mới</button>
+                        <a asp-action="Index" class="btn btn-secondary btn-lg px-4 mt-3">Quay lại</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -10,8 +10,7 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.AdminQL.Controllers
 {
-    [Area("AdminQL")]
-    public class CategoriesController : Controller
+    public class CategoriesController : BaseController
     {
         private readonly XuongMocContext _context;
 
@@ -40,6 +39,7 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
         // GET: AdminQL/Categories/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+
             if (id == null)
             {
                 return NotFound();
@@ -52,12 +52,22 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
                 return NotFound();
             }
 
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", category);
+            }
+
             return View(category);
         }
 
         // GET: AdminQL/Categories/Create
         public IActionResult Create()
         {
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create");
+            }
             return View();
         }
 
@@ -70,10 +80,36 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
         {
             if (ModelState.IsValid)
             {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Any() && files[0].Length > 0)
+                {
+                    var file = files[0];
+                    var fileName = file.FileName;
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\category", fileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        category.Icon = "/images/category/" + fileName;
+                    }
+                }
                 _context.Add(category);
                 await _context.SaveChangesAsync();
+
+                // Return success response for AJAX
+                if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                {
+                    return Json(new { success = true, redirectUrl = Url.Action("Index") });
+                }
+
                 return RedirectToAction(nameof(Index));
             }
+
+            // Return partial view for AJAX in case of validation errors
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create", category);
+            }
+
             return View(category);
         }
 
@@ -89,6 +125,11 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             if (category == null)
             {
                 return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Edit", category);
             }
             return View(category);
         }
@@ -109,6 +150,18 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 try
                 {
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Any() && files[0].Length > 0)
+                    {
+                        var file = files[0];
+                        var fileName = file.FileName;
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\category", fileName);
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                            category.Icon = "/images/category/" + fileName;
+                        }
+                    }
                     _context.Update(category);
                     await _context.SaveChangesAsync();
                 }
@@ -133,21 +186,42 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
 
         // POST: AdminQL/AdminUsers/Delete/5
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> DeleteAsync(int id)
         {
-            var user = _context.Categories.FirstOrDefault(u => u.Id == id);
-            if (user == null)
+            if (id == null)
             {
-                // Nếu không tìm thấy người dùng, redirect đến danh sách hoặc hiển thị lỗi
                 return NotFound();
             }
 
-            // Tiến hành xóa người dùng
-            _context.Categories.Remove(user);
-            _context.SaveChanges();
+            var category = await _context.Categories
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (category == null)
+            {
+                return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Delete", category);
+            }
 
-            // Redirect về trang danh sách người dùng hoặc trang khác sau khi xóa thành công
-            return RedirectToAction(nameof(Index));  // Giả sử bạn sẽ chuyển hướng về trang danh sách người dùng
+            return View(category);
+        }
+
+
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var category = await _context.Categories.FindAsync(id);
+            if (category != null)
+            {
+                _context.Categories.Remove(category);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         private bool CategoryExists(int id)

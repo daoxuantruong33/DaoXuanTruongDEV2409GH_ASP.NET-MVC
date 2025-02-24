@@ -1,0 +1,247 @@
+﻿@model QuanLyVienPhi.Models.BenhNhan
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phiếu Thanh Toán Viện Phí</title>
+
+
+    <style>
+
+        @@media print {
+            .btn-print, .btn-pay {
+                display: none !important;
+            }
+        }
+
+        body {
+            font-family: "Times New Roman", serif;
+        }
+        .invoice-container {
+            width: 700px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .sub-header {
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .info, .amount, .signature {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .btn-print {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .bold {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .barcode {
+            text-align: right;
+        }
+
+        .clinic-info {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+            .clinic-info img {
+                height: 60px;
+            }
+
+            .clinic-info p {
+                margin: 2px 0;
+                margin-left: 1rem;
+                margin-top: 0.5rem;
+            }
+
+        .clinic-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .info-left, .info-right {
+            width: 50%;
+        }
+
+        .signature-container {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .signature-box {
+            width: 45%;
+        }
+
+            .signature-box p {
+                margin: 3px 0; /* Giảm khoảng cách giữa các dòng */
+                line-height: 1.2; /* Giảm độ cao giữa các dòng chữ */
+            }
+        .sign-line {
+            width: 200px;
+            border-bottom: 1px solid black;
+            margin: 5px auto;
+            height: 20px; /* Để tạo khoảng trống cho chữ ký */
+        }
+
+        .btn-custom {
+            background-color: #007bff; /* Màu xanh dương */
+            color: white; /* Chữ màu trắng */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+            .btn-custom:hover {
+                background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+            }
+
+            .btn-custom:active {
+                background-color: #004085; /* Màu nhấn */
+            }
+
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="clinic-info">
+            <img style="width:120px; height:120px;" src="~/dist/img/logo4.1.png" alt="Logo Phòng Khám">
+            <div>
+                <p class="clinic-name">PHÒNG KHÁM ĐA KHOA ARNICA</p>
+                <p>Địa chỉ: 25 Vũ Ngọc Phan - Láng Hạ - Đống Đa - Hà Nội, Phường Láng Hạ, </p>
+                <p>Quận Đống Đa, Thành Phố Hà Nội.</p>
+                <p>Điện thoại: 0333333333</p>
+            </div>
+        </div>
+
+        </br>
+        <div class="header">PHIẾU THANH TOÁN VIỆN PHÍ</div>
+
+        <div class="info">
+            <p><span class="bold">Thông tin khách hàng</span></p>
+            <div class="info-container">
+                <div class="info-left">
+                    <p><span class="bold1">Mã khách hàng:</span> <span class="bold">@Model.BenhNhanId</span></p>
+                    <p><span class="bold1">Tên khách hàng:</span> <span class="bold">@Model.HoTen</span></p>
+                    <p><span class="bold1">Giới tính:</span> @Model.GioiTinh</p>
+                </div>
+                <div class="info-right">
+                    <p><span class="bold1">Năm sinh:</span> @Model.NgaySinh</p>
+                    <p><span class="bold1">Địa chỉ:</span> @Model.DiaChi</p>
+                </div>
+            </div>
+        </div>
+
+
+     
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên dịch vụ</th>
+                    <th>Đơn giá</th>
+                    <th>Thành tiền</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ChiTietPhongs)
+                {
+                    <tr>
+                        <td>@item.ChiTietPhongId</td>
+                        <td>Tiền phòng</td>
+                        <td>@item.TienPhong VNĐ</td>
+                        <td>@item.TienPhong VNĐ</td>
+                    </tr>
+                }
+                @foreach (var item in Model.ChiTietThuocs)
+                {
+                    <tr>
+                        <td>@item.ChiTietThuocId</td>
+                        <td>Tiền thuốc</td>
+                        <td>@item.TienThuoc VNĐ</td>
+                        <td>@item.TienThuoc VNĐ</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="amount">
+            <p class="text-right"><strong>Tổng số tiền:</strong> @(Model.TienThuoc + Model.TienPhong) VNĐ</p>
+            <p class="text-right"><strong>Số tiền thu:</strong>  @(Model.TienThuoc + Model.TienPhong) VNĐ</p>
+        </div>
+        <div class="signature">
+            <p class="text-right">
+                <strong></strong><i> @DateTime.Now.ToString("HH:mm, 'Ngày' dd 'Tháng' MM 'Năm' yyyy")</i>
+            </p>
+            <div class="signature-container">
+                <div class="signature-box">
+                    <p><strong>Khách hàng</strong></p>
+                    <p style="margin-bottom:5rem"><i>(Ký và ghi rõ họ tên)</i></p>
+                    <p><strong>@Model.HoTen</strong></p>
+                </div>
+                <div class="signature-box">
+                    <p><strong>Thu ngân</strong></p>
+                    <p style="margin-bottom:5rem"><i>(Ký và ghi rõ họ tên)</i></p>
+                    <p><strong>@Model</strong></p>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn-custom btn-print" onclick="window.print()">In</button>
+        <button class="btn-custom btn-pay" onclick="location.href='@Url.Action("CreateQR", "BenhNhans", new { id = Model.BenhNhanId })'">Thanh Toán</button>
+
+
+    </div>
+</body>
+</html>

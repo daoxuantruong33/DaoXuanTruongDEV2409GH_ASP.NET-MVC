@@ -1,0 +1,203 @@
+﻿@model DevXuongMoc.Models.Product
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <form asp-action="Edit" enctype="multipart/form-data" style="font-size:13px">
+                    <h1 class="display-8 text-center mt-4" style="font-size:28px; margin-bottom:2rem">Chỉnh Sửa</h1>
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Cid" class="control-label"></label>
+                            <input asp-for="Cid" class="form-control" />
+                            <span asp-validation-for="Cid" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Code" class="control-label"></label>
+                            <input asp-for="Code" class="form-control" />
+                            <span asp-validation-for="Code" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Title" class="control-label"></label>
+                            <input asp-for="Title" class="form-control" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Description" class="control-label"></label>
+                            <input asp-for="Description" class="form-control" />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Content" class="control-label"></label>
+                            <input asp-for="Content" class="form-control" />
+                            <span asp-validation-for="Content" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Image" class="control-label"></label>
+                            <input asp-for="Image" type="file" class="form-control" />
+                            <span asp-validation-for="Image" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="MetaTitle" class="control-label"></label>
+                            <input asp-for="MetaTitle" class="form-control" />
+                            <span asp-validation-for="MetaTitle" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="MetaKeyword" class="control-label"></label>
+                            <input asp-for="MetaKeyword" class="form-control" />
+                            <span asp-validation-for="MetaKeyword" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="MetaDescription" class="control-label"></label>
+                            <input asp-for="MetaDescription" class="form-control" />
+                            <span asp-validation-for="MetaDescription" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Slug" class="control-label"></label>
+                            <input asp-for="Slug" class="form-control" />
+                            <span asp-validation-for="Slug" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="PriceOld" class="control-label"></label>
+                            <input asp-for="PriceOld" class="form-control" />
+                            <span asp-validation-for="PriceOld" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="PriceNew" class="control-label"></label>
+                            <input asp-for="PriceNew" class="form-control" />
+                            <span asp-validation-for="PriceNew" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Size" class="control-label"></label>
+                            <input asp-for="Size" class="form-control" />
+                            <span asp-validation-for="Size" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Views" class="control-label"></label>
+                            <input asp-for="Views" class="form-control" />
+                            <span asp-validation-for="Views" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Likes" class="control-label"></label>
+                            <input asp-for="Likes" class="form-control" />
+                            <span asp-validation-for="Likes" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Star" class="control-label"></label>
+                            <input asp-for="Star" class="form-control" />
+                            <span asp-validation-for="Star" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Home" class="control-label"></label>
+                            <input asp-for="Home" class="form-control" />
+                            <span asp-validation-for="Home" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Hot" class="control-label"></label>
+                            <input asp-for="Hot" class="form-control" />
+                            <span asp-validation-for="Hot" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="CreatedDate" class="control-label"></label>
+                            <input asp-for="CreatedDate" class="form-control" />
+                            <span asp-validation-for="CreatedDate" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="UpdatedDate" class="control-label"></label>
+                            <input asp-for="UpdatedDate" class="form-control" />
+                            <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="AdminCreated" class="control-label"></label>
+                            <input asp-for="AdminCreated" class="form-control" />
+                            <span asp-validation-for="AdminCreated" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="AdminUpdated" class="control-label"></label>
+                            <input asp-for="AdminUpdated" class="form-control" />
+                            <span asp-validation-for="AdminUpdated" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Status" class="control-label"></label>
+                            <input asp-for="Status" class="form-control" />
+                            <span asp-validation-for="Status" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Isdelete" class="control-label"></label>
+                            <input asp-for="Isdelete" class="form-control" />
+                            <span asp-validation-for="Isdelete" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <button type="submit" class="btn btn-info btn-lg px-4 mt-3">Lưu</button>
+                        <a asp-action="Index" class="btn btn-secondary btn-lg px-4 mt-3">Quay lại</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

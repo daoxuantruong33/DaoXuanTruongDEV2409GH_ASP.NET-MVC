@@ -10,8 +10,8 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.AdminQL.Controllers
 {
-    [Area("AdminQL")]
-    public class ProductsController : Controller
+   
+    public class ProductsController : BaseController
     {
         private readonly XuongMocContext _context;
 
@@ -52,13 +52,22 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 return NotFound();
             }
-
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", product);
+            }
             return View(product);
         }
 
         // GET: AdminQL/Products/Create
         public IActionResult Create()
         {
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create");
+            }
             return View();
         }
 
@@ -71,9 +80,34 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
         {
             if (ModelState.IsValid)
             {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Any() && files[0].Length > 0)
+                {
+                    var file = files[0];
+                    var fileName = file.FileName;
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\products", fileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        product.Image = "/images/products/" + fileName;
+                    }
+                }
                 _context.Add(product);
                 await _context.SaveChangesAsync();
+
+                // Return success response for AJAX
+                if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                {
+                    return Json(new { success = true, redirectUrl = Url.Action("Index") });
+                }
+
                 return RedirectToAction(nameof(Index));
+            }
+
+            // Return partial view for AJAX in case of validation errors
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create", product);
             }
             return View(product);
         }
@@ -90,6 +124,11 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             if (product == null)
             {
                 return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Edit", product);
             }
             return View(product);
         }
@@ -110,6 +149,18 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 try
                 {
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Any() && files[0].Length > 0)
+                    {
+                        var file = files[0];
+                        var fileName = file.FileName;
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\pruducts", fileName);
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                            product.Image = "/images/pruducts/" + fileName;
+                        }
+                    }
                     _context.Update(product);
                     await _context.SaveChangesAsync();
                 }
@@ -129,25 +180,44 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             return View(product);
         }
 
-        // GET: AdminQL/AdminUsers/Delete/5
-
-        // POST: AdminQL/AdminUsers/Delete/5
-        [HttpGet]
-        public IActionResult Delete(int id)
+        // GET: AdminQL/Materials/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
-            var user = _context.Products.FirstOrDefault(u => u.Id == id);
-            if (user == null)
+            if (id == null)
             {
-                // Nếu không tìm thấy người dùng, redirect đến danh sách hoặc hiển thị lỗi
                 return NotFound();
             }
 
-            // Tiến hành xóa người dùng
-            _context.Products.Remove(user);
-            _context.SaveChanges();
+            var product = await _context.Products
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Delete", product);
+            }
 
-            // Redirect về trang danh sách người dùng hoặc trang khác sau khi xóa thành công
-            return RedirectToAction(nameof(Index));  // Giả sử bạn sẽ chuyển hướng về trang danh sách người dùng
+            return View(product);
+        }
+
+        // GET: AdminQL/AdminUsers/Delete/5
+
+        // POST: AdminQL/ProductExtensions/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product != null)
+            {
+                _context.Products.Remove(product);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         private bool ProductExists(int id)

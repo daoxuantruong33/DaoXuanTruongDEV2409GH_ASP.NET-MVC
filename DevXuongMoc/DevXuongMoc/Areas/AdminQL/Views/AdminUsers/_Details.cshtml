@@ -1,0 +1,135 @@
+﻿@model DevXuongMoc.Models.AdminUser
+
+@{
+    ViewData["Title"] = "Chi Tiết Người Dùng Admin";
+}
+
+<style>
+    dl {
+        display: flex;
+        flex-wrap: wrap; /* Cho phép các mục tràn xuống hàng nếu thiếu không gian */
+        row-gap: 1rem; /* Khoảng cách giữa các hàng */
+        column-gap: 4rem; /* Khoảng cách giữa các cột */
+    }
+
+    dt {
+        flex: 0 0 150px; /* Đặt độ rộng cố định cho phần tiêu đề */
+        font-weight: bold;
+    }
+
+    dd {
+        flex: 1; /* Phần nội dung chiếm phần còn lại */
+        margin-left: 0;
+    }
+
+    .avatar img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+</style>
+
+<div class="container bg-light p-4 rounded shadow-sm">
+    <div class="row">
+        <h1 class="display-12 text-center" style="font-size: 28px; margin-bottom: 2rem;">Chi Tiết</h1>
+        <div class="col-12">
+            <dl>
+                <!-- Tài Khoản -->
+                <dt>@Html.DisplayNameFor(model => model.Account)</dt>
+                <dd>@Html.DisplayFor(model => model.Account)</dd>
+
+                <!-- Mật Khẩu -->
+                <dt>@Html.DisplayNameFor(model => model.Password)</dt>
+                <dd>@Html.DisplayFor(model => model.Password)</dd>
+
+                <!-- Mã Nhân Sự -->
+                <dt>@Html.DisplayNameFor(model => model.MaNhanSu)</dt>
+                <dd>@Html.DisplayFor(model => model.MaNhanSu)</dd>
+
+                <!-- Tên -->
+                <dt>@Html.DisplayNameFor(model => model.Name)</dt>
+                <dd>@Html.DisplayFor(model => model.Name)</dd>
+
+                <!-- Số Điện Thoại -->
+                <dt>@Html.DisplayNameFor(model => model.Phone)</dt>
+                <dd>@Html.DisplayFor(model => model.Phone)</dd>
+
+                <!-- Email -->
+                <dt>@Html.DisplayNameFor(model => model.Email)</dt>
+                <dd>@Html.DisplayFor(model => model.Email)</dd>
+
+                <!-- Avatar -->
+                <dt>@Html.DisplayNameFor(model => model.Avatar)</dt>
+                <dd class="avatar" style=" flex: 0 0 250px;">
+                    <img src="@Model.Avatar" alt="Avatar">
+                </dd>
+
+                <!-- ID Phòng Ban -->
+                <dt>@Html.DisplayNameFor(model => model.IdPhongBan)</dt>
+                <dd>@Html.DisplayFor(model => model.IdPhongBan)</dd>
+
+                <!-- Ngày Tạo -->
+                <dt>@Html.DisplayNameFor(model => model.NgayTao)</dt>
+                <dd>@Html.DisplayFor(model => model.NgayTao)</dd>
+
+                <!-- Người Tạo -->
+                <dt>@Html.DisplayNameFor(model => model.NguoiTao)</dt>
+                <dd>@Html.DisplayFor(model => model.NguoiTao)</dd>
+
+                <!-- Ngày Cập Nhật -->
+                <dt>@Html.DisplayNameFor(model => model.NgayCapNhat)</dt>
+                <dd>@Html.DisplayFor(model => model.NgayCapNhat)</dd>
+
+                <!-- Người Cập Nhật -->
+                <dt>@Html.DisplayNameFor(model => model.NguoiCapNhat)</dt>
+                <dd>@Html.DisplayFor(model => model.NguoiCapNhat)</dd>
+
+                <!-- Session Token -->
+                <dt>@Html.DisplayNameFor(model => model.SessionToken)</dt>
+                <dd>@Html.DisplayFor(model => model.SessionToken)</dd>
+
+                <!-- Salt -->
+                <dt>@Html.DisplayNameFor(model => model.Salt)</dt>
+                <dd>@Html.DisplayFor(model => model.Salt)</dd>
+
+                <!-- Quyền Admin -->
+                <dt>@Html.DisplayNameFor(model => model.IsAdmin)</dt>
+                <dd>@Html.DisplayFor(model => model.IsAdmin)</dd>
+
+                <!-- Trạng Thái -->
+                <dt>@Html.DisplayNameFor(model => model.TrangThai)</dt>
+                <dd>@Html.DisplayFor(model => model.TrangThai)</dd>
+
+                <!-- Xóa -->
+                <dt>@Html.DisplayNameFor(model => model.IsDelete)</dt>
+                <dd>@Html.DisplayFor(model => model.IsDelete)</dd>
+            </dl>
+        </div>
+    </div>
+
+    <!-- Nút Chỉnh Sửa và Quay Lại -->
+    <div class="text-center mt-5">
+        <button class="btn btn-info ajax-action btn-lg px-4 mt-3" data-url="@Url.Action("Edit", new { id = Model.Id })">Sửa</button>
+        <a asp-action="Index" class="btn btn-secondary btn-lg px-4 mt-3">Quay Lại</a>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".ajax-action").click(function (e) {
+            e.preventDefault();
+             
+            // Get the URL from the data attribute
+            var url = $(this).data("url");
+
+            // Load the content into the .click div
+            $(".click").load(url, function (response, status, xhr) {
+                if (status == "error") {
+                    alert("Error: " + xhr.status + " " + xhr.statusText);
+                }
+            });
+        });
+    });
+</script>

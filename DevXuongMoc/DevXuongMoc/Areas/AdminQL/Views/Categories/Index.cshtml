@@ -4,92 +4,103 @@
     ViewData["Title"] = "Danh sách sản phẩm";
     Layout = "~/Areas/AdminQL/Views/Shared/Admin.cshtml";
 }
+<div class="row">
+    <div class="col-md-8">
+        <div class="container ">
+            
+                <div class="d-flex justify-content-between align-items-center" style="margin-bottom:1rem">
 
-<div class="container ">
-    <div class="container ">
-        <div class="d-flex justify-content-between align-items-center " style="margin-bottom:1rem">
-            <!-- Tiêu đề -->
-            <h1 class="text-left" style="color:black;margin-right:10rem">QUẢN LÝ DANH MỤC</h1> 
+                    <!-- Thanh tìm kiếm -->
+                    <div class="d-flex gap-2" style="margin-top:1rem">
+                        <form action="" method="get" class="d-flex align-items-center">
+                            <input type="text" name="name" id="keyword" class="form-control me-2" placeholder="Nhập tên cần tìm..." value="@ViewData["CurrentFilter"]">
+                            <button type="submit" style="width:2.4rem;height:2.4rem" class="btn btn-info">
+                                <i class="bi bi-search"></i> <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                        <button class="btn btn-info ajax-action" data-url="@Url.Action("Create")">Tạo mới</button>
+                    </div>
+                </div>
 
-            <!-- Thanh tìm kiếm -->
-            <div class="d-flex gap-2" style="margin-top:1rem">
-                <form action="" method="get" class="d-flex align-items-center">
-                    <input type="text" name="name" id="keyword" class="form-control me-2" placeholder="Nhập tên cần tìm..." value="@ViewData["CurrentFilter"]">
-                    <button type="submit" style="width:2.4rem;height:2.4rem" class="btn btn-primary">
-                        <i class="bi bi-search"></i> <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                <a asp-action="Create" class="btn btn-success" style="height:2.4rem">
-                    <i class="bi bi-plus-circle"></i> Thêm Mới
-                </a>
+
+         
+
+
+
+            <table class="table table-hover table-bordered align-middle">
+                <thead class ="table-dark">
+                    <tr>
+                        <th style="min-width: 150px;">@Html.DisplayNameFor(model => model.FirstOrDefault().Title)</th>
+                        <th style="min-width: 60px;">@Html.DisplayNameFor(model => model.FirstOrDefault().Icon)</th>
+                        @*  <th style="min-width: 150px;">@Html.DisplayNameFor(model => model.FirstOrDefault().MateTitle)</th> *@
+                        @*                 <th style="min-width: 470px;">@Html.DisplayNameFor(model => model.FirstOrDefault().MetaDescription)</th>
+                        *@
+                        <th style="min-width: 20px;">@Html.DisplayNameFor(model => model.FirstOrDefault().Slug)</th>
+                        <th style="min-width: 40px;">@Html.DisplayNameFor(model => model.FirstOrDefault().Orders)</th>
+
+                        <th style="min-width: 200px;">Hành động</th>
+                    </tr>
+                </thead >
+                <tbody >
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                            <td class="text-center">
+                                @if (!string.IsNullOrEmpty(item.Icon))
+                                {
+                                    <img src="@item.Icon" alt="@item.Title" style="width:80px; height:60px;" />
+                                }
+                                else
+                                {
+                                    <span class="text-muted">Không có hình</span>
+                                }
+                            </td>
+                            @*  <td>@Html.DisplayFor(modelItem => item.MateTitle)</td> *@
+                            @*  <td>@Html.DisplayFor(modelItem => item.MetaDescription)</td> *@
+                            <td>@Html.DisplayFor(modelItem => item.Slug)</td>
+                            <td>@Html.DisplayFor(modelItem => item.Orders)</td>
+
+                            <td>
+                                <button class="btn btn-warning btn-sm ajax-action" data-url="@Url.Action("Edit", new { id = item.Id })">Sửa</button>
+                                <button class="btn btn-info btn-sm ajax-action" data-url="@Url.Action("Details", new { id = item.Id })">Chi tiết</button>
+                                <button class="btn btn-danger btn-sm ajax-action" data-url="@Url.Action("Delete", new { id = item.Id })">Xóa</button>
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="d-flex justify-content-center mt-4">
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }), new PagedListRenderOptions
+           {
+               LiElementClasses = new[] { "page-item" },
+               PageClasses = new[] { "page-link" }
+           })
             </div>
         </div>
-
-
     </div>
-
-    
-     
-    <table class="table table-hover table-bordered align-middle">
-        <thead >
-            <tr>
-                <th style="min-width: 150px;">@Html.DisplayNameFor(model => model.FirstOrDefault().Title)</th>
-                <th style="min-width: 60px;">@Html.DisplayNameFor(model => model.FirstOrDefault().Icon)</th>
-               @*  <th style="min-width: 150px;">@Html.DisplayNameFor(model => model.FirstOrDefault().MateTitle)</th> *@
-@*                 <th style="min-width: 470px;">@Html.DisplayNameFor(model => model.FirstOrDefault().MetaDescription)</th>
- *@                <th style="min-width: 20px;">@Html.DisplayNameFor(model => model.FirstOrDefault().Slug)</th>
-                <th style="min-width: 40px;">@Html.DisplayNameFor(model => model.FirstOrDefault().Orders)</th>
-   
-                <th style="min-width: 200px;">Hành động</th>
-            </tr>
-        </thead> 
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@Html.DisplayFor(modelItem => item.Title)</td>
-                    <td>
-                        <img src="@item.Icon" alt="@item.Slug" style="width:50px; height:50px;" />
-                    </td>
-                   @*  <td>@Html.DisplayFor(modelItem => item.MateTitle)</td> *@
-                   @*  <td>@Html.DisplayFor(modelItem => item.MetaDescription)</td> *@
-                    <td>@Html.DisplayFor(modelItem => item.Slug)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Orders)</td>
-                  
-                    <td>
-                        <div class="btn-group" role="group">
-                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">
-                                <i class="fa-solid fa-edit"></i> Sửa
-                            </a>
-                            <a asp-action="Details" asp-route-id="@item.Id" style="margin-left:0.2rem;margin-right:0.2rem" class="btn btn-info btn-sm">
-                                <i class="fa-solid fa-info-circle" ></i> Chi tiết
-                            </a>
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger" onclick="return confirmDelete(@item.Id);">
-                                <i class="fas fa-trash"></i> Xóa
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <div class="d-flex justify-content-center mt-4">
-        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }), new PagedListRenderOptions
-   {
-       LiElementClasses = new[] { "page-item" },
-       PageClasses = new[] { "page-link" }
-   })
+    <div class="col-md-4" style="margin-top:4.4rem">
+        <div class="click"></div>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    function confirmDelete(id) {
-        if (confirm('Bạn có chắc chắn muốn xóa?')) {
-            // Nếu nhấn OK, thực hiện xóa
-            window.location.href = '/AdminUsersController/Delete/' + id;
-            return true; // Cho phép thực hiện hành động
-        } else {
-            return false; // Không thực hiện hành động
-        }
-    }
+    $(document).ready(function () {
+        $(".ajax-action").click(function (e) {
+            e.preventDefault();
+
+            // Get the URL from the data attribute
+            var url = $(this).data("url");
+
+            // Load the content into the .click div
+            $(".click").load(url, function (response, status, xhr) {
+                    if (status == "error") {
+                        alert("Error: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+        });
 </script>

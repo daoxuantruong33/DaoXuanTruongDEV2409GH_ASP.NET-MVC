@@ -1,0 +1,92 @@
+﻿@using X.PagedList.Mvc.Core
+@model X.PagedList.IPagedList<DevXuongMoc.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/CustomerUser/Views/Shared/_Customer.cshtml";
+}
+
+
+<div class="box-content all-product">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/images/anhcat/trai-nghiem1.jpg" alt="" width="1100" height="500">
+                        <div class="carousel-btn"><button class="btn-buy">Mua ngay</button></div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/images/anhcat/banner.jpg" alt="" width="1100" height="500">
+                    </div>
+
+                </div>
+            </div>
+        </div><a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a><a class="carousel-control-next" href="#demo"
+               data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="all-product__item">
+        @* <div class="all-product__item--title">
+        <h4>Phòng khách</h4><a class="see-all" href="/san-pham/phong-khach">Xem tất cả</a>
+        </div> *@
+        <div class="row bg-white">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="product-card">
+                        <img src="@item.Image" alt="@item.Title" class="product-card-img">
+                        <div class="product-card-content">
+                            <h6><a asp-action="Details" asp-route-id="@item.Id">@item.Title</a></h6>
+                            <span style="display: inline-block;direction: ltr;touch-action: none;">
+                                <span class="react-simple-star-rating" aria-hidden="true" style="position: relative; display: inline-block; overflow: hidden; white-space: nowrap; vertical-align: middle; user-select: none;">
+                                    <span class="empty-icons" style="display: inline-block;/* color: rgb(204, 204, 204); */">
+                                        <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                            <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                        </svg>
+
+                                        <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                            <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                        </svg>
+
+                                        <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                            <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                        </svg>
+
+                                        <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                            <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                        </svg>
+
+
+                                        <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                            <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                        </svg>
+
+                                    </span>
+
+                                    <p class="old-price">@string.Format("{0:#,##0}", item.PriceOld)VND</p>
+                                    <p class="new-price">@string.Format("{0:#,##0}", item.PriceNew)VND</p>
+                                    <a asp-area="CustomerUser" asp-controller="Carts" asp-action="Add" asp-route-id="@item.Id">
+                                        <i class="fi fi-bs-shopping-bag">Mua hàng</i>
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }), new PagedListRenderOptions
+   {
+       LiElementClasses = new[] { "page-item" },
+       PageClasses = new[] { "page-link" }
+   })
+</div>

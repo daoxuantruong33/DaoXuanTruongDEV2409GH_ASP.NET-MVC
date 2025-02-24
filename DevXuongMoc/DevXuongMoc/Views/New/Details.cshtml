@@ -1,0 +1,81 @@
+﻿@model DevXuongMoc.Models.News
+
+@{
+    ViewData["Title"] = "Chi tiết tin tức";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .news-container {
+        margin-top: 10rem;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .news-container img {
+        object-fit: cover;
+    }
+    .news-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    .news-image {
+        width: 90%;
+        height: 300px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-description {
+        font-size: 1.2rem;
+        color: #5a5a5a;
+        line-height: 1.8;
+        margin-top: 10px;
+    }
+
+    .news-container h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        max-width: 10rem;
+        border-top: 0.35rem solid #bd945f;
+    }
+    .news-container h1 {
+        text-transform: uppercase;
+        font-family: Gotham-Ultra;
+        color: var(--color);
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+        .news-description p {
+            font-family: Gotham-Medium;
+        }
+</style>
+
+<div class="news-container">
+    <!-- Tiêu đề -->
+    <h1 class="news-title">@Model.Title</h1>
+
+    <!-- Hình ảnh -->
+    <img src="@Model.Image" alt="@Model.Title" class="news-image">
+
+    <!-- Nội dung mô tả -->
+    <p class="news-description"><b style="font-family: Gotham-Medium;">@Html.Raw(Model.Description)</b></p>
+</div>

@@ -64,8 +64,8 @@
                 <dt class="col-sm-3 fw-bold">
                     @Html.DisplayNameFor(model => model.Avatar)
                 </dt>
-                <dd class="col-sm-9">
-                    @Html.DisplayFor(model => model.Avatar)
+                 <dd>
+                    <img src="@Model.Avatar" alt="Avatar" class="img-fluid rounded-circle" style="width: 150px; height: 150px;" />
                 </dd>
             </dl>
         </div>
@@ -156,7 +156,7 @@
 
     <!-- Nút Chỉnh Sửa và Quay Lại -->
     <div class="text-center mt-5">
-        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning mx-2">Chỉnh Sửa</a>
-        <a asp-action="Index" class="btn btn-secondary mx-2">Quay Lại Danh Sách</a>
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-info btn-lg px-4 mt-3">Chỉnh Sửa</a>
+        <a asp-action="Index"  class="btn btn-secondary btn-lg px-4 mt-3">Quay Lại Danh Sách</a>
     </div>
 </div>

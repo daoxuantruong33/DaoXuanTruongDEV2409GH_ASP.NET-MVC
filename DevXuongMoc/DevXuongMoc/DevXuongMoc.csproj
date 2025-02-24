@@ -27,7 +27,18 @@
     <Folder Include="wwwroot\images\adminUsers\" />
     <Folder Include="wwwroot\images\banners\" />
     <Folder Include="wwwroot\images\categories\" />
+    <Folder Include="wwwroot\images\category\" />
+    <Folder Include="wwwroot\images\materials\" />
+    <Folder Include="wwwroot\images\partners\" />
     <Folder Include="wwwroot\images\tin-tuc\" />
+    <Folder Include="wwwroot\fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\images\adminUsers\logo2.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

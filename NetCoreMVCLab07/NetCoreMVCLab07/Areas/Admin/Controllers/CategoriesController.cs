@@ -75,11 +75,11 @@ namespace NetCoreMVCLab07.Areas.Admin.Controllers
                 {
                     var file = files[0];
                     var FileName = file.FileName;
-                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\img\\category", FileName);
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\dist\\img\\category", FileName);
                     using (var stream = new FileStream(path, FileMode.Create))
                     {
                         file.CopyTo(stream);
-                        category.Image = "/img/category/" + FileName;
+                        category.Image = "/dist/img/category/" + FileName;
                     }
                 }
                 _context.Add(category);
@@ -131,11 +131,11 @@ namespace NetCoreMVCLab07.Areas.Admin.Controllers
                     {
                         var file = files[0];
                         var FileName = file.FileName;
-                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\img\\category", FileName);
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\dist\\img\\category", FileName);
                         using (var stream = new FileStream(path, FileMode.Create))
                         {
                             file.CopyTo(stream);
-                            category.Image = "/img/category/" + FileName;
+                            category.Image = "/dist/img/category/" + FileName;
                         }
                     }
                     _context.Update(category);

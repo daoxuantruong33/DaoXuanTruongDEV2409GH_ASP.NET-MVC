@@ -1,0 +1,144 @@
+﻿@model DevXuongMoc.Models.Material
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<style>
+    dl {
+        display: flex;
+        flex-wrap: wrap; /* Cho phép các mục tràn xuống hàng nếu thiếu không gian */
+        row-gap: 1rem; /* Khoảng cách giữa các hàng */
+        column-gap: 4rem; /* Khoảng cách giữa các cột */
+    }
+
+    dt {
+        flex: 0 0 150px; /* Đặt độ rộng cố định cho phần tiêu đề */
+        font-weight: bold;
+    }
+
+    dd {
+        flex: 1; /* Phần nội dung chiếm phần còn lại */
+        margin-left: 0;
+    }
+
+    .icon img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+</style>
+
+
+
+
+<div class="container bg-light p-4 rounded shadow-sm">
+    <div class="row">
+        <h1 class="display-12 text-center" style="font-size: 26px; margin-bottom: 2rem;">Bạn muốn xóa vật liệu này?</h1>
+        <div class="col-12">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Icon)
+                </dt>
+                <dd class="icon" style=" flex: 0 0 250px;">
+                    <img src="@Model.Icon" alt="Icon">
+                </dd>
+                @* <dt>
+                    @Html.DisplayNameFor(model => model.MetaTitle)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MetaTitle)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MetaKeyword)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MetaKeyword)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MetaDescription)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MetaDescription)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Slug)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Slug)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Orders)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Orders)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Parentid)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Parentid)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.CreatedDate)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.CreatedDate)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.UpdatedDate)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.UpdatedDate)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.AdminCreated)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.AdminCreated)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.AdminUpdated)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.AdminUpdated)
+                </dd> *@
+                <dt>
+                    @Html.DisplayNameFor(model => model.Notes)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Notes)
+                </dd>
+               @*  <dt>
+                    @Html.DisplayNameFor(model => model.Status)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Status)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Isdelete)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Isdelete)
+                </dd> *@
+            </dl>
+        </div>
+    </div>
+    <!-- Nút Xóa và Quay Lại -->
+    <div class="text-center mt-5">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <input type="submit" value="Xóa" class="btn btn-danger btn-lg px-4 mt-3" />
+            <a asp-action="Index" class="btn btn-secondary btn-lg px-4 mt-3">Quay Lại</a>
+        </form>
+    </div>
+</div>
+
+

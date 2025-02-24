@@ -10,8 +10,7 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.AdminQL.Controllers
 {
-    [Area("AdminQL")]
-    public class PartnersController : Controller
+    public class PartnersController : BaseController
     {
         private readonly XuongMocContext _context;
 
@@ -51,6 +50,11 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 return NotFound();
             }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", partner);
+            }
 
             return View(partner);
         }
@@ -58,6 +62,12 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
         // GET: AdminQL/Partners/Create
         public IActionResult Create()
         {
+
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create");
+            }
             return View();
         }
 
@@ -70,10 +80,36 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
         {
             if (ModelState.IsValid)
             {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Any() && files[0].Length > 0)
+                {
+                    var file = files[0];
+                    var fileName = file.FileName;
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\partners", fileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        partner.Logo = "/images/partners/" + fileName;
+                    }
+                }
                 _context.Add(partner);
                 await _context.SaveChangesAsync();
+
+                // Return success response for AJAX
+                if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                {
+                    return Json(new { success = true, redirectUrl = Url.Action("Index") });
+                }
+
                 return RedirectToAction(nameof(Index));
             }
+
+            // Return partial view for AJAX in case of validation errors
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create", partner);
+            }
+
             return View(partner);
         }
 
@@ -89,6 +125,11 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             if (partner == null)
             {
                 return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Edit", partner);
             }
             return View(partner);
         }
@@ -109,6 +150,18 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 try
                 {
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Any() && files[0].Length > 0)
+                    {
+                        var file = files[0];
+                        var fileName = file.FileName;
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\partners", fileName);
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                            partner.Logo = "/images/partners/" + fileName;
+                        }
+                    }
                     _context.Update(partner);
                     await _context.SaveChangesAsync();
                 }
@@ -142,7 +195,11 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 return NotFound();
             }
-
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Delete", partner);
+            }
             return View(partner);
         }
 

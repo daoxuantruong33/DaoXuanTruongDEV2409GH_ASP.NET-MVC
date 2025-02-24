@@ -1,47 +1,68 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-namespace DevXuongMoc.Models;
-
-public partial class News
+namespace DevXuongMoc.Models
 {
-    public int Id { get; set; }
+    public partial class News
+    {
+        [Display(Name = "Mã tin tức")]
+        public int Id { get; set; }
 
-    public string? Code { get; set; }
+        [Display(Name = "Mã")]
+        public string? Code { get; set; }
 
-    public string? Title { get; set; }
+        [Display(Name = "Tiêu đề")]
+        public string? Title { get; set; }
 
-    public string? Description { get; set; }
+        [Display(Name = "Mô tả")]
+        public string? Description { get; set; }
 
-    public string? Content { get; set; }
+        [Display(Name = "Nội dung")]
+        public string? Content { get; set; }
 
-    public string? Image { get; set; }
+        [Display(Name = "Hình ảnh")]
+        public string? Image { get; set; }
 
-    public string? MetaTitle { get; set; }
+        [Display(Name = "Tiêu đề Meta")]
+        public string? MetaTitle { get; set; }
 
-    public string? MainKeyword { get; set; }
+        [Display(Name = "Từ khóa chính")]
+        public string? MainKeyword { get; set; }
 
-    public string? MetaKeyword { get; set; }
+        [Display(Name = "Từ khóa Meta")]
+        public string? MetaKeyword { get; set; }
 
-    public string? MetaDescription { get; set; }
+        [Display(Name = "Mô tả Meta")]
+        public string? MetaDescription { get; set; }
 
-    public string? Slug { get; set; }
+        [Display(Name = "Slug")]
+        public string? Slug { get; set; }
 
-    public int? Views { get; set; }
+        [Display(Name = "Lượt xem")]
+        public int? Views { get; set; }
 
-    public int? Likes { get; set; }
+        [Display(Name = "Lượt thích")]
+        public int? Likes { get; set; }
 
-    public double? Star { get; set; }
+        [Display(Name = "Đánh giá")]
+        public double? Star { get; set; }
 
-    public DateTime? CreatedDate { get; set; }
+        [Display(Name = "Ngày tạo")]
+        public DateTime? CreatedDate { get; set; }
 
-    public DateTime? UpdatedDate { get; set; }
+        [Display(Name = "Ngày cập nhật")]
+        public DateTime? UpdatedDate { get; set; }
 
-    public string? AdminCreated { get; set; }
+        [Display(Name = "Người tạo")]
+        public string? AdminCreated { get; set; }
 
-    public string? AdminUpdated { get; set; }
+        [Display(Name = "Người cập nhật")]
+        public string? AdminUpdated { get; set; }
 
-    public byte? Status { get; set; }
+        [Display(Name = "Trạng thái")]
+        public byte? Status { get; set; }
 
-    public bool? Isdelete { get; set; }
+        [Display(Name = "Đã xóa")]
+        public bool? Isdelete { get; set; }
+    }
 }

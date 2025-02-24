@@ -1,0 +1,50 @@
+﻿@model QuanLyVienPhi.Models.ChiTietThuoc
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>ChiTietThuoc</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ChiTietThuocId" />
+            <div class="form-group">
+                <label asp-for="BenhNhanId" class="control-label"></label>
+                <select asp-for="BenhNhanId" class="form-control" asp-items="ViewBag.BenhNhanId"></select>
+                <span asp-validation-for="BenhNhanId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThuocId" class="control-label"></label>
+                <select asp-for="ThuocId" class="form-control" asp-items="ViewBag.ThuocId"></select>
+                <span asp-validation-for="ThuocId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoLuong" class="control-label"></label>
+                <input asp-for="SoLuong" class="form-control" />
+                <span asp-validation-for="SoLuong" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TienThuoc" class="control-label"></label>
+                <input asp-for="TienThuoc" class="form-control" />
+                <span asp-validation-for="TienThuoc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,48 @@
+﻿@model DevXuongMoc.Models.Contact
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/CustomerUser/Views/Shared/_Customer.cshtml";
+}
+<div class="box-content">
+    <div class="banner-page">
+        <div class="banner-page__image">
+            <img src="~/images/anhcat/LIENHE.jpg" alt="đối tác">
+        </div>
+        <div class="banner-page__title">
+            <img src="~/images/anhcat/logo3.png" alt="logo">
+            <p>LIÊN HỆ</p>
+        </div>
+    </div>
+    <div class="wrapper-box box-contact">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="thumbnail h-100">
+                    <img src="~/images/anhcat/sp2.jpg" alt="ảnh liên hệ" class="h-100 w-100">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <p>Liên hệ với chúng tôi</p>
+                    <form class="form" method="post" asp-area="CustomerUser" asp-controller="Contacts"  id="form">
+                        <div class="form-contact">
+                            <input type="text" id="username" name="title" class="form-control" required placeholder="Họ tên">
+                        </div>
+                        <div class="form-contact">
+                            <input type="email" id="email" name="email" class="form-control" required placeholder="Email">
+                        </div>
+                        <div class="form-contact">
+                            <input type="text" id="phone" name="phone" class="form-control" required placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-contact">
+                            <textarea id="desc" name="description" class="form-control" required placeholder="Nội dung" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="box-contact__btn btn " onclick=" window.history.back();" style="background-color:#bd945f">
+                            Gửi
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

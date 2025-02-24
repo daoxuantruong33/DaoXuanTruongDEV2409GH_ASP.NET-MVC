@@ -1,0 +1,37 @@
+﻿@model QuanLyVienPhi.Models.Phong
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Phong</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SoPhong)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SoPhong)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TienPhongNgay)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TienPhongNgay)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Khoa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Khoa.KhoaId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.PhongId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

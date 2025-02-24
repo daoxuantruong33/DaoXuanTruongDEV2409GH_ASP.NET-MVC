@@ -1,0 +1,68 @@
+﻿@model DevXuongMoc.Models.Customer
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/CustomerUser/Views/Shared/_Customer.cshtml";
+}
+<style>
+    .text-secondary {
+        color: #6c757d !important;
+        margin-bottom: 1rem;
+    }
+</style>
+<div class="container mt-5" style="padding-bottom:2rem; max-width: 600px;">
+    <div class="card shadow-sm" style="margin-top:10rem; border-radius: 15px;">
+        <div class="card-header text-white text-center" style="border-radius: 15px 15px 0 0; background-color:#bd945f">
+            <h4 class="card-title mb-0" style="color:#2c2e53">Thông Tin Của Bạn</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4 font-weight-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt class="col-sm-4 font-weight-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.Username)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Username)
+                </dd>
+
+                <dt class="col-sm-4 font-weight-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Password)
+                </dd>
+
+                <dt class="col-sm-4 font-weight-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.Address)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Address)
+                </dd>
+
+                <dt class="col-sm-4 font-weight-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt class="col-sm-4 font-weight-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.Phone)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Phone)
+                </dd>
+            </dl>
+        </div>
+        <div class="card-footer text-center" style="border-radius: 0 0 15px 15px;">
+            <a style="height: 40px; width: 80px; font-size: 18px; background-color:#bd945f; color:white" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning me-2">Sửa</a>
+            <a style="height: 40px; width: 100px; font-size: 18px;  background-color:#363636; color:white" class="btn btn-info" onclick="window.history.back();">Trở lại</a>
+        </div>
+    </div>
+</div>

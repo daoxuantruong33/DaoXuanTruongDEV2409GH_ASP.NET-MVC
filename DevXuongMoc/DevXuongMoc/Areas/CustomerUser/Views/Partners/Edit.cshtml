@@ -1,0 +1,82 @@
+﻿@model DevXuongMoc.Models.Partner
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/CustomerUser/Views/Shared/_Customer.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Partner</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Logo" class="control-label"></label>
+                <input asp-for="Logo" class="form-control" />
+                <span asp-validation-for="Logo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Url" class="control-label"></label>
+                <input asp-for="Url" class="form-control" />
+                <span asp-validation-for="Url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Orders" class="control-label"></label>
+                <input asp-for="Orders" class="form-control" />
+                <span asp-validation-for="Orders" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreatedDate" class="control-label"></label>
+                <input asp-for="CreatedDate" class="form-control" />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UpdatedDate" class="control-label"></label>
+                <input asp-for="UpdatedDate" class="form-control" />
+                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminCreated" class="control-label"></label>
+                <input asp-for="AdminCreated" class="form-control" />
+                <span asp-validation-for="AdminCreated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdminUpdated" class="control-label"></label>
+                <input asp-for="AdminUpdated" class="form-control" />
+                <span asp-validation-for="AdminUpdated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Content" class="control-label"></label>
+                <input asp-for="Content" class="form-control" />
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Isdelete" class="control-label"></label>
+                <input asp-for="Isdelete" class="form-control" />
+                <span asp-validation-for="Isdelete" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

@@ -27,14 +27,15 @@
                         </li>
                     </ul>
                     <div class="dropdow">
-                        <a href="#" class="header-auth-text account">
-                            <i class="fa-regular fa-user " style="font-size:28px; color:black;"></i>
+                        <a href="#" id="auth-icon" class="header-auth-text account">
+                            <i class="fa-regular fa-user" style="font-size:28px; color:black;"></i>
                         </a>
-                        <ul class="dropdow-list" style="background:none;">
+                        <ul id="auth-menu" class="dropdow-list" style="display: none;">
                             <li><a class="dropdown-item" asp-area="CustomerUser" asp-controller="Customers" asp-action="Create">Đăng ký</a></li>
                             <li><a class="dropdown-item" asp-area="CustomerUser" asp-controller="Login" asp-action="Index">Đăng nhập</a></li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </nav>

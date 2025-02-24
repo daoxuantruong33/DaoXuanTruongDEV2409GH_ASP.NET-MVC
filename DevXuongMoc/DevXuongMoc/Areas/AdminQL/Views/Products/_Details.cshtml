@@ -1,0 +1,210 @@
+﻿@model DevXuongMoc.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<style>
+    dl {
+        display: flex;
+        flex-wrap: wrap; /* Cho phép các mục tràn xuống hàng nếu thiếu không gian */
+        row-gap: 1rem; /* Khoảng cách giữa các hàng */
+        column-gap: 4rem; /* Khoảng cách giữa các cột */
+    }
+
+    dt {
+        flex: 0 0 150px; /* Đặt độ rộng cố định cho phần tiêu đề */
+        font-weight: bold;
+    }
+
+    dd {
+        flex: 1; /* Phần nội dung chiếm phần còn lại */
+        margin-left: 0;
+    }
+
+    .avatar img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+</style>
+
+
+<div class="container bg-light p-4 rounded shadow-sm">
+    <div class="row">
+        <h1 class="display-12 text-center" style="font-size: 28px; margin-bottom: 2rem;">Chi Tiết</h1>
+        <div class="col-12">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Cid)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Cid)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Code)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Code)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Title)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Title)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Content)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Content)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Image)
+                </dt>
+                <dd class="image" style=" flex: 0 0 250px;">
+                    <img src="@Model.Image" alt="Image" style="width: 150px; height: 150px;">
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MetaTitle)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MetaTitle)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MetaKeyword)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MetaKeyword)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MetaDescription)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.MetaDescription)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Slug)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Slug)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PriceOld)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.PriceOld)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.PriceNew)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.PriceNew)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Size)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Size)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Views)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Views)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Likes)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Likes)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Star)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Star)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Home)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Home)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Hot)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Hot)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.CreatedDate)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.CreatedDate)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.UpdatedDate)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.UpdatedDate)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.AdminCreated)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.AdminCreated)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.AdminUpdated)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.AdminUpdated)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Status)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Status)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Isdelete)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Isdelete)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!-- Nút Chỉnh Sửa và Quay Lại -->
+    <div class="text-center mt-5">
+        <button class="btn btn-info ajax-action btn-lg px-4 mt-3" data-url="@Url.Action("Edit", new { id = Model.Id })">Sửa</button>
+        <a asp-action="Index" class="btn btn-secondary btn-lg px-4 mt-3">Quay Lại</a>
+    </div>
+</div>
+    
+<script>
+    $(document).ready(function () {
+        $(".ajax-action").click(function (e) {
+            e.preventDefault();
+
+            // Get the URL from the data attribute
+            var url = $(this).data("url");
+
+            // Load the content into the .click div
+            $(".click").load(url, function (response, status, xhr) {
+                if (status == "error") {
+                    alert("Error: " + xhr.status + " " + xhr.statusText);
+                }
+            });
+        });
+    });
+</script>

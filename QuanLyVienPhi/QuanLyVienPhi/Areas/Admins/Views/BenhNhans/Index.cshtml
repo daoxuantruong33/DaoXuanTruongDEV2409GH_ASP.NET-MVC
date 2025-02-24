@@ -1,0 +1,166 @@
+﻿@model IEnumerable<QuanLyVienPhi.Models.BenhNhan>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HoTen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgaySinh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GioiTinh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DienThoai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cmnd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgayNhapVien)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NgayRaVien)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BacSi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Khoa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TienPhong)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TienThuoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TrangThaiThanhToan)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.HoTen)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgaySinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GioiTinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DienThoai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cmnd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgayNhapVien)
+                </td>
+                <td>
+                    @{
+                        var chiTietPhongS = item.ChiTietPhongs.FirstOrDefault();
+                        if (chiTietPhongS != null)
+                        {
+                            @Html.DisplayFor(modelItem => chiTietPhongS.NgayKetThuc)
+                        }
+
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BacSi.BacSiId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Khoa.KhoaId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phong.PhongId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TienPhong)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TienThuoc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TrangThaiThanhToan)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.BenhNhanId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.BenhNhanId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.BenhNhanId">Delete</a> |
+                    <a asp-action="Invoice" asp-route-id="@item.BenhNhanId" target="_blank">In hóa đơn</a> |
+
+                    @if (!item.TrangThaiThanhToan)
+                    {
+                        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalThanhToan-@item.BenhNhanId">
+                            Thanh toán
+                        </button>
+
+                        <!-- Modal Thanh Toán -->
+                        <div class="modal fade" id="modalThanhToan-@item.BenhNhanId" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalLabel">Chọn phương thức thanh toán</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="formThanhToan-@item.BenhNhanId" asp-action="ThanhToan" method="post">
+                                            <input type="hidden" name="id" value="@item.BenhNhanId" />
+                                            <div class="mb-3">
+                                                <label class="form-label">Phương thức thanh toán:</label>
+                                                <select class="form-control" name="phuongThucThanhToan">
+                                                    <option value="TienMat">Tiền mặt</option>
+                                                    <option value="ChuyenKhoan">Chuyển khoản</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                                        <button type="submit" class="btn btn-primary" onclick="document.getElementById('formThanhToan-@item.BenhNhanId').submit();">Xác nhận</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <span class="text-success">Đã thanh toán</span>
+                    }
+                </td>
+
+
+
+
+            </tr>
+        }
+    </tbody>
+</table>

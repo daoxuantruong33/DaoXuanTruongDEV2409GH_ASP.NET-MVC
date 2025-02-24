@@ -1,8 +1,519 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿﻿@{
+    ViewData["Title"] = "Trang chủ";
 }
+<style>
+    .slider-container {
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    .slider-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+        .slider-track img {
+            width: 164px;
+            flex-shrink: 0;
+            margin: 0 5px;
+        }
+
+    .slider-controls {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+        .slider-controls button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+            .slider-controls button:hover {
+                background-color: #0056b3;
+            }
+
+</style>
+<div class="home-banner">
+    <div class="home-banner__content" style="margin-top:3rem">
+        <h1>
+            THẾ GIỚI NỘI THẤT SỐ 1 VIỆT NAM <br /><span>HOÀNG HOAN</span>
+        </h1>
+        <p>
+            Sứ mệnh của chúng tôi là kết hợp hài hoà giữa ý tưởng và<br /> mong muốn
+            của khách hàng,đem lại những phút giây thư<br /> giãn tuyệt vời bên gia
+            đình và những người thân yêu
+
+        </p>
+
+        <button class="home-banner__btn">
+            <a asp-area="" asp-controller="Contact" asp-action="Index">LIÊN HỆ NGAY</a>
+        </button>
+
+
+    </div>
 </div>
+<div class="home-category">
+    <div class="list-category">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="link" asp-area="" asp-controller="Product" asp-action="Index">
+                <img src="~/images/anhcat/icon-phong-khach.png" alt="">
+                    <p>Phòng khách</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="link" asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/images/anhcat/icon-phong-ngu.png" alt="">
+                    <p>Phòng ngủ</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="link" asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/images/anhcat/icon-phong-bep.png" alt="">
+                    <p>Phòng bếp</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="link" asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/images/anhcat/icon-phong-tam.png" alt="">
+                    <p>Phòng tắm</p>
+                </a>
+            </div><div class="col-md-3">
+                <a class="link" asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/images/anhcat/icon-tre-em.png" alt="">
+                    <p>Trẻ em</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="link" asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/images/anhcat/icon-van-phong.png" alt="">
+                    <p>Văn phòng</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="link" asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/images/anhcat/icon-cau-thang.png" alt="">
+                    <p>Cầu thang</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="link" asp-area="" asp-controller="Product" asp-action="Index">
+                    <img src="~/images/anhcat/icon-do-trang-tri.png" alt="">
+                    <p>Đồ trang trí</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="slide-product">
+        <h4>sản phẩm nổi bật</h4>
+        <div class="slick-slider slider slick-initialized">
+            <div class="all-product__item">
+                @* <div class="all-product__item--title">
+                <h4>Phòng khách</h4><a class="see-all" href="/san-pham/phong-khach">Xem tất cả</a>
+                </div> *@
+                <div class="row bg-white">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="product-card">
+                                <img src="@item.Image" alt="@item.Title" class="product-card-img">
+                                <div class="product-card-content">
+                                    <h6><a asp-controller="Product" asp-action="Details" asp-route-id="@item.Id">@item.Title</a></h6>
+                                    <span style="display: inline-block;direction: ltr;touch-action: none;">
+                                        <span class="react-simple-star-rating" aria-hidden="true" style="position: relative; display: inline-block; overflow: hidden; white-space: nowrap; vertical-align: middle; user-select: none;">
+                                            <span class="empty-icons" style="display: inline-block;/* color: rgb(204, 204, 204); */">
+                                                <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                                    <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                                </svg>
+
+                                                <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                                    <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                                </svg>
+
+                                                <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                                    <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                                </svg>
+
+                                                <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                                    <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                                </svg>
+
+
+                                                <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" class="star-svg">
+                                                    <path fill="currentColor" stroke="none" stroke-miterlimit="10" stroke-width="0" d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"></path>
+                                                </svg>
+
+                                            </span>
+
+                                            <p class="old-price">@string.Format("{0:#,##0}", item.PriceOld)VND</p>
+                                            <p class="new-price">@string.Format("{0:#,##0}", item.PriceNew)VND</p>
+                                            <a asp-controller="Cart" asp-action="Orders" asp-route-id="@item.Id">
+                                                <i class="fi fi-bs-shopping-bag">Mua hàng</i>
+                                            </a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="home-aboutUs">
+    <div class="home-aboutUs__content">
+        <h4>về chúng tôi</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/images/anhcat/ve-chung-toi.jpg" alt="về chúng tôi" class="h-100 w-100">
+            </div>
+            <div class="col-md-6">
+                <p>nội thất <span>hoàng hoan</span><br>uy tín song hành chất lượng</p>
+                <p>Nội thất của <span>Hoàng Hoan</span> chúng tôi tự hào là đức con tinh thần ra đời sau hơn 30 năm hoạt động trong lĩnh vực kinh doanh đồ gỗ nội thất với thương hiệu ĐỒ GỖ HOÀNG HOAN nổi tiếng.</p>
+                <p>Tài nguyên của chúng tôi là đội ngũ kiến trúc sư tốt nghiệp ĐH Kiên Trúc Hà Nội với nhiều năm kinh nghiệm, luôn tràn đầy nhiệt huyết và sức sáng tạo của tuổi trẻ. Thế mạnh của chúng tôi là sở hữu xưởng nội thất hơn 10.000m2 tại Hà Nội sản xuất đa dạng các sản phẩm với giá cả luôn cạnh tranh.</p>
+                <div class="list-img">
+                    <ul class="d-flex justify-content-between">
+                        <li>
+                            <div class="box">
+                                <img src="images/anhcat/ve-chung-toi-1.jpg" alt="về chúng tôi 1">
+                                <div class="see-more">
+                                    <a class="btn" href="/">Xem thêm&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="images/anhcat/ve-chung-toi-2.jpg" alt="về chúng tôi 1">
+                                <div class="see-more">
+                                    <a class="btn" href="/">Xem thêm&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="images/anhcat/ve-chung-toi-3.jpg" alt="về chúng tôi 1">
+                                <div class="see-more">
+                                    <a class="btn" href="/">Xem thêm&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="images/anhcat/ve-chung-toi-4.jpg" alt="về chúng tôi 1">
+                                <div class="see-more">
+                                    <a class="btn" href="/">Xem thêm&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-aboutUs__content">
+        <h4>tại sao nên chọn hoàng hoan?</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="aboutUs-policy__item d-flex">
+                    <div class="img">
+                        <img src="images/anhcat/chinh-sach.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="title">chính sách giá</p>
+                        <p class="desc">Tốt nhất và công khai giá trên Website</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="aboutUs-policy__item d-flex">
+                    <div class="img">
+                        <img src="images/anhcat/san-pham.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="title">sản xuất</p>
+                        <p class="desc">Trực tiếp sản xuất bởi đội ngũ nhân viên hàng đầu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="aboutUs-policy__item d-flex">
+                    <div class="img">
+                        <img src="images/anhcat/chat-luong.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="title">chất lượng</p>
+                        <p class="desc">Cam kết chất lượng sản phẩm và tiến độ thi công</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="aboutUs-policy__item d-flex">
+                    <div class="img">
+                        <img src="images/anhcat/bao-hanh.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <p class="title">bảo hành</p>
+                        <p class="desc">Dịch vụ bảo hành sản phẩm tốt nhất khu vực</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="home-new">
+    <div class="home-news">
+        <h4>tin tức</h4>
+        <div class="row ">
+            <div class="col-md-7 home-news__effect">
+                <a class="link" asp-area="" asp-controller="New" asp-action="Index">
+
+                    <div class="thumbnail box">
+                        <div class="img img-main">
+                            <img src="images/news/01.jpg" alt="">
+                        </div>
+                        <div class="main-content">
+                            <p>Cách chọn Sofa cho phòng khách thêm sang trọng</p>
+                            <p>Không phải ai trong chúng ta cũng biết cách chọn màu sofa cho phòng khách trở nên sang trọng và đẹp mắt hơn. Tuy nhiên, đây là yếu tố quyết định phần lớn đến tính thẩm mỹ của toàn bộ ngôi nhà.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-5">
+                <div class="thumbnail">
+                    <div class="home-news__effect">
+                        <div class="row fix-height">
+                            <div class="col-md-5 box">
+                                <div class="img img-list">
+                                    <a class="link" asp-area="" asp-controller="New" asp-action="Index">
+                                        <img src="images/news/02.jpg" alt="tin tức">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <p class="title">
+                                    <a class="link" asp-area="" asp-controller="New" asp-action="Index">
+                                        Trang trí phòng khách cho thêm năng động
+                                    </a>
+                                </p>
+                                <p class="desc">Không cần quá đầu tư quá nhiều tiền vào những món đồ sang trong cho việc trang trí phòng khách. Bạn vẫn có thể sở hữu không gian phòng khách đẹp với những mẹo không phải ai cũng sẵn sàng chỉ cho bạn. </p>
+                            </div>
+                        </div>
+                        <div class="row fix-height">
+                            <div class="col-md-5 box">
+                                <div class="img img-list">
+                                    <a class="link" asp-area="" asp-controller="New" asp-action="Index">
+                                        <img src="images/news/06.jpg" alt="tin tức">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <p class="title">
+                                    <a class="link" asp-area="" asp-controller="New" asp-action="Index">
+                                        25+ Mẫu giường ngủ hộc kéo cho phòng nhỏ
+                                    </a>
+                                </p>
+                                <p class="desc">
+                                    Sự thật là chúng ta dành hết 1/3 cuộc đời chỉ để ngủ, vì thế việc tạo được một giấc ngủ ngon là một điều đặc biệt quan trọng. Giường ngủ hộc kéo chính là giải pháp thông minh vừa giúp đem lại một giấc ngủ sâu, vừa giúp các gia đình giải quyết hiệu quả bài toán diện tích.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row fix-height">
+                            <div class="col-md-5 box">
+                                <div class="img img-list">
+                                    <a class="link" asp-area="" asp-controller="New" asp-action="Index">
+                                        <img src="images/news/05.jpg" alt="tin tức">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <p class="title">
+                                    <a class="link" asp-area="" asp-controller="New" asp-action="Index">
+                                        Top 10 mẫu nội thất chung cư 1 phòng ngủ
+                                    </a>
+                                </p>
+                                <p class="desc">
+                                    Những căn hộ chung cư mini có diện tích nhỏ, ngày càng trở nên ưa chuộng hơn trong cuộc sống hiện đại với những ai có khoản kinh phí “hạn hẹp”. Thiết kế nội thất chung cư một phòng ngủ chính là giải pháp tối ưu nhất mang lại một không gian sống hoàn hảo và hiện đại.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="readMore">
+                        <a asp-area="" asp-controller="New" asp-action="Index" style="color:#bd945f">Xem thêm</a>
+
+                       @*  <a href="/" style="color:#bd945f">
+                            Xem thêm
+                           
+                        </a> *@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="home-partner">
+    <h4>đối tác</h4>
+    <div class="slider-container">
+        <div class="slider-track" style="width:90px">
+            <img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"><img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"> <img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"><img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"> <img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"><img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"> <img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"><img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"><img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"><img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"> <img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"><img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"> <img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"><img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"> <img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella"><img src="images/anhcat/sheraton.png" alt="Sheraton">
+            <img src="images/anhcat/sunrise-sapa.png" alt="Sunrise Sapa">
+            <img src="images/anhcat/the-coffee-house.png" alt="The Coffee House">
+            <img src="images/anhcat/vinpearl.png" alt="Vinpearl">
+            <img src="images/anhcat/marvella.png" alt="Marvella">
+        </div>
+    </div>
+    <div class="slider-controls" hidden>
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+
+</div>
+<div class="home-contact">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="home-contact__content">
+                Trải nghiệm dịch vụ
+                <br><strong>cùng Hoàng Hoan ngay</strong>
+            </p>
+        </div>
+        <div class="col-md-6">
+            <form class="home-contact__form" action="">
+                <p>Thông tin liên hệ</p>
+                <input type="email" placeholder="Email / Số điện thoại">
+                <button>Gửi</button>
+            </form>
+        </div>
+    </div>
+    <img class="image" src="~/images/anhcat/ghe.png" alt="liên hệ">
+</div>
+<script>
+    const track = document.querySelector('.slider-track');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
+    let currentIndex = 0; // Current index of the visible image
+    const images = document.querySelectorAll('.slider-track img');
+    const totalImages = images.length;
+    const imageWidth = images[0].clientWidth + 10; // Add margin between images
+    let autoPlayInterval; // Interval for auto-play
+
+    // Function to update the position of the slider
+    function updateSliderPosition() {
+        track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+    }
+
+    // Next Image Functionality
+    function nextImage() {
+        if (currentIndex < totalImages - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Loop back to start
+        }
+        updateSliderPosition();
+    }
+
+    // Previous Image Functionality
+    function prevImage() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalImages - 1; // Loop to the end
+        }
+        updateSliderPosition();
+    }
+
+    // Auto-Play Functionality
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextImage, 1000); // Change image every 3 seconds
+    }
+
+    // Stop Auto-Play on Hover
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+
+    // Add Event Listeners
+    nextButton.addEventListener('click', () => {
+        stopAutoPlay();
+        nextImage();
+        startAutoPlay(); // Restart auto-play after manual navigation
+    });
+
+    prevButton.addEventListener('click', () => {
+        stopAutoPlay();
+        prevImage();
+        startAutoPlay(); // Restart auto-play after manual navigation
+    });
+
+    track.addEventListener('mouseenter', stopAutoPlay); // Stop auto-play on hover
+    track.addEventListener('mouseleave', startAutoPlay); // Restart auto-play when mouse leaves
+
+    // Start Auto-Play on Page Load
+    startAutoPlay();
+
+</script>

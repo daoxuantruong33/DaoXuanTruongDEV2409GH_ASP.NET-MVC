@@ -1,0 +1,58 @@
+﻿@model IEnumerable<DevXuongMoc.Models.News>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/CustomerUser/Views/Shared/_Customer.cshtml";
+}
+
+<div class="box-news">
+    <div id="map-link-bar">
+        <ul>
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="/tin-tuc">Tin tức</a></li>
+        </ul>
+    </div>
+    <div class="box-news__content">
+        <div class="row">
+            <div class="col-md-7 content-left">
+                <a >
+                    <div class="thumbnail">
+                        <p class="content-left__title">Top 10 mẫu nội thất chung cư 1 phòng ngủ</p>
+                        <p>
+                            Những căn hộ chung cư mini có diện tích nhỏ, ngày càng trở nên ưa chuộng hơn trong cuộc sống
+                            hiện đại với những ai có khoản kinh phí “hạn hẹp”. Thiết kế nội thất chung cư một phòng ngủ
+                            chính là giải pháp tối ưu nhất mang lại một không gian sống hoàn hảo và hiện đại.
+                        </p><img src="~/images/news/05.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-5 content-right">
+                <div class="thumbnail">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <h4>bài viết mới</h4>
+                        </div>
+                    </div>
+                    @foreach (var item in Model)
+                    {
+                        <div class="row fix-height">
+                            <div class="col-md-5">
+                                <a asp-action ="Details" asp-route-id="@item.Id">
+                                    <img src="@item.Image" alt="@item.Title">
+                                </a>
+                            </div>
+                            <div class="col-md-7">
+                                <p class="content-right__title">
+                                    <a asp-action ="Details" asp-route-id="@item.Id">
+                                        @item.Title
+                                    </a>
+                                </p>
+                                <p><i class="fa-regular fa-clock"></i>&nbsp;@item.UpdatedDate</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

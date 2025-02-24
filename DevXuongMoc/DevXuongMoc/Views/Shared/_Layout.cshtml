@@ -1,49 +1,264 @@
-﻿<!DOCTYPE html>
+﻿﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - DevXuongMoc</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/DevXuongMoc.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/fonts.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app"> 
+    <link rel="apple-touch-icon" href="/logo192.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>Trang chủ | Nội thất Hoàng Hoan</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DevXuongMoc</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Product</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <div class="header">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+            <img class="logo" src="~/images/anhcat/logo.jpg" alt="logo" />
+        </a>
+        <nav class="navbar">
+            <a class="link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ </a>
+            <a class="link" asp-area="" asp-controller="Aboutus" asp-action="Index">Giới thiệu</a>
+            <a class="link" asp-area="" asp-controller="Product" asp-action="Index">Sản phẩm</a>
+            <a class="link" asp-area="" asp-controller="New" asp-action="Index">Tin tức</a>
+            <a class="link" asp-area="" asp-controller="Partner" asp-action="Index">Đối tác</a>
+            <a class="link" asp-area="" asp-controller="Contact" asp-action="Index">Liên hệ</a>
         </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+        <div class="group-icon">
+             <div class="icon icon-cart">
+                <a class="link" id="icon1" asp-area="" asp-controller="Carts" asp-action="Index">
+                    <i class="fi fi-bs-shopping-bag"></i>
+                </a>
+                <div class="box box-carts">
+                    <div class="box__empty">
+                        <p class="box__title">
+                            Giỏ hàng của bạn đang trống !
+                        </p>
+                        <a href="/san-pham">
+                            <div class="check__btn">
+                                Mua hàng ngay
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+
+            </div>
+             <div class="icon icon-wishlist">
+                <a id="icon2" href="/danh-sach-yeu-thich">
+                    <i class="fi fi-bs-heart"></i>
+                </a>
+                <div id="box2" class="box box-wishlist">
+                    <div class="box__empty">
+                        <p class="box__title">
+                            Danh sách yêu thích trống !
+                        </p>
+                        <a href="/san-pham">
+                            <div class="check__btn">
+                                Xem thêm sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+
+
+
+             <div class="icon">
+                <i class="fi fi-bs-search"></i>
+            </div>
+            <div id="box1" class="search-form">
+                <input id="search" type="text" class="search-box" required="" value="">
+                <label for="search">Bạn cần tìm sản phẩm gì?</label>
+                <a class="search-form__search" href="/tim-kiem?key=">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div id="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+
+
+
+            <div class="icon user-dropdown">
+                <a href="#" class="header-auth-text account">
+                    <i class="fa-solid fa-user" style="margin-bottom:0.3rem" id="userIcon"></i>
+                </a>
+                <ul class="dropdown-menu" style="background:none;">
+                    <li><a class="dropdown-item" asp-area="CustomerUser" asp-controller="Customers" asp-action="Create">Đăng ký</a></li>
+                    <li><a class="dropdown-item" asp-area="CustomerUser" asp-controller="Login" asp-action="Index">Đăng nhập</a></li>
+                </ul>
+            </div>
+
+
+
+
+                    <button id="scroll-top" class=""><i class="fa-solid fa-chevron-up"></i></button>
+
+
+
+        </div>
+    </div>
+    <div>
+        <main role="main" class="">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - DevXuongMoc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer>
+        <div class="allInfo">
+            <div class="info">
+                <h5>thông tin chung</h5>
+                <p>công ty tnhh hoàng hoan</p>
+                <ul class="list-footer">
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <a href="tel:0999.999.999">0999.999.999</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <a href="mailto:cskh@hoanghoan.vn">cskh@hoanghoan.vn</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>Số 1 Nguyễn Trãi, Thanh Xuân, Hà Nội</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <h5 style="margin-left:2rem">về chúng tôi</h5>
+                <ul class="list-footer">
+                    <li>
+                        <a class="link" asp-area="" asp-controller="Aboutus" asp-action="Index">
+                            Giới thiệu
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" asp-area="" asp-controller="Product" asp-action="Index">
+                            Sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" asp-area="" asp-controller="New" asp-action="Index">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" asp-area="" asp-controller="Partner" asp-action="Index">
+                            Đối tác
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" asp-area="" asp-controller="Contact" asp-action="Index">
+                            Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="info">
+                <h5>kết nối với chúng tôi</h5>
+                <div class="social">
+                    <a href="/" style="margin-right:1rem">
+                        <img src="../../images/anhcat/icon_fb_pro.jpg" alt="social images">
+                    </a>
+                    <a style="margin-right:1rem" href="/"><img src="../../images/anhcat/icon_zalo_pro.jpg" alt="social images"></a>
+                    <a href="/"><img src="../../images/anhcat/icon_email_pro.jpg" alt="social images"></a>
+                </div>
+                <img src="../../images/anhcat/chatluong.jpg" alt="chứng nhận">
+            </div>
         </div>
     </footer>
+
+
+    <!-- Modal Đăng ký -->
+
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            // Khi icon được click
+            $('.icon').on('click', function () {
+                $('. search-form').toggleClass('active');
+            });
+        });
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            // Hiển thị dropdown khi click
+            $('#userIcon').on('click', function (e) {
+                e.stopPropagation(); // Ngăn chặn sự kiện click lan ra ngoài
+                $('.user-dropdown .dropdown-menu').toggle(); // Hiển thị hoặc ẩn menu
+            });
+
+            // Ẩn dropdown khi click ra ngoài
+            $(document).on('click', function () {
+                $('.user-dropdown .dropdown-menu').hide(); // Ẩn menu khi click bên ngoài
+            });
+        });
+    </script>
+
+
+    
+    <script>
+    // Lấy phần tử nút scroll-to-top
+    const scrollTopButton = document.getElementById("scroll-top");
+
+    // Lắng nghe sự kiện cuộn trang
+    window.addEventListener("scroll", () => {
+        // Hiển thị nút khi người dùng cuộn xuống hơn 200px
+        if (window.scrollY > 200) {
+            scrollTopButton.classList.add("active");
+        } else {
+            scrollTopButton.classList.remove("active");
+        }
+    });
+
+    // Thêm sự kiện click vào nút
+    scrollTopButton.addEventListener("click", () => {
+        // Cuộn mượt lên đầu trang
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+</script>
+
+
+
+
+
 </body>
 </html>

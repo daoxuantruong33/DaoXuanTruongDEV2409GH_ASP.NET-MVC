@@ -1,0 +1,89 @@
+﻿@model DevXuongMoc.Areas.CustomerUser.Models.LoginUser
+@{
+    ViewData["Title"] = "Đăng nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var modelState in ViewData.ModelState.Values)
+            {
+                foreach (var error in modelState.Errors)
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            }
+        </ul>
+    </div>
+}
+<body style="background: url('https://haycafe.vn/wp-content/uploads/2022/03/Anh-meo-cute-doi-mu-tai-tho.jpg') no-repeat center center fixed; background-size: cover;">
+
+    <style>
+        /* Hiệu ứng nền mờ */
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Nút bấm đẹp hơn */
+        .btn-custom {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 0.75rem 2rem;
+            transition: background 0.3s;
+        }
+
+            .btn-custom:hover {
+                background: linear-gradient(to right, #00f2fe, #4facfe);
+            }
+
+        /* Placeholder màu nhẹ hơn */
+        .custom-input::placeholder {
+            color: #6c757d;
+        }
+    </style>
+
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="form-container col-md-6 col-lg-4">
+            <h2 class="text-center mb-4">Đăng nhập</h2>
+            <form asp-action="Index" method="post">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <input asp-for="Email" type="email" class="custom-input form-control form-control-lg"
+                           placeholder="Email" required />
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                    <input asp-for="Password" type="password" class="custom-input form-control form-control-lg"
+                           placeholder="Mật khẩu" required />
+                </div>
+
+                <!-- Forgot password -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <a asp-controller="ForgotPassword" asp-action="ForgotPassword" class="text-body text-decoration-none">Quên mật khẩu</a>
+                </div>
+
+                <!-- Submit button -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-custom btn-lg">Đăng nhập</button>
+                </div>
+
+                <!-- Register link -->
+                <p class="small fw-bold mt-3 text-center">
+                    Bạn chưa có tài khoản? <a asp-controller="Customers" asp-action="Create" class="link-danger">Đăng ký</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/adminlte.min.js"></script>
+</body>

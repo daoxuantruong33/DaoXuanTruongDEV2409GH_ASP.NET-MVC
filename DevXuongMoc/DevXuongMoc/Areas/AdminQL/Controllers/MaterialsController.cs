@@ -10,8 +10,7 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.AdminQL.Controllers
 {
-    [Area("AdminQL")]
-    public class MaterialsController : Controller
+    public class MaterialsController : BaseController
     {
         private readonly XuongMocContext _context;
 
@@ -51,13 +50,22 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 return NotFound();
             }
-
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", material);
+            }
             return View(material);
         }
 
         // GET: AdminQL/Materials/Create
         public IActionResult Create()
         {
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create");
+            }
             return View();
         }
 
@@ -70,9 +78,34 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
         {
             if (ModelState.IsValid)
             {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Any() && files[0].Length > 0)
+                {
+                    var file = files[0];
+                    var fileName = file.FileName;
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\materials", fileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        material.Icon = "/images/materials/" + fileName;
+                    }
+                }
                 _context.Add(material);
                 await _context.SaveChangesAsync();
+
+                // Return success response for AJAX
+                if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                {
+                    return Json(new { success = true, redirectUrl = Url.Action("Index") });
+                }
+
                 return RedirectToAction(nameof(Index));
+            }
+
+            // Return partial view for AJAX in case of validation errors
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create", material);
             }
             return View(material);
         }
@@ -89,6 +122,11 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             if (material == null)
             {
                 return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Edit", material);
             }
             return View(material);
         }
@@ -109,6 +147,18 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 try
                 {
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Any() && files[0].Length > 0)
+                    {
+                        var file = files[0];
+                        var fileName = file.FileName;
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\materials", fileName);
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                            material.Icon = "/images/materials/" + fileName;
+                        }
+                    }
                     _context.Update(material);
                     await _context.SaveChangesAsync();
                 }
@@ -142,11 +192,18 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 return NotFound();
             }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Delete", material);
+            }
 
             return View(material);
         }
 
-        // POST: AdminQL/Materials/Delete/5
+        // GET: AdminQL/AdminUsers/Delete/5
+
+        // POST: AdminQL/ProductExtensions/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

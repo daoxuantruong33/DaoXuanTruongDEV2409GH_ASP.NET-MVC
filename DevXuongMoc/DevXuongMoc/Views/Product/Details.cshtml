@@ -1,0 +1,164 @@
+﻿@using System.Web
+@model DevXuongMoc.Models.Product
+
+@{
+    ViewData["Title"] = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .product-container {
+            margin-top: 10rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+            .product-container img {
+                object-fit: cover;
+            }
+
+        .product-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-family: Gotham-Ultra;
+            position: relative;
+            display: inline-block;
+        }
+
+            .product-title:after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50%;
+                max-width: 10rem;
+                border-top: 0.35rem solid #bd945f;
+            }
+
+        .product-image {
+            width: 90%;
+            height: 300px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-description {
+            font-size: 1.2rem;
+            color: #5a5a5a;
+            line-height: 1.8;
+            margin-top: 10px;
+            font-family: Gotham-Medium;
+        }
+
+        .product-details {
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+            .product-details h4 {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #2c3e50;
+                margin-bottom: 1rem;
+            }
+
+            .product-details dl {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .product-details dt {
+                font-weight: bold;
+                color: #2c3e50;
+                width: 20%;
+            }
+
+            .product-details dd {
+                width: 80%;
+                margin: 0 0 1rem 0;
+            }
+
+        .product-actions {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+            .product-actions a {
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+                .product-actions a.btn-mua {
+                    background-color: #28a745;
+                    color: white;
+                }
+
+                    .product-actions a.btn-mua:hover {
+                        background-color: #218838;
+                    }
+
+                .product-actions a.btn-quayve {
+                    background-color: #17a2b8;
+                    color: white;
+                }
+
+                    .product-actions a.btn-quayve:hover {
+                        background-color: #138496;
+                    }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-details">
+            <h4>Chi tiết sản phẩm</h4>
+            <hr />
+            <dl>
+                <dt >@Html.DisplayNameFor(model => model.Title)</dt>
+                <dd style="text-transform: uppercase; font-size:1.5rem; font-family: Gotham-Ultra;">@Html.DisplayFor(model => model.Title)</dd>
+
+                <dt>@Html.DisplayNameFor(model => model.Description)</dt>
+                <dd>
+                    @Html.Raw(HttpUtility.HtmlDecode(Model.Description))
+                </dd>
+
+                <dt>@Html.DisplayNameFor(model => model.Image)</dt>
+                <dd>
+                    <img src="@Model.Image" alt="@Model.Title" width="300px" height="300px">
+                </dd>
+
+                <dt>@Html.DisplayNameFor(model => model.PriceOld)</dt>
+                <dd style="     color: #888888;    text-decoration: line-through;">@Html.DisplayFor(model => model.PriceOld)</dd>
+
+                <dt>@Html.DisplayNameFor(model => model.PriceNew)</dt>
+                <dd>@Html.DisplayFor(model => model.PriceNew)</dd>
+            </dl>
+        </div>
+
+        <!-- Hành động -->
+        <div class="product-actions">
+            <a asp-area="CustomerUser" asp-controller="Carts" asp-action="Orders" asp-route-id="@Model?.Id" class="btn-mua" style="color:#fff;background-color:#bd945f">
+                Mua ngay
+            </a>
+            <a asp-action="Index" class="btn-quayve" style="background-color:#363636">Quay lại</a>
+        </div>
+    </div>
+</body>
+</html>

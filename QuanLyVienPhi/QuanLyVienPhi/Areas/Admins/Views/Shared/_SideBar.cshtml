@@ -1,0 +1,144 @@
+﻿@using Microsoft.AspNetCore.Http;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<aside class="main-sidebar" style="background-color: #ffffff; border-right: 1px solid #dddddd;">
+    <!-- Brand Logo -->
+    <a asp-area="" asp-controller="Home" asp-action="Index" >
+        <img src="~/dist/img/logoo.png" alt="Logo" class="brand-image img-circle" style="width:200px; height:60px; margin-top:1rem; margin-left:1rem">
+
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-3">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" style="gap: 10px;">
+                <!-- Trang Chủ -->
+                <li class="nav-item">
+                    <a href="~/admins" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-house" style="color: #333333;"></i>&ensp;
+                        <p>Trang Chủ</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admins/Admins" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-user" style="color: #333333;"></i>&ensp;
+                        <p>Tài khoản Admin</p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="/admins/Benhnhans" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-wheelchair" style="color: #333333;"></i>&ensp;
+                        <p>Danh sách bệnh nhân</p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="/admins/Bacsis" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-user-doctor" style="color: #333333;"></i>&ensp;
+                        <p>Danh sách Bác Sĩ</p>
+                    </a>
+                </li>
+                
+
+
+                <li class="nav-item">
+                    <a href="/admins/Ytums" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-user-nurse" style="color: #333333;"></i>&ensp;
+                        <p>Danh sách y tá</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admins/Thuocs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-syringe" style="color: #333333;"></i>&ensp;
+                        <p>Danh sách thuốc</p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="/admins/Khoas" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-house-medical" style="color: #333333;"></i>&ensp;
+                        <p>Danh sách các khoa</p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="/admins/Phongs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-kit-medical" style="color: #333333;"></i>&ensp;
+                        <p>Danh sách phòng</p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="/admins/ThuNgans" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                        <p>Danh sách thu ngân</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="/admins/HoaDons" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                        <p>Hóa đơn</p>
+                    </a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="/admins/ChiTietPhongs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                        <p>Chi tiết phòng</p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a href="/admins/ChiTietThuocs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                        <p>Chi tiết thuốc</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- User Panel -->
+        <div class="user-panel mt-4 d-flex align-items-center">
+            <div class="image">
+                <a asp-action="Logout" asp-controller="Login">
+                    <i class="fa-solid fa-arrow-right-from-bracket" style="color:black; margin-left:1rem"></i>
+                </a>
+            </div>
+            <div class="info ms-2">
+                @{
+                    if (HttpContextAccessor.HttpContext.Session.GetString("AdminLogin") != null)
+                    {
+                        <a asp-action="Logout" asp-controller="Login" class="d-block" style="color: #333333; font-weight: bold;">Đăng Xuất</a>
+                    }
+                    else
+                    {
+                        <a href="~/admins/login" class="d-block" style="color: #333333; font-weight: bold;">Đăng Nhập</a>
+                    }
+                }
+            </div>
+        </div>
+
+    </div>
+    <!-- /.sidebar -->
+</aside>
+
+<style>
+    .nav-link:hover {
+        background-color: #2c4964;
+        !important;
+        color: #ffffff !important;
+    }
+
+        .nav-link:hover i {
+            color: #ffffff !important;
+        }
+</style>

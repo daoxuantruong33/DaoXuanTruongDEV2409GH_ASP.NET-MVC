@@ -1,0 +1,76 @@
+﻿@model DevXuongMoc.Models.Customer
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5" style="padding-bottom:2rem; max-width: 600px;">
+    <div class="card shadow-sm" style="margin-top: 10rem; border-radius: 15px;">
+        <div class="card-header text-white text-center" style="border-radius: 15px 15px 0 0; background-color:#bd945f">
+            <h4 class="card-title mb-0">ĐĂNG KÝ</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <dl class="row">
+                    <dt class="col-sm-4 font-weight-bold text-secondary">
+                        <label asp-for="Name"></label>
+                    </dt>
+                    <dd class="col-sm-8">
+                        <input asp-for="Name" class="form-control" placeholder="Nhập tên đầy đủ" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </dd>
+
+                    <dt class="col-sm-4 font-weight-bold text-secondary">
+                        <label asp-for="Username"></label>
+                    </dt>
+                    <dd class="col-sm-8">
+                        <input asp-for="Username" class="form-control" placeholder="Chọn tên người dùng" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </dd>
+
+                    <dt class="col-sm-4 font-weight-bold text-secondary">
+                        <label asp-for="Password"></label>
+                    </dt>
+                    <dd class="col-sm-8">
+                        <input asp-for="Password" type="password" class="form-control" placeholder="Nhập mật khẩu an toàn" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </dd>
+
+                    <dt class="col-sm-4 font-weight-bold text-secondary">
+                        <label asp-for="Email"></label>
+                    </dt>
+                    <dd class="col-sm-8">
+                        <input asp-for="Email" type="email" class="form-control" placeholder="Nhập email của bạn" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </dd>
+
+                    <dt class="col-sm-4 font-weight-bold text-secondary">
+                        <label asp-for="Phone"></label>
+                    </dt>
+                    <dd class="col-sm-8">
+                        <input asp-for="Phone" type="tel" class="form-control" placeholder="Nhập số điện thoại" />
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </dd>
+
+                    <dt class="col-sm-4 font-weight-bold text-secondary">
+                        <label asp-for="Address"></label>
+                    </dt>
+                    <dd class="col-sm-8">
+                        <textarea asp-for="Address" class="form-control" rows="3" placeholder="Nhập địa chỉ"></textarea>
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </dd>
+                    
+                </dl>
+
+                <div class="text-center">
+                    <button type="submit" style="height: 40px; width: 80px; font-size: 18px; background-color:#bd945f; color:white" class="btn btn-warning me-2">Tạo</button>
+                    <a style="height: 40px; width: 100px; font-size: 18px; background-color:#363636; color:white" class="btn btn-info" onclick="window.history.back();">Trở lại</a>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

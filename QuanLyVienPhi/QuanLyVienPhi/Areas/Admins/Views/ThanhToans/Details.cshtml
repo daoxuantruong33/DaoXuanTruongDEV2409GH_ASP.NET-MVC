@@ -1,0 +1,49 @@
+﻿@model QuanLyVienPhi.Models.ThanhToan
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ThanhToan</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HinhThuc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HinhThuc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NgayThanhToan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NgayThanhToan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SoTien)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SoTien)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HoaDon)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HoaDon.HoaDonId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ThuNgan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ThuNgan.ThuNganId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ThanhToanId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

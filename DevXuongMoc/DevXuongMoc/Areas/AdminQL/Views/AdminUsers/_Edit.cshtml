@@ -1,0 +1,106 @@
+﻿@model DevXuongMoc.Models.AdminUser
+
+@{
+    ViewData["Title"] = "Chỉnh sửa tài khoản quản trị";
+}
+
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                <form asp-action="Edit" enctype="multipart/form-data" style="font-size:13px">
+                    <h1 class="display-8 text-center mt-4" style="font-size:28px; margin-bottom:2rem">Chỉnh Sửa</h1>
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Account" class="form-label fw-bold">Tài khoản</label>
+                                <input asp-for="Account" class="form-control" placeholder="Nhập tên tài khoản" />
+                                <span asp-validation-for="Account" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Password" class="form-label fw-bold">Mật khẩu</label>
+                                <input asp-for="Password" class="form-control" placeholder="Nhập mật khẩu" />
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Name" class="form-label fw-bold">Họ và tên</label>
+                                <input asp-for="Name" class="form-control" placeholder="Nhập họ và tên" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Phone" class="form-label fw-bold">Số điện thoại</label>
+                                <input asp-for="Phone" type="tel" class="form-control" placeholder="Nhập số điện thoại" />
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Email" class="form-label fw-bold">Email</label>
+                                <input asp-for="Email" type="email" class="form-control" placeholder="Nhập email" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Avatar" class="form-label fw-bold">Ảnh đại diện</label>
+                                <input asp-for="Avatar"  class="form-control" placeholder="Nhập URL ảnh đại diện" />
+                                <span asp-validation-for="Avatar" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="IdPhongBan" class="form-label fw-bold">ID Phòng ban</label>
+                                <input asp-for="IdPhongBan" class="form-control" placeholder="Nhập ID phòng ban" />
+                                <span asp-validation-for="IdPhongBan" class="text-danger"></span>
+                            </div>
+
+                           @*  <div class="col-md-6 mb-3">
+                                <label asp-for="NgayCapNhat" class="form-label fw-bold">Ngày cập nhật</label>
+                                <input asp-for="NgayCapNhat" type="date" class="form-control" />
+                                <span asp-validation-for="NgayCapNhat" class="text-danger"></span>
+                            </div> *@
+                        </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-6 fw-bold">Trạng thái:</label>
+                        <div class="col-sm-6">
+                            @if (Model.TrangThai == 0)
+                            {
+                                <span class="text-success">Hoạt động</span>
+                            }
+                            else
+                            {
+                                <span class="text-danger">Không hoạt động</span>
+                            }
+                        </div>
+                    </div>
+                        <div class="mb-3">
+                            <label asp-for="IsAdmin" class="form-label fw-bold">Quyền quản trị</label>
+                            <select asp-for="IsAdmin" class="form-select">
+                                <option value="true">Có</option>
+                                <option value="false">Không</option>
+                            </select>
+                            <span asp-validation-for="IsAdmin" class="text-danger"></span>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-info btn-lg px-4 mt-3">Lưu</button>
+                            <a asp-action="Index" class="btn btn-secondary btn-lg px-4 mt-3">Quay lại</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

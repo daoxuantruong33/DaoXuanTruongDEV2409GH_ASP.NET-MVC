@@ -19,31 +19,31 @@
                     <div class="row">
                         <!-- Cột bên trái -->
                         <div class="col-md-6">
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="Title" class="form-label">Tiêu Đề</label>
                                 <input asp-for="Title" class="form-control" />
                                 <span asp-validation-for="Title" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="Icon" class="form-label">Biểu Tượng</label>
                                 <input asp-for="Icon" type="file" class="form-control" />
                                 <span asp-validation-for="Icon" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="MateTitle" class="form-label">Tiêu Đề Meta</label>
                                 <input asp-for="MateTitle" class="form-control" />
                                 <span asp-validation-for="MateTitle" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="Slug" class="form-label">Slug</label>
                                 <input asp-for="Slug" class="form-control" />
                                 <span asp-validation-for="Slug" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="Orders" class="form-label">Sắp Xếp</label>
                                 <input asp-for="Orders" class="form-control" />
                                 <span asp-validation-for="Orders" class="text-danger"></span>
@@ -52,37 +52,37 @@
 
                         <!-- Cột bên phải -->
                         <div class="col-md-6">
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="MetaKeyword" class="form-label">Từ Khóa Meta</label>
                                 <input asp-for="MetaKeyword" class="form-control" />
                                 <span asp-validation-for="MetaKeyword" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="MetaDescription" class="form-label">Mô Tả Meta</label>
                                 <input asp-for="MetaDescription" class="form-control" />
                                 <span asp-validation-for="MetaDescription" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="Parentid" class="form-label">Danh Mục Cha</label>
                                 <input asp-for="Parentid" class="form-control" />
                                 <span asp-validation-for="Parentid" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="AdminCreated" class="form-label">Người Tạo</label>
                                 <input asp-for="AdminCreated" class="form-control" />
                                 <span asp-validation-for="AdminCreated" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="AdminUpdated" class="form-label">Người Cập Nhật</label>
                                 <input asp-for="AdminUpdated" class="form-control" />
                                 <span asp-validation-for="AdminUpdated" class="text-danger"></span>
                             </div>
 
-                            <div class="form-group mb-3">
+                            <div class="col-md-6 mb-3">
                                 <label asp-for="Notes" class="form-label">Ghi Chú</label>
                                 <input asp-for="Notes" class="form-control" />
                                 <span asp-validation-for="Notes" class="text-danger"></span>
@@ -91,7 +91,7 @@
                     </div>
 
                     <!-- Nút Gửi -->
-                    <div class="form-group mb-3 text-center">
+                    <div class="col-md-6 mb-3 text-center">
                         <button type="submit" class="btn btn-warning" style="width:154.11px">Tạo Người Dùng</button>
                         <a asp-action="Index" class="btn btn-secondary">Quay lại Danh Sách</a>
                     </div>

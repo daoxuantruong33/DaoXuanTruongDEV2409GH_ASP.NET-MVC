@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\doantotnghiep\\doantotnghiep\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|solutionrelative:doantotnghiep\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\doantotnghiep\\doantotnghiep\\views\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|solutionrelative:doantotnghiep\\views\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\doantotnghiep\\doantotnghiep\\views\\.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|solutionrelative:doantotnghiep\\views\\.gitattributes||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\doantotnghiep\\doantotnghiep\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|solutionrelative:doantotnghiep\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\doantotnghiep\\doantotnghiep\\views\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CE50A842-253B-410C-98DC-4332132C1C16}|DoAnTotNghiep\\DoAnTotNghiep.csproj|solutionrelative:doantotnghiep\\views\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitattributes",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\.gitattributes",
+              "RelativeDocumentMoniker": "DoAnTotNghiep\\Views\\.gitattributes",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\.gitattributes",
+              "RelativeToolTip": "DoAnTotNghiep\\Views\\.gitattributes",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-11T11:33:24.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnTotNghiep\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "DoAnTotNghiep\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAO0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T11:31:07.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "contact.html",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\contact.html",
+              "RelativeDocumentMoniker": "DoAnTotNghiep\\Views\\contact.html",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\contact.html",
+              "RelativeToolTip": "DoAnTotNghiep\\Views\\contact.html",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-11T11:29:28.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "about.html",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\about.html",
+              "RelativeDocumentMoniker": "DoAnTotNghiep\\Views\\about.html",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\about.html",
+              "RelativeToolTip": "DoAnTotNghiep\\Views\\about.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAO8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-11T11:29:06.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DoAnTotNghiep\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "DoAnTotNghiep\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-11T11:26:13.919Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

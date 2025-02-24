@@ -10,8 +10,7 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.AdminQL.Controllers
 {
-    [Area("AdminQL")]
-    public class ContactsController : Controller
+    public class ContactsController : BaseController
     {
         private readonly XuongMocContext _context;
 
@@ -52,12 +51,25 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
                 return NotFound();
             }
 
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", contact);
+            }
+
             return View(contact);
         }
 
         // GET: AdminQL/Contacts/Create
         public IActionResult Create()
         {
+
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create");
+            }
+
             return View();
         }
 
@@ -89,6 +101,11 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             if (contact == null)
             {
                 return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Edit", contact);
             }
             return View(contact);
         }
@@ -129,25 +146,41 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
         }
 
         // GET: AdminQL/Contacts/Delete/5
-        // GET: AdminQL/AdminUsers/Delete/5
-
-        // POST: AdminQL/AdminUsers/Delete/5
-        [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int? id)
         {
-            var user = _context.Contacts.FirstOrDefault(u => u.Id == id);
-            if (user == null)
+            if (id == null)
             {
-                // Nếu không tìm thấy người dùng, redirect đến danh sách hoặc hiển thị lỗi
                 return NotFound();
             }
 
-            // Tiến hành xóa người dùng
-            _context.Contacts.Remove(user);
-            _context.SaveChanges();
+            var contact = await _context.Contacts
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (contact == null)
+            {
+                return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Delete", contact);
+            }
 
-            // Redirect về trang danh sách người dùng hoặc trang khác sau khi xóa thành công
-            return RedirectToAction(nameof(Index));  // Giả sử bạn sẽ chuyển hướng về trang danh sách người dùng
+            return View(contact);
+        }
+        // GET: AdminQL/AdminUsers/Delete/5
+        // POST: AdminQL/ProductExtensions/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var contact = await _context.Contacts.FindAsync(id);
+            if (contact != null)
+            {
+                _context.Contacts.Remove(contact);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         private bool ContactExists(int id)

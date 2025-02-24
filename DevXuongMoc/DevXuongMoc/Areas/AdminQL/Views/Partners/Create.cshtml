@@ -13,32 +13,32 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="col-md-6 mb-3">
                 <label asp-for="Title" class="control-label"></label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-6 mb-3">
                 <label asp-for="Url" class="control-label"></label>
                 <input asp-for="Url" class="form-control" />
                 <span asp-validation-for="Url" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-6 mb-3">
                 <label asp-for="AdminCreated" class="control-label"></label>
                 <input asp-for="AdminCreated" class="form-control" />
                 <span asp-validation-for="AdminCreated" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-6 mb-3">
                 <label asp-for="AdminUpdated" class="control-label"></label>
                 <input asp-for="AdminUpdated" class="form-control" />
                 <span asp-validation-for="AdminUpdated" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-6 mb-3">
                 <label asp-for="Content" class="control-label"></label>
                 <input asp-for="Content" class="form-control" />
                 <span asp-validation-for="Content" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="col-md-6 mb-3">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>

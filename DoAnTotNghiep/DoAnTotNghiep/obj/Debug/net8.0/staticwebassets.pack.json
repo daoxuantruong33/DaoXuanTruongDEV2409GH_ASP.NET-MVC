@@ -1,0 +1,369 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DoAnTotNghiep.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DoAnTotNghiep.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\css\\style.scss",
+      "PackagePath": "staticwebassets\\css\\style.scss"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\about-img.jpg",
+      "PackagePath": "staticwebassets\\images\\about-img.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\client.jpg",
+      "PackagePath": "staticwebassets\\images\\client.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\d1.jpg",
+      "PackagePath": "staticwebassets\\images\\d1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\d2.jpg",
+      "PackagePath": "staticwebassets\\images\\d2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\d3.jpg",
+      "PackagePath": "staticwebassets\\images\\d3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\hero-bg.png",
+      "PackagePath": "staticwebassets\\images\\hero-bg.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\s1.png",
+      "PackagePath": "staticwebassets\\images\\s1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\s2.png",
+      "PackagePath": "staticwebassets\\images\\s2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\s3.png",
+      "PackagePath": "staticwebassets\\images\\s3.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\s4.png",
+      "PackagePath": "staticwebassets\\images\\s4.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\t1.jpg",
+      "PackagePath": "staticwebassets\\images\\t1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\t2.jpg",
+      "PackagePath": "staticwebassets\\images\\t2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\t3.jpg",
+      "PackagePath": "staticwebassets\\images\\t3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\images\\t4.jpg",
+      "PackagePath": "staticwebassets\\images\\t4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\js\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\DoAnTotNghiep\\DoAnTotNghiep\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DoAnTotNghiep.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DoAnTotNghiep.props",
+      "PackagePath": "build\\DoAnTotNghiep.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DoAnTotNghiep.props",
+      "PackagePath": "buildMultiTargeting\\DoAnTotNghiep.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DoAnTotNghiep.props",
+      "PackagePath": "buildTransitive\\DoAnTotNghiep.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

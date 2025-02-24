@@ -2,9 +2,9 @@
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="~/adminql" class="brand-link d-flex align-items-center">
+    <a asp-area="" asp-controller="Home" asp-action="Index" class="brand-link d-flex align-items-center">
         <img src="~/dist/img/logo2.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-bold ms-2" style="font-size: 1.5rem; color:white; text-transform: uppercase; letter-spacing: 0.1rem;">
+        <span class="brand-text font-weight-bold ms-2" style=" color:white; text-transform: uppercase; letter-spacing: 0.1rem;">
             XUONG MOC
         </span>
     </a>
@@ -41,15 +41,15 @@
                         </p>
                     </a>
                 </li>
-                @* <li class="nav-item">
-                    <a href="/adminql/Banners" class="nav-link">
+                @*  <li class="nav-item">
+                    <a href="/adminql/adminlogs" class="nav-link">
                         <i class="fa-solid fa-user-group"></i>&ensp;
                         <p>
                             Quản lý banner
                         </p>
                     </a>
 
-                </li> *@
+                </li>  *@
                 <li class="nav-item">
                     <a href="/adminql/Contacts" class="nav-link">
                         <i class="fa-solid fa-paw"></i>&ensp;

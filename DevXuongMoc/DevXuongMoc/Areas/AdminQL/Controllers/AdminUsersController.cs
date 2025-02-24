@@ -10,8 +10,8 @@ using X.PagedList;
 
 namespace DevXuongMoc.Areas.AdminQL.Controllers
 {
-    [Area("AdminQL")]
-    public class AdminUsersController : Controller
+
+    public class AdminUsersController : BaseController
     {
         private readonly XuongMocContext _context;
 
@@ -38,6 +38,7 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
         }
 
         // GET: AdminQL/AdminUsers/Details/5
+        // GET: AdminQL/Admins/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -45,19 +46,32 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
                 return NotFound();
             }
 
-            var adminUser = await _context.AdminUsers
+            var admin = await _context.AdminUsers
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (adminUser == null)
+            if (admin == null)
             {
                 return NotFound();
             }
 
-            return View(adminUser);
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", admin);
+            }
+
+            return View(admin);
         }
 
-        // GET: AdminQL/AdminUsers/Create
+        // GET: AdminQL/Admins/Create
+        // GET: AdminQL/Admins/Create
         public IActionResult Create()
         {
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create");
+            }
+
             return View();
         }
 
@@ -70,12 +84,39 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
         {
             if (ModelState.IsValid)
             {
+                var files = HttpContext.Request.Form.Files;
+                if (files.Any() && files[0].Length > 0)
+                {
+                    var file = files[0];
+                    var fileName = file.FileName;
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\adminUsers", fileName);
+                    using (var stream = new FileStream(path, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                        adminUser.Avatar = "/images/adminUsers/" + fileName;
+                    }
+                }
                 _context.Add(adminUser);
                 await _context.SaveChangesAsync();
+
+                // Return success response for AJAX
+                if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                {
+                    return Json(new { success = true, redirectUrl = Url.Action("Index") });
+                }
+
                 return RedirectToAction(nameof(Index));
             }
+
+            // Return partial view for AJAX in case of validation errors
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Create", adminUser);
+            }
+
             return View(adminUser);
         }
+
 
         // GET: AdminQL/AdminUsers/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -89,6 +130,11 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             if (adminUser == null)
             {
                 return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Edit", adminUser);
             }
             return View(adminUser);
         }
@@ -109,6 +155,18 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             {
                 try
                 {
+                    var files = HttpContext.Request.Form.Files;
+                    if (files.Any() && files[0].Length > 0)
+                    {
+                        var file = files[0];
+                        var fileName = file.FileName;
+                        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\adminUsers", fileName);
+                        using (var stream = new FileStream(path, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                            adminUser.Avatar = "/images/adminUsers/" + fileName;
+                        }
+                    }
                     _context.Update(adminUser);
                     await _context.SaveChangesAsync();
                 }
@@ -128,25 +186,44 @@ namespace DevXuongMoc.Areas.AdminQL.Controllers
             return View(adminUser);
         }
 
-        // GET: AdminQL/AdminUsers/Delete/5
-
-        // POST: AdminQL/AdminUsers/Delete/5
-        [HttpGet]
-        public IActionResult Delete(int id)
+        // GET: AdminQL/Materials/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
-            var user = _context.AdminUsers.FirstOrDefault(u => u.Id == id);
-            if (user == null)
+            if (id == null)
             {
-                // Nếu không tìm thấy người dùng, redirect đến danh sách hoặc hiển thị lỗi
                 return NotFound();
             }
 
-            // Tiến hành xóa người dùng
-            _context.AdminUsers.Remove(user);
-            _context.SaveChanges();
+            var adminUser = await _context.AdminUsers
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (adminUser == null)
+            {
+                return NotFound();
+            }
+            // Return partial view for AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Delete", adminUser);
+            }
 
-            // Redirect về trang danh sách người dùng hoặc trang khác sau khi xóa thành công
-            return RedirectToAction(nameof(Index));  // Giả sử bạn sẽ chuyển hướng về trang danh sách người dùng
+            return View(adminUser);
+        }
+
+        // GET: AdminQL/AdminUsers/Delete/5
+
+        // POST: AdminQL/ProductExtensions/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var adminUser = await _context.AdminUsers.FindAsync(id);
+            if (adminUser != null)
+            {
+                _context.AdminUsers.Remove(adminUser);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         private bool AdminUserExists(int id)

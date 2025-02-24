@@ -9,8 +9,7 @@ using DevXuongMoc.Models;
 
 namespace DevXuongMoc.Areas.AdminQL.Controllers
 {
-    [Area("AdminQL")]
-    public class ProductExtensionsController : Controller
+    public class ProductExtensionsController : BaseController
     {
         private readonly XuongMocContext _context;
 

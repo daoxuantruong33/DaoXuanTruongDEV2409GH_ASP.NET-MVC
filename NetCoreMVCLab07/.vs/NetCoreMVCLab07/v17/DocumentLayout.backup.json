@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D80EC36F-6D9C-43CD-97F8-CBCAF83C1A87}|NetCoreMVCLab07\\NetCoreMVCLab07.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab07\\netcoremvclab07\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D80EC36F-6D9C-43CD-97F8-CBCAF83C1A87}|NetCoreMVCLab07\\NetCoreMVCLab07.csproj|solutionrelative:netcoremvclab07\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D80EC36F-6D9C-43CD-97F8-CBCAF83C1A87}|NetCoreMVCLab07\\NetCoreMVCLab07.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\netcoremvclab07\\netcoremvclab07\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D80EC36F-6D9C-43CD-97F8-CBCAF83C1A87}|NetCoreMVCLab07\\NetCoreMVCLab07.csproj|solutionrelative:netcoremvclab07\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "RelativeDocumentMoniker": "NetCoreMVCLab07\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "RelativeToolTip": "NetCoreMVCLab07\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T07:10:51.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "NetCoreMVCLab07\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "NetCoreMVCLab07\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwFoAAAANAAAAAAAAAA==",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\NetCoreMVCLab07\\NetCoreMVCLab07\\Areas\\Admin\\Controllers\\CategoriesController.cs*",
+              "RelativeToolTip": "NetCoreMVCLab07\\Areas\\Admin\\Controllers\\CategoriesController.cs*",
+              "ViewState": "AgIAALIAAAAAAAAAAADwv4kAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T06:37:47.488Z",
+              "WhenOpened": "2024-12-12T15:21:10.161Z",
               "EditorCaption": ""
             }
           ]

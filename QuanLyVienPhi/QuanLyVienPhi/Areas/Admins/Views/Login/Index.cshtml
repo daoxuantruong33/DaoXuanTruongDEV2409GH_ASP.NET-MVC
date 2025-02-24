@@ -1,0 +1,134 @@
+﻿@model QuanLyVienPhi.Areas.Admins.Models.Login
+@{
+    Layout = null;
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var modelState in ViewData.ModelState.Values)
+            {
+                foreach (var error in modelState.Errors)
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            }
+        </ul>
+    </div>
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Login</title>
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+
+    <style>
+        body {
+            background: url('https://haycafe.vn/wp-content/uploads/2022/03/Anh-meo-cute-doi-mu-tai-tho.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+        }
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            margin: auto;
+            margin-top: 5rem;
+            width: 400px;
+        }
+
+        .btn-custom {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            border: none;
+            color: #fff;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 0.75rem 2rem;
+            transition: background 0.3s;
+        }
+
+            .btn-custom:hover {
+                background: linear-gradient(to right, #00f2fe, #4facfe);
+            }
+
+        .custom-input::placeholder {
+            color: #6c757d;
+        }
+
+        .custom-input {
+            border-radius: 10px;
+            height: 50px;
+            margin-bottom: 20px;
+            border: 1px solid #dfe6e9;
+            font-size: 16px;
+            padding: 10px 15px;
+        }
+
+            .custom-input:focus {
+                border-color: #0984e3;
+                box-shadow: 0 0 8px rgba(9, 132, 227, 0.5);
+            }
+
+        .text-body {
+            color: #0984e3;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+            .text-body:hover {
+                text-decoration: underline;
+            }
+
+        .link-danger {
+            color: #e74c3c;
+        }
+
+            .link-danger:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="form-container">
+            <h2 class="text-center mb-4" style="color:black">Đăng nhập</h2>
+            <form asp-action="Index" method="post">
+                <!-- Email Input -->
+                <input asp-for="Email" type="email" class="custom-input form-control" placeholder="Email" required />
+
+                <!-- Password Input -->
+                <input asp-for="Password" type="password" class="custom-input form-control" placeholder="Mật khẩu" required />
+
+                <!-- Forgot Password -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="#" class="text-body">Quên mật khẩu?</a>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-custom">Đăng nhập</button>
+                </div>
+
+              
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+</body>
+</html>
