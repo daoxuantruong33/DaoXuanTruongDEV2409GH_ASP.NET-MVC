@@ -25,9 +25,16 @@
             </div>
             <div class="form-group">
                 <label asp-for="GioiTinh" class="control-label"></label>
-                <input asp-for="GioiTinh" class="form-control" />
+                <select asp-for="GioiTinh" class="form-control" asp-items="@(new List<SelectListItem>
+    {
+        new SelectListItem { Text = "Nam", Value = "Nam" },
+        new SelectListItem { Text = "Nữ", Value = "Nữ" },
+        new SelectListItem { Text = "Khác", Value = "Khác" }
+    })">
+                </select>
                 <span asp-validation-for="GioiTinh" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="DiaChi" class="control-label"></label>
                 <input asp-for="DiaChi" class="form-control" />
@@ -66,6 +73,13 @@
                 <label asp-for="PhongId" class="control-label"></label>
                 <select asp-for="PhongId" class ="form-control" asp-items="ViewBag.PhongId"></select>
             </div>
+            <div class="form-group">
+                <label asp-for="ThuNganId" class="control-label"></label>
+                <select asp-for="ThuNganId" class="form-control" asp-items="ViewBag.ThuNganId">
+                    <option value="">-- Chọn Thu Ngân --</option>
+                </select>
+            </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

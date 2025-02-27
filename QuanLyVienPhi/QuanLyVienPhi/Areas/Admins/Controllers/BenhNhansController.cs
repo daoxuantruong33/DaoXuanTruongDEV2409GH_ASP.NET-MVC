@@ -34,23 +34,27 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         {
             GetListBank();
             var quanLyVienPhiContext = _context.BenhNhans
-                .Include(b => b.BacSi)        // Bao gồm thông tin bác sĩ
-                .Include(b => b.Khoa)         // Bao gồm thông tin khoa
-                .Include(b => b.Phong)        // Bao gồm thông tin phòng
-                .Include(b => b.ChiTietPhongs) // Bao gồm thông tin ChiTietPhong
-                .Include(b => b.ChiTietThuocs); // Bao gồm thông tin ChiTietThuoc
+                .Include(b => b.BacSi)
+                .Include(b => b.Khoa)
+                .Include(b => b.Phong)
+                .Include(b => b.ChiTietPhongs)
+                .Include(b => b.ChiTietThuocs);
 
             var benhNhans = await quanLyVienPhiContext.ToListAsync();
 
             // Cập nhật lại Tiền Phòng và Tiền Thuốc
             foreach (var benhNhan in benhNhans)
             {
-                benhNhan.TienPhong = benhNhan.ChiTietPhongs.Sum(cp => cp.TienPhong); // Giả sử ChiTietPhong có trường TienPhong
-                benhNhan.TienThuoc = benhNhan.ChiTietThuocs.Sum(ct => ct.TienThuoc); // Giả sử ChiTietThuoc có trường TienThuoc
+                // Tính tổng tiền phòng
+                benhNhan.TienPhong = benhNhan.ChiTietPhongs.Sum(cp => cp.TienPhong);
+
+                // Tính tổng tiền thuốc gộp lại từ tất cả các loại thuốc
+                benhNhan.TienThuoc = benhNhan.ChiTietThuocs.Sum(ct => ct.TienThuoc);
             }
 
             return View(benhNhans);
         }
+
 
 
 
@@ -78,10 +82,12 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // GET: Admins/BenhNhans/Create
         public IActionResult Create()
         {
-            ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "BacSiId");
-            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId");
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "PhongId");
-            ViewData["YtaId"] = new SelectList(_context.Yta, "YtaId", "YtaId");
+            ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "HoTen");
+            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa");
+            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong");
+            ViewData["YtaId"] = new SelectList(_context.Yta, "YtaId", "HoTen");
+            ViewData["ThuNganId"] = new SelectList(_context.ThuNgans, "ThuNganId", "HoTen");
+
             return View();
         }
 
@@ -90,7 +96,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BenhNhanId,HoTen,NgaySinh,GioiTinh,DiaChi,DienThoai,Cmnd,NgayNhapVien,NgayRaVien,BacSiId,YtaId,KhoaId,PhongId")] BenhNhan benhNhan)
+        public async Task<IActionResult> Create([Bind("BenhNhanId,HoTen,NgaySinh,GioiTinh,DiaChi,DienThoai,Cmnd,NgayNhapVien,NgayRaVien,BacSiId,YtaId,KhoaId,PhongId,ThuNganId")] BenhNhan benhNhan)
         {
             if (ModelState.IsValid)
             {
@@ -101,6 +107,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "BacSiId", benhNhan.BacSiId);
             ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId", benhNhan.KhoaId);
             ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "PhongId", benhNhan.PhongId);
+            ViewData["ThuNganId"] = new SelectList(_context.ThuNgans, "ThuNganId", "HoTen", benhNhan.ThuNganId);
+
             return View(benhNhan);
         }
 
@@ -210,6 +218,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 .Include(b => b.BacSi)
                 .Include(b => b.Khoa)
                 .Include(b => b.Phong)
+                .Include(b => b.ThuNgan)
+
                 .Include(b => b.ChiTietPhongs) // Bao gồm thông tin ChiTietPhong
                 .Include(b => b.ChiTietThuocs) // Bao gồm thông tin ChiTietThuoc
                 .FirstOrDefault(b => b.BenhNhanId == id);
@@ -256,7 +266,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             var apiRequest = new ApiRequest();
             apiRequest.acqId = Convert.ToInt32("970423");
             //MessageBox.Show(apiRequest.acqId.ToString());
-            apiRequest.accountNo = long.Parse("06095317801");
+            apiRequest.accountNo = ("06095317801");
             apiRequest.accountName = "Dao Xuan Truong";
            var amount =  _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id).TienThuoc;
             apiRequest.amount = Convert.ToInt32(_context.ChiTietPhongs.FirstOrDefault(x => x.BenhNhanId == id).TienPhong + _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id).TienThuoc);//+ Convert.ToInt32(_context.BenhNhans.FirstOrDefault(x => x.BenhNhanId == id).TienThuoc);

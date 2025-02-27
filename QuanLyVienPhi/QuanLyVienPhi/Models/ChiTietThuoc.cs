@@ -15,7 +15,7 @@ public partial class ChiTietThuoc
 
     public decimal? TienThuoc { get; set; }
 
-    public virtual BenhNhan BenhNhan { get; set; } = null!;
+    public virtual BenhNhan? BenhNhan { get; set; } = null!;
 
-    public virtual Thuoc Thuoc { get; set; } = null!;
+    public virtual Thuoc? Thuoc { get; set; } = null!;
 }

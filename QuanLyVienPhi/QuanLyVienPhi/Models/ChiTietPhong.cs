@@ -17,7 +17,7 @@ public partial class ChiTietPhong
 
     public decimal TienPhong { get; set; }
 
-    public virtual BenhNhan BenhNhan { get; set; } = null!;
+    public virtual BenhNhan? BenhNhan { get; set; } = null!;
 
-    public virtual Phong Phong { get; set; } = null!;
+    public virtual Phong? Phong { get; set; } = null!;
 }

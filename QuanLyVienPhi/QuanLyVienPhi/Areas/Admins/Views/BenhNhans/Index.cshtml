@@ -31,7 +31,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Cmnd)
             </th>
-            <th>
+           @*  <th>
                 @Html.DisplayNameFor(model => model.NgayNhapVien)
             </th>
             <th>
@@ -45,7 +45,7 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Phong)
-            </th>
+            </th> *@
             <th>
                 @Html.DisplayNameFor(model => model.TienPhong)
             </th>
@@ -80,7 +80,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Cmnd)
                 </td>
-                <td>
+               @*  <td>
                     @Html.DisplayFor(modelItem => item.NgayNhapVien)
                 </td>
                 <td>
@@ -101,7 +101,7 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Phong.PhongId)
-                </td>
+                </td> *@
                 <td>
                     @Html.DisplayFor(modelItem => item.TienPhong)
                 </td>
@@ -116,45 +116,29 @@
                     <a asp-action="Details" asp-route-id="@item.BenhNhanId">Details</a> |
                     <a asp-action="Delete" asp-route-id="@item.BenhNhanId">Delete</a> |
                     <a asp-action="Invoice" asp-route-id="@item.BenhNhanId" target="_blank">In hóa đơn</a> |
-
                     @if (!item.TrangThaiThanhToan)
                     {
-                        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalThanhToan-@item.BenhNhanId">
+                        <form id="formThanhToan-@item.BenhNhanId" asp-action="ThanhToan" method="post">
+                            <input type="hidden" name="id" value="@item.BenhNhanId" />
+                        </form>
+
+                        <button type="button" class="btn btn-success btn-sm" onclick="submitThanhToan(@item.BenhNhanId)">
                             Thanh toán
                         </button>
 
-                        <!-- Modal Thanh Toán -->
-                        <div class="modal fade" id="modalThanhToan-@item.BenhNhanId" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="modalLabel">Chọn phương thức thanh toán</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form id="formThanhToan-@item.BenhNhanId" asp-action="ThanhToan" method="post">
-                                            <input type="hidden" name="id" value="@item.BenhNhanId" />
-                                            <div class="mb-3">
-                                                <label class="form-label">Phương thức thanh toán:</label>
-                                                <select class="form-control" name="phuongThucThanhToan">
-                                                    <option value="TienMat">Tiền mặt</option>
-                                                    <option value="ChuyenKhoan">Chuyển khoản</option>
-                                                </select>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
-                                        <button type="submit" class="btn btn-primary" onclick="document.getElementById('formThanhToan-@item.BenhNhanId').submit();">Xác nhận</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <script>
+                            function submitThanhToan(id) {
+                                var form = document.getElementById('formThanhToan-' + id);
+                                form.submit();
+                            }
+                        </script>
                     }
                     else
                     {
                         <span class="text-success">Đã thanh toán</span>
                     }
+
+
                 </td>
 
 

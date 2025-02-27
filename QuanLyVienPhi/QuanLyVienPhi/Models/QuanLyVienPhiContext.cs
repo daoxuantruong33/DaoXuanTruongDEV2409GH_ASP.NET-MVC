@@ -91,6 +91,7 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.HoTen).HasMaxLength(100);
             entity.Property(e => e.KhoaId).HasColumnName("KhoaID");
             entity.Property(e => e.PhongId).HasColumnName("PhongID");
+            entity.Property(e => e.ThuNganId).HasColumnName("ThuNganID");
             entity.Property(e => e.TienPhong).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.TienThuoc).HasColumnType("decimal(10, 2)");
 
@@ -105,6 +106,10 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.HasOne(d => d.Phong).WithMany(p => p.BenhNhans)
                 .HasForeignKey(d => d.PhongId)
                 .HasConstraintName("FK__BenhNhan__PhongI__48CFD27E");
+
+            entity.HasOne(d => d.ThuNgan).WithMany(p => p.BenhNhans)
+                .HasForeignKey(d => d.ThuNganId)
+                .HasConstraintName("FK_BenhNhan_ThuNgan");
         });
 
         modelBuilder.Entity<ChiTietPhong>(entity =>

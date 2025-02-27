@@ -13,5 +13,7 @@ public partial class ThuNgan
 
     public string? Email { get; set; }
 
+    public virtual ICollection<BenhNhan> BenhNhans { get; set; } = new List<BenhNhan>();
+
     public virtual ICollection<ThanhToan> ThanhToans { get; set; } = new List<ThanhToan>();
 }

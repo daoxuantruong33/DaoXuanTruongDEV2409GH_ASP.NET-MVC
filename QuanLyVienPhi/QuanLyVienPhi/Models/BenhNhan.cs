@@ -35,6 +35,8 @@ public partial class BenhNhan
 
     public bool TrangThaiThanhToan { get; set; }
 
+    public int? ThuNganId { get; set; }
+
     public virtual BacSi? BacSi { get; set; }
 
     public virtual ICollection<ChiTietPhong> ChiTietPhongs { get; set; } = new List<ChiTietPhong>();
@@ -46,4 +48,6 @@ public partial class BenhNhan
     public virtual Khoa? Khoa { get; set; }
 
     public virtual Phong? Phong { get; set; }
+
+    public virtual ThuNgan? ThuNgan { get; set; }
 }

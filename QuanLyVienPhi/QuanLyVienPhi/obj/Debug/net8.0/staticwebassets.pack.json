@@ -3393,12 +3393,28 @@
       "PackagePath": "staticwebassets\\images\\imgQR3QRCode.png"
     },
     {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\11QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\11QRCode.jpg"
+    },
+    {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\3QRCode.jpg",
       "PackagePath": "staticwebassets\\images\\imgQR\\3QRCode.jpg"
     },
     {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\4QRCode.jpg",
       "PackagePath": "staticwebassets\\images\\imgQR\\4QRCode.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\5QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\5QRCode.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\8QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\8QRCode.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\9QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\9QRCode.jpg"
     },
     {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\materials\\anhvit2.jpg",

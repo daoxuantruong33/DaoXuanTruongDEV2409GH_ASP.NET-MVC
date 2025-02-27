@@ -1,6 +1,8 @@
 ﻿@model QuanLyVienPhi.Models.BenhNhan
+<link href="~/dist/img/logo4.1.png" rel="icon">
 
 @{
+    ViewData["Title"] = "Invoice";
     Layout = null;
 }
 
@@ -22,6 +24,7 @@
         body {
             font-family: "Times New Roman", serif;
         }
+
         .invoice-container {
             width: 700px;
             margin: auto;
@@ -126,6 +129,7 @@
                 margin: 3px 0; /* Giảm khoảng cách giữa các dòng */
                 line-height: 1.2; /* Giảm độ cao giữa các dòng chữ */
             }
+
         .sign-line {
             width: 200px;
             border-bottom: 1px solid black;
@@ -185,7 +189,7 @@
         </div>
 
 
-     
+
         <table>
             <thead>
                 <tr>
@@ -231,10 +235,11 @@
                     <p><strong>@Model.HoTen</strong></p>
                 </div>
                 <div class="signature-box">
-                    <p><strong>Thu ngân</strong></p>
+                    <p><strong>Thu Ngân </strong></p>
                     <p style="margin-bottom:5rem"><i>(Ký và ghi rõ họ tên)</i></p>
-                    <p><strong>@Model</strong></p>
+                    <p><strong>@Model.ThuNgan?.HoTen</strong></p>
                 </div>
+
             </div>
 
         </div>
