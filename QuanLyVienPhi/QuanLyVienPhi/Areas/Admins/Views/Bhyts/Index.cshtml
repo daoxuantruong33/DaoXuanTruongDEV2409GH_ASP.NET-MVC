@@ -1,0 +1,60 @@
+﻿@model IEnumerable<QuanLyVienPhi.Models.Bhyt>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cccd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoTheBhyt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MienGiam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BenhNhan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DoiTuong)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cccd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoTheBhyt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MienGiam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BenhNhan.BenhNhanId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoiTuong.DoiTuongId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BhytId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BhytId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BhytId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

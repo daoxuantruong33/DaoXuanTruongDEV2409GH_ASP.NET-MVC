@@ -17,7 +17,7 @@ public partial class BenhNhan
 
     public string? DienThoai { get; set; }
 
-    public string? Cmnd { get; set; }
+    public string? Cccd { get; set; }
 
     public DateOnly NgayNhapVien { get; set; }
 
@@ -33,17 +33,23 @@ public partial class BenhNhan
 
     public decimal? TienPhong { get; set; }
 
+    public decimal? TienDichVu { get; set; }
+
     public bool TrangThaiThanhToan { get; set; }
 
     public int? ThuNganId { get; set; }
 
+    public decimal? MienGiam { get; set; }
+
     public virtual BacSi? BacSi { get; set; }
+
+    public virtual ICollection<Bhyt> Bhyts { get; set; } = new List<Bhyt>();
+
+    public virtual ICollection<ChiTietDichVu> ChiTietDichVus { get; set; } = new List<ChiTietDichVu>();
 
     public virtual ICollection<ChiTietPhong> ChiTietPhongs { get; set; } = new List<ChiTietPhong>();
 
     public virtual ICollection<ChiTietThuoc> ChiTietThuocs { get; set; } = new List<ChiTietThuoc>();
-
-    public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
 
     public virtual Khoa? Khoa { get; set; }
 

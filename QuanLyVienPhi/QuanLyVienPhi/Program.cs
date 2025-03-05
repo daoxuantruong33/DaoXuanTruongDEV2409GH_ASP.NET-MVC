@@ -1,4 +1,6 @@
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using QuanLyVienPhi.Areas.Admins.Models;
 using QuanLyVienPhi.Models;
 
 namespace QuanLyVienPhi
@@ -11,8 +13,8 @@ namespace QuanLyVienPhi
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            // ??ng k� d?ch v? cho HttpContextAccessor
-            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddScoped<DashboardService>();
+            builder.Services.AddHttpClient(); builder.Services.AddHttpContextAccessor();
             builder.Services.AddSession(options =>
             {
                 options.IdleTimeout = TimeSpan.FromSeconds(60);
@@ -20,8 +22,15 @@ namespace QuanLyVienPhi
                 options.Cookie.IsEssential = true;
                 options.Cookie.Name = "QuanLyVienPhi";
             });
+            // Cấu hình Authentication với Cookie
+            builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Account/Login";
+                    options.LogoutPath = "/Account/Logout";
+                });
             builder.Services.AddDbContext<QuanLyVienPhiContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("AppConnectionString")));
+            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 

@@ -47,16 +47,17 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // GET: Admins/Phongs/Create
         public IActionResult Create()
         {
-            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId");
+            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa");
             return View();
         }
+
 
         // POST: Admins/Phongs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PhongId,SoPhong,LoaiPhong,KhoaId")] Phong phong)
+        public async Task<IActionResult> Create([Bind("PhongId,SoPhong,TienPhongNgay,KhoaId")] Phong phong)
         {
             if (ModelState.IsValid)
             {
@@ -67,6 +68,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId", phong.KhoaId);
             return View(phong);
         }
+
 
         // GET: Admins/Phongs/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -81,16 +83,17 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
-            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId", phong.KhoaId);
+            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa", phong.KhoaId);
             return View(phong);
         }
+
 
         // POST: Admins/Phongs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PhongId,SoPhong,LoaiPhong,KhoaId")] Phong phong)
+        public async Task<IActionResult> Edit(int id, [Bind("PhongId,SoPhong,TienPhongNgay,KhoaId")] Phong phong)
         {
             if (id != phong.PhongId)
             {
@@ -120,6 +123,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId", phong.KhoaId);
             return View(phong);
         }
+
 
         // GET: Admins/Phongs/Delete/5
         public async Task<IActionResult> Delete(int? id)

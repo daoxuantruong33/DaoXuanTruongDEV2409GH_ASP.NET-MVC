@@ -16,8 +16,4 @@ public partial class ThanhToan
     public decimal SoTien { get; set; }
 
     public int ThuNganId { get; set; }
-
-    public virtual HoaDon HoaDon { get; set; } = null!;
-
-    public virtual ThuNgan ThuNgan { get; set; } = null!;
 }

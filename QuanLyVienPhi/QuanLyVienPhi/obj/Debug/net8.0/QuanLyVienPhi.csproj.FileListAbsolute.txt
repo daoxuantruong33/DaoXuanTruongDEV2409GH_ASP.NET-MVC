@@ -259,3 +259,4 @@ D:\Devmaster\DaoXuanTruongDEV2409GH_ASP.NET-MVC\QuanLyVienPhi\QuanLyVienPhi\bin\
 D:\Devmaster\DaoXuanTruongDEV2409GH_ASP.NET-MVC\QuanLyVienPhi\QuanLyVienPhi\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Devmaster\DaoXuanTruongDEV2409GH_ASP.NET-MVC\QuanLyVienPhi\QuanLyVienPhi\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Devmaster\DaoXuanTruongDEV2409GH_ASP.NET-MVC\QuanLyVienPhi\QuanLyVienPhi\bin\Debug\net8.0\RestSharp.dll
+D:\Devmaster\DaoXuanTruongDEV2409GH_ASP.NET-MVC\QuanLyVienPhi\QuanLyVienPhi\bin\Debug\net8.0\payos-lib-backend-dotnet.dll

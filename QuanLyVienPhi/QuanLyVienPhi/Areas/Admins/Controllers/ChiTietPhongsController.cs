@@ -49,8 +49,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // GET: Admins/ChiTietPhongs/Create
         public IActionResult Create()
         {
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId");
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "PhongId");
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
+            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong");
 
             // Lấy danh sách ID phòng và giá phòng
             var danhSachGiaPhong = _context.Phongs.ToDictionary(p => p.PhongId, p => p.TienPhongNgay);
@@ -73,8 +73,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", chiTietPhong.BenhNhanId);
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "PhongId", chiTietPhong.PhongId);
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietPhong.BenhNhanId);
+            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", chiTietPhong.PhongId);
             return View(chiTietPhong);
         }
 
@@ -91,8 +91,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", chiTietPhong.BenhNhanId);
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "PhongId", chiTietPhong.PhongId);
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietPhong.BenhNhanId);
+            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", chiTietPhong.PhongId);
             return View(chiTietPhong);
         }
 
@@ -128,8 +128,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", chiTietPhong.BenhNhanId);
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "PhongId", chiTietPhong.PhongId);
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietPhong.BenhNhanId);
+            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", chiTietPhong.PhongId);
             return View(chiTietPhong);
         }
 
@@ -178,12 +178,14 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         public async Task<IActionResult> GetThongTinBenhNhan(int benhNhanId)
         {
             var benhNhan = await _context.BenhNhans
-                .Include(b => b.Khoa) // Đảm bảo load thông tin Khoa
+                .Include(b => b.Khoa) // Load thông tin Khoa
                 .Where(b => b.BenhNhanId == benhNhanId)
                 .Select(b => new
                 {
+                    cccd = b.Cccd, // Lấy CCCD của bệnh nhân
                     ngayNhapVien = b.NgayNhapVien.ToString("yyyy-MM-dd"),
-                    khoa = b.Khoa != null ? b.Khoa.TenKhoa : "Chưa cập nhật" // Xử lý nếu Khoa bị null
+                    khoa = b.Khoa != null ? b.Khoa.TenKhoa : "Chưa cập nhật",
+                    phongId = b.PhongId // Lấy Phòng hiện tại của bệnh nhân
                 })
                 .FirstOrDefaultAsync();
 

@@ -9,23 +9,22 @@ using QuanLyVienPhi.Models;
 
 namespace QuanLyVienPhi.Areas.Admins.Controllers
 {
-    public class HoaDonsController : BaseController
+    public class DoiTuongsController : BaseController
     {
         private readonly QuanLyVienPhiContext _context;
 
-        public HoaDonsController(QuanLyVienPhiContext context)
+        public DoiTuongsController(QuanLyVienPhiContext context)
         {
             _context = context;
         }
 
-        // GET: Admins/HoaDons
+        // GET: Admins/DoiTuongs
         public async Task<IActionResult> Index()
         {
-            var quanLyVienPhiContext = _context.HoaDons.Include(h => h.BenhNhan);
-            return View(await quanLyVienPhiContext.ToListAsync());
+            return View(await _context.DoiTuongs.ToListAsync());
         }
 
-        // GET: Admins/HoaDons/Details/5
+        // GET: Admins/DoiTuongs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,42 +32,39 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var hoaDon = await _context.HoaDons
-                .Include(h => h.BenhNhan)
-                .FirstOrDefaultAsync(m => m.HoaDonId == id);
-            if (hoaDon == null)
+            var doiTuong = await _context.DoiTuongs
+                .FirstOrDefaultAsync(m => m.DoiTuongId == id);
+            if (doiTuong == null)
             {
                 return NotFound();
             }
 
-            return View(hoaDon);
+            return View(doiTuong);
         }
 
-        // GET: Admins/HoaDons/Create
+        // GET: Admins/DoiTuongs/Create
         public IActionResult Create()
         {
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId");
             return View();
         }
 
-        // POST: Admins/HoaDons/Create
+        // POST: Admins/DoiTuongs/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("HoaDonId,BenhNhanId,TienPhong,TienThuoc,TongTien")] HoaDon hoaDon)
+        public async Task<IActionResult> Create([Bind("DoiTuongId,SoThe,MienGiam")] DoiTuong doiTuong)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(hoaDon);
+                _context.Add(doiTuong);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", hoaDon.BenhNhanId);
-            return View(hoaDon);
+            return View(doiTuong);
         }
 
-        // GET: Admins/HoaDons/Edit/5
+        // GET: Admins/DoiTuongs/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -76,23 +72,22 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var hoaDon = await _context.HoaDons.FindAsync(id);
-            if (hoaDon == null)
+            var doiTuong = await _context.DoiTuongs.FindAsync(id);
+            if (doiTuong == null)
             {
                 return NotFound();
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", hoaDon.BenhNhanId);
-            return View(hoaDon);
+            return View(doiTuong);
         }
 
-        // POST: Admins/HoaDons/Edit/5
+        // POST: Admins/DoiTuongs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("HoaDonId,BenhNhanId,TienPhong,TienThuoc,TongTien")] HoaDon hoaDon)
+        public async Task<IActionResult> Edit(int id, [Bind("DoiTuongId,SoThe,MienGiam")] DoiTuong doiTuong)
         {
-            if (id != hoaDon.HoaDonId)
+            if (id != doiTuong.DoiTuongId)
             {
                 return NotFound();
             }
@@ -101,12 +96,12 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 try
                 {
-                    _context.Update(hoaDon);
+                    _context.Update(doiTuong);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!HoaDonExists(hoaDon.HoaDonId))
+                    if (!DoiTuongExists(doiTuong.DoiTuongId))
                     {
                         return NotFound();
                     }
@@ -117,11 +112,10 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", hoaDon.BenhNhanId);
-            return View(hoaDon);
+            return View(doiTuong);
         }
 
-        // GET: Admins/HoaDons/Delete/5
+        // GET: Admins/DoiTuongs/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -129,37 +123,34 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var hoaDon = await _context.HoaDons
-                .Include(h => h.BenhNhan)
-                .FirstOrDefaultAsync(m => m.HoaDonId == id);
-            if (hoaDon == null)
+            var doiTuong = await _context.DoiTuongs
+                .FirstOrDefaultAsync(m => m.DoiTuongId == id);
+            if (doiTuong == null)
             {
                 return NotFound();
             }
 
-            return View(hoaDon);
+            return View(doiTuong);
         }
 
-        // POST: Admins/HoaDons/Delete/5
+        // POST: Admins/DoiTuongs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var hoaDon = await _context.HoaDons.FindAsync(id);
-            if (hoaDon != null)
+            var doiTuong = await _context.DoiTuongs.FindAsync(id);
+            if (doiTuong != null)
             {
-                _context.HoaDons.Remove(hoaDon);
+                _context.DoiTuongs.Remove(doiTuong);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool HoaDonExists(int id)
+        private bool DoiTuongExists(int id)
         {
-            return _context.HoaDons.Any(e => e.HoaDonId == id);
+            return _context.DoiTuongs.Any(e => e.DoiTuongId == id);
         }
-
-
     }
 }

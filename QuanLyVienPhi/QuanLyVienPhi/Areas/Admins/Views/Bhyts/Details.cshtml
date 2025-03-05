@@ -1,4 +1,4 @@
-﻿@model QuanLyVienPhi.Models.HoaDon
+﻿@model QuanLyVienPhi.Models.Bhyt
 
 @{
     ViewData["Title"] = "Details";
@@ -8,26 +8,26 @@
 <h1>Details</h1>
 
 <div>
-    <h4>HoaDon</h4>
+    <h4>Bhyt</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TienPhong)
+            @Html.DisplayNameFor(model => model.Cccd)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TienPhong)
+            @Html.DisplayFor(model => model.Cccd)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TienThuoc)
+            @Html.DisplayNameFor(model => model.SoTheBhyt)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TienThuoc)
+            @Html.DisplayFor(model => model.SoTheBhyt)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TongTien)
+            @Html.DisplayNameFor(model => model.MienGiam)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TongTien)
+            @Html.DisplayFor(model => model.MienGiam)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.BenhNhan)
@@ -35,9 +35,15 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.BenhNhan.BenhNhanId)
         </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DoiTuong)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DoiTuong.DoiTuongId)
+        </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.HoaDonId">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model?.BhytId">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

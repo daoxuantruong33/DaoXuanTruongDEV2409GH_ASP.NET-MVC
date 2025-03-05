@@ -1,0 +1,95 @@
+﻿@model QuanLyVienPhi.Models.ChiTietDichVu
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>ChiTietDichVu</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BenhNhanId" class="control-label"></label>
+                <select asp-for="BenhNhanId" class ="form-control" asp-items="ViewBag.BenhNhanId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cccd" class="control-label"></label>
+                <input asp-for="Cccd" class="form-control" id="Cccd" readonly />
+                <span asp-validation-for="Cccd" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DichVuId" class="control-label"></label>
+                <select asp-for="DichVuId" class="form-control" asp-items="ViewBag.DichVuId">
+                    <option value="">-- Chọn dịch vụ --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenDichVu" class="control-label"></label>
+                <input asp-for="TenDichVu" class="form-control" id="TenDichVu" readonly />
+                <span asp-validation-for="TenDichVu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GiaTien" class="control-label"></label>
+                <input asp-for="GiaTien" class="form-control" />
+                <span asp-validation-for="GiaTien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#BenhNhanId").change(function () {
+            var benhNhanId = $(this).val();
+            if (benhNhanId) {
+                $.ajax({
+                    url: '/Admins/ChiTietDichVus/GetCccdByBenhNhanId',
+                    type: 'GET',
+                    data: { benhNhanId: benhNhanId },
+                    success: function (response) {
+                        $("#Cccd").val(response.cccd);
+                    }
+                });
+            } else {
+                $("#Cccd").val(""); // Xóa nội dung nếu không có bệnh nhân nào được chọn
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        // Xử lý sự kiện khi chọn Dịch vụ
+        $("#DichVuId").change(function () {
+            var dichVuId = $(this).val();
+            if (dichVuId) {
+                $.ajax({
+                    url: '/Admins/ChiTietDichVus/GetGiaTienByDichVuId',
+                    type: 'GET',
+                    data: { dichVuId: dichVuId },
+                    success: function (response) {
+                        $("#GiaTien").val(response.giaTien);
+                        $("#TenDichVu").val(response.tenDichVu); // Điền tên dịch vụ
+                    }
+                });
+            } else {
+                $("#GiaTien").val("");
+                $("#TenDichVu").val(""); // Xóa nếu chưa chọn dịch vụ
+            }
+        });
+    });
+</script>

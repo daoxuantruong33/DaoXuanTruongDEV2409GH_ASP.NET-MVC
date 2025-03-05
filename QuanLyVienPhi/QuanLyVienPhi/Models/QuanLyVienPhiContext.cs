@@ -21,15 +21,23 @@ public partial class QuanLyVienPhiContext : DbContext
 
     public virtual DbSet<BenhNhan> BenhNhans { get; set; }
 
+    public virtual DbSet<Bhyt> Bhyts { get; set; }
+
+    public virtual DbSet<ChiTietDichVu> ChiTietDichVus { get; set; }
+
     public virtual DbSet<ChiTietPhong> ChiTietPhongs { get; set; }
 
     public virtual DbSet<ChiTietThuoc> ChiTietThuocs { get; set; }
 
-    public virtual DbSet<HoaDon> HoaDons { get; set; }
+    public virtual DbSet<DichVu> DichVus { get; set; }
+
+    public virtual DbSet<DoiTuong> DoiTuongs { get; set; }
 
     public virtual DbSet<Khoa> Khoas { get; set; }
 
     public virtual DbSet<Phong> Phongs { get; set; }
+
+    public virtual DbSet<Role> Roles { get; set; }
 
     public virtual DbSet<ThanhToan> ThanhToans { get; set; }
 
@@ -58,7 +66,12 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.FullName).HasMaxLength(100);
             entity.Property(e => e.Password).HasMaxLength(100);
             entity.Property(e => e.Phone).HasMaxLength(15);
+            entity.Property(e => e.RoleId).HasColumnName("RoleID");
             entity.Property(e => e.Username).HasMaxLength(50);
+
+            entity.HasOne(d => d.Role).WithMany(p => p.Admins)
+                .HasForeignKey(d => d.RoleId)
+                .HasConstraintName("FK_Admin_Role");
         });
 
         modelBuilder.Entity<BacSi>(entity =>
@@ -68,10 +81,19 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.ToTable("BacSi");
 
             entity.Property(e => e.BacSiId).HasColumnName("BacSiID");
-            entity.Property(e => e.ChuyenKhoa).HasMaxLength(100);
             entity.Property(e => e.DienThoai).HasMaxLength(15);
             entity.Property(e => e.Email).HasMaxLength(50);
             entity.Property(e => e.HoTen).HasMaxLength(100);
+            entity.Property(e => e.KhoaId).HasColumnName("KhoaID");
+            entity.Property(e => e.RoleId).HasColumnName("RoleID");
+
+            entity.HasOne(d => d.Khoa).WithMany(p => p.BacSis)
+                .HasForeignKey(d => d.KhoaId)
+                .HasConstraintName("FK_BacSi_Khoa");
+
+            entity.HasOne(d => d.Role).WithMany(p => p.BacSis)
+                .HasForeignKey(d => d.RoleId)
+                .HasConstraintName("FK_BacSi_Role");
         });
 
         modelBuilder.Entity<BenhNhan>(entity =>
@@ -82,16 +104,18 @@ public partial class QuanLyVienPhiContext : DbContext
 
             entity.Property(e => e.BenhNhanId).HasColumnName("BenhNhanID");
             entity.Property(e => e.BacSiId).HasColumnName("BacSiID");
-            entity.Property(e => e.Cmnd)
+            entity.Property(e => e.Cccd)
                 .HasMaxLength(12)
-                .HasColumnName("CMND");
+                .HasColumnName("CCCD");
             entity.Property(e => e.DiaChi).HasMaxLength(255);
             entity.Property(e => e.DienThoai).HasMaxLength(15);
             entity.Property(e => e.GioiTinh).HasMaxLength(10);
             entity.Property(e => e.HoTen).HasMaxLength(100);
             entity.Property(e => e.KhoaId).HasColumnName("KhoaID");
+            entity.Property(e => e.MienGiam).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.PhongId).HasColumnName("PhongID");
             entity.Property(e => e.ThuNganId).HasColumnName("ThuNganID");
+            entity.Property(e => e.TienDichVu).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.TienPhong).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.TienThuoc).HasColumnType("decimal(10, 2)");
 
@@ -112,6 +136,54 @@ public partial class QuanLyVienPhiContext : DbContext
                 .HasConstraintName("FK_BenhNhan_ThuNgan");
         });
 
+        modelBuilder.Entity<Bhyt>(entity =>
+        {
+            entity.HasKey(e => e.BhytId).HasName("PK__HoaDon__6956CE69F0192C85");
+
+            entity.ToTable("BHYT");
+
+            entity.Property(e => e.BhytId).HasColumnName("BhytID");
+            entity.Property(e => e.BenhNhanId).HasColumnName("BenhNhanID");
+            entity.Property(e => e.Cccd).HasMaxLength(12);
+            entity.Property(e => e.DoiTuongId).HasColumnName("DoiTuongID");
+            entity.Property(e => e.MienGiam).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.SoTheBhyt)
+                .HasMaxLength(13)
+                .HasColumnName("SoTheBHYT");
+
+            entity.HasOne(d => d.BenhNhan).WithMany(p => p.Bhyts)
+                .HasForeignKey(d => d.BenhNhanId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_BHYT_BenhNhan");
+
+            entity.HasOne(d => d.DoiTuong).WithMany(p => p.Bhyts)
+                .HasForeignKey(d => d.DoiTuongId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_BHYT_DoiTuong");
+        });
+
+        modelBuilder.Entity<ChiTietDichVu>(entity =>
+        {
+            entity.ToTable("ChiTietDichVu");
+
+            entity.Property(e => e.ChiTietDichVuId).HasColumnName("ChiTietDichVuID");
+            entity.Property(e => e.BenhNhanId).HasColumnName("BenhNhanID");
+            entity.Property(e => e.Cccd).HasMaxLength(12);
+            entity.Property(e => e.DichVuId).HasColumnName("DichVuID");
+            entity.Property(e => e.GiaTien).HasColumnType("decimal(10, 0)");
+            entity.Property(e => e.TenDichVu).HasMaxLength(100);
+
+            entity.HasOne(d => d.BenhNhan).WithMany(p => p.ChiTietDichVus)
+                .HasForeignKey(d => d.BenhNhanId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_ChiTietDichVu_BenhNhan");
+
+            entity.HasOne(d => d.DichVu).WithMany(p => p.ChiTietDichVus)
+                .HasForeignKey(d => d.DichVuId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_ChiTietDichVu_DichVu");
+        });
+
         modelBuilder.Entity<ChiTietPhong>(entity =>
         {
             entity.HasKey(e => e.ChiTietPhongId).HasName("PK__ChiTietP__E1B170CDCFE9E1D9");
@@ -120,6 +192,9 @@ public partial class QuanLyVienPhiContext : DbContext
 
             entity.Property(e => e.ChiTietPhongId).HasColumnName("ChiTietPhongID");
             entity.Property(e => e.BenhNhanId).HasColumnName("BenhNhanID");
+            entity.Property(e => e.Cccd)
+                .HasMaxLength(12)
+                .HasColumnName("CCCD");
             entity.Property(e => e.PhongId).HasColumnName("PhongID");
             entity.Property(e => e.TienPhong).HasColumnType("decimal(10, 2)");
 
@@ -142,6 +217,9 @@ public partial class QuanLyVienPhiContext : DbContext
 
             entity.Property(e => e.ChiTietThuocId).HasColumnName("ChiTietThuocID");
             entity.Property(e => e.BenhNhanId).HasColumnName("BenhNhanID");
+            entity.Property(e => e.Cccd)
+                .HasMaxLength(12)
+                .HasColumnName("CCCD");
             entity.Property(e => e.ThuocId).HasColumnName("ThuocID");
             entity.Property(e => e.TienThuoc).HasColumnType("decimal(10, 2)");
 
@@ -156,24 +234,24 @@ public partial class QuanLyVienPhiContext : DbContext
                 .HasConstraintName("FK__ChiTietTh__Thuoc__4E88ABD4");
         });
 
-        modelBuilder.Entity<HoaDon>(entity =>
+        modelBuilder.Entity<DichVu>(entity =>
         {
-            entity.HasKey(e => e.HoaDonId).HasName("PK__HoaDon__6956CE69F0192C85");
+            entity.ToTable("DichVu");
 
-            entity.ToTable("HoaDon");
+            entity.Property(e => e.DichVuId).HasColumnName("DichVuID");
+            entity.Property(e => e.GiaTien).HasColumnType("decimal(10, 0)");
+            entity.Property(e => e.TenDichVu).HasMaxLength(100);
+        });
 
-            entity.Property(e => e.HoaDonId).HasColumnName("HoaDonID");
-            entity.Property(e => e.BenhNhanId).HasColumnName("BenhNhanID");
-            entity.Property(e => e.TienPhong).HasColumnType("decimal(10, 2)");
-            entity.Property(e => e.TienThuoc).HasColumnType("decimal(10, 2)");
-            entity.Property(e => e.TongTien)
-                .HasComputedColumnSql("([TienPhong]+[TienThuoc])", true)
-                .HasColumnType("decimal(11, 2)");
+        modelBuilder.Entity<DoiTuong>(entity =>
+        {
+            entity.ToTable("DoiTuong");
 
-            entity.HasOne(d => d.BenhNhan).WithMany(p => p.HoaDons)
-                .HasForeignKey(d => d.BenhNhanId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__HoaDon__BenhNhan__5535A963");
+            entity.Property(e => e.DoiTuongId)
+                .ValueGeneratedNever()
+                .HasColumnName("DoiTuongID");
+            entity.Property(e => e.MienGiam).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.SoThe).HasMaxLength(15);
         });
 
         modelBuilder.Entity<Khoa>(entity =>
@@ -198,12 +276,20 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.PhongId).HasColumnName("PhongID");
             entity.Property(e => e.KhoaId).HasColumnName("KhoaID");
             entity.Property(e => e.SoPhong).HasMaxLength(10);
-            entity.Property(e => e.TienPhongNgay).HasMaxLength(50);
+            entity.Property(e => e.TienPhongNgay).HasColumnType("decimal(10, 2)");
 
             entity.HasOne(d => d.Khoa).WithMany(p => p.Phongs)
                 .HasForeignKey(d => d.KhoaId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Phong_Khoa");
+        });
+
+        modelBuilder.Entity<Role>(entity =>
+        {
+            entity.ToTable("Role");
+
+            entity.Property(e => e.RoleId).HasColumnName("RoleID");
+            entity.Property(e => e.Name).HasMaxLength(100);
         });
 
         modelBuilder.Entity<ThanhToan>(entity =>
@@ -218,16 +304,6 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.NgayThanhToan).HasDefaultValueSql("(getdate())");
             entity.Property(e => e.SoTien).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.ThuNganId).HasColumnName("ThuNganID");
-
-            entity.HasOne(d => d.HoaDon).WithMany(p => p.ThanhToans)
-                .HasForeignKey(d => d.HoaDonId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__ThanhToan__HoaDo__5812160E");
-
-            entity.HasOne(d => d.ThuNgan).WithMany(p => p.ThanhToans)
-                .HasForeignKey(d => d.ThuNganId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__ThanhToan__ThuNg__6754599E");
         });
 
         modelBuilder.Entity<ThuNgan>(entity =>
@@ -240,6 +316,11 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.DienThoai).HasMaxLength(15);
             entity.Property(e => e.Email).HasMaxLength(50);
             entity.Property(e => e.HoTen).HasMaxLength(100);
+            entity.Property(e => e.RoleId).HasColumnName("RoleID");
+
+            entity.HasOne(d => d.Role).WithMany(p => p.ThuNgans)
+                .HasForeignKey(d => d.RoleId)
+                .HasConstraintName("FK_ThuNgan_Role");
         });
 
         modelBuilder.Entity<Thuoc>(entity =>

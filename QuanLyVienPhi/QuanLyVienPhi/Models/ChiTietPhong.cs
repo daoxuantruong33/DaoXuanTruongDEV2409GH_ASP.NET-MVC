@@ -9,6 +9,8 @@ public partial class ChiTietPhong
 
     public int BenhNhanId { get; set; }
 
+    public string? Cccd { get; set; }
+
     public int PhongId { get; set; }
 
     public DateOnly NgayBatDau { get; set; }
@@ -17,7 +19,7 @@ public partial class ChiTietPhong
 
     public decimal TienPhong { get; set; }
 
-    public virtual BenhNhan? BenhNhan { get; set; } = null!;
+    public virtual BenhNhan BenhNhan { get; set; } = null!;
 
-    public virtual Phong? Phong { get; set; } = null!;
+    public virtual Phong Phong { get; set; } = null!;
 }

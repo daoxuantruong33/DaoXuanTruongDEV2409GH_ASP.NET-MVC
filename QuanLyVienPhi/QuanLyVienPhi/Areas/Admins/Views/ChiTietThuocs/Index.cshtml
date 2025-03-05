@@ -17,6 +17,9 @@
                 @Html.DisplayNameFor(model => model.BenhNhan)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.BenhNhan.Cccd)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Thuoc)
             </th>
             <th>
@@ -33,12 +36,15 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BenhNhan.HoTen)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Thuoc.TenThuoc)
-                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BenhNhan.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BenhNhan.Cccd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Thuoc.TenThuoc)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SoLuong)
             </td>

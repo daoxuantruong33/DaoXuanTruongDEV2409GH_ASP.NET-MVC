@@ -9,13 +9,15 @@ public partial class ChiTietThuoc
 
     public int BenhNhanId { get; set; }
 
+    public string? Cccd { get; set; }
+
     public int ThuocId { get; set; }
 
     public int SoLuong { get; set; }
 
     public decimal? TienThuoc { get; set; }
 
-    public virtual BenhNhan? BenhNhan { get; set; } = null!;
+    public virtual BenhNhan BenhNhan { get; set; } = null!;
 
-    public virtual Thuoc? Thuoc { get; set; } = null!;
+    public virtual Thuoc Thuoc { get; set; } = null!;
 }

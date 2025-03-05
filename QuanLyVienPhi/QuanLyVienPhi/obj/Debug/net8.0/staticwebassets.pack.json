@@ -3397,6 +3397,18 @@
       "PackagePath": "staticwebassets\\images\\imgQR\\11QRCode.jpg"
     },
     {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\12QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\12QRCode.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\16QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\16QRCode.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\17QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\17QRCode.jpg"
+    },
+    {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\3QRCode.jpg",
       "PackagePath": "staticwebassets\\images\\imgQR\\3QRCode.jpg"
     },

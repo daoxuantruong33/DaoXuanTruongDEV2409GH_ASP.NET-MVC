@@ -17,6 +17,10 @@
                 <label asp-for="BenhNhanId" class="control-label"></label>
                 <select asp-for="BenhNhanId" class ="form-control" asp-items="ViewBag.BenhNhanId"></select>
             </div>
+            <div class="form-group">
+                <label asp-for="Cccd" class="control-label"></label>
+                <input id="Cccd" class="form-control" readonly />
+            </div>
 
             <div class="form-group">
                 <label class="control-label">Khoa</label>
@@ -25,10 +29,9 @@
 
 
             <div class="form-group">
-                <label asp-for="PhongId" class="control-label"></label>
-
-                <select asp-for="PhongId" class="form-control" readonly asp-items="ViewBag.PhongId"></select>
-            </div>
+    <label class="control-label">Phòng</label>
+    <select id="PhongId" class="form-control" readonly asp-items="ViewBag.PhongId"></select>
+</div>
             <div class="form-group">
                 <label asp-for="NgayBatDau" class="control-label"></label>
                 <input asp-for="NgayBatDau" type="date" class="form-control" readonly />
@@ -111,21 +114,32 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-    $(document).ready(function () {
-        $("#BenhNhanId").change(function () {
-            var benhNhanId = $(this).val();
+    document.addEventListener("DOMContentLoaded", function () {
+        const benhNhanSelect = document.getElementById("BenhNhanId");
+        const cccdInput = document.getElementById("Cccd"); // Input CCCD
+        const khoaInput = document.getElementById("Khoa"); // Input Khoa
+        const ngayBatDauInput = document.getElementById("NgayBatDau");
+        const phongSelect = document.getElementById("PhongId"); // Select Phòng
+
+        benhNhanSelect.addEventListener("change", function () {
+            let benhNhanId = benhNhanSelect.value;
             if (benhNhanId) {
-                $.get("/Admins/ChiTietPhongs/GetPhongByBenhNhan", { benhNhanId: benhNhanId }, function (data) {
-                    if (data) {
-                        $("#PhongId").val(data.phongId);
-                    } else {
-                        $("#PhongId").val(""); // Nếu không tìm thấy, xóa giá trị
-                    }
-                });
+                fetch(`/Admins/ChiTietPhongs/GetThongTinBenhNhan?benhNhanId=${benhNhanId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        ngayBatDauInput.value = data.ngayNhapVien;
+                        khoaInput.value = data.khoa;
+                        cccdInput.value = data.cccd; // Hiển thị CCCD của bệnh nhân
+                        phongSelect.value = data.phongId; // Hiển thị Phòng của bệnh nhân
+                    })
+                    .catch(error => console.error("Lỗi lấy thông tin bệnh nhân:", error));
             } else {
-                $("#PhongId").val(""); // Nếu không có bệnh nhân, xóa giá trị
+                cccdInput.value = ""; // Xóa CCCD nếu không chọn bệnh nhân
+                phongSelect.value = ""; // Xóa phòng nếu không chọn bệnh nhân
             }
         });
     });
 </script>
+
+
 

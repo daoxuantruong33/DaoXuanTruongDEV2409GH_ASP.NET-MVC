@@ -18,6 +18,11 @@
                 <select asp-for="BenhNhanId" class ="form-control" asp-items="ViewBag.BenhNhanId"></select>
             </div>
             <div class="form-group">
+                <label asp-for="Cccd" class="control-label"></label>
+                <input asp-for="Cccd" class="form-control" readonly />
+            </div>
+
+            <div class="form-group">
                 <label asp-for="ThuocId" class="control-label"></label>
                 <select asp-for="ThuocId" class ="form-control" asp-items="ViewBag.ThuocId"></select>
             </div>
@@ -49,19 +54,39 @@
 
     <script>
         $(document).ready(function () {
+            $("#BenhNhanId").change(function () {
+                var benhNhanId = $(this).val();
+                if (benhNhanId) {
+                    $.ajax({
+                        url: '/Admins/ChiTietThuocs/GetCCCD',
+                        type: 'GET',
+                        data: { id: benhNhanId },
+                        success: function (cccd) {
+                            if (cccd) {
+                                $("#Cccd").val(cccd);
+                            } else {
+                                $("#Cccd").val('');
+                            }
+                        }
+                    });
+                } else {
+                    $("#Cccd").val('');
+                }
+            });
+
             $("#ThuocId, #SoLuong").change(function () {
                 var thuocId = $("#ThuocId").val();
                 var soLuong = $("#SoLuong").val();
 
                 if (thuocId && soLuong) {
                     $.ajax({
-                        url: '/Admins/ChiTietThuocs/GetDonGia', // Gọi API lấy giá thuốc
+                        url: '/Admins/ChiTietThuocs/GetDonGia',
                         type: 'GET',
                         data: { id: thuocId },
                         success: function (donGia) {
                             if (donGia) {
                                 var tienThuoc = soLuong * donGia;
-                                $("#TienThuoc").val(tienThuoc.toFixed(2)); // Cập nhật giá tiền
+                                $("#TienThuoc").val(tienThuoc.toFixed(2));
                             }
                         }
                     });
@@ -69,4 +94,6 @@
             });
         });
     </script>
+
+
 }

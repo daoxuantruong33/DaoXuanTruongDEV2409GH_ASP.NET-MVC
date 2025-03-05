@@ -21,10 +21,12 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // GET: Admins/BacSis
         public async Task<IActionResult> Index()
         {
-            return View(await _context.BacSis.ToListAsync());
+            var bacSis = _context.BacSis.Include(b => b.Khoa);
+            return View(await bacSis.ToListAsync());
         }
 
-        // GET: Admins/BacSis/Details/5
+
+        // GET: Admins/BenhNhans/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -32,19 +34,23 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var bacSi = await _context.BacSis
+            var bacsi = await _context.BacSis
+                .Include(b => b.Khoa)
                 .FirstOrDefaultAsync(m => m.BacSiId == id);
-            if (bacSi == null)
+            if (bacsi == null)
             {
                 return NotFound();
             }
 
-            return View(bacSi);
+            return View(bacsi);
         }
+
 
         // GET: Admins/BacSis/Create
         public IActionResult Create()
         {
+            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa");
+
             return View();
         }
 
@@ -53,7 +59,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BacSiId,HoTen,ChuyenKhoa,DienThoai,Email")] BacSi bacSi)
+        public async Task<IActionResult> Create([Bind("BacSiId,HoTen,KhoaId,DienThoai,Email")] BacSi bacSi)
         {
             if (ModelState.IsValid)
             {
@@ -61,6 +67,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId", bacSi.KhoaId);
+
             return View(bacSi);
         }
 
@@ -77,6 +85,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
+            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa", bacSi.KhoaId);
+
             return View(bacSi);
         }
 
@@ -85,7 +95,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BacSiId,HoTen,ChuyenKhoa,DienThoai,Email")] BacSi bacSi)
+        public async Task<IActionResult> Edit(int id, [Bind("BacSiId,HoTen,KhoaId,DienThoai,Email")] BacSi bacSi)
         {
             if (id != bacSi.BacSiId)
             {
@@ -109,9 +119,13 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                     {
                         throw;
                     }
+
                 }
                 return RedirectToAction(nameof(Index));
+               
+
             }
+            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId", bacSi.KhoaId);
             return View(bacSi);
         }
 

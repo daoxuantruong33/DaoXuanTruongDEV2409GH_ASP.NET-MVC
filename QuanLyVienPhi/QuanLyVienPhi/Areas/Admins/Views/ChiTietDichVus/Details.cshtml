@@ -1,0 +1,43 @@
+﻿@model QuanLyVienPhi.Models.ChiTietDichVu
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ChiTietDichVu</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cccd)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cccd)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GiaTien)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GiaTien)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BenhNhan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BenhNhan.BenhNhanId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DichVu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DichVu.DichVuId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ChiTietDichVuId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

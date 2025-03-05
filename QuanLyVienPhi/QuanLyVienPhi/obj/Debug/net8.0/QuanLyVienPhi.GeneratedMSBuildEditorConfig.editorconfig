@@ -94,6 +94,46 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEJlbmhOaGFuc1xJbnZvaWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Bhyts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEJoeXRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Bhyts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEJoeXRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Bhyts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEJoeXRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Bhyts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEJoeXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Bhyts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEJoeXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ChiTietDichVus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXREaWNoVnVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ChiTietDichVus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXREaWNoVnVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ChiTietDichVus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXREaWNoVnVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ChiTietDichVus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXREaWNoVnVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ChiTietDichVus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXREaWNoVnVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ChiTietPhongs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXRQaG9uZ3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -134,28 +174,60 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXRUaHVvY3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Dashboard/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERhc2hib2FyZFxBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Dashboard/BacSi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERhc2hib2FyZFxCYWNTaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/HoaDons/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEhvYURvbnNcQ3JlYXRlLmNzaHRtbA==
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Dashboard/ThuNgan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERhc2hib2FyZFxUaHVOZ2FuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/HoaDons/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEhvYURvbnNcRGVsZXRlLmNzaHRtbA==
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DichVus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERpY2hWdXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/HoaDons/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEhvYURvbnNcRGV0YWlscy5jc2h0bWw=
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DichVus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERpY2hWdXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/HoaDons/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEhvYURvbnNcRWRpdC5jc2h0bWw=
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DichVus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERpY2hWdXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/HoaDons/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEhvYURvbnNcSW5kZXguY3NodG1s
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DichVus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERpY2hWdXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DichVus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERpY2hWdXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DoiTuongs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERvaVR1b25nc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DoiTuongs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERvaVR1b25nc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DoiTuongs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERvaVR1b25nc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DoiTuongs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERvaVR1b25nc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/DoiTuongs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXERvaVR1b25nc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Khoas/Create.cshtml]
@@ -216,26 +288,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Shared/_SideBar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXFNoYXJlZFxfU2lkZUJhci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ThanhToans/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXFRoYW5oVG9hbnNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ThanhToans/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXFRoYW5oVG9hbnNcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ThanhToans/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXFRoYW5oVG9hbnNcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ThanhToans/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXFRoYW5oVG9hbnNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ThanhToans/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXFRoYW5oVG9hbnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ThuNgans/Create.cshtml]

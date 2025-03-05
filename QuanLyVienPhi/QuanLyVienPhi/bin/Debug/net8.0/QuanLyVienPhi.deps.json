@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.11",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
-          "RestSharp": "112.1.0"
+          "RestSharp": "112.1.0",
+          "payOS": "1.0.9"
         },
         "runtime": {
           "QuanLyVienPhi.dll": {}
@@ -1636,6 +1637,17 @@
           }
         }
       },
+      "payOS/1.0.9": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net6.0/payos-lib-backend-dotnet.dll": {
+            "assemblyVersion": "1.0.9.0",
+            "fileVersion": "1.0.9.0"
+          }
+        }
+      },
       "RestSharp/112.1.0": {
         "runtime": {
           "lib/net8.0/RestSharp.dll": {
@@ -2760,6 +2772,13 @@
       "sha512": "sha512-v/GGlIj2dd7svplFmASWEueu62veKW0MrMtBaZ7QG8aJTSGv2yE+pgUGhXRcQ4nxNOEq/wLBrz1vkth/1SND7A==",
       "path": "nuget.versioning/6.11.0",
       "hashPath": "nuget.versioning.6.11.0.nupkg.sha512"
+    },
+    "payOS/1.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LPfIWXg0Oo8mPk8l3otrqtH4iQcjaG+ughDp2DS3gS52s7bs8eEtU+uXflu32GPDCFKksfFyAAOLUoPDva4/Gw==",
+      "path": "payos/1.0.9",
+      "hashPath": "payos.1.0.9.nupkg.sha512"
     },
     "RestSharp/112.1.0": {
       "type": "package",

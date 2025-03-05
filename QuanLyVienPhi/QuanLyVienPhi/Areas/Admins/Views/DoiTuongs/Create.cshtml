@@ -1,4 +1,4 @@
-﻿@model QuanLyVienPhi.Models.HoaDon
+﻿@model QuanLyVienPhi.Models.DoiTuong
 
 @{
     ViewData["Title"] = "Create";
@@ -7,25 +7,26 @@
 
 <h1>Create</h1>
 
-<h4>HoaDon</h4>
+<h4>DoiTuong</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="BenhNhanId" class="control-label"></label>
-                <select asp-for="BenhNhanId" class ="form-control" asp-items="ViewBag.BenhNhanId"></select>
+                <label asp-for="DoiTuongId" class="control-label"></label>
+                <input asp-for="DoiTuongId" class="form-control" />
+                <span asp-validation-for="DoiTuongId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TienPhong" class="control-label"></label>
-                <input asp-for="TienPhong" class="form-control" />
-                <span asp-validation-for="TienPhong" class="text-danger"></span>
+                <label asp-for="SoThe" class="control-label"></label>
+                <input asp-for="SoThe" class="form-control" />
+                <span asp-validation-for="SoThe" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TienThuoc" class="control-label"></label>
-                <input asp-for="TienThuoc" class="form-control" />
-                <span asp-validation-for="TienThuoc" class="text-danger"></span>
+                <label asp-for="MienGiam" class="control-label"></label>
+                <input asp-for="MienGiam" class="form-control" />
+                <span asp-validation-for="MienGiam" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

@@ -14,29 +14,31 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Khoa)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.SoPhong)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.TienPhongNgay)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Khoa)
-            </th>
+           
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Khoa.TenKhoa)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SoPhong)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.TienPhongNgay)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Khoa.KhoaId)
-            </td>
+            
             <td>
                 <a asp-action="Edit" asp-route-id="@item.PhongId">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.PhongId">Details</a> |

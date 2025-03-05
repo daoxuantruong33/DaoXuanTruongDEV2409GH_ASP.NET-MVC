@@ -9,11 +9,17 @@ public partial class BacSi
 
     public string HoTen { get; set; } = null!;
 
-    public string? ChuyenKhoa { get; set; }
+    public int? KhoaId { get; set; }
 
     public string? DienThoai { get; set; }
 
     public string? Email { get; set; }
 
+    public int? RoleId { get; set; }
+
     public virtual ICollection<BenhNhan> BenhNhans { get; set; } = new List<BenhNhan>();
+
+    public virtual Khoa? Khoa { get; set; }
+
+    public virtual Role? Role { get; set; }
 }

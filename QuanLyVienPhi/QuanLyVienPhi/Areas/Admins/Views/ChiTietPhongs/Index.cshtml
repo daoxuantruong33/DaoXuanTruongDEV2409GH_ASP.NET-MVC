@@ -14,26 +14,37 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.BenhNhan.HoTen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BenhNhan.Cccd)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.NgayBatDau)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.NgayKetThuc)
             </th>
+            
             <th>
                 @Html.DisplayNameFor(model => model.TienPhong)
             </th>
+            
             <th>
-                @Html.DisplayNameFor(model => model.BenhNhan)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phong)
+                @Html.DisplayNameFor(model => model.Phong.SoPhong)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+            <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BenhNhan.HoTen)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BenhNhan.Cccd)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.NgayBatDau)
             </td>
@@ -43,11 +54,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.TienPhong)
             </td>
+            
             <td>
-                @Html.DisplayFor(modelItem => item.BenhNhan.BenhNhanId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phong.PhongId)
+                @Html.DisplayFor(modelItem => item.Phong.SoPhong)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ChiTietPhongId">Edit</a> |

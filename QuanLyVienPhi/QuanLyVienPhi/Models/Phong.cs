@@ -9,7 +9,7 @@ public partial class Phong
 
     public string SoPhong { get; set; } = null!;
 
-    public string? TienPhongNgay { get; set; }
+    public decimal? TienPhongNgay { get; set; }
 
     public int KhoaId { get; set; }
 

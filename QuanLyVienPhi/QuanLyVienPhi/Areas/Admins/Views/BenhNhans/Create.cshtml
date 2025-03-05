@@ -46,9 +46,9 @@
                 <span asp-validation-for="DienThoai" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Cmnd" class="control-label"></label>
-                <input asp-for="Cmnd" class="form-control" />
-                <span asp-validation-for="Cmnd" class="text-danger"></span>
+                <label asp-for="Cccd" class="control-label"></label>
+                <input asp-for="Cccd" class="form-control" />
+                <span asp-validation-for="Cccd" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="NgayNhapVien" class="control-label"></label>
@@ -94,3 +94,24 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#KhoaId").change(function () {
+            var khoaId = $(this).val();
+            if (khoaId) {
+                $.getJSON("/Admins/BenhNhans/GetPhongByKhoa", { khoaId: khoaId }, function (data) {
+                    var phongSelect = $("#PhongId");
+                    phongSelect.empty();
+                    phongSelect.append('<option value="">-- Chọn Phòng --</option>');
+                    $.each(data, function (index, item) {
+                        phongSelect.append('<option value="' + item.phongId + '">' + item.soPhong + '</option>');
+                    });
+                });
+            } else {
+                $("#PhongId").empty().append('<option value="">-- Chọn Phòng --</option>');
+            }
+        });
+    });
+</script>

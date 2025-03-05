@@ -20,9 +20,8 @@
                 <span asp-validation-for="HoTen" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ChuyenKhoa" class="control-label"></label>
-                <input asp-for="ChuyenKhoa" class="form-control" />
-                <span asp-validation-for="ChuyenKhoa" class="text-danger"></span>
+                <label asp-for="KhoaId" class="control-label"></label>
+                <select asp-for="KhoaId" class="form-control" asp-items="ViewBag.KhoaId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="DienThoai" class="control-label"></label>

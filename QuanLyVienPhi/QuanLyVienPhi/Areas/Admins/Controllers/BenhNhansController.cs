@@ -37,6 +37,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 .Include(b => b.BacSi)
                 .Include(b => b.Khoa)
                 .Include(b => b.Phong)
+                .Include(b => b.ChiTietDichVus)
+
                 .Include(b => b.ChiTietPhongs)
                 .Include(b => b.ChiTietThuocs);
 
@@ -50,6 +52,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
 
                 // Tính tổng tiền thuốc gộp lại từ tất cả các loại thuốc
                 benhNhan.TienThuoc = benhNhan.ChiTietThuocs.Sum(ct => ct.TienThuoc);
+                benhNhan.TienDichVu = benhNhan.ChiTietDichVus.Sum(ct => ct.GiaTien);
             }
 
             return View(benhNhans);
@@ -84,8 +87,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         {
             ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "HoTen");
             ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa");
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong");
-            ViewData["YtaId"] = new SelectList(_context.Yta, "YtaId", "HoTen");
+            ViewData["PhongId"] = new SelectList(new List<Phong>(), "PhongId", "SoPhong"); // Ban đầu để trống
             ViewData["ThuNganId"] = new SelectList(_context.ThuNgans, "ThuNganId", "HoTen");
 
             return View();
@@ -125,9 +127,9 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
-            ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "BacSiId", benhNhan.BacSiId);
-            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId", benhNhan.KhoaId);
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "PhongId", benhNhan.PhongId);
+            ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "HoTen", benhNhan.BacSiId);
+            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa", benhNhan.KhoaId);
+            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", benhNhan.PhongId);
             return View(benhNhan);
         }
 
@@ -163,9 +165,9 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "BacSiId", benhNhan.BacSiId);
-            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "KhoaId", benhNhan.KhoaId);
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "PhongId", benhNhan.PhongId);
+            ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "HoTen", benhNhan.BacSiId);
+            ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa", benhNhan.KhoaId);
+            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", benhNhan.PhongId);
             return View(benhNhan);
         }
 
@@ -220,8 +222,12 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 .Include(b => b.Phong)
                 .Include(b => b.ThuNgan)
 
+                .Include(b => b.ChiTietDichVus)
                 .Include(b => b.ChiTietPhongs) // Bao gồm thông tin ChiTietPhong
                 .Include(b => b.ChiTietThuocs) // Bao gồm thông tin ChiTietThuoc
+                .Include(b => b.Bhyts)
+
+
                 .FirstOrDefault(b => b.BenhNhanId == id);
 
             if (benhNhan == null)
@@ -230,8 +236,10 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             }
 
             // Cập nhật Tiền Phòng và Tiền Thuốc trước khi hiển thị hóa đơn
+            benhNhan.TienDichVu = benhNhan.ChiTietDichVus.Sum(cp => cp.GiaTien);
             benhNhan.TienPhong = benhNhan.ChiTietPhongs.Sum(cp => cp.TienPhong);
             benhNhan.TienThuoc = benhNhan.ChiTietThuocs.Sum(ct => ct.TienThuoc);
+            benhNhan.MienGiam = benhNhan.Bhyts.Sum(ct => ct.MienGiam);
 
             return View(benhNhan);
         }
@@ -268,8 +276,17 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             //MessageBox.Show(apiRequest.acqId.ToString());
             apiRequest.accountNo = ("06095317801");
             apiRequest.accountName = "Dao Xuan Truong";
-           var amount =  _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id).TienThuoc;
-            apiRequest.amount = Convert.ToInt32(_context.ChiTietPhongs.FirstOrDefault(x => x.BenhNhanId == id).TienPhong + _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id).TienThuoc);//+ Convert.ToInt32(_context.BenhNhans.FirstOrDefault(x => x.BenhNhanId == id).TienThuoc);
+            var amount =  _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id).TienThuoc;
+            var tienPhong = _context.ChiTietPhongs.FirstOrDefault(x => x.BenhNhanId == id)?.TienPhong ?? 0;
+            var tienThuoc = _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id)?.TienThuoc ?? 0;
+            var tienDichvu = _context.ChiTietDichVus
+                                     .Where(x => x.BenhNhanId == id)
+                                     .Sum(x => x.GiaTien);  // Tính tổng tiền dịch vụ
+
+            var miengiam = _context.Bhyts.FirstOrDefault(x => x.BenhNhanId == id)?.MienGiam ?? 0;
+
+
+            apiRequest.amount = Convert.ToInt32((tienPhong + tienThuoc + tienDichvu) * (1 - miengiam / 100m));
             apiRequest.addInfo = "Chuyển khoản tiền viện phí";
             apiRequest.format = "text";
             apiRequest.template = "print";
@@ -345,6 +362,14 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
 
-
+        [HttpGet]
+        public JsonResult GetPhongByKhoa(int khoaId)
+        {
+            var danhSachPhong = _context.Phongs
+                .Where(p => p.KhoaId == khoaId)
+                .Select(p => new { p.PhongId, p.SoPhong })
+                .ToList();
+            return Json(danhSachPhong);
+        }
     }
 }

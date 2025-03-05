@@ -9,8 +9,7 @@ using QuanLyVienPhi.Models;
 
 namespace QuanLyVienPhi.Areas.Admins.Controllers
 {
-    [Area("Admins")]
-    public class ChiTietThuocsController : Controller
+    public class ChiTietThuocsController : BaseController
     {
         private readonly QuanLyVienPhiContext _context;
 
@@ -49,8 +48,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // GET: Admins/ChiTietThuocs/Create
         public IActionResult Create()
         {
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId");
-            ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "ThuocId");
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
+            ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "TenThuoc");
             return View();
         }
 
@@ -72,8 +71,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", chiTietThuoc.BenhNhanId);
-            ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "ThuocId", chiTietThuoc.ThuocId);
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietThuoc.BenhNhanId);
+            ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "TenThuoc", chiTietThuoc.ThuocId);
             return View(chiTietThuoc);
         }
 
@@ -91,8 +90,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", chiTietThuoc.BenhNhanId);
-            ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "ThuocId", chiTietThuoc.ThuocId);
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietThuoc.BenhNhanId);
+            ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "TenThuoc", chiTietThuoc.ThuocId);
             return View(chiTietThuoc);
         }
 
@@ -128,8 +127,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", chiTietThuoc.BenhNhanId);
-            ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "ThuocId", chiTietThuoc.ThuocId);
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietThuoc.BenhNhanId);
+            ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "TenThuoc", chiTietThuoc.ThuocId);
             return View(chiTietThuoc);
         }
 
@@ -184,6 +183,16 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
             return Json(thuoc.GiaTien);
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetCCCD(int id)
+        {
+            var benhNhan = await _context.BenhNhans.FindAsync(id);
+            if (benhNhan != null)
+            {
+                return Json(benhNhan.Cccd);
+            }
+            return NotFound();
         }
 
     }

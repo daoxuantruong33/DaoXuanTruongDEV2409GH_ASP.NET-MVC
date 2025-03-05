@@ -156,6 +156,20 @@
                 background-color: #004085; /* Màu nhấn */
             }
 
+        .button-container {
+           
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .btn-custom {
+            height: 40px;
+            flex: 1; /* Cả hai nút sẽ có cùng kích thước */
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
@@ -174,11 +188,11 @@
         <div class="header">PHIẾU THANH TOÁN VIỆN PHÍ</div>
 
         <div class="info">
-            <p><span class="bold">Thông tin khách hàng</span></p>
+            <p><span class="bold">Thông tin Bệnh Nhân</span></p>
             <div class="info-container">
                 <div class="info-left">
-                    <p><span class="bold1">Mã khách hàng:</span> <span class="bold">@Model.BenhNhanId</span></p>
-                    <p><span class="bold1">Tên khách hàng:</span> <span class="bold">@Model.HoTen</span></p>
+                    <p><span class="bold1">Mã Bệnh Nhân:</span> <span class="bold">@Model.BenhNhanId</span></p>
+                    <p><span class="bold1">Tên Bệnh Nhân:</span> <span class="bold">@Model.HoTen</span></p>
                     <p><span class="bold1">Giới tính:</span> @Model.GioiTinh</p>
                 </div>
                 <div class="info-right">
@@ -200,30 +214,59 @@
                 </tr>
             </thead>
             <tbody>
+                @{
+                    int stt = 1;
+                }
                 @foreach (var item in Model.ChiTietPhongs)
                 {
                     <tr>
-                        <td>@item.ChiTietPhongId</td>
+                        <td>@stt</td>
                         <td>Tiền phòng</td>
-                        <td>@item.TienPhong VNĐ</td>
-                        <td>@item.TienPhong VNĐ</td>
+                        <td>@string.Format("{0:N0}", item.TienPhong) VNĐ</td>
+                        <td>@string.Format("{0:N0}", item.TienPhong) VNĐ</td>
                     </tr>
+                    stt++;
                 }
                 @foreach (var item in Model.ChiTietThuocs)
                 {
                     <tr>
-                        <td>@item.ChiTietThuocId</td>
+                        <td>@stt</td>
                         <td>Tiền thuốc</td>
-                        <td>@item.TienThuoc VNĐ</td>
-                        <td>@item.TienThuoc VNĐ</td>
+                        <td>@string.Format("{0:N0}", item.TienThuoc) VNĐ</td>
+                        <td>@string.Format("{0:N0}", item.TienThuoc) VNĐ</td>
                     </tr>
+                    stt++;
+                }
+                @foreach (var item in Model.ChiTietDichVus)
+                {
+                    <tr>
+                        <td>@stt</td>
+                        <td>@item.TenDichVu</td>
+                        <td>@string.Format("{0:N0}", item.GiaTien) VNĐ</td>
+                        <td>@string.Format("{0:N0}", item.GiaTien) VNĐ</td>
+                    </tr>
+                    stt++;
                 }
             </tbody>
         </table>
+
+
+
         <div class="amount">
-            <p class="text-right"><strong>Tổng số tiền:</strong> @(Model.TienThuoc + Model.TienPhong) VNĐ</p>
-            <p class="text-right"><strong>Số tiền thu:</strong>  @(Model.TienThuoc + Model.TienPhong) VNĐ</p>
+            <p class="text-right">
+                <strong>Tổng số tiền:</strong>
+                @(((decimal)(Model.TienThuoc + Model.TienPhong + Model.TienDichVu)).ToString("N0")) VNĐ
+            </p>
+            <p class="text-right"><strong>Miễn Giảm:</strong> @(((decimal)(Model.MienGiam)).ToString("N0")) %</p>
+
+            <p class="text-right">
+                <strong>Thành Tiền:</strong>
+                @(((decimal)((Model.TienThuoc + Model.TienPhong + Model.TienDichVu) * (1 - Model.MienGiam / 100))).ToString("N0")) VNĐ
+            </p>
         </div>
+
+
+
         <div class="signature">
             <p class="text-right">
                 <strong></strong><i> @DateTime.Now.ToString("HH:mm, 'Ngày' dd 'Tháng' MM 'Năm' yyyy")</i>
@@ -243,8 +286,10 @@
             </div>
 
         </div>
-        <button class="btn-custom btn-print" onclick="window.print()">In</button>
-        <button class="btn-custom btn-pay" onclick="location.href='@Url.Action("CreateQR", "BenhNhans", new { id = Model.BenhNhanId })'">Thanh Toán</button>
+        <div class="button-container">
+            <button class="btn-custom btn-pay" style="margin:1.3rem;" onclick="location.href='@Url.Action("CreateQR", "BenhNhans", new { id = Model.BenhNhanId })'">Chuyển Khoản</button>
+            <button class="btn-custom btn-print"  onclick="window.print()">In Hóa Đơn</button>
+        </div>
 
 
     </div>

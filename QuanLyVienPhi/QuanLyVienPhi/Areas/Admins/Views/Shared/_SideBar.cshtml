@@ -14,81 +14,110 @@
         <nav class="mt-3">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" style="gap: 10px;">
                 <!-- Trang Chủ -->
+                 @if (HttpContextAccessor.HttpContext.Session.GetInt32("RoleId") == 1){
+
+                    <li class="nav-item">
+                        <a href="~/admins" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                           <i class="fa-solid fa-house" style="color: #333333;"></i>&ensp;
+                           <p>Trang Chủ</p>
+                       </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/admins/Admins" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-user" style="color: #333333;"></i>&ensp;
+                            <p>Tài khoản Admin</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/admins/Bacsis" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-user-doctor" style="color: #333333;"></i>&ensp;
+                            <p>Danh sách Bác Sĩ</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/admins/Ytums" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-user-nurse" style="color: #333333;"></i>&ensp;
+                            <p>Danh sách y tá</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admins/Thuocs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-syringe" style="color: #333333;"></i>&ensp;
+                            <p>Danh sách thuốc</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/admins/Khoas" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-house-medical" style="color: #333333;"></i>&ensp;
+                            <p>Danh sách các khoa</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/admins/Phongs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-kit-medical" style="color: #333333;"></i>&ensp;
+                            <p>Danh sách phòng</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/admins/ThuNgans" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                            <p>Danh sách thu ngân</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/admins/DoiTuongs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                            <p>Đối Tượng</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/admins/DichVus" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                            <p>Dịch Vụ</p>
+                        </a>
+                    </li>
+                 }
+                 
+
+
+
+                @{
+                    var roleId = HttpContextAccessor.HttpContext.Session.GetInt32("RoleId");
+                }
+
+                @if (roleId == 1 || roleId == 3)
+                {                
                 <li class="nav-item">
-                    <a href="~/admins" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-house" style="color: #333333;"></i>&ensp;
-                        <p>Trang Chủ</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/admins/Admins" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-user" style="color: #333333;"></i>&ensp;
-                        <p>Tài khoản Admin</p>
-                    </a>
-                </li>
+                        <a href="/admins/Benhnhans" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-wheelchair" style="color: #333333;"></i>&ensp;
+                            <p>Danh sách bệnh nhân</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admins/Bhyts" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                            <p>Bảo Hiểm Y Tế</p>
+                        </a>
+                    </li>
+                }
 
 
-                <li class="nav-item">
-                    <a href="/admins/Benhnhans" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-wheelchair" style="color: #333333;"></i>&ensp;
-                        <p>Danh sách bệnh nhân</p>
-                    </a>
-                </li>
 
 
-                <li class="nav-item">
-                    <a href="/admins/Bacsis" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-user-doctor" style="color: #333333;"></i>&ensp;
-                        <p>Danh sách Bác Sĩ</p>
-                    </a>
-                </li>
-                
+                @{
+                    var userRoleId = HttpContextAccessor.HttpContext.Session.GetInt32("RoleId");
+                }
 
-
-                <li class="nav-item">
-                    <a href="/admins/Ytums" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-user-nurse" style="color: #333333;"></i>&ensp;
-                        <p>Danh sách y tá</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/admins/Thuocs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-syringe" style="color: #333333;"></i>&ensp;
-                        <p>Danh sách thuốc</p>
-                    </a>
-                </li>
-
-
-                <li class="nav-item">
-                    <a href="/admins/Khoas" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-house-medical" style="color: #333333;"></i>&ensp;
-                        <p>Danh sách các khoa</p>
-                    </a>
-                </li>
-
-
-                <li class="nav-item">
-                    <a href="/admins/Phongs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-kit-medical" style="color: #333333;"></i>&ensp;
-                        <p>Danh sách phòng</p>
-                    </a>
-                </li>
-
-
-                <li class="nav-item">
-                    <a href="/admins/ThuNgans" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
-                        <p>Danh sách thu ngân</p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="/admins/HoaDons" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                        <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
-                        <p>Hóa đơn</p>
-                    </a>
-                </li>
-               
+                @if (userRoleId == 1 || userRoleId == 2)
+                {
                 <li class="nav-item">
                     <a href="/admins/ChiTietPhongs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
                         <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
@@ -103,6 +132,14 @@
                         <p>Chi tiết thuốc</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/admins/ChiTietDichVus" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                        <p>Chi tiết dịch vụ</p>
+                    </a>
+                </li>
+                }
+
             </ul>
         </nav>
 
