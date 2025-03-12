@@ -1,0 +1,9 @@
+﻿.nav-link:hover {
+    background-color: #2c4964;
+    !important;
+    color: #ffffff !important;
+}
+
+    .nav-link:hover i {
+        color: #ffffff !important;
+    }

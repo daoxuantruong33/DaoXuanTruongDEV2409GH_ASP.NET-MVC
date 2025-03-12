@@ -19,10 +19,27 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/Admins
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
         {
-            return View(await _context.Admins.ToListAsync());
+            var adminsQuery = _context.Admins.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                adminsQuery = adminsQuery.Where(a => a.FullName.Contains(searchString) || a.Username.Contains(searchString));
+            }
+
+            int totalRecords = await adminsQuery.CountAsync();
+            var admins = await adminsQuery.OrderBy(a => a.AdminId)
+                                          .Skip((page - 1) * pageSize)
+                                          .Take(pageSize)
+                                          .ToListAsync();
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+
+            return View(admins);
         }
+
 
         // GET: Admins/Admins/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -53,7 +70,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AdminId,Username,Password,FullName,Phone,Email")] Admin admin)
+        public async Task<IActionResult> Create([Bind("AdminId,Username,Password,FullName,Phone,Email,RoleId")] Admin admin)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +102,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AdminId,Username,Password,FullName,Phone,Email")] Admin admin)
+        public async Task<IActionResult> Edit(int id, [Bind("AdminId,Username,Password,FullName,Phone,Email,RoleId")] Admin admin)
         {
             if (id != admin.AdminId)
             {
