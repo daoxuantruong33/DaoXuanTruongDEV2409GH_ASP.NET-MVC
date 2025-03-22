@@ -20,10 +20,29 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/ChiTietPhongs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
         {
-            var quanLyVienPhiContext = _context.ChiTietPhongs.Include(c => c.BenhNhan).Include(c => c.Phong);
-            return View(await quanLyVienPhiContext.ToListAsync());
+            var achitietphongsQuery = _context.ChiTietPhongs
+                .Include(c => c.BenhNhan)
+                .Include(c => c.Phong)
+                .Include(c => c.Giuong) // Thêm Include cho Giuong
+                .AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                achitietphongsQuery = achitietphongsQuery.Where(a => a.Cccd.Contains(searchString));
+            }
+
+            int totalRecords = await achitietphongsQuery.CountAsync();
+            var ChiTietPhongs = await achitietphongsQuery.OrderBy(a => a.ChiTietPhongId)
+                                          .Skip((page - 1) * pageSize)
+                                          .Take(pageSize)
+                                          .ToListAsync();
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+
+            return View(ChiTietPhongs);
         }
 
         // GET: Admins/ChiTietPhongs/Details/5
@@ -37,13 +56,15 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             var chiTietPhong = await _context.ChiTietPhongs
                 .Include(c => c.BenhNhan)
                 .Include(c => c.Phong)
+                .Include(c => c.Giuong)
+
                 .FirstOrDefaultAsync(m => m.ChiTietPhongId == id);
             if (chiTietPhong == null)
             {
                 return NotFound();
             }
 
-            return View(chiTietPhong);
+            return PartialView("_DetailsPartial", chiTietPhong);
         }
 
         // GET: Admins/ChiTietPhongs/Create
@@ -51,6 +72,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         {
             ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
             ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong");
+            ViewData["GiuongId"] = new SelectList(_context.Giuongs, "GiuongId", "SoGiuong");
 
             // Lấy danh sách ID phòng và giá phòng
             var danhSachGiaPhong = _context.Phongs.ToDictionary(p => p.PhongId, p => p.TienPhongNgay);
@@ -65,19 +87,29 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ChiTietPhongId,BenhNhanId,PhongId,NgayBatDau,NgayKetThuc,TienPhong")] ChiTietPhong chiTietPhong)
+        public async Task<IActionResult> Create([Bind("ChiTietPhongId,BenhNhanId,PhongId,GiuongId,NgayBatDau,NgayKetThuc,CreatedDate,UpdatedDate")] ChiTietPhong chiTietPhong)
         {
             if (ModelState.IsValid)
             {
+                chiTietPhong.TienPhong = 0;
                 _context.Add(chiTietPhong);
+
+                // Cập nhật trạng thái giường thành "Đã sử dụng"
+                var giuong = await _context.Giuongs.FindAsync(chiTietPhong.GiuongId);
+                if (giuong != null)
+                {
+                    giuong.TrangThai = "Đã sử dụng";
+                }
+
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietPhong.BenhNhanId);
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", chiTietPhong.PhongId);
+
             return View(chiTietPhong);
         }
 
+
+        // GET: Admins/ChiTietPhongs/Edit/5
         // GET: Admins/ChiTietPhongs/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -91,17 +123,25 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
+
             ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietPhong.BenhNhanId);
             ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", chiTietPhong.PhongId);
+            ViewData["GiuongId"] = new SelectList(_context.Giuongs, "GiuongId", "SoGiuong", chiTietPhong.GiuongId);
+
+            // Lấy danh sách giá phòng
+            var danhSachGiaPhong = _context.Phongs.ToDictionary(p => p.PhongId, p => p.TienPhongNgay);
+            ViewBag.GiaPhongJson = System.Text.Json.JsonSerializer.Serialize(danhSachGiaPhong);
+
             return View(chiTietPhong);
         }
+
 
         // POST: Admins/ChiTietPhongs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ChiTietPhongId,BenhNhanId,PhongId,NgayBatDau,NgayKetThuc,TienPhong")] ChiTietPhong chiTietPhong)
+        public async Task<IActionResult> Edit(int id, [Bind("ChiTietPhongId,BenhNhanId,PhongId,GiuongId,NgayBatDau,NgayKetThuc,TienPhong,CreatedDate,UpdatedDate")] ChiTietPhong chiTietPhong)
         {
             if (id != chiTietPhong.ChiTietPhongId)
             {
@@ -112,6 +152,31 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 try
                 {
+                    var existingChitietphong = await _context.ChiTietPhongs
+                        .AsNoTracking()
+                        .FirstOrDefaultAsync(b => b.ChiTietPhongId == id);
+
+                    if (existingChitietphong == null)
+                    {
+                        return NotFound();
+                    }
+                    _context.Update(chiTietPhong);
+
+                    // Nếu bệnh nhân xuất viện, giải phóng giường
+                    if (chiTietPhong.NgayKetThuc.HasValue)
+                    {
+                        var giuong = await _context.Giuongs.FindAsync(chiTietPhong.GiuongId);
+                        if (giuong != null)
+                        {
+                            giuong.TrangThai = "Trống";
+                            _context.Giuongs.Update(giuong);
+                        }
+                    }
+
+                    // Giữ nguyên CreatedDate và cập nhật UpdatedDate
+                    chiTietPhong.CreatedDate = existingChitietphong.CreatedDate;
+                    chiTietPhong.UpdatedDate = DateTime.Now;
+
                     _context.Update(chiTietPhong);
                     await _context.SaveChangesAsync();
                 }
@@ -128,10 +193,13 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietPhong.BenhNhanId);
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", chiTietPhong.PhongId);
+
             return View(chiTietPhong);
         }
+
+
+
+
 
         // GET: Admins/ChiTietPhongs/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -152,20 +220,18 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
 
             return View(chiTietPhong);
         }
-
+       
         // POST: Admins/ChiTietPhongs/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult Delete(int id)
         {
-            var chiTietPhong = await _context.ChiTietPhongs.FindAsync(id);
-            if (chiTietPhong != null)
+            var chitietphong = _context.ChiTietPhongs.Find(id);
+            if (chitietphong != null)
             {
-                _context.ChiTietPhongs.Remove(chiTietPhong);
+                _context.ChiTietPhongs.Remove(chitietphong);
+                _context.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
         private bool ChiTietPhongExists(int id)
@@ -184,8 +250,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 {
                     cccd = b.Cccd, // Lấy CCCD của bệnh nhân
                     ngayNhapVien = b.NgayNhapVien.ToString("yyyy-MM-dd"),
-                    khoa = b.Khoa != null ? b.Khoa.TenKhoa : "Chưa cập nhật",
-                    phongId = b.PhongId // Lấy Phòng hiện tại của bệnh nhân
+                    khoaId = b.KhoaId, // Trả về ID của khoa
+                    khoa = b.Khoa != null ? b.Khoa.TenKhoa : "Chưa cập nhật"
                 })
                 .FirstOrDefaultAsync();
 
@@ -213,6 +279,37 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
 
             return Json(benhNhan);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetPhongByKhoa(int khoaId)
+        {
+            var danhSachPhong = await _context.Phongs
+                .Where(p => p.KhoaId == khoaId)
+                .Select(p => new { p.PhongId, p.SoPhong })
+                .ToListAsync();
+
+            return Json(danhSachPhong);
+        }
+        [HttpGet("GetGiaPhong/{phongId}")]
+        public async Task<IActionResult> GetGiaPhong(int phongId)
+        {
+            var phong = await _context.Phongs.FindAsync(phongId);
+            if (phong == null)
+            {
+                return NotFound();
+            }
+            return Ok(phong.TienPhongNgay); // Trả về giá phòng theo ngày
+        }
+        [HttpGet]
+        public IActionResult GetGiuongByPhong(int phongId)
+        {
+            var danhSachGiuong = _context.Giuongs
+                                        .Where(g => g.PhongId == phongId && g.TrangThai == "Trống") // Chỉ lấy giường trống
+                                        .Select(g => new { giuongId = g.GiuongId, soGiuong = g.SoGiuong })
+                                        .ToList();
+            return Json(danhSachGiuong);
+        }
+
 
 
     }

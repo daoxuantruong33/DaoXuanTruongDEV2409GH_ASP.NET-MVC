@@ -2589,6 +2589,10 @@
       "PackagePath": "staticwebassets\\css\\_SideBar.css"
     },
     {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\css\\edit-bhyt.css",
+      "PackagePath": "staticwebassets\\css\\edit-bhyt.css"
+    },
+    {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\css\\fonts.css",
       "PackagePath": "staticwebassets\\css\\fonts.css"
     },
@@ -3429,8 +3433,24 @@
       "PackagePath": "staticwebassets\\images\\imgQR\\17QRCode.jpg"
     },
     {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\25QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\25QRCode.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\28QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\28QRCode.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\29QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\29QRCode.jpg"
+    },
+    {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\3QRCode.jpg",
       "PackagePath": "staticwebassets\\images\\imgQR\\3QRCode.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\43QRCode.jpg",
+      "PackagePath": "staticwebassets\\images\\imgQR\\43QRCode.jpg"
     },
     {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\images\\imgQR\\4QRCode.jpg",
@@ -3735,6 +3755,18 @@
     {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\img\\testimonials\\testimonials-5.jpg",
       "PackagePath": "staticwebassets\\img\\testimonials\\testimonials-5.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\js\\calculateTienPhong.js",
+      "PackagePath": "staticwebassets\\js\\calculateTienPhong.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\js\\eventListeners.js",
+      "PackagePath": "staticwebassets\\js\\eventListeners.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\js\\getBenhNhan.js",
+      "PackagePath": "staticwebassets\\js\\getBenhNhan.js"
     },
     {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\js\\main.js",

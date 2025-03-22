@@ -9,6 +9,10 @@ public partial class BacSi
 
     public string HoTen { get; set; } = null!;
 
+    public DateOnly? NgaySinh { get; set; }
+
+    public string? GioiTinh { get; set; }
+
     public int? KhoaId { get; set; }
 
     public string? DienThoai { get; set; }

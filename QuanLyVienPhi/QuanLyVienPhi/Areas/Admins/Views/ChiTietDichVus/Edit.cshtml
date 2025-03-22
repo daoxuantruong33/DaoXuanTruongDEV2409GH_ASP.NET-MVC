@@ -5,9 +5,10 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Edit</h1>
+<link rel="stylesheet" href="~/css/Create.css" />
 
-<h4>ChiTietDichVu</h4>
+<h1>Sửa</h1>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -26,25 +27,36 @@
             </div>
             <div class="form-group">
                 <label asp-for="DichVuId" class="control-label"></label>
-                <select asp-for="DichVuId" class="form-control" asp-items="ViewBag.DichVuId"></select>
+                <select asp-for="DichVuId" class="form-control" asp-items="ViewBag.DichVuId" id="DichVuId"></select>
                 <span asp-validation-for="DichVuId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="GiaTien" class="control-label"></label>
-                <input asp-for="GiaTien" class="form-control" />
+                <input asp-for="GiaTien" class="form-control" id="GiaTien" readonly />
                 <span asp-validation-for="GiaTien" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="button-group">
+                <input type="submit" value="Xác nhận" class="btn btn-primary" />
+                <a asp-action="Index" class="btn back-button">Quay lại</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $(document).ready(function () {
+            $("#DichVuId").change(function () {
+                var dichVuId = $(this).val();
+                if (dichVuId) {
+                    $.get("/Admins/ChiTietDichVus/GetGiaTienByDichVuId", { dichVuId: dichVuId }, function (data) {
+                        $("#GiaTien").val(data.giaTien);
+                    });
+                } else {
+                    $("#GiaTien").val("");
+                }
+            });
+        });
+    </script>
 }

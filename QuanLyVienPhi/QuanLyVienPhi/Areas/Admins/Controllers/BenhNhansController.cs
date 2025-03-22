@@ -30,30 +30,43 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/BenhNhans
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
         {
             GetListBank();
-            var quanLyVienPhiContext = _context.BenhNhans
+
+            var benhNhansQuery = _context.BenhNhans
                 .Include(b => b.BacSi)
                 .Include(b => b.Khoa)
                 .Include(b => b.Phong)
                 .Include(b => b.ChiTietDichVus)
-
                 .Include(b => b.ChiTietPhongs)
-                .Include(b => b.ChiTietThuocs);
+                .Include(b => b.ChiTietThuocs)
+                .AsQueryable();
 
-            var benhNhans = await quanLyVienPhiContext.ToListAsync();
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                benhNhansQuery = benhNhansQuery.Where(a => a.HoTen.Contains(searchString));
+            }
 
-            // Cập nhật lại Tiền Phòng và Tiền Thuốc
+            int totalRecords = await benhNhansQuery.CountAsync();
+            var benhNhans = await benhNhansQuery
+                .OrderBy(a => a.BenhNhanId)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            // Cập nhật lại Tiền Phòng, Tiền Thuốc, Tiền Dịch Vụ
             foreach (var benhNhan in benhNhans)
             {
-                // Tính tổng tiền phòng
                 benhNhan.TienPhong = benhNhan.ChiTietPhongs.Sum(cp => cp.TienPhong);
-
-                // Tính tổng tiền thuốc gộp lại từ tất cả các loại thuốc
                 benhNhan.TienThuoc = benhNhan.ChiTietThuocs.Sum(ct => ct.TienThuoc);
                 benhNhan.TienDichVu = benhNhan.ChiTietDichVus.Sum(ct => ct.GiaTien);
+
             }
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+            ViewData["SearchString"] = searchString;
 
             return View(benhNhans);
         }
@@ -70,17 +83,46 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             }
 
             var benhNhan = await _context.BenhNhans
-                .Include(b => b.BacSi)
-                .Include(b => b.Khoa)
-                .Include(b => b.Phong)
-                .FirstOrDefaultAsync(m => m.BenhNhanId == id);
+     .Include(b => b.BacSi)
+     .Include(b => b.Khoa)
+     .Include(b => b.Phong)
+     .Include(b => b.ChiTietPhongs)
+         .ThenInclude(cp => cp.Phong) // Load thông tin phòng
+     .Include(b => b.ChiTietPhongs)
+         .ThenInclude(cp => cp.Giuong) // Load thông tin giường
+     .FirstOrDefaultAsync(m => m.BenhNhanId == id);
+
             if (benhNhan == null)
             {
                 return NotFound();
             }
 
-            return View(benhNhan);
+            // Lấy ngày ra viện (Ngày kết thúc lớn nhất)
+            benhNhan.NgayRaVien = benhNhan.ChiTietPhongs
+                .OrderByDescending(cp => cp.NgayKetThuc)
+                .Select(cp => cp.NgayKetThuc)
+                .FirstOrDefault();
+
+            // Lấy phòng gần nhất
+            var phongMoiNhat = benhNhan.ChiTietPhongs
+                .OrderByDescending(cp => cp.NgayKetThuc)
+                .Select(cp => cp.Phong)
+                .FirstOrDefault();
+
+            // Lấy giường gần nhất
+            var giuongMoiNhat = benhNhan.ChiTietPhongs
+                .OrderByDescending(cp => cp.NgayKetThuc)
+                .Select(cp => cp.Giuong)
+                .FirstOrDefault();
+
+            // Gán vào model
+            benhNhan.Phong = phongMoiNhat;
+            ViewBag.GiuongMoiNhat = giuongMoiNhat; // Gửi giường qua View
+
+            return PartialView("_DetailsPartial", benhNhan);
+
         }
+
 
         // GET: Admins/BenhNhans/Create
         public IActionResult Create()
@@ -98,7 +140,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BenhNhanId,HoTen,NgaySinh,GioiTinh,DiaChi,DienThoai,Cmnd,NgayNhapVien,NgayRaVien,BacSiId,YtaId,KhoaId,PhongId,ThuNganId")] BenhNhan benhNhan)
+        public async Task<IActionResult> Create([Bind("BenhNhanId,HoTen,NgaySinh,GioiTinh,DiaChi,DienThoai,Cccd,NgayNhapVien,NgayRaVien,BacSiId,YtaId,KhoaId,PhongId,ThuNganId,CreatedDate,UpdatedDate")] BenhNhan benhNhan)
         {
             if (ModelState.IsValid)
             {
@@ -130,7 +172,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "HoTen", benhNhan.BacSiId);
             ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa", benhNhan.KhoaId);
             ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", benhNhan.PhongId);
-            return View(benhNhan);
+            return PartialView("_EditPartial", benhNhan);
         }
 
         // POST: Admins/BenhNhans/Edit/5
@@ -138,7 +180,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BenhNhanId,HoTen,NgaySinh,GioiTinh,DiaChi,DienThoai,Cmnd,NgayNhapVien,NgayRaVien,BacSiId,YtaId,KhoaId,PhongId")] BenhNhan benhNhan)
+        public async Task<IActionResult> Edit(int id, [Bind("BenhNhanId,HoTen,NgaySinh,GioiTinh,DiaChi,DienThoai,Cccd,NgayNhapVien,NgayRaVien,BacSiId,YtaId,KhoaId,PhongId,TrangThaiThanhToan,CreatedDate,UpdatedDate")] BenhNhan benhNhan)
         {
             if (id != benhNhan.BenhNhanId)
             {
@@ -149,8 +191,30 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 try
                 {
+                    var existingBenhNhan = await _context.BenhNhans
+                        .AsNoTracking()
+                        .FirstOrDefaultAsync(b => b.BenhNhanId == id);
+
+                    if (existingBenhNhan == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Kiểm tra giá trị trước khi cập nhật
+                    Console.WriteLine($"ModelState.IsValid: {ModelState.IsValid}");
+                    Console.WriteLine($"Giá trị nhận được từ form: {benhNhan.TrangThaiThanhToan}");
+
+
+                    // Giữ nguyên CreatedDate và cập nhật UpdatedDate
+                    benhNhan.CreatedDate = existingBenhNhan.CreatedDate;
+                    benhNhan.UpdatedDate = DateTime.Now;
+
                     _context.Update(benhNhan);
                     await _context.SaveChangesAsync();
+
+                    // Kiểm tra sau khi lưu
+                    var checkAfterSave = await _context.BenhNhans.FindAsync(id);
+                    Console.WriteLine($"Sau khi cập nhật: {checkAfterSave.TrangThaiThanhToan}");
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -165,11 +229,14 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "HoTen", benhNhan.BacSiId);
             ViewData["KhoaId"] = new SelectList(_context.Khoas, "KhoaId", "TenKhoa", benhNhan.KhoaId);
             ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", benhNhan.PhongId);
             return View(benhNhan);
         }
+
+
 
         // GET: Admins/BenhNhans/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -193,20 +260,18 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             return View(benhNhan);
         }
 
-        // POST: Admins/BenhNhans/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult Delete(int id)
         {
-            var benhNhan = await _context.BenhNhans.FindAsync(id);
-            if (benhNhan != null)
+            var benhnhan = _context.BenhNhans.Find(id);
+            if (benhnhan != null)
             {
-                _context.BenhNhans.Remove(benhNhan);
+                _context.BenhNhans.Remove(benhnhan);
+                _context.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
+
 
         private bool BenhNhanExists(int id)
         {
@@ -221,13 +286,11 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 .Include(b => b.Khoa)
                 .Include(b => b.Phong)
                 .Include(b => b.ThuNgan)
-
                 .Include(b => b.ChiTietDichVus)
-                .Include(b => b.ChiTietPhongs) // Bao gồm thông tin ChiTietPhong
+                .Include(b => b.ChiTietPhongs)
                 .Include(b => b.ChiTietThuocs) // Bao gồm thông tin ChiTietThuoc
+                .ThenInclude(ct => ct.Thuoc) // Thêm Include để lấy thông tin thuốc
                 .Include(b => b.Bhyts)
-
-
                 .FirstOrDefault(b => b.BenhNhanId == id);
 
             if (benhNhan == null)
@@ -238,7 +301,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             // Cập nhật Tiền Phòng và Tiền Thuốc trước khi hiển thị hóa đơn
             benhNhan.TienDichVu = benhNhan.ChiTietDichVus.Sum(cp => cp.GiaTien);
             benhNhan.TienPhong = benhNhan.ChiTietPhongs.Sum(cp => cp.TienPhong);
-            benhNhan.TienThuoc = benhNhan.ChiTietThuocs.Sum(ct => ct.TienThuoc);
+            benhNhan.TienThuoc = benhNhan.ChiTietThuocs.Sum(cp => cp.TienThuoc);
             benhNhan.MienGiam = benhNhan.Bhyts.Sum(ct => ct.MienGiam);
 
             return View(benhNhan);
@@ -276,9 +339,11 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             //MessageBox.Show(apiRequest.acqId.ToString());
             apiRequest.accountNo = ("06095317801");
             apiRequest.accountName = "Dao Xuan Truong";
-            var amount =  _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id).TienThuoc;
+            var amount =  _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id)?.TienThuoc ?? 0;
             var tienPhong = _context.ChiTietPhongs.FirstOrDefault(x => x.BenhNhanId == id)?.TienPhong ?? 0;
-            var tienThuoc = _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id)?.TienThuoc ?? 0;
+            var tienThuoc = _context.ChiTietThuocs
+                                     .Where(x => x.BenhNhanId == id)
+                                     .Sum(x => x.TienThuoc);
             var tienDichvu = _context.ChiTietDichVus
                                      .Where(x => x.BenhNhanId == id)
                                      .Sum(x => x.GiaTien);  // Tính tổng tiền dịch vụ
@@ -371,5 +436,16 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 .ToList();
             return Json(danhSachPhong);
         }
+        [HttpGet]
+        public JsonResult GetBacSiByKhoa(int khoaId)
+        {
+            var danhSachBacSi = _context.BacSis
+                .Where(b => b.KhoaId == khoaId)
+                .Select(b => new { b.BacSiId, b.HoTen })
+                .ToList();
+
+            return Json(danhSachBacSi);
+        }
+
     }
 }

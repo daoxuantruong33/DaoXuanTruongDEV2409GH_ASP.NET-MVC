@@ -5,10 +5,9 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Edit</h1>
+<link rel="stylesheet" href="~/css/Create.css" />
 
-<h4>BenhNhan</h4>
-<hr />
+
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -36,51 +35,79 @@
             </div>
             <div class="form-group">
                 <label asp-for="DienThoai" class="control-label"></label>
-                <input asp-for="DienThoai" class="form-control" />
+                <input asp-for="DienThoai" class="form-control" id="DienThoai" maxlength="10" required />
                 <span asp-validation-for="DienThoai" class="text-danger"></span>
+                <span id="phone-error" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Cccd" class="control-label"></label>
-                <input asp-for="Cccd" class="form-control" />
+                <input asp-for="Cccd" class="form-control" id="Cccd" maxlength="12" required />
                 <span asp-validation-for="Cccd" class="text-danger"></span>
+                <span id="cccd-error" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="NgayNhapVien" class="control-label"></label>
-                <input asp-for="NgayNhapVien" class="form-control" />
+                <input asp-for="NgayNhapVien" class="form-control" readonly/>
                 <span asp-validation-for="NgayNhapVien" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="NgayRaVien" class="control-label"></label>
-                <input asp-for="NgayRaVien" class="form-control" />
+                <input asp-for="NgayRaVien" class="form-control" readonly />
                 <span asp-validation-for="NgayRaVien" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="BacSiId" class="control-label"></label>
-                <select asp-for="BacSiId" class="form-control" asp-items="ViewBag.BacSiId"></select>
-                <span asp-validation-for="BacSiId" class="text-danger"></span>
+                <label for="KhoaId">Khoa</label>
+                <select id="KhoaId" name="KhoaId" class="form-control" asp-items="ViewBag.KhoaId">
+                    <option value="">-- Chọn Khoa --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="BacSiId">Bác sĩ</label>
+                <select id="BacSiId" name="BacSiId" class="form-control" asp-items="ViewBag.BacSiId">
+                    <option value="">-- Chọn Bác Sĩ --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TrangThaiThanhToan" class="control-label"></label>
+                <input asp-for="TrangThaiThanhToan" class="form-control"  />
+                <span asp-validation-for="TrangThaiThanhToan" class="text-danger"></span>
             </div>
            
-            <div class="form-group">
-                <label asp-for="KhoaId" class="control-label"></label>
-                <select asp-for="KhoaId" class="form-control" asp-items="ViewBag.KhoaId"></select>
-                <span asp-validation-for="KhoaId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+            
+          @*   <div class="form-group">
                 <label asp-for="PhongId" class="control-label"></label>
                 <select asp-for="PhongId" class="form-control" asp-items="ViewBag.PhongId"></select>
                 <span asp-validation-for="PhongId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            </div> *@
+            <div class="button-group">
+                <input type="submit" value="Xác nhận" class="btn btn-primary" />
+                <a asp-action="Index" class="btn back-button">Quay lại</a>
             </div>
         </form>
     </div>
 </div>
+    <script>
+        $(document).ready(function () {
+            $('#KhoaId').change(function () {
+                var khoaId = $(this).val();
+                if (khoaId) {
+                    $.get('/Admins/BenhNhans/GetBacSiByKhoa', { khoaId: khoaId }, function (data) {
+                        var bacSiSelect = $('#BacSiId');
+                        bacSiSelect.empty();
+                        bacSiSelect.append('<option value="">-- Chọn Bác Sĩ --</option>');
+                        $.each(data, function (index, item) {
+                            bacSiSelect.append('<option value="' + item.bacSiId + '">' + item.hoTen + '</option>');
+                        });
+                    });
+                }
+            });
+        });
+    </script>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+
+

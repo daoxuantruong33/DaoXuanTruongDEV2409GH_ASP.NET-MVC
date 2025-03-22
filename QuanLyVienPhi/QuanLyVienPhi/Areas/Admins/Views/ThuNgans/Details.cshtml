@@ -5,11 +5,12 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Details</h1>
+<link rel="stylesheet" href="~/css/Details.css" />
 
+<h1>Chi Tiết</h1>
+<hr />
 <div>
-    <h4>ThuNgan</h4>
-    <hr />
+ 
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.HoTen)
@@ -30,8 +31,8 @@
             @Html.DisplayFor(model => model.Email)
         </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.ThuNganId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <div class="button-group">
+        <a asp-action="Edit" asp-route-id="@Model?.ThuNganId" class="btn btn-primary">Sửa</a>
+        <a asp-action="Index" class="back-button">Quay lại</a>
+    </div>
 </div>

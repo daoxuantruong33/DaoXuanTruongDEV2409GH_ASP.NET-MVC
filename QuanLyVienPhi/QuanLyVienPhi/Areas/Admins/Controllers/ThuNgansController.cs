@@ -19,9 +19,25 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/ThuNgans
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
         {
-            return View(await _context.ThuNgans.ToListAsync());
+            var thungansQuery = _context.ThuNgans.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                thungansQuery = thungansQuery.Where(a => a.HoTen.Contains(searchString) || a.HoTen.Contains(searchString));
+            }
+
+            int totalRecords = await thungansQuery.CountAsync();
+            var thungans = await thungansQuery.OrderBy(a => a.ThuNganId)
+                                          .Skip((page - 1) * pageSize)
+                                          .Take(pageSize)
+                                          .ToListAsync();
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+
+            return View(thungans);
         }
 
         // GET: Admins/ThuNgans/Details/5

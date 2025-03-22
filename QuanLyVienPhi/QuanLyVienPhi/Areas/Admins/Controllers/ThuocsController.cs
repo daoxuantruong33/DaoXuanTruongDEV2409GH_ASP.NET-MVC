@@ -19,10 +19,27 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/Thuocs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
         {
-            return View(await _context.Thuocs.ToListAsync());
+            var thuocsQuery = _context.Thuocs.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                thuocsQuery = thuocsQuery.Where(a => a.TenThuoc.Contains(searchString) || a.TenThuoc.Contains(searchString));
+            }
+
+            int totalRecords = await thuocsQuery.CountAsync();
+            var thuocs = await thuocsQuery.OrderBy(a => a.ThuocId)
+                                          .Skip((page - 1) * pageSize)
+                                          .Take(pageSize)
+                                          .ToListAsync();
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+
+            return View(thuocs);
         }
+
 
         // GET: Admins/Thuocs/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -5,13 +5,30 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Index</h1>
+<link rel="stylesheet" href="~/css/Index.css" />
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="text-muted border rounded px-3 py-1 shadow-sm" style="background-color: #2c4964; color: white !important ">
+            @DateTime.Now.ToString("dd/MM/yyyy")
+        </div>
+        <div class="d-flex justify-content-between align-items-center" style="margin-bottom:1rem">
+            <div class="d-flex gap-2" style="margin-top:1rem">
+                <form action="" method="get" class="d-flex align-items-center">
+                    <input type="text" name="name" id="keyword" class="form-control me-2" placeholder="Nhập tên cần tìm..." value="@ViewData["CurrentFilter"]">
+                    <button type="submit" style="width:2.4rem;height:2.4rem;background-color:#2c4964" class="btn btn-info">
+                        <i class="bi bi-search"></i> <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <button type="button" class="btn btn-info" style="background-color:#2c4964" onclick="location.href='@Url.Action("Create")'">
+                    Tạo mới
+                </button>
+            </div>
+        </div>
+    </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
+    <table class="table table-hover border rounded shadow-sm">
+        <thead class="table-dark">
+        <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.HoTen)
@@ -37,12 +54,42 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ThuNganId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ThuNganId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ThuNganId">Delete</a>
-            </td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@item.ThuNganId" class="btn btn-outline btn-sm">Sửa</a>
+                        <a asp-action="Details" asp-route-id="@item.ThuNganId" class="btn btn-outline btn-sm">Chi tiết</a>
+                        <a asp-action="Delete" asp-route-id="@item.ThuNganId" class="btn btn-outline btn-sm">Xóa</a>
+                    </td>
         </tr>
 }
     </tbody>
 </table>
+<div class="d-flex justify-content-center mt-4">
+    <nav aria-label="Pagination">
+        <ul class="pagination shadow-none align-items-center gap-2">
+            @if ((int)ViewData["CurrentPage"] > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link pagination-hover border-0 p-2 rounded-pill" href="@Url.Action("Index", new { page = (int)ViewData["CurrentPage"] - 1 })">
+                        <i class="fas fa-chevron-left" style="color:#2c4964"></i>
+                    </a>
+                </li>
+            }
+
+            <li class="page-item active">
+                <span class="page-link bg text-white border-0 px-3 py-2 rounded-pill text-center" style=" background-color: #2c4964">
+                    @ViewData["CurrentPage"]
+                </span>
+            </li>
+
+            @if ((int)ViewData["CurrentPage"] < (int)ViewData["TotalPages"])
+            {
+                <li class="page-item">
+                    <a class="page-link pagination-hover border-0 p-2 rounded-pill" href="@Url.Action("Index", new { page = (int)ViewData["CurrentPage"] + 1 })">
+                        <i class="fas fa-chevron-right" style="color:#2c4964"></i>
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+</div>

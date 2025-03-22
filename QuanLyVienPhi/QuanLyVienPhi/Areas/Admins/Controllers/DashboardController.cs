@@ -25,13 +25,16 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             // Điều hướng người dùng đến dashboard dựa trên roleId
             if (roleId == 1) // Admin
             {
-                return RedirectToAction("AdminDashboard");
+                return RedirectToAction("Admin");
             }
             else if (roleId == 2) // Sales
             {
-                return RedirectToAction("ThuNganDashboard");
+                return RedirectToAction("ThuNgan");
             }
-
+            else if (roleId == 3) // Sales
+            {
+                return RedirectToAction("BacSi");
+            }
             return RedirectToAction("Index", "Login"); // Nếu role không hợp lệ, quay lại đăng nhập
         }
 

@@ -9,8 +9,7 @@ using QuanLyVienPhi.Models;
 
 namespace QuanLyVienPhi.Areas.Admins.Controllers
 {
-    [Area("Admins")]
-    public class ChiTietDichVusController : Controller
+    public class ChiTietDichVusController : BaseController
     {
         private readonly QuanLyVienPhiContext _context;
 
@@ -19,13 +18,31 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             _context = context;
         }
 
-        // GET: Admins/ChiTietDichVus
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
         {
-            var quanLyVienPhiContext = _context.ChiTietDichVus.Include(c => c.BenhNhan).Include(c => c.DichVu);
-            return View(await quanLyVienPhiContext.ToListAsync());
-        }
+            var chitietdichvusQuery = _context.ChiTietDichVus
+                .Include(c => c.BenhNhan)
+                .Include(c => c.DichVu)
+                .AsQueryable();
 
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                chitietdichvusQuery = chitietdichvusQuery.Where(a => a.Cccd.Contains(searchString));
+            }
+
+            int totalRecords = await chitietdichvusQuery.CountAsync();
+            var chitietdichvus = await chitietdichvusQuery
+                .OrderBy(a => a.ChiTietDichVuId)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+            ViewData["SearchString"] = searchString;
+
+            return View(chitietdichvus);
+        }
         // GET: Admins/ChiTietDichVus/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -43,14 +60,14 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            return View(chiTietDichVu);
+            return PartialView("_DetailsPartial", chiTietDichVu);
         }
 
         // GET: Admins/ChiTietDichVus/Create
         public IActionResult Create()
         {
             ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
-            ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "DichVuId");
+            ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "TenDichVu");
             return View();
         }
 
@@ -59,7 +76,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ChiTietDichVuId,BenhNhanId,Cccd,DichVuId,TenDichVu,GiaTien")] ChiTietDichVu chiTietDichVu)
+        public async Task<IActionResult> Create([Bind("ChiTietDichVuId,BenhNhanId,Cccd,DichVuId,TenDichVu,GiaTien,CreatedDate,UpdatedDate")] ChiTietDichVu chiTietDichVu)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +85,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", chiTietDichVu.BenhNhanId);
-            ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "DichVuId", chiTietDichVu.DichVuId);
+            ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "TenDichVu", chiTietDichVu.DichVuId);
             return View(chiTietDichVu);
         }
 
@@ -85,9 +102,9 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", chiTietDichVu.BenhNhanId);
-            ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "DichVuId", chiTietDichVu.DichVuId);
-            return View(chiTietDichVu);
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietDichVu.BenhNhanId);
+            ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "TenDichVu", chiTietDichVu.DichVuId);
+            return PartialView("_EditPartial", chiTietDichVu);
         }
 
         // POST: Admins/ChiTietDichVus/Edit/5
@@ -95,7 +112,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ChiTietDichVuId,BenhNhanId,Cccd,DichVuId,GiaTien")] ChiTietDichVu chiTietDichVu)
+        public async Task<IActionResult> Edit(int id, [Bind("ChiTietDichVuId,BenhNhanId,Cccd,DichVuId,GiaTien,CreatedDate,UpdatedDate")] ChiTietDichVu chiTietDichVu)
         {
             if (id != chiTietDichVu.ChiTietDichVuId)
             {
@@ -106,6 +123,21 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 try
                 {
+                    var existingChitietdichvus = await _context.ChiTietDichVus
+                       .AsNoTracking()
+                       .FirstOrDefaultAsync(b => b.ChiTietDichVuId == id);
+
+                    if (existingChitietdichvus == null)
+                    {
+                        return NotFound();
+                    }
+                    _context.Update(chiTietDichVu);
+
+                    // Giữ nguyên CreatedDate và cập nhật e
+                    chiTietDichVu.CreatedDate = existingChitietdichvus.CreatedDate;
+                    chiTietDichVu.UpdatedDate = DateTime.Now;
+
+
                     _context.Update(chiTietDichVu);
                     await _context.SaveChangesAsync();
                 }
@@ -122,8 +154,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", chiTietDichVu.BenhNhanId);
-            ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "DichVuId", chiTietDichVu.DichVuId);
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietDichVu.BenhNhanId);
+            ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "TenDichVu", chiTietDichVu.DichVuId);
             return View(chiTietDichVu);
         }
 
@@ -148,18 +180,16 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // POST: Admins/ChiTietDichVus/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult Delete(int id)
         {
-            var chiTietDichVu = await _context.ChiTietDichVus.FindAsync(id);
+            var chiTietDichVu = _context.ChiTietDichVus.Find(id);
             if (chiTietDichVu != null)
             {
                 _context.ChiTietDichVus.Remove(chiTietDichVu);
+                _context.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
         private bool ChiTietDichVuExists(int id)

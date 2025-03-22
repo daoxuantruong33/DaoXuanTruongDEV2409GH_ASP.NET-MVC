@@ -1,13 +1,18 @@
 ﻿body {
     background-color: #f4f6f9;
-    font-family: 'Arial', sans-serif;
+    font-family: "SVN-Medium", sans-serif;
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
     color: #2c4964;
     font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
+
 
 h4 {
     text-align: center;
@@ -88,3 +93,34 @@ h4 {
         background-color: #1b3348;
         text-decoration: none;
     }
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-md-4 {
+    width: 100%;
+    max-width: 800px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    width: calc(50% - 10px); /* Chia 2 cột, trừ khoảng cách giữa */
+}
+
+.button-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

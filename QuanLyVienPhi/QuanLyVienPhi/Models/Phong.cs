@@ -17,5 +17,7 @@ public partial class Phong
 
     public virtual ICollection<ChiTietPhong> ChiTietPhongs { get; set; } = new List<ChiTietPhong>();
 
+    public virtual ICollection<Giuong> Giuongs { get; set; } = new List<Giuong>();
+
     public virtual Khoa Khoa { get; set; } = null!;
 }

@@ -5,12 +5,11 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Create</h1>
+<link rel="stylesheet" href="~/css/Create.css" />
 
-<h4>ChiTietThuoc</h4>
-<hr />
+
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-8">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -33,18 +32,26 @@
             </div>
             <div class="form-group">
                 <label asp-for="TienThuoc" class="control-label"></label>
-                <input asp-for="TienThuoc" class="form-control" />
+                <input asp-for="TienThuoc" class="form-control" readonly />
                 <span asp-validation-for="TienThuoc" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label asp-for="CreatedDate" class="control-label"></label>
+                <input asp-for="CreatedDate" type="datetime-local" class="form-control" readonly />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="UpdatedDate" class="control-label"></label>
+                <input asp-for="UpdatedDate" type="datetime-local" class="form-control" readonly />
+                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+            </div>
+            <div class="button-group">
+                <input type="submit" value="Xác nhận" class="btn btn-primary" />
+                <a asp-action="Index" class="btn back-button">Quay lại</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
@@ -95,5 +102,30 @@
         });
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var createdDateInput = document.querySelector("input[name='CreatedDate']");
+            var updatedDateInput = document.querySelector("input[name='UpdatedDate']");
 
+            function formatDateTimeLocal(date) {
+                let d = new Date(date);
+                let year = d.getFullYear();
+                let month = String(d.getMonth() + 1).padStart(2, '0');
+                let day = String(d.getDate()).padStart(2, '0');
+                let hours = String(d.getHours()).padStart(2, '0');
+                let minutes = String(d.getMinutes()).padStart(2, '0');
+                return `${year}-${month}-${day}T${hours}:${minutes}`;
+            }
+
+            // Nếu CreatedDate chưa có giá trị, đặt ngày + giờ hiện tại
+            if (!createdDateInput.value) {
+                createdDateInput.value = formatDateTimeLocal(new Date());
+            }
+
+            // Cập nhật UpdatedDate khi có thay đổi trong form
+            document.querySelector("form").addEventListener("change", function () {
+                updatedDateInput.value = formatDateTimeLocal(new Date());
+            });
+        });
+    </script>
 }

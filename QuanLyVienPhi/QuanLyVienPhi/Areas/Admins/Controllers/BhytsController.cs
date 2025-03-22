@@ -19,10 +19,25 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/Bhyts
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString = "", int page = 1, int pageSize = 5)
         {
-            var quanLyVienPhiContext = _context.Bhyts.Include(b => b.BenhNhan).Include(b => b.DoiTuong);
-            return View(await quanLyVienPhiContext.ToListAsync());
+            var bhytssQuery = _context.Bhyts.Include(b => b.BenhNhan).Include(b => b.DoiTuong).AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                bhytssQuery = bhytssQuery.Where(a => a.SoTheBhyt.Contains(searchString));
+            }
+
+            int totalRecords = await bhytssQuery.CountAsync();
+            var bhyts = await bhytssQuery.OrderBy(a => a.BhytId)
+                                          .Skip((page - 1) * pageSize)
+                                          .Take(pageSize)
+                                          .ToListAsync();
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+
+            return View(bhyts);
         }
 
         // GET: Admins/Bhyts/Details/5
@@ -42,7 +57,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            return View(bhyt);
+            return PartialView("_DetailsPartial", bhyt);
         }
 
         public IActionResult Create()
@@ -58,7 +73,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BhytId,BenhNhanId,Cccd,DoiTuongId,SoTheBhyt,MienGiam")] Bhyt bhyt)
+        public async Task<IActionResult> Create([Bind("BhytId,BenhNhanId,Cccd,DoiTuongId,SoTheBhyt,MienGiam,CreatedDate,UpdatedDate")] Bhyt bhyt)
         {
             if (ModelState.IsValid)
             {
@@ -84,9 +99,9 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", bhyt.BenhNhanId);
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", bhyt.BenhNhanId);
             ViewData["DoiTuongId"] = new SelectList(_context.DoiTuongs, "DoiTuongId", "DoiTuongId", bhyt.DoiTuongId);
-            return View(bhyt);
+            return PartialView("_EditPartial",bhyt);
         }
 
         // POST: Admins/Bhyts/Edit/5
@@ -94,7 +109,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BhytId,BenhNhanId,Cccd,DoiTuongId,SoTheBhyt,MienGiam")] Bhyt bhyt)
+        public async Task<IActionResult> Edit(int id, [Bind("BhytId,BenhNhanId,Cccd,DoiTuongId,SoTheBhyt,MienGiam,CreatedDate,UpdatedDate")] Bhyt bhyt)
         {
             if (id != bhyt.BhytId)
             {
@@ -105,6 +120,18 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 try
                 {
+                    var existingBhyts = await _context.Bhyts
+                        .AsNoTracking()
+                        .FirstOrDefaultAsync(b => b.BhytId == id);
+
+                    if (existingBhyts == null)
+                    {
+                        return NotFound();
+                    }
+
+                    bhyt.CreatedDate = existingBhyts.CreatedDate; // Giữ nguyên ngày tạo
+                    bhyt.UpdatedDate = DateTime.Now; // Cập nhật ngày sửa đổi
+
                     _context.Update(bhyt);
                     await _context.SaveChangesAsync();
                 }
@@ -121,10 +148,13 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "BenhNhanId", bhyt.BenhNhanId);
+
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", bhyt.BenhNhanId);
             ViewData["DoiTuongId"] = new SelectList(_context.DoiTuongs, "DoiTuongId", "DoiTuongId", bhyt.DoiTuongId);
+
             return View(bhyt);
         }
+
 
         // GET: Admins/Bhyts/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -147,19 +177,18 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // POST: Admins/Bhyts/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult Delete(int id)
         {
-            var bhyt = await _context.Bhyts.FindAsync(id);
+            var bhyt = _context.Bhyts.Find(id);
             if (bhyt != null)
             {
                 _context.Bhyts.Remove(bhyt);
+                _context.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
+
 
         private bool BhytExists(int id)
         {

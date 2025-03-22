@@ -4,12 +4,12 @@
     ViewData["Title"] = "Details";
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
+<link rel="stylesheet" href="~/css/Details.css" />
 
-<h1>Details</h1>
-
+<h1>Chi Tiết</h1>
+<hr />
 <div>
-    <h4>BenhNhan</h4>
-    <hr />
+    
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.HoTen)
@@ -71,16 +71,42 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Khoa.TenKhoa)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Phong)
+        <dt class="col-sm-2">
+            Phòng
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Phong.SoPhong)
+        <dd class="col-sm-10">
+            @foreach (var item in Model.ChiTietPhongs)
+            {
+                <p>@item.Phong.SoPhong</p> <!-- Hiển thị số phòng -->
+            }
         </dd>
-       
+        <dt class="col-sm-2">
+            Giường gần nhất
+        </dt>
+        <dd class="col-sm-10">
+            @(ViewBag.GiuongMoiNhat != null ? ViewBag.GiuongMoiNhat.SoGiuong : "Chưa có")
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TrangThaiThanhToan)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TrangThaiThanhToan)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UpdatedDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UpdatedDate)
+        </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.BenhNhanId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <div class="button-group">
+        <a asp-action="Edit" asp-route-id="@Model?.BenhNhanId" class="btn btn-primary">Sửa</a>
+        <a asp-action="Index" class="back-button">Quay lại</a>
+    </div>
 </div>

@@ -5,10 +5,8 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Edit</h1>
+<link rel="stylesheet" href="~/css/Create.css" />
 
-<h4>ChiTietPhong</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -16,40 +14,117 @@
             <input type="hidden" asp-for="ChiTietPhongId" />
             <div class="form-group">
                 <label asp-for="BenhNhanId" class="control-label"></label>
-                <select asp-for="BenhNhanId" class="form-control" asp-items="ViewBag.BenhNhanId"></select>
+                <select asp-for="BenhNhanId" class="form-control" asp-items="ViewBag.BenhNhanId" disabled="disabled"></select>
+                <input type="hidden" asp-for="BenhNhanId" />
                 <span asp-validation-for="BenhNhanId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PhongId" class="control-label"></label>
-                <select asp-for="PhongId" class="form-control" asp-items="ViewBag.PhongId"></select>
+                <select asp-for="PhongId" class="form-control" asp-items="ViewBag.PhongId" disabled="disabled"></select>
+                <input type="hidden" asp-for="PhongId" />                
                 <span asp-validation-for="PhongId" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="GiuongId" class="control-label"></label>
+                <select asp-for="GiuongId" class="form-control" asp-items="ViewBag.GiuongId" disabled="disabled"></select>
+                <input type="hidden" asp-for="GiuongId" />
+                <span asp-validation-for="GiuongId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="NgayBatDau" class="control-label"></label>
-                <input asp-for="NgayBatDau" class="form-control" />
+                <input asp-for="NgayBatDau" type="date" class="form-control" readonly />
                 <span asp-validation-for="NgayBatDau" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="NgayKetThuc" class="control-label"></label>
-                <input asp-for="NgayKetThuc" class="form-control" />
+                <input asp-for="NgayKetThuc" type="date" class="form-control" />
                 <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TienPhong" class="control-label"></label>
-                <input asp-for="TienPhong" class="form-control" />
+                <input asp-for="TienPhong" class="form-control" readonly />
                 <span asp-validation-for="TienPhong" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="button-group">
+                <input type="submit" value="Xác nhận" class="btn btn-primary" />
+                <a asp-action="Index" class="btn back-button">Quay lại</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const khoaInput = document.getElementById("Khoa");
+        const benhNhanSelect = document.getElementById("BenhNhanId");
+        const phongSelect = document.getElementById("PhongId");
+        const cccdInput = document.getElementById("Cccd");
+        const ngayBatDauInput = document.getElementById("NgayBatDau");
+        const ngayKetThucInput = document.getElementById("NgayKetThuc");
+        const tienPhongInput = document.getElementById("TienPhong");
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        // Lấy dữ liệu giá phòng từ ViewBag
+        let giaPhongData;
+        try {
+            giaPhongData = @Html.Raw(ViewBag.GiaPhongJson) || {};
+        } catch (error) {
+            console.error("Lỗi khi lấy giá phòng:", error);
+            giaPhongData = {};
+        }
+
+        function tinhTienPhong() {
+            const phongId = phongSelect.value;
+            const giaPhong = giaPhongData[phongId] ? parseFloat(giaPhongData[phongId]) : 0;
+
+            const ngayBatDau = new Date(ngayBatDauInput.value);
+            const ngayKetThuc = new Date(ngayKetThucInput.value);
+
+            if (!isNaN(ngayBatDau.getTime()) && !isNaN(ngayKetThuc.getTime()) && ngayBatDau <= ngayKetThuc) {
+                const soNgay = Math.ceil((ngayKetThuc - ngayBatDau) / (1000 * 60 * 60 * 24));
+                const tongTien = soNgay * giaPhong;
+                tienPhongInput.value = tongTien.toLocaleString("vi-VN");
+            } else {
+                tienPhongInput.value = "";
+            }
+        }
+
+        // Khi chọn bệnh nhân, cập nhật thông tin khoa & danh sách phòng
+        benhNhanSelect.addEventListener("change", function () {
+            const benhNhanId = benhNhanSelect.value;
+            if (benhNhanId) {
+                fetch(`/Admins/ChiTietPhongs/GetThongTinBenhNhan?benhNhanId=${benhNhanId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data) {
+                            khoaInput.value = data.khoa || "Chưa cập nhật";
+                            cccdInput.value = data.cccd || "";
+
+                            // Lấy danh sách phòng theo khoa
+                            fetch(`/Admins/ChiTietPhongs/GetPhongByKhoa?khoaId=${data.khoaId}`)
+                                .then(response => response.json())
+                                .then(phongList => {
+                                    phongSelect.innerHTML = "<option value=''>Chọn phòng</option>";
+                                    phongList.forEach(phong => {
+                                        const option = document.createElement("option");
+                                        option.value = phong.phongId;
+                                        option.textContent = phong.soPhong;
+                                        phongSelect.appendChild(option);
+                                    });
+                                })
+                                .catch(error => console.error("Lỗi khi lấy danh sách phòng:", error));
+                        }
+                    })
+                    .catch(error => console.error("Lỗi lấy thông tin bệnh nhân:", error));
+            } else {
+                khoaInput.value = "";
+                cccdInput.value = "";
+                phongSelect.innerHTML = "<option value=''>Chọn phòng</option>";
+            }
+        });
+
+        // 🔹 Bổ sung lắng nghe sự kiện "input" để tính tiền ngay khi nhập ngày kết thúc
+        phongSelect.addEventListener("change", tinhTienPhong);
+        ngayBatDauInput.addEventListener("change", tinhTienPhong);
+        ngayKetThucInput.addEventListener("input", tinhTienPhong); // ⚡ Nhập vào là cập nhật luôn
+    });
+</script>

@@ -5,12 +5,11 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Delete</h1>
+<link rel="stylesheet" href="~/css/Delete.css" />
+<h1>Xóa</h1>
+<hr />
 
-<h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>BenhNhan</h4>
-    <hr />
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.HoTen)
@@ -83,7 +82,9 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="BenhNhanId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <div class="button-group">
+            <input type="submit" value="Xóa" class="btn btn-danger" />
+            <a asp-action="Index" class="back-button">Quay lại</a>
+        </div>
     </form>
 </div>

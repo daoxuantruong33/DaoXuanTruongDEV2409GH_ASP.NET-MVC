@@ -33,6 +33,8 @@ public partial class QuanLyVienPhiContext : DbContext
 
     public virtual DbSet<DoiTuong> DoiTuongs { get; set; }
 
+    public virtual DbSet<Giuong> Giuongs { get; set; }
+
     public virtual DbSet<Khoa> Khoas { get; set; }
 
     public virtual DbSet<Phong> Phongs { get; set; }
@@ -83,6 +85,7 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.BacSiId).HasColumnName("BacSiID");
             entity.Property(e => e.DienThoai).HasMaxLength(15);
             entity.Property(e => e.Email).HasMaxLength(50);
+            entity.Property(e => e.GioiTinh).HasMaxLength(10);
             entity.Property(e => e.HoTen).HasMaxLength(100);
             entity.Property(e => e.KhoaId).HasColumnName("KhoaID");
             entity.Property(e => e.RoleId).HasColumnName("RoleID");
@@ -107,6 +110,9 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.Cccd)
                 .HasMaxLength(12)
                 .HasColumnName("CCCD");
+            entity.Property(e => e.CreatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Created_Date");
             entity.Property(e => e.DiaChi).HasMaxLength(255);
             entity.Property(e => e.DienThoai).HasMaxLength(15);
             entity.Property(e => e.GioiTinh).HasMaxLength(10);
@@ -118,6 +124,9 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.TienDichVu).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.TienPhong).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.TienThuoc).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.UpdatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Updated_Date");
 
             entity.HasOne(d => d.BacSi).WithMany(p => p.BenhNhans)
                 .HasForeignKey(d => d.BacSiId)
@@ -145,11 +154,17 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.BhytId).HasColumnName("BhytID");
             entity.Property(e => e.BenhNhanId).HasColumnName("BenhNhanID");
             entity.Property(e => e.Cccd).HasMaxLength(12);
+            entity.Property(e => e.CreatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Created_Date");
             entity.Property(e => e.DoiTuongId).HasColumnName("DoiTuongID");
             entity.Property(e => e.MienGiam).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.SoTheBhyt)
                 .HasMaxLength(13)
                 .HasColumnName("SoTheBHYT");
+            entity.Property(e => e.UpdatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Updated_Date");
 
             entity.HasOne(d => d.BenhNhan).WithMany(p => p.Bhyts)
                 .HasForeignKey(d => d.BenhNhanId)
@@ -169,9 +184,15 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.ChiTietDichVuId).HasColumnName("ChiTietDichVuID");
             entity.Property(e => e.BenhNhanId).HasColumnName("BenhNhanID");
             entity.Property(e => e.Cccd).HasMaxLength(12);
+            entity.Property(e => e.CreatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Created_Date");
             entity.Property(e => e.DichVuId).HasColumnName("DichVuID");
             entity.Property(e => e.GiaTien).HasColumnType("decimal(10, 0)");
             entity.Property(e => e.TenDichVu).HasMaxLength(100);
+            entity.Property(e => e.UpdatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Updated_Date");
 
             entity.HasOne(d => d.BenhNhan).WithMany(p => p.ChiTietDichVus)
                 .HasForeignKey(d => d.BenhNhanId)
@@ -195,13 +216,24 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.Cccd)
                 .HasMaxLength(12)
                 .HasColumnName("CCCD");
+            entity.Property(e => e.CreatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Created_Date");
+            entity.Property(e => e.GiuongId).HasColumnName("GiuongID");
             entity.Property(e => e.PhongId).HasColumnName("PhongID");
             entity.Property(e => e.TienPhong).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.UpdatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Updated_Date");
 
             entity.HasOne(d => d.BenhNhan).WithMany(p => p.ChiTietPhongs)
                 .HasForeignKey(d => d.BenhNhanId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__ChiTietPh__BenhN__5165187F");
+
+            entity.HasOne(d => d.Giuong).WithMany(p => p.ChiTietPhongs)
+                .HasForeignKey(d => d.GiuongId)
+                .HasConstraintName("FK_ChiTietPhong_Giuong");
 
             entity.HasOne(d => d.Phong).WithMany(p => p.ChiTietPhongs)
                 .HasForeignKey(d => d.PhongId)
@@ -220,8 +252,14 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.Cccd)
                 .HasMaxLength(12)
                 .HasColumnName("CCCD");
+            entity.Property(e => e.CreatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Created_Date");
             entity.Property(e => e.ThuocId).HasColumnName("ThuocID");
             entity.Property(e => e.TienThuoc).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.UpdatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("Updated_Date");
 
             entity.HasOne(d => d.BenhNhan).WithMany(p => p.ChiTietThuocs)
                 .HasForeignKey(d => d.BenhNhanId)
@@ -252,6 +290,21 @@ public partial class QuanLyVienPhiContext : DbContext
                 .HasColumnName("DoiTuongID");
             entity.Property(e => e.MienGiam).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.SoThe).HasMaxLength(15);
+        });
+
+        modelBuilder.Entity<Giuong>(entity =>
+        {
+            entity.ToTable("Giuong");
+
+            entity.Property(e => e.GiuongId).HasColumnName("GiuongID");
+            entity.Property(e => e.PhongId).HasColumnName("PhongID");
+            entity.Property(e => e.SoGiuong).HasMaxLength(10);
+            entity.Property(e => e.TrangThai).HasMaxLength(50);
+
+            entity.HasOne(d => d.Phong).WithMany(p => p.Giuongs)
+                .HasForeignKey(d => d.PhongId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Giuong_Phong");
         });
 
         modelBuilder.Entity<Khoa>(entity =>
@@ -315,6 +368,7 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.ThuNganId).HasColumnName("ThuNganID");
             entity.Property(e => e.DienThoai).HasMaxLength(15);
             entity.Property(e => e.Email).HasMaxLength(50);
+            entity.Property(e => e.GioiTinh).HasMaxLength(10);
             entity.Property(e => e.HoTen).HasMaxLength(100);
             entity.Property(e => e.RoleId).HasColumnName("RoleID");
 
@@ -343,6 +397,7 @@ public partial class QuanLyVienPhiContext : DbContext
             entity.Property(e => e.YtaId).HasColumnName("YTaID");
             entity.Property(e => e.DienThoai).HasMaxLength(15);
             entity.Property(e => e.Email).HasMaxLength(50);
+            entity.Property(e => e.GioiTinh).HasMaxLength(10);
             entity.Property(e => e.HoTen).HasMaxLength(100);
         });
 

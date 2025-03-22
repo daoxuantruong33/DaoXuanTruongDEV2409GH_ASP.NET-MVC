@@ -231,12 +231,13 @@
                 {
                     <tr>
                         <td>@stt</td>
-                        <td>Tiền thuốc</td>
+                        <td>@item.Thuoc.TenThuoc</td> <!-- Lấy tên thuốc từ bảng Thuoc -->
                         <td>@string.Format("{0:N0}", item.TienThuoc) VNĐ</td>
                         <td>@string.Format("{0:N0}", item.TienThuoc) VNĐ</td>
                     </tr>
                     stt++;
                 }
+
                 @foreach (var item in Model.ChiTietDichVus)
                 {
                     <tr>
@@ -287,11 +288,43 @@
 
         </div>
         <div class="button-container">
-            <button class="btn-custom btn-pay" style="margin:1.3rem;" onclick="location.href='@Url.Action("CreateQR", "BenhNhans", new { id = Model.BenhNhanId })'">Chuyển Khoản</button>
-            <button class="btn-custom btn-print"  onclick="window.print()">In Hóa Đơn</button>
+            <button class="btn-custom btn-pay" style="margin:1.25rem;" onclick="location.href='@Url.Action("CreateQR", "BenhNhans", new { id = Model.BenhNhanId })'">Chuyển Khoản</button>
+                @if (!Model.TrangThaiThanhToan)
+                {
+                    <form id="formThanhToan" asp-action="ThanhToan" method="post">
+                        <input type="hidden" name="id" value="@Model.BenhNhanId" />
+                    </form>
+                    <button type="button" class="btn-custom btn-pay" style="margin-top:1.25rem" onclick="handleButtonClick()">
+                        Thanh toán
+                    </button>
+                }
+                else
+                {
+                    <!-- Chỉ hiển thị nút In Hóa Đơn khi đã thanh toán -->
+                    <button type="button" class="btn-custom btn-print" onclick="window.print()">In Hóa Đơn</button>
+                }
+            
+
+
+            <script>
+                function handleButtonClick() {
+                    var isPaid = '@Model.TrangThaiThanhToan'.toLowerCase() === 'true';
+
+                    if (!isPaid) {
+                        // Nếu chưa thanh toán, thực hiện hành động thanh toán
+                        var form = document.getElementById('formThanhToan');
+                        form.submit();
+                    } else {
+                        // Nếu đã thanh toán, thực hiện hành động in hóa đơn
+                        window.print();
+                    }
+                }
+            </script>
+
+
+
+
         </div>
-
-
     </div>
 </body>
 </html>

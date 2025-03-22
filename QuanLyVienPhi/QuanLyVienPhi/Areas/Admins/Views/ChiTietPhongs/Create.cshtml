@@ -5,23 +5,36 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Create</h1>
+<link rel="stylesheet" href="~/css/Create.css" />
 
-<h4>ChiTietPhong</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-8">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="BenhNhanId" class="control-label"></label>
                 <select asp-for="BenhNhanId" class ="form-control" asp-items="ViewBag.BenhNhanId"></select>
+            </div>     
+            <div class="form-group">
+                <label class="control-label">Phòng</label>
+                <select id="PhongId" name="PhongId" class="form-control" asp-items="ViewBag.PhongId"></select>
             </div>
+            
+           
             <div class="form-group">
                 <label asp-for="Cccd" class="control-label"></label>
                 <input id="Cccd" class="form-control" readonly />
             </div>
 
+
+            <div class="form-group">
+                <label class="control-label">Giường</label>
+                <select id="GiuongId" name="GiuongId" class="form-control">
+                    <option value="">Chọn giường</option>
+                </select>
+            </div>
+
+          
             <div class="form-group">
                 <label class="control-label">Khoa</label>
                 <input id="Khoa" class="form-control" readonly />
@@ -29,17 +42,13 @@
 
 
             <div class="form-group">
-    <label class="control-label">Phòng</label>
-    <select id="PhongId" class="form-control" readonly asp-items="ViewBag.PhongId"></select>
-</div>
-            <div class="form-group">
                 <label asp-for="NgayBatDau" class="control-label"></label>
-                <input asp-for="NgayBatDau" type="date" class="form-control" readonly />
+                <input asp-for="NgayBatDau" type="date" class="form-control" />
                 <span asp-validation-for="NgayBatDau" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="NgayKetThuc" class="control-label"></label>
-                <input asp-for="NgayKetThuc" type="date" class="form-control" />
+                <input asp-for="NgayKetThuc" type="date" class="form-control" readonly />
                 <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -48,98 +57,162 @@
                 <span asp-validation-for="TienPhong" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label asp-for="CreatedDate" class="control-label"></label>
+                <input asp-for="CreatedDate" type="datetime-local" class="form-control" readonly />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="UpdatedDate" class="control-label"></label>
+                <input asp-for="UpdatedDate" type="datetime-local" class="form-control" readonly />
+                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+            </div>
+            <div class="button-group">
+                <input type="submit" value="Xác nhận" class="btn btn-primary" />
+                <a asp-action="Index" class="btn back-button">Quay lại</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
-
 
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        const khoaInput = document.getElementById("Khoa");
+        const benhNhanSelect = document.getElementById("BenhNhanId");
+        const phongSelect = document.getElementById("PhongId");
+        const cccdInput = document.getElementById("Cccd");
         const ngayBatDauInput = document.getElementById("NgayBatDau");
         const ngayKetThucInput = document.getElementById("NgayKetThuc");
-        const phongIdSelect = document.getElementById("PhongId");
-        const benhNhanSelect = document.getElementById("BenhNhanId");
         const tienPhongInput = document.getElementById("TienPhong");
-        const khoaInput = document.getElementById("Khoa"); // Thêm trường khoa
+        const soGiuongInput = document.getElementById("SoGiuong"); // Thêm trường số giường
 
-        // Nhận giá phòng từ backend
-        const giaPhongData = @Html.Raw(ViewBag.GiaPhongJson);
+        let giaPhongData;
+        try {
+            giaPhongData = @Html.Raw(ViewBag.GiaPhongJson) || {};
+        } catch (error) {
+            console.error("Lỗi khi lấy giá phòng:", error);
+            giaPhongData = {};
+        }
 
         function tinhTienPhong() {
-            const phongId = phongIdSelect.value;
-            let giaPhong = giaPhongData[phongId] || 0;
+            const phongId = phongSelect.value;
+            const giaPhong = giaPhongData[phongId] ? parseFloat(giaPhongData[phongId]) : 0;
+            const ngayBatDau = new Date(ngayBatDauInput.value);
+            const ngayKetThuc = new Date(ngayKetThucInput.value);
 
-            let ngayBatDau = new Date(ngayBatDauInput.value);
-            let ngayKetThuc = new Date(ngayKetThucInput.value);
-
-            if (!isNaN(ngayBatDau) && !isNaN(ngayKetThuc) && ngayBatDau <= ngayKetThuc) {
-                let soNgay = (ngayKetThuc - ngayBatDau) / (1000 * 60 * 60 * 24);
-                let tongTien = soNgay * giaPhong;
+            if (!isNaN(ngayBatDau.getTime()) && !isNaN(ngayKetThuc.getTime()) && ngayBatDau <= ngayKetThuc) {
+                const soNgay = Math.ceil((ngayKetThuc - ngayBatDau) / (1000 * 60 * 60 * 24));
+                const tongTien = soNgay * giaPhong;
                 tienPhongInput.value = tongTien.toLocaleString("vi-VN");
             } else {
                 tienPhongInput.value = "";
             }
         }
 
-        // Khi chọn bệnh nhân, lấy ngày nhập viện và khoa
         benhNhanSelect.addEventListener("change", function () {
-            let benhNhanId = benhNhanSelect.value;
+            const benhNhanId = benhNhanSelect.value;
             if (benhNhanId) {
                 fetch(`/Admins/ChiTietPhongs/GetThongTinBenhNhan?benhNhanId=${benhNhanId}`)
                     .then(response => response.json())
                     .then(data => {
-                        ngayBatDauInput.value = data.ngayNhapVien;
-                        khoaInput.value = data.khoa; // Hiển thị khoa của bệnh nhân
-                        tinhTienPhong();
+                        if (data) {
+                            khoaInput.value = data.khoa || "Chưa cập nhật";
+                            cccdInput.value = data.cccd || "";
+
+                            fetch(`/Admins/ChiTietPhongs/GetPhongByKhoa?khoaId=${data.khoaId}`)
+                                .then(response => response.json())
+                                .then(phongList => {
+                                    phongSelect.innerHTML = "<option value=''>Chọn phòng</option>";
+                                    phongList.forEach(phong => {
+                                        const option = document.createElement("option");
+                                        option.value = phong.phongId;
+                                        option.textContent = phong.soPhong;
+                                        phongSelect.appendChild(option);
+                                    });
+                                })
+                                .catch(error => console.error("Lỗi khi lấy danh sách phòng:", error));
+                        }
                     })
                     .catch(error => console.error("Lỗi lấy thông tin bệnh nhân:", error));
+            } else {
+                khoaInput.value = "";
+                cccdInput.value = "";
+                phongSelect.innerHTML = "<option value=''>Chọn phòng</option>";
             }
         });
 
-        phongIdSelect.addEventListener("change", tinhTienPhong);
+        // Khi chọn phòng, lấy số giường và tính tiền phòng
+        phongSelect.addEventListener("change", function () {
+            const phongId = phongSelect.value;
+            if (phongId) {
+                fetch(`/Admins/ChiTietPhongs/GetSoGiuongByPhong?phongId=${phongId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        soGiuongInput.value = data.soGiuong || "Chưa cập nhật";
+                    })
+                    .catch(error => console.error("Lỗi khi lấy số giường:", error));
+            } else {
+                soGiuongInput.value = "";
+            }
+            tinhTienPhong();
+        });
+
         ngayBatDauInput.addEventListener("change", tinhTienPhong);
         ngayKetThucInput.addEventListener("change", tinhTienPhong);
     });
 </script>
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const benhNhanSelect = document.getElementById("BenhNhanId");
-        const cccdInput = document.getElementById("Cccd"); // Input CCCD
-        const khoaInput = document.getElementById("Khoa"); // Input Khoa
-        const ngayBatDauInput = document.getElementById("NgayBatDau");
-        const phongSelect = document.getElementById("PhongId"); // Select Phòng
+        const phongSelect = document.getElementById("PhongId");
+        const giuongSelect = document.getElementById("GiuongId");
 
-        benhNhanSelect.addEventListener("change", function () {
-            let benhNhanId = benhNhanSelect.value;
-            if (benhNhanId) {
-                fetch(`/Admins/ChiTietPhongs/GetThongTinBenhNhan?benhNhanId=${benhNhanId}`)
+        phongSelect.addEventListener("change", function () {
+            const phongId = phongSelect.value;
+
+            if (phongId) {
+                fetch(`/Admins/ChiTietPhongs/GetGiuongByPhong?phongId=${phongId}`)
                     .then(response => response.json())
                     .then(data => {
-                        ngayBatDauInput.value = data.ngayNhapVien;
-                        khoaInput.value = data.khoa;
-                        cccdInput.value = data.cccd; // Hiển thị CCCD của bệnh nhân
-                        phongSelect.value = data.phongId; // Hiển thị Phòng của bệnh nhân
+                        giuongSelect.innerHTML = "<option value=''>Chọn giường</option>";
+                        data.forEach(giuong => {
+                            const option = document.createElement("option");
+                            option.value = giuong.giuongId;
+                            option.textContent = `Giường ${giuong.soGiuong}`;
+                            giuongSelect.appendChild(option);
+                        });
                     })
-                    .catch(error => console.error("Lỗi lấy thông tin bệnh nhân:", error));
+                    .catch(error => console.error("Lỗi khi lấy danh sách giường:", error));
             } else {
-                cccdInput.value = ""; // Xóa CCCD nếu không chọn bệnh nhân
-                phongSelect.value = ""; // Xóa phòng nếu không chọn bệnh nhân
+                giuongSelect.innerHTML = "<option value=''>Chọn giường</option>";
             }
         });
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var createdDateInput = document.querySelector("input[name='CreatedDate']");
+        var updatedDateInput = document.querySelector("input[name='UpdatedDate']");
 
+        function formatDateTimeLocal(date) {
+            let d = new Date(date);
+            let year = d.getFullYear();
+            let month = String(d.getMonth() + 1).padStart(2, '0');
+            let day = String(d.getDate()).padStart(2, '0');
+            let hours = String(d.getHours()).padStart(2, '0');
+            let minutes = String(d.getMinutes()).padStart(2, '0');
+            return `${year}-${month}-${day}T${hours}:${minutes}`;
+        }
 
+        // Nếu CreatedDate chưa có giá trị, đặt ngày + giờ hiện tại
+        if (!createdDateInput.value) {
+            createdDateInput.value = formatDateTimeLocal(new Date());
+        }
 
+        // Cập nhật UpdatedDate khi có thay đổi trong form
+        document.querySelector("form").addEventListener("change", function () {
+            updatedDateInput.value = formatDateTimeLocal(new Date());
+        });
+    });
+</script>

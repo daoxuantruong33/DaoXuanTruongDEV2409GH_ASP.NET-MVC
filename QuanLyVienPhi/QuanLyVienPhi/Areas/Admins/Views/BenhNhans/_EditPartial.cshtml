@@ -1,0 +1,109 @@
+﻿@model QuanLyVienPhi.Models.BenhNhan
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card shadow-lg p-5">
+            <div class="card-body">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="BenhNhanId" />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label asp-for="HoTen" class="control-label"></label>
+                                <input asp-for="HoTen" class="form-control" />
+                                <span asp-validation-for="HoTen" class="text-danger"></span>
+                            </div> 
+                            <div class="form-group">
+                                <label asp-for="Cccd" class="control-label"></label>
+                                <input asp-for="Cccd" class="form-control" id="Cccd" maxlength="12" required />
+                                <span asp-validation-for="Cccd" class="text-danger"></span>
+                                <span id="cccd-error" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="NgaySinh" class="control-label"></label>
+                                <input asp-for="NgaySinh" class="form-control" />
+                                <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="GioiTinh" class="control-label"></label>
+                                <input asp-for="GioiTinh" class="form-control" />
+                                <span asp-validation-for="GioiTinh" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="DiaChi" class="control-label"></label>
+                                <input asp-for="DiaChi" class="form-control" />
+                                <span asp-validation-for="DiaChi" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="DienThoai" class="control-label"></label>
+                                <input asp-for="DienThoai" class="form-control" id="DienThoai" maxlength="10" required />
+                                <span asp-validation-for="DienThoai" class="text-danger"></span>
+                                <span id="phone-error" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                           
+                            <div class="form-group">
+                                <label asp-for="NgayNhapVien" class="control-label"></label>
+                                <input asp-for="NgayNhapVien" class="form-control" readonly />
+                                <span asp-validation-for="NgayNhapVien" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="NgayRaVien" class="control-label"></label>
+                                <input asp-for="NgayRaVien" class="form-control" readonly />
+                                <span asp-validation-for="NgayRaVien" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="KhoaId">Khoa</label>
+                                <select id="KhoaId" name="KhoaId" class="form-control" asp-items="ViewBag.KhoaId">
+                                    <option value="">-- Chọn Khoa --</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="BacSiId">Bác sĩ</label>
+                                <select id="BacSiId" name="BacSiId" class="form-control" asp-items="ViewBag.BacSiId">
+                                    <option value="">-- Chọn Bác Sĩ --</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="TrangThaiThanhToan" class="control-label"></label>
+                                <select asp-for="TrangThaiThanhToan" class="form-control">
+                                    <option value="true">Đã thanh toán</option>
+                                    <option value="false">Chưa thanh toán</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="button-group text-center mt-3">
+                        <input type="submit" value="Xác nhận" class="btn btn-primary" />
+                        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $(document).ready(function () {
+            $('#KhoaId').change(function () {
+                var khoaId = $(this).val();
+                if (khoaId) {
+                    $.get('/Admins/BenhNhans/GetBacSiByKhoa', { khoaId: khoaId }, function (data) {
+                        var bacSiSelect = $('#BacSiId');
+                        bacSiSelect.empty();
+                        bacSiSelect.append('<option value="">-- Chọn Bác Sĩ --</option>');
+                        $.each(data, function (index, item) {
+                            bacSiSelect.append('<option value="' + item.bacSiId + '">' + item.hoTen + '</option>');
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+

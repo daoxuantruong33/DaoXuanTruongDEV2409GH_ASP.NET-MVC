@@ -1,6 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Http;
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
-<link rel="stylesheet" href="~/css/_SideBar.css" />
 
 <aside class="main-sidebar" style="background-color: #ffffff; border-right: 1px solid #dddddd;">
     <!-- Brand Logo -->
@@ -24,7 +23,7 @@
                        </a>
                     </li>
 
-                    <li class="nav-item">
+                   @*  <li class="nav-item">
                         <a href="/admins/Admins" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
                             <i class="fa-solid fa-user" style="color: #333333;"></i>&ensp;
                             <p>Tài khoản Admin</p>
@@ -85,6 +84,12 @@
                             <p>Dịch Vụ</p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="/admins/Giuongs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                            <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
+                            <p>Giường</p>
+                        </a>
+                    </li> *@
                  }
                  
 
@@ -166,5 +171,4 @@
         </div>
 
     </div>
-    <!-- /.sidebar -->
 </aside>

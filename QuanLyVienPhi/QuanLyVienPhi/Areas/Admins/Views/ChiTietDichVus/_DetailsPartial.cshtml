@@ -1,0 +1,38 @@
+﻿@model QuanLyVienPhi.Models.ChiTietDichVu
+
+<div class="container mt-4">
+    <div class="card shadow-sm p-4">
+        <div class="row">
+            <dl class="col-md-6">
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.Cccd)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.Cccd)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.GiaTien)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.GiaTien)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.BenhNhan)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.BenhNhan.HoTen)</dd>
+            </dl>
+
+            <dl class="col-md-6">
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.DichVu)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.DichVu.TenDichVu)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.CreatedDate)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.CreatedDate)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.UpdatedDate)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.UpdatedDate)</dd>
+            </dl>
+        </div>
+
+        <div class="text-center mt-4">
+            <a class="btn btn-primary me-2" onclick="loadModal('@Url.Action("Edit", "ChiTietDichVus", new { id = Model?.ChiTietDichVuId })')">
+                <i class="fas fa-edit"></i> Sửa
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </div>
+</div>

@@ -4,12 +4,11 @@
     ViewData["Title"] = "Details";
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
+<link rel="stylesheet" href="~/css/Details.css" />
 
-<h1>Details</h1>
+<h1>Chi Tiết</h1>
 
 <div>
-    <h4>BacSi</h4>
-    <hr />
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.HoTen)
@@ -36,8 +35,9 @@
             @Html.DisplayFor(model => model.Email)
         </dd>
     </dl>
+    <div class="button-group">
+        <a asp-action="Edit" asp-route-id="@Model?.BacSiId" class="btn btn-primary">Sửa</a>
+        <a asp-action="Index" class="back-button">Quay lại</a>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.BacSiId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+

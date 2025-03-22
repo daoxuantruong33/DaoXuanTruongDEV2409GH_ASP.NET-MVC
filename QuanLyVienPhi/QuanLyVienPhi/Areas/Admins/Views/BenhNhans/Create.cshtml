@@ -5,12 +5,10 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Create</h1>
+<link rel="stylesheet" href="~/css/Create.css" />
 
-<h4>BenhNhan</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-8">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -42,14 +40,18 @@
             </div>
             <div class="form-group">
                 <label asp-for="DienThoai" class="control-label"></label>
-                <input asp-for="DienThoai" class="form-control" />
+                <input asp-for="DienThoai" class="form-control" id="DienThoai" maxlength="10" required />
                 <span asp-validation-for="DienThoai" class="text-danger"></span>
+                <span id="phone-error" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Cccd" class="control-label"></label>
-                <input asp-for="Cccd" class="form-control" />
+                <input asp-for="Cccd" class="form-control" id="Cccd" maxlength="12" required />
                 <span asp-validation-for="Cccd" class="text-danger"></span>
+                <span id="cccd-error" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="NgayNhapVien" class="control-label"></label>
                 <input asp-for="NgayNhapVien" type="date" class="form-control" />
@@ -57,22 +59,47 @@
             </div>
             <div class="form-group">
                 <label asp-for="NgayRaVien" class="control-label"></label>
-                <input asp-for="NgayRaVien" class="form-control" />
+                <input asp-for="NgayRaVien" class="form-control" readonly/>
                 <span asp-validation-for="NgayRaVien" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="BacSiId" class="control-label"></label>
-                <select asp-for="BacSiId" class ="form-control" asp-items="ViewBag.BacSiId"></select>
-            </div>
-          
-            <div class="form-group">
                 <label asp-for="KhoaId" class="control-label"></label>
-                <select asp-for="KhoaId" class ="form-control" asp-items="ViewBag.KhoaId"></select>
+                <select id="KhoaId" name="KhoaId" class="form-control">
+                    <option value="">-- Chọn Khoa --</option>
+                    @if (ViewData["KhoaId"] != null)
+                    {
+                        var khoaList = ViewData["KhoaId"] as SelectList;
+                        foreach (var item in khoaList)
+                        {
+                            <option value="@item.Value">@item.Text</option>
+                        }
+                    }
+                </select>
+
             </div>
             <div class="form-group">
-                <label asp-for="PhongId" class="control-label"></label>
-                <select asp-for="PhongId" class ="form-control" asp-items="ViewBag.PhongId"></select>
+                <label asp-for="BacSiId" class="control-label"></label>
+                <select id="BacSiId" name="BacSiId" class="form-control">
+                    <option value="">-- Chọn Bác Sĩ --</option>
+                </select>
             </div>
+            <div class="form-group">
+                <label asp-for="CreatedDate" class="control-label"></label>
+                <input asp-for="CreatedDate" type="datetime-local" class="form-control" readonly />
+                <span asp-validation-for="CreatedDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="UpdatedDate" class="control-label"></label>
+                <input asp-for="UpdatedDate" type="datetime-local" class="form-control" readonly />
+                <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+            </div>
+
+         @*    <div class="form-group">
+                <label asp-for="PhongId" class="control-label"></label>
+                <input asp-for="PhongId" class="form-control" readonly />
+                <span asp-validation-for="PhongId" class="text-danger"></span>
+            </div> *@
             <div class="form-group">
                 <label asp-for="ThuNganId" class="control-label"></label>
                 <select asp-for="ThuNganId" class="form-control" asp-items="ViewBag.ThuNganId">
@@ -80,16 +107,14 @@
                 </select>
             </div>
 
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="button-group">
+                <input type="submit" value="Xác nhận" class="btn btn-primary" />
+                <a asp-action="Index" class="btn back-button">Quay lại</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
@@ -113,5 +138,114 @@
                 $("#PhongId").empty().append('<option value="">-- Chọn Phòng --</option>');
             }
         });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#KhoaId").change(function () {
+            var khoaId = $(this).val();
+            if (khoaId) {
+                $.ajax({
+                    url: '/Admins/BenhNhans/GetBacSiByKhoa',
+                    type: 'GET',
+                    data: { khoaId: khoaId },
+                    success: function (data) {
+                        $("#BacSiId").empty();
+                        $("#BacSiId").append('<option value="">Chọn Bác Sĩ</option>');
+                        $.each(data, function (index, item) {
+                            $("#BacSiId").append('<option value="' + item.bacSiId + '">' + item.hoTen + '</option>');
+                        });
+                    }
+                });
+            } else {
+                $("#BacSiId").empty();
+                $("#BacSiId").append('<option value="">Chọn Bác Sĩ</option>');
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var createdDateInput = document.querySelector("input[name='CreatedDate']");
+        var updatedDateInput = document.querySelector("input[name='UpdatedDate']");
+
+        function formatDateTimeLocal(date) {
+            let d = new Date(date);
+            let year = d.getFullYear();
+            let month = String(d.getMonth() + 1).padStart(2, '0');
+            let day = String(d.getDate()).padStart(2, '0');
+            let hours = String(d.getHours()).padStart(2, '0');
+            let minutes = String(d.getMinutes()).padStart(2, '0');
+            return `${year}-${month}-${day}T${hours}:${minutes}`;
+        }
+
+        // Nếu CreatedDate chưa có giá trị, đặt ngày + giờ hiện tại
+        if (!createdDateInput.value) {
+            createdDateInput.value = formatDateTimeLocal(new Date());
+        }
+
+        // Cập nhật UpdatedDate khi có thay đổi trong form
+        document.querySelector("form").addEventListener("change", function () {
+            updatedDateInput.value = formatDateTimeLocal(new Date());
+        });
+    });
+</script>
+
+
+
+<script>
+    $(document).ready(function () {
+        function validateInput(inputId, errorId, requiredLength) {
+            var value = $(inputId).val();
+            var sanitizedValue = value.replace(/\D/g, ""); // Chỉ giữ lại số
+
+            if (sanitizedValue.length > requiredLength) {
+                sanitizedValue = sanitizedValue.substring(0, requiredLength); // Giữ tối đa số yêu cầu
+            }
+
+            $(inputId).val(sanitizedValue);
+
+            if (sanitizedValue.length < requiredLength) {
+                $(errorId).text("Trường này phải có đúng " + requiredLength + " chữ số.");
+                return false;
+            } else {
+                $(errorId).text("");
+                return true;
+            }
+        }
+
+        // Kiểm tra khi nhập dữ liệu
+        $("#DienThoai, #Cccd").on("input", function () {
+            var id = $(this).attr("id");
+            if (id === "DienThoai") validateInput("#DienThoai", "#phone-error", 10);
+            if (id === "Cccd") validateInput("#Cccd", "#cccd-error", 12);
+
+            // Kiểm tra để bật/tắt nút submit
+            toggleSubmitButton();
+        });
+
+        // Ngăn form gửi đi nếu chưa nhập đủ số
+        $("form").on("submit", function (e) {
+            var isPhoneValid = validateInput("#DienThoai", "#phone-error", 10);
+            var isCccdValid = validateInput("#Cccd", "#cccd-error", 12);
+
+            if (!isPhoneValid || !isCccdValid) {
+                e.preventDefault(); // Ngăn gửi form nếu có lỗi
+            }
+        });
+
+        function toggleSubmitButton() {
+            var isPhoneValid = $("#DienThoai").val().length === 10;
+            var isCccdValid = $("#Cccd").val().length === 12;
+
+            if (isPhoneValid && isCccdValid) {
+                $("input[type=submit]").prop("disabled", false); // Mở nút submit
+            } else {
+                $("input[type=submit]").prop("disabled", true); // Tắt nút submit
+            }
+        }
+
+        // Tắt nút submit khi trang load
+        toggleSubmitButton();
     });
 </script>

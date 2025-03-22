@@ -5,10 +5,8 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
-<h1>Edit</h1>
+<link rel="stylesheet" href="~/css/Create.css" />
 
-<h4>Bhyt</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
@@ -16,40 +14,103 @@
             <input type="hidden" asp-for="BhytId" />
             <div class="form-group">
                 <label asp-for="BenhNhanId" class="control-label"></label>
-                <select asp-for="BenhNhanId" class="form-control" asp-items="ViewBag.BenhNhanId"></select>
+                <select asp-for="BenhNhanId" class="form-control" asp-items="ViewBag.BenhNhanId" disabled="disabled"></select>
+                <input type="hidden" asp-for="BenhNhanId" />
                 <span asp-validation-for="BenhNhanId" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Cccd" class="control-label"></label>
-                <input asp-for="Cccd" class="form-control" />
+                <input asp-for="Cccd" class="form-control" readonly />
                 <span asp-validation-for="Cccd" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DoiTuongId" class="control-label"></label>
-                <select asp-for="DoiTuongId" class="form-control" asp-items="ViewBag.DoiTuongId"></select>
-                <span asp-validation-for="DoiTuongId" class="text-danger"></span>
-            </div>
+            </div> 
             <div class="form-group">
                 <label asp-for="SoTheBhyt" class="control-label"></label>
                 <input asp-for="SoTheBhyt" class="form-control" />
                 <span asp-validation-for="SoTheBhyt" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="DoiTuongId" class="control-label"></label>
+                <input asp-for="DoiTuongId" class="form-control" readonly />
+            </div>
+
+
+            <div class="form-group">
                 <label asp-for="MienGiam" class="control-label"></label>
-                <input asp-for="MienGiam" class="form-control" />
+                <input asp-for="MienGiam" class="form-control" readonly />
                 <span asp-validation-for="MienGiam" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+
+            <div class="button-group">
+                <input type="submit" value="Xác nhận" class="btn btn-primary" />
+                <a asp-action="Index" class="btn back-button">Quay lại</a>
             </div>
         </form>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<script>
+    $(document).ready(function () {
+        $("#BenhNhanId").change(function () {
+            var benhNhanId = $(this).val();
+            if (benhNhanId) {
+                $.ajax({
+                    url: '/Admins/Bhyts/GetCccdByBenhNhanId',
+                    type: 'GET',
+                    data: { benhNhanId: benhNhanId },
+                    success: function (response) {
+                        $("#Cccd").val(response);
+                    },
+                    error: function () {
+                        console.log("Lỗi khi lấy CCCD");
+                    }
+                });
+            } else {
+                $("#Cccd").val("");  // Xóa CCCD nếu không chọn bệnh nhân
+            }
+        });
+    });
+</script>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#SoTheBhyt').on('input', function () {
+            var soTheBhyt = $(this).val();
+            if (soTheBhyt && soTheBhyt.length > 0) {
+                // Lấy số đầu tiên của thẻ BHYT
+                var soDau = soTheBhyt.charAt(0);
+
+                // Cập nhật giá trị của DoiTuongId dựa trên số đầu tiên của SoTheBhyt
+                $('#DoiTuongId').val(soDau);
+            }
+        });
+    });
+</script>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#SoTheBhyt").on("input", function () {
+            var soTheBhyt = $(this).val();
+            if (soTheBhyt.length > 0) {
+                var firstDigit = soTheBhyt.charAt(0);
+
+                // Gửi request đến server để lấy MienGiam
+                $.ajax({
+                    url: '/Admins/Bhyts/GetMienGiamBySoThe',
+                    type: 'GET',
+                    data: { soTheBhyt: soTheBhyt },
+                    success: function (response) {
+                        $("#MienGiam").val(response);
+                    },
+                    error: function () {
+                        console.log("Lỗi khi lấy MienGiam");
+                    }
+                });
+            }
+        });
+    });
+</script>

@@ -18,13 +18,30 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             _context = context;
         }
 
-        // GET: Admins/ChiTietThuocs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
         {
-            var quanLyVienPhiContext = _context.ChiTietThuocs.Include(c => c.BenhNhan).Include(c => c.Thuoc);
-            return View(await quanLyVienPhiContext.ToListAsync());
-        }
+            var chitietthuocsQuery = _context.ChiTietThuocs
+                .Include(c => c.BenhNhan)
+                .Include(c => c.Thuoc)
+                .AsQueryable();
 
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                chitietthuocsQuery = chitietthuocsQuery.Where(a => a.Cccd.Contains(searchString));
+            }
+
+            int totalRecords = await chitietthuocsQuery.CountAsync();
+            var ChiTietThuocs = await chitietthuocsQuery.OrderBy(a => a.ChiTietThuocId)
+                                          .Skip((page - 1) * pageSize)
+                                          .Take(pageSize)
+                                          .ToListAsync();
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+            ViewData["SearchString"] = searchString;
+
+            return View(ChiTietThuocs);
+        }
         // GET: Admins/ChiTietThuocs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -42,7 +59,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            return View(chiTietThuoc);
+            return PartialView("_DetailsPartial", chiTietThuoc);
         }
 
         // GET: Admins/ChiTietThuocs/Create
@@ -55,7 +72,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ChiTietThuocId,BenhNhanId,ThuocId,SoLuong,TienThuoc")] ChiTietThuoc chiTietThuoc)
+        public async Task<IActionResult> Create([Bind("ChiTietThuocId,BenhNhanId,ThuocId,SoLuong,TienThuoc,CreatedDate,UpdatedDate")] ChiTietThuoc chiTietThuoc)
         {
             if (ModelState.IsValid)
             {
@@ -85,22 +102,34 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var chiTietThuoc = await _context.ChiTietThuocs.FindAsync(id);
+            var chiTietThuoc = await _context.ChiTietThuocs
+                .Include(ct => ct.BenhNhan) // Bao gồm thông tin từ bảng BenhNhan
+                .FirstOrDefaultAsync(ct => ct.ChiTietThuocId == id);
+
             if (chiTietThuoc == null)
             {
                 return NotFound();
             }
+
+            // Gán CCCD từ BenhNhan nếu có
+            if (chiTietThuoc.BenhNhan != null)
+            {
+                chiTietThuoc.Cccd = chiTietThuoc.BenhNhan.Cccd;
+            }
+
             ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietThuoc.BenhNhanId);
             ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "TenThuoc", chiTietThuoc.ThuocId);
-            return View(chiTietThuoc);
+
+            return PartialView("_EditPartial", chiTietThuoc);
         }
+
 
         // POST: Admins/ChiTietThuocs/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ChiTietThuocId,BenhNhanId,ThuocId,SoLuong,TienThuoc")] ChiTietThuoc chiTietThuoc)
+        public async Task<IActionResult> Edit(int id, [Bind("ChiTietThuocId,BenhNhanId,Cccd,ThuocId,SoLuong,TienThuoc,CreatedDate,UpdatedDate")] ChiTietThuoc chiTietThuoc)
         {
             if (id != chiTietThuoc.ChiTietThuocId)
             {
@@ -111,8 +140,32 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 try
                 {
+                    var existingChiTietThuocs = await _context.ChiTietThuocs
+                        .AsNoTracking()
+                        .FirstOrDefaultAsync(b => b.ChiTietThuocId == id);
+
+                    if (existingChiTietThuocs == null)
+                    {
+                        return NotFound();
+                    }
+                    _context.Update(chiTietThuoc);
+
+                    // Lấy giá thuốc để tính tiền thuốc
+                    var thuoc = await _context.Thuocs.FindAsync(chiTietThuoc.ThuocId);
+                    if (thuoc != null)
+                    {
+                        chiTietThuoc.TienThuoc = thuoc.GiaTien * chiTietThuoc.SoLuong;
+                        Console.WriteLine($"Debug: GiaTien = {thuoc.GiaTien}, SoLuong = {chiTietThuoc.SoLuong}, TienThuoc = {chiTietThuoc.TienThuoc}");
+                    }
+
+                    // Giữ nguyên CreatedDate và cập nhật UpdatedDate
+                    chiTietThuoc.CreatedDate = existingChiTietThuocs.CreatedDate;
+                    chiTietThuoc.UpdatedDate = DateTime.Now;
+
+                    // Cập nhật dữ liệu vào database
                     _context.Update(chiTietThuoc);
                     await _context.SaveChangesAsync();
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -123,14 +176,15 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                     else
                     {
                         throw;
-                    }
-                }
+                    }                    
+
+                }                    
                 return RedirectToAction(nameof(Index));
+
             }
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietThuoc.BenhNhanId);
-            ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "TenThuoc", chiTietThuoc.ThuocId);
             return View(chiTietThuoc);
         }
+
 
         // GET: Admins/ChiTietThuocs/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -153,18 +207,16 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // POST: Admins/ChiTietThuocs/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult Delete(int id)
         {
-            var chiTietThuoc = await _context.ChiTietThuocs.FindAsync(id);
-            if (chiTietThuoc != null)
+            var chitietthuoc = _context.ChiTietThuocs.Find(id);
+            if (chitietthuoc != null)
             {
-                _context.ChiTietThuocs.Remove(chiTietThuoc);
+                _context.ChiTietThuocs.Remove(chitietthuoc);
+                _context.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
         private bool ChiTietThuocExists(int id)

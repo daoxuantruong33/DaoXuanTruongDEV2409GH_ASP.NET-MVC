@@ -19,9 +19,25 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/Khoas
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
         {
-            return View(await _context.Khoas.ToListAsync());
+            var khoasQuery = _context.Khoas.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                khoasQuery = khoasQuery.Where(a => a.TenKhoa.Contains(searchString) || a.TenKhoa.Contains(searchString));
+            }
+
+            int totalRecords = await khoasQuery.CountAsync();
+            var admins = await khoasQuery.OrderBy(a => a.KhoaId)
+                                          .Skip((page - 1) * pageSize)
+                                          .Take(pageSize)
+                                          .ToListAsync();
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+
+            return View(admins);
         }
 
         // GET: Admins/Khoas/Details/5

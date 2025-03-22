@@ -1,0 +1,76 @@
+﻿@model QuanLyVienPhi.Models.BenhNhan
+
+<div class="container mt-4">
+    <div class="card shadow-sm p-4">
+        <div class="row">
+            <dl class="col-md-6">
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.HoTen)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.HoTen)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.Cccd)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.Cccd)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.NgaySinh)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.NgaySinh)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.GioiTinh)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.GioiTinh)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.DiaChi)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.DiaChi)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.DienThoai)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.DienThoai)</dd>
+
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.NgayNhapVien)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.NgayNhapVien)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.NgayRaVien)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.NgayRaVien)</dd>
+            </dl>
+
+            <dl class="col-md-6">
+               
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.BacSi)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.BacSi.HoTen)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.Khoa)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.Khoa.TenKhoa)</dd>
+
+                <dt class="fw-bold text-nowrap">Phòng</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">
+                    @foreach (var item in Model.ChiTietPhongs)
+                    {
+                        <span class="badge bg-info me-1">@item.Phong.SoPhong</span>
+                    }
+                </dd>
+
+                <dt class="fw-bold text-nowrap">Giường gần nhất</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">
+                    @(ViewBag.GiuongMoiNhat != null ? ViewBag.GiuongMoiNhat.SoGiuong : "Chưa có")
+                </dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.TrangThaiThanhToan)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.TrangThaiThanhToan)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.CreatedDate)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.CreatedDate)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.UpdatedDate)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.UpdatedDate)</dd>
+            </dl>
+        </div>
+
+        <div class="text-center mt-4">
+            <a class="btn btn-primary me-2" onclick="loadModal('@Url.Action("Edit", "BenhNhans", new { id = Model?.BenhNhanId })')">
+                <i class="fas fa-edit"></i> Sửa
+            </a>
+
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </div>
+</div>

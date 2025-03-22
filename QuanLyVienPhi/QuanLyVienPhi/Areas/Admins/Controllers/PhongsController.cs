@@ -18,11 +18,25 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             _context = context;
         }
 
-        // GET: Admins/Phongs
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString = "", int page = 1, int pageSize = 5)
         {
-            var quanLyVienPhiContext = _context.Phongs.Include(p => p.Khoa);
-            return View(await quanLyVienPhiContext.ToListAsync());
+            var phongsQuery = _context.Phongs.Include(p => p.Khoa).AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                phongsQuery = phongsQuery.Where(a => a.SoPhong.Contains(searchString));
+            }
+
+            int totalRecords = await phongsQuery.CountAsync();
+            var phongs = await phongsQuery.OrderBy(a => a.PhongId)
+                                          .Skip((page - 1) * pageSize)
+                                          .Take(pageSize)
+                                          .ToListAsync();
+
+            ViewData["CurrentPage"] = page;
+            ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
+
+            return View(phongs);
         }
 
         // GET: Admins/Phongs/Details/5

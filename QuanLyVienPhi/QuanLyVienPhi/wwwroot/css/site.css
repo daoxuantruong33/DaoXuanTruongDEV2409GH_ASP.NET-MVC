@@ -18,7 +18,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: "SVN-Medium", sans-serif !important;
 }
 <style >
 /* ??m b?o sidebar luôn c? ??nh chi?u r?ng */
@@ -63,5 +64,15 @@ body {
 .nav-link {
     padding: 10px 15px;
 }
+    .nav-link:hover {
+        background-color: #2c4964 !important;
+        color: #ffffff !important;
+    }
+
+
+        .nav-link:hover i {
+            color: #ffffff !important;
+        }
+
 
 </style >
