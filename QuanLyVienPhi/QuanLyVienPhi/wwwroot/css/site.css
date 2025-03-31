@@ -18,6 +18,7 @@ html {
 }
 
 body {
+    font-size: 18px !important;
     margin-bottom: 60px;
     font-family: "SVN-Medium", sans-serif !important;
 }

@@ -80,12 +80,12 @@
             </td>
                     <td>@item.TienPhong.ToString("N0")</td>
             <td>
-                       <a asp-action="Edit" asp-route-id="@item.ChiTietPhongId" class="btn btn-outline btn-sm">Sửa</a>
+                       @* <a asp-action="Edit" asp-route-id="@item.ChiTietPhongId" class="btn btn-outline btn-sm">Sửa</a> *@
 
-                       @*  <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Edit", "Chitietphongs", new { id = item.ChiTietPhongId })')">Sửa</a> *@
+                        <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Edit", "Chitietphongs", new { id = item.ChiTietPhongId })')">Sửa</a>
                         <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Details", "Chitietphongs", new { id = item.ChiTietPhongId })')">Chi Tiết</a>
-                        <a href="#" class="btn btn-outline btn-sm" onclick="confirmDelete('@Url.Action("Delete", new { id = item.ChiTietPhongId })')">Xóa</a>
-            </td>
+                        <a href="#" class="btn btn-outline btn-sm" onclick="confirmDelete('@Url.Action("DeleteConfirmed", "ChiTietPhongs", new { id = item.ChiTietPhongId })')">Xóa</a>
+                    </td>
         </tr>
 }
     </tbody>
@@ -140,6 +140,8 @@
         </div>
     </div>
 </div>
+<form id="deleteForm" method="post"></form>
+
 <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -152,8 +154,8 @@
         </div>
     </div>
 </div>
+
 <!-- Form ẩn để xóa -->
-<form id="deleteForm" method="post"></form>
 <script>
     function loadModal(url) {
         $.get(url, function (data) {
@@ -190,3 +192,28 @@
     }
 </script>
 
+<script>
+    function confirmDelete(deleteUrl) {
+        // Hiển thị modal xác nhận
+        var deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
+        deleteModal.show();
+
+        // Khi nhấn "Xác nhận", gửi yêu cầu xóa bằng AJAX
+        document.getElementById("confirmDeleteBtn").onclick = function () {
+            $.ajax({
+                url: deleteUrl,
+                type: 'POST',
+                success: function (result) {
+                    // Ẩn modal sau khi xóa thành công
+                    deleteModal.hide();
+
+                    // Xóa hàng khỏi bảng hoặc làm mới trang
+                    location.reload(); // Hoặc xóa dòng bằng JavaScript nếu không muốn tải lại trang
+                },
+                error: function () {
+                    alert("Có lỗi xảy ra, vui lòng thử lại!");
+                }
+            });
+        };
+    }
+</script>

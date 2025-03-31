@@ -63,7 +63,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 benhNhan.TienDichVu = benhNhan.ChiTietDichVus.Sum(ct => ct.GiaTien);
 
             }
-
+            TempData["CurrentPage"] = page;
             ViewData["CurrentPage"] = page;
             ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
             ViewData["SearchString"] = searchString;
@@ -227,7 +227,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                int currentPage = TempData["CurrentPage"] != null ? (int)TempData["CurrentPage"] : 1;
+                return RedirectToAction(nameof(Index), new { page = currentPage });
             }
 
             ViewData["BacSiId"] = new SelectList(_context.BacSis, "BacSiId", "HoTen", benhNhan.BacSiId);
@@ -269,7 +270,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 _context.BenhNhans.Remove(benhnhan);
                 _context.SaveChanges();
             }
-            return RedirectToAction("Index");
+            int currentPage = TempData["CurrentPage"] != null ? (int)TempData["CurrentPage"] : 1;
+            return RedirectToAction(nameof(Index), new { page = currentPage });
         }
 
 

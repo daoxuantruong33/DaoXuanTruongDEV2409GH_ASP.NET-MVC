@@ -38,7 +38,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                                           .Skip((page - 1) * pageSize)
                                           .Take(pageSize)
                                           .ToListAsync();
-
+            TempData["CurrentPage"] = page;
             ViewData["CurrentPage"] = page;
             ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
 
@@ -127,12 +127,13 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietPhong.BenhNhanId);
             ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong", chiTietPhong.PhongId);
             ViewData["GiuongId"] = new SelectList(_context.Giuongs, "GiuongId", "SoGiuong", chiTietPhong.GiuongId);
-
             // Lấy danh sách giá phòng
-            var danhSachGiaPhong = _context.Phongs.ToDictionary(p => p.PhongId, p => p.TienPhongNgay);
+            var danhSachGiaPhong = _context.Phongs.ToDictionary(p => p.PhongId.ToString(), p => p.TienPhongNgay);
             ViewBag.GiaPhongJson = System.Text.Json.JsonSerializer.Serialize(danhSachGiaPhong);
 
-            return View(chiTietPhong);
+          
+
+            return PartialView("_EditPartial", chiTietPhong);
         }
 
 
@@ -191,7 +192,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                int currentPage = TempData["CurrentPage"] != null ? (int)TempData["CurrentPage"] : 1;
+                return RedirectToAction(nameof(Index), new { page = currentPage });
             }
 
             return View(chiTietPhong);
@@ -220,19 +222,33 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
 
             return View(chiTietPhong);
         }
-       
-        // POST: Admins/ChiTietPhongs/Delete/5
+
         [HttpPost]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var chitietphong = _context.ChiTietPhongs.Find(id);
-            if (chitietphong != null)
+            var chiTietPhong = await _context.ChiTietPhongs
+                .Include(c => c.Giuong)
+                .FirstOrDefaultAsync(m => m.ChiTietPhongId == id);
+
+            if (chiTietPhong == null)
             {
-                _context.ChiTietPhongs.Remove(chitietphong);
-                _context.SaveChanges();
+                return Json(new { success = false, message = "Không tìm thấy dữ liệu!" });
             }
-            return RedirectToAction("Index");
+
+            // Cập nhật trạng thái giường về trống
+            if (chiTietPhong.Giuong != null)
+            {
+                chiTietPhong.Giuong.TrangThai = "Trống"; // Nếu TrangThai là string
+                _context.Update(chiTietPhong.Giuong);
+            }
+
+            // Xóa chi tiết phòng
+            _context.ChiTietPhongs.Remove(chiTietPhong);
+            await _context.SaveChangesAsync();
+
+            return Json(new { success = true, message = "Xóa thành công!" });
         }
+
 
         private bool ChiTietPhongExists(int id)
         {

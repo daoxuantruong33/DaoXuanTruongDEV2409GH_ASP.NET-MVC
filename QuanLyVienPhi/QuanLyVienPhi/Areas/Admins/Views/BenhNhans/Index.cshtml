@@ -136,7 +136,10 @@
                 <td>
                         <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Edit", "BenhNhans", new { id = item.BenhNhanId })')">Sửa</a>
                         <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Details", "BenhNhans", new { id = item.BenhNhanId })')">Chi tiết</a>
-                        <a href="#" class="btn btn-outline btn-sm" onclick="confirmDelete('@Url.Action("Delete", new { id = item.BenhNhanId })')">Xóa</a>
+                        <a href="#" class="btn btn-outline btn-sm"
+                           onclick="confirmDelete('@Url.Action("Delete", new { id = item.BenhNhanId })', @item.TienPhong, @item.TienThuoc, @item.TienDichVu)">
+                            Xóa
+                        </a>
                         <a asp-action="Invoice" asp-route-id="@item.BenhNhanId" class="btn btn-outline btn-sm" target="_blank">Hóa đơn</a>
                 
                         @if (!item.TrangThaiThanhToan)
@@ -222,6 +225,25 @@
         </div>
     </div>
 </div>
+<!-- Modal Cảnh báo Không thể Xóa -->
+<div class="modal fade" id="warningModal" tabindex="-1" aria-labelledby="warningModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-body text-center p-4">
+                <div class="text-danger" style="font-size: 6rem;">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                </div>
+                <p class="fw-bold text-danger mt-3 fs-5">Không thể xóa bệnh nhân này.</p>
+            </div>
+            <div class="modal-footer border-0 justify-content-center">
+                <button type="button" class="btn btn-danger px-4 py-2 fs-5" data-bs-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 <!-- Form ẩn để xóa -->
 <form id="deleteForm" method="post"></form>
@@ -244,17 +266,21 @@
     }
 </script>
 <script>
-    function confirmDelete(deleteUrl) {
-        var form = document.getElementById("deleteForm");
-        form.action = deleteUrl;  // Cập nhật đường dẫn xóa vào form
-        form.innerHTML = '<input type="hidden" name="_method" value="POST">';  // Thêm input ẩn để gửi request
+    function confirmDelete(deleteUrl, tienPhong, tienThuoc, tienDichVu) {
+        if (tienPhong > 0 || tienThuoc > 0 || tienDichVu > 0) {
+            var warningModal = new bootstrap.Modal(document.getElementById("warningModal"));
+            warningModal.show();
+            return;
+        }
 
-        // Khi nhấn "Xóa" trong modal, tự động submit form
+        var form = document.getElementById("deleteForm");
+        form.action = deleteUrl;
+        form.innerHTML = '<input type="hidden" name="_method" value="POST">';
+
         document.getElementById("confirmDeleteBtn").onclick = function () {
             form.submit();
         };
 
-        // Hiển thị modal
         var deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
         deleteModal.show();
     }

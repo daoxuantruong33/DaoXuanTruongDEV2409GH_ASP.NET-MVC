@@ -4,7 +4,7 @@
     <div class="col-md-12">
         <div class="card shadow-lg p-5">
             <div class="card-body">
-                <form asp-action="Edit">
+                <form asp-action="Edit" method="post">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="ChiTietPhongId" />
 
@@ -19,7 +19,7 @@
 
                             <div class="form-group">
                                 <label asp-for="PhongId" class="control-label"></label>
-                                <select asp-for="PhongId" class="form-control" asp-items="ViewBag.PhongId" disabled="disabled"></select>
+                                <select asp-for="PhongId" class="form-control" asp-items="ViewBag.PhongId" disabled="disabled" data-gia-tien="@ViewBag.GiaTien"></select>
                                 <input type="hidden" asp-for="PhongId" />
                                 <span asp-validation-for="PhongId" class="text-danger"></span>
                             </div>
@@ -35,19 +35,19 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label asp-for="NgayBatDau" class="control-label"></label>
-                                <input asp-for="NgayBatDau" type="date" class="form-control" readonly />
+                                <input asp-for="NgayBatDau" type="date" class="form-control" readonly id="NgayBatDau"/>
                                 <span asp-validation-for="NgayBatDau" class="text-danger"></span>
                             </div>
 
                             <div class="form-group">
                                 <label asp-for="NgayKetThuc" class="control-label"></label>
-                                <input asp-for="NgayKetThuc" type="date" class="form-control" />
+                                <input asp-for="NgayKetThuc" type="date" class="form-control" id="NgayKetThuc"/>
                                 <span asp-validation-for="NgayKetThuc" class="text-danger"></span>
                             </div>
 
                             <div class="form-group">
                                 <label asp-for="TienPhong" class="control-label"></label>
-                                <input asp-for="TienPhong" class="form-control" readonly />
+                                <input asp-for="TienPhong" class="form-control" readonly id="TienPhong"/>
                                 <span asp-validation-for="TienPhong" class="text-danger"></span>
                             </div>
                         </div>
@@ -63,77 +63,32 @@
     </div>
 </div>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const khoaInput = document.getElementById("Khoa");
-        const benhNhanSelect = document.getElementById("BenhNhanId");
-        const phongSelect = document.getElementById("PhongId");
-        const cccdInput = document.getElementById("Cccd");
-        const ngayBatDauInput = document.getElementById("NgayBatDau");
-        const ngayKetThucInput = document.getElementById("NgayKetThuc");
-        const tienPhongInput = document.getElementById("TienPhong");
+    $(document).ready(function () {
+        var giaPhongData = @Html.Raw(ViewBag.GiaPhongJson); // Chuyển JSON từ ViewBag vào biến JavaScript
 
-        // Lấy dữ liệu giá phòng từ ViewBag
-        let giaPhongData;
-        try {
-            giaPhongData = @Html.Raw(ViewBag.GiaPhongJson) || {};
-        } catch (error) {
-            console.error("Lỗi khi lấy giá phòng:", error);
-            giaPhongData = {};
+        function daydiff(date1, date2) {
+            var _date1 = new Date(date1);
+            var _date2 = new Date(date2);
+            return Math.max(Math.floor((_date2 - _date1) / (1000 * 60 * 60 * 24)), 1);
         }
 
         function tinhTienPhong() {
-            const phongId = phongSelect.value;
-            const giaPhong = giaPhongData[phongId] ? parseFloat(giaPhongData[phongId]) : 0;
+            var ngayBatDau = $("#NgayBatDau").val();
+            var ngayKetThuc = $("#NgayKetThuc").val();
+            var phongId = $("#PhongId").val();
 
-            const ngayBatDau = new Date(ngayBatDauInput.value);
-            const ngayKetThuc = new Date(ngayKetThucInput.value);
+            if (!ngayBatDau || !ngayKetThuc || !phongId) return;
 
-            if (!isNaN(ngayBatDau.getTime()) && !isNaN(ngayKetThuc.getTime()) && ngayBatDau <= ngayKetThuc) {
-                const soNgay = Math.ceil((ngayKetThuc - ngayBatDau) / (1000 * 60 * 60 * 24));
-                const tongTien = soNgay * giaPhong;
-                tienPhongInput.value = tongTien.toLocaleString("vi-VN");
-            } else {
-                tienPhongInput.value = "";
-            }
+            var giaTien = giaPhongData[phongId] || 100000; // Lấy giá theo phòng, mặc định 100000 nếu không có
+            var diff = daydiff(ngayBatDau, ngayKetThuc);
+            var tongTien = diff * giaTien;
+
+            console.log(`Phòng: ${phongId}, Ngày bắt đầu: ${ngayBatDau}, Ngày kết thúc: ${ngayKetThuc}, Giá/ngày: ${giaTien}, Tổng tiền: ${tongTien}`);
+
+            $("#TienPhong").val(tongTien);
         }
 
-        // Khi chọn bệnh nhân, cập nhật thông tin khoa & danh sách phòng
-        benhNhanSelect.addEventListener("change", function () {
-            const benhNhanId = benhNhanSelect.value;
-            if (benhNhanId) {
-                fetch(`/Admins/ChiTietPhongs/GetThongTinBenhNhan?benhNhanId=${benhNhanId}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data) {
-                            khoaInput.value = data.khoa || "Chưa cập nhật";
-                            cccdInput.value = data.cccd || "";
-
-                            // Lấy danh sách phòng theo khoa
-                            fetch(`/Admins/ChiTietPhongs/GetPhongByKhoa?khoaId=${data.khoaId}`)
-                                .then(response => response.json())
-                                .then(phongList => {
-                                    phongSelect.innerHTML = "<option value=''>Chọn phòng</option>";
-                                    phongList.forEach(phong => {
-                                        const option = document.createElement("option");
-                                        option.value = phong.phongId;
-                                        option.textContent = phong.soPhong;
-                                        phongSelect.appendChild(option);
-                                    });
-                                })
-                                .catch(error => console.error("Lỗi khi lấy danh sách phòng:", error));
-                        }
-                    })
-                    .catch(error => console.error("Lỗi lấy thông tin bệnh nhân:", error));
-            } else {
-                khoaInput.value = "";
-                cccdInput.value = "";
-                phongSelect.innerHTML = "<option value=''>Chọn phòng</option>";
-            }
-        });
-
-        // 🔹 Bổ sung lắng nghe sự kiện "input" để tính tiền ngay khi nhập ngày kết thúc
-        phongSelect.addEventListener("change", tinhTienPhong);
-        ngayBatDauInput.addEventListener("change", tinhTienPhong);
-        ngayKetThucInput.addEventListener("input", tinhTienPhong); // ⚡ Nhập vào là cập nhật luôn
+        $("#NgayKetThuc").change(tinhTienPhong);
+        tinhTienPhong(); // Tính tiền ngay khi trang tải
     });
 </script>

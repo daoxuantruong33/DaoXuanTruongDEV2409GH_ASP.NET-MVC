@@ -36,7 +36,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
-
+            TempData["CurrentPage"] = page;
             ViewData["CurrentPage"] = page;
             ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
             ViewData["SearchString"] = searchString;
@@ -152,7 +152,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                int currentPage = TempData["CurrentPage"] != null ? (int)TempData["CurrentPage"] : 1;
+                return RedirectToAction(nameof(Index), new { page = currentPage });
             }
             ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen", chiTietDichVu.BenhNhanId);
             ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "TenDichVu", chiTietDichVu.DichVuId);
@@ -189,7 +190,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 _context.ChiTietDichVus.Remove(chiTietDichVu);
                 _context.SaveChanges();
             }
-            return RedirectToAction("Index");
+            int currentPage = TempData["CurrentPage"] != null ? (int)TempData["CurrentPage"] : 1;
+            return RedirectToAction(nameof(Index), new { page = currentPage });
         }
 
         private bool ChiTietDichVuExists(int id)

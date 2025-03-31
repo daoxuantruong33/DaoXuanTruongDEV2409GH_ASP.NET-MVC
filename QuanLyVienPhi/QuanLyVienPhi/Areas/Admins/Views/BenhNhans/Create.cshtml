@@ -17,10 +17,11 @@
                 <span asp-validation-for="HoTen" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NgaySinh" class="control-label"></label>
-                <input asp-for="NgaySinh" type="date" class="form-control" />
-                <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                <label asp-for="NgayNhapVien" class="control-label"></label>
+                <input asp-for="NgayNhapVien" type="date" class="form-control" />
+                <span asp-validation-for="NgayNhapVien" class="text-danger"></span>
             </div>
+           
             <div class="form-group">
                 <label asp-for="GioiTinh" class="control-label"></label>
                 <select asp-for="GioiTinh" class="form-control" asp-items="@(new List<SelectListItem>
@@ -34,33 +35,14 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="DiaChi" class="control-label"></label>
-                <input asp-for="DiaChi" class="form-control" />
-                <span asp-validation-for="DiaChi" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DienThoai" class="control-label"></label>
-                <input asp-for="DienThoai" class="form-control" id="DienThoai" maxlength="10" required />
-                <span asp-validation-for="DienThoai" class="text-danger"></span>
-                <span id="phone-error" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label asp-for="Cccd" class="control-label"></label>
-                <input asp-for="Cccd" class="form-control" id="Cccd" maxlength="12" required />
-                <span asp-validation-for="Cccd" class="text-danger"></span>
-                <span id="cccd-error" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label asp-for="NgayNhapVien" class="control-label"></label>
-                <input asp-for="NgayNhapVien" type="date" class="form-control" />
-                <span asp-validation-for="NgayNhapVien" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="NgayRaVien" class="control-label"></label>
-                <input asp-for="NgayRaVien" class="form-control" readonly/>
+                <input asp-for="NgayRaVien" class="form-control" readonly />
                 <span asp-validation-for="NgayRaVien" class="text-danger"></span>
+            </div> 
+            <div class="form-group">
+                <label asp-for="NgaySinh" class="control-label"></label>
+                <input asp-for="NgaySinh" type="date" class="form-control" />
+                <span asp-validation-for="NgaySinh" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="KhoaId" class="control-label"></label>
@@ -78,16 +60,42 @@
 
             </div>
             <div class="form-group">
+                <label asp-for="Cccd" class="control-label"></label>
+                <input asp-for="Cccd" class="form-control" id="Cccd" maxlength="12" required />
+                <span asp-validation-for="Cccd" class="text-danger"></span>
+                <span id="cccd-error" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="BacSiId" class="control-label"></label>
                 <select id="BacSiId" name="BacSiId" class="form-control">
                     <option value="">-- Chọn Bác Sĩ --</option>
                 </select>
             </div>
+           
+            <div class="form-group">
+                <label asp-for="DiaChi" class="control-label"></label>
+                <input asp-for="DiaChi" class="form-control" />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
+            </div> 
             <div class="form-group">
                 <label asp-for="CreatedDate" class="control-label"></label>
                 <input asp-for="CreatedDate" type="datetime-local" class="form-control" readonly />
                 <span asp-validation-for="CreatedDate" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="DienThoai" class="control-label"></label>
+                <input asp-for="DienThoai" class="form-control" id="DienThoai" maxlength="10" required />
+                <span asp-validation-for="DienThoai" class="text-danger"></span>
+                <span id="phone-error" class="text-danger"></span>
+            </div>
+
+            
+
+            
+           
+            
+            
+           
 
             <div class="form-group">
                 <label asp-for="UpdatedDate" class="control-label"></label>

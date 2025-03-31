@@ -5,6 +5,2390 @@
       "PackagePath": "staticwebassets\\QuanLyVienPhi.bundle.scp.css"
     },
     {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\landing.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\landing.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\animate.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\animate.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\autoFill.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\autoFill.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\bootstrap-slider.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\bootstrap-slider.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\bootstrap-switch-button.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\bootstrap-switch-button.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\buttons.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\buttons.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\colReorder.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\colReorder.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\croppr.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\croppr.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\dataTables.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\datepicker-bs5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\datepicker-bs5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\dragula.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\dragula.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\dropzone.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\dropzone.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\fixedColumns.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\fixedColumns.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\fixedHeader.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\fixedHeader.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\flatpickr.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\introjs.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\introjs.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\jsvectormap.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\jsvectormap.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\keyTable.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\keyTable.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\notifier.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\notifier.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\nouislider.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\prism-coy.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\prism-coy.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\quill.bubble.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\quill.bubble.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\quill.core.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\quill.core.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\quill.snow.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\quill.snow.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\responsive.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\responsive.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\rowReorder.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\rowReorder.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\scroller.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\scroller.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\select.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\select.bootstrap5.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\simplemde.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\simplemde.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\style.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\style.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\tiny-slider.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\tiny-slider.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\uppy.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\uppy.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\plugins\\vanillatree.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\plugins\\vanillatree.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\style-preset.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\style-preset.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\css\\uikit.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\css\\uikit.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\feather.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\feather.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\feather\\feather.eot",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\feather\\feather.eot"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\feather\\feather.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\feather\\feather.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\feather\\feather.ttf",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\feather\\feather.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\feather\\feather.woff",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\feather\\feather.woff"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\fontawesome\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\inter\\Inter-italic.var.woff2",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\inter\\Inter-italic.var.woff2"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\inter\\Inter-roman.var.woff2",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\inter\\Inter-roman.var.woff2"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\inter\\inter.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\inter\\inter.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\material.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\material.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\material\\material.woff2",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\material\\material.woff2"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\phosphor\\duotone\\Phosphor-Duotone.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\phosphor\\duotone\\Phosphor-Duotone.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\phosphor\\duotone\\Phosphor-Duotone.ttf",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\phosphor\\duotone\\Phosphor-Duotone.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\phosphor\\duotone\\Phosphor-Duotone.woff",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\phosphor\\duotone\\Phosphor-Duotone.woff"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\phosphor\\duotone\\selection.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\phosphor\\duotone\\selection.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\phosphor\\duotone\\style.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\phosphor\\duotone\\style.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\tabler-icons.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\tabler-icons.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\tabler\\tabler-icons.eot",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\tabler\\tabler-icons.eot"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\tabler\\tabler-icons.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\tabler\\tabler-icons.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\tabler\\tabler-icons.ttf",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\tabler\\tabler-icons.ttf"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\tabler\\tabler-icons.woff",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\tabler\\tabler-icons.woff"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\fonts\\tabler\\tabler-icons.woff2",
+      "PackagePath": "staticwebassets\\ass\\assets\\fonts\\tabler\\tabler-icons.woff2"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\card-discover.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\card-discover.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\card-master.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\card-master.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\card-visa.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\card-visa.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\card.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\card.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\cod.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\cod.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\completed.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\completed.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\discount.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\discount.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-catalog1.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-catalog1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-catalog2.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-catalog2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-catalog3.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-catalog3.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-empty-mail.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-empty-mail.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-1.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-10.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-10.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-11.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-11.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-12.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-12.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-2.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-3.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-3.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-4.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-4.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-5.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-5.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-6.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-6.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-7.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-7.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-8.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-8.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\img-gal-9.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\img-gal-9.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\mastercard.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\mastercard.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\paypal.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\paypal.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\prod-img-1.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\prod-img-1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\prod-img-2.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\prod-img-2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\prod-img-3.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\prod-img-3.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\prod-img-4.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\prod-img-4.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\prod-img-5.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\prod-img-5.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\prod-img-6.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\prod-img-6.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\prod-img-7.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\prod-img-7.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\prod-img-8.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\prod-img-8.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\prod-img-9.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\prod-img-9.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-1.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-10.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-10.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-11.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-11.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-12.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-12.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-2.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-3.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-3.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-4.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-4.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-5.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-5.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-6.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-6.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-7.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-7.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-8.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-8.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\profile-back-9.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\profile-back-9.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\application\\visa.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\application\\visa.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\authentication\\facebook.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\authentication\\facebook.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\authentication\\google.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\authentication\\google.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\authentication\\img-auth-bg.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\authentication\\img-auth-bg.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\authentication\\twitter.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\authentication\\twitter.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\customization\\container.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\customization\\container.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\customization\\dark.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\customization\\dark.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\customization\\default.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\customization\\default.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\customization\\mini-menu.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\customization\\mini-menu.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\customization\\rtl.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\customization\\rtl.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\customization\\theme-color.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\customization\\theme-color.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\favicon.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\favicon.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\img-navbar-card.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\img-navbar-card.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\bg-mockup-theme-1.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\bg-mockup-theme-1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\bg-mockup-theme-2.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\bg-mockup-theme-2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\bg-mockup-theme-3.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\bg-mockup-theme-3.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\bg-mockup-theme-4.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\bg-mockup-theme-4.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\bg-mockup-theme-5.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\bg-mockup-theme-5.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\bg-mockup-theme-6.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\bg-mockup-theme-6.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\bg-mockup-theme-7.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\bg-mockup-theme-7.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\bg-mockup-theme-8.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\bg-mockup-theme-8.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\bg-mockup-theme-9.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\bg-mockup-theme-9.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\client-01.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\client-01.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\client-02.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\client-02.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\client-03.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\client-03.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\client-04.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\client-04.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\client-05.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\client-05.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-bg-screen.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-bg-screen.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-demo1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-demo1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-demo2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-demo2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-demo3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-demo3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-main-theme-1.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-main-theme-1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-main-theme-2.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-main-theme-2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-main-theme-3.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-main-theme-3.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-main-theme-4.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-main-theme-4.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-main-theme-5.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-main-theme-5.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-main-theme-6.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-main-theme-6.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-main-theme-7.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-main-theme-7.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-main-theme-8.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-main-theme-8.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-main-theme-9.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-main-theme-9.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-msg.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-msg.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-element-widget.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-element-widget.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-feature1.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-feature1.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-feature2.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-feature2.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-feature3.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-feature3.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-footer-moke-1.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-footer-moke-1.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-footer-moke-2.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-footer-moke-2.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-footer-moke-3.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-footer-moke-3.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-footer-moke-4.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-footer-moke-4.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-footer-moke-5.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-footer-moke-5.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-footer-moke-6.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-footer-moke-6.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-footer-moke-7.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-footer-moke-7.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-footer-moke-8.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-footer-moke-8.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-footer-moke-9.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-footer-moke-9.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-headertech.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-headertech.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-dark-1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-dark-1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-dark-2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-dark-2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-dark-3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-dark-3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-dark-4.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-dark-4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-dark-5.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-dark-5.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-dark-6.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-dark-6.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-dark-7.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-dark-7.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-dark-8.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-dark-8.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-dark-9.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-dark-9.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-light-1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-light-1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-light-2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-light-2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-light-3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-light-3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-light-4.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-light-4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-light-5.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-light-5.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-light-6.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-light-6.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-light-7.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-light-7.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-light-8.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-light-8.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-theme-light-9.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-theme-light-9.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\landing\\img-user1.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\landing\\img-user1.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\l1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\l1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\l2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\l2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\l3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\l3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\l4.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\l4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\l5.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\l5.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\l6.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\l6.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\mixin.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\mixin.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\sl1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\sl1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\sl2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\sl2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\sl3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\sl3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\sl4.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\sl4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\sl5.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\sl5.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\sl6.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\sl6.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\smixin.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\smixin.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\v1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\v1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\v2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\v2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\v3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\v3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\light-box\\v4.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\light-box\\v4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\logo-dark.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\logo-dark.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\logo-icon.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\logo-icon.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\logo-white.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\logo-white.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\mega-menu\\back.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\mega-menu\\back.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\mega-menu\\chart.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\mega-menu\\chart.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\notification\\clock-48.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\notification\\clock-48.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\notification\\high_priority-48.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\notification\\high_priority-48.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\notification\\medium_priority-48.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\notification\\medium_priority-48.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\notification\\ok-48.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\notification\\ok-48.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\notification\\survey-48.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\notification\\survey-48.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\Error404.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\Error404.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\Error500.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\Error500.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\TwoCone.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\TwoCone.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\codedthemes-logo.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\codedthemes-logo.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\coming-soon.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\coming-soon.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\img-megamenu.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\img-megamenu.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\img-price-extended.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\img-price-extended.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\img-price-standard.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\img-price-standard.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\img-price-standardplus.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\img-price-standardplus.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\under-construction-2.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\under-construction-2.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\pages\\worldMap.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\pages\\worldMap.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\profile\\card.png",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\profile\\card.png"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\profile\\img-profile-bottom.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\profile\\img-profile-bottom.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\profile\\img-profile-top.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\profile\\img-profile-top.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\slider\\header-bg.07dde975.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\slider\\header-bg.07dde975.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\slider\\img-slide-1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\slider\\img-slide-1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\slider\\img-slide-2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\slider\\img-slide-2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\slider\\img-slide-3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\slider\\img-slide-3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\slider\\img-slide-4.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\slider\\img-slide-4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\slider\\img-slide-5.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\slider\\img-slide-5.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\slider\\img-slide-6.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\slider\\img-slide-6.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\slider\\img-slide-7.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\slider\\img-slide-7.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-10.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-10.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-4.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-5.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-5.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-6.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-6.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-7.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-7.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-8.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-8.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\user\\avatar-9.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\user\\avatar-9.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\AUSTRALIA.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\AUSTRALIA.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\BRAZIL.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\BRAZIL.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\GERMANY.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\GERMANY.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\PHONE1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\PHONE1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\PHONE2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\PHONE2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\PHONE3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\PHONE3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\PHONE4.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\PHONE4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\UK.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\UK.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\USA.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\USA.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\dashborad-1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\dashborad-1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\dashborad-2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\dashborad-2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\dashborad-3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\dashborad-3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\p1.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\p1.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\p2.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\p2.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\p3.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\p3.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\p4.jpg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\p4.jpg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\reader.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\reader.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\images\\widget\\target.svg",
+      "PackagePath": "staticwebassets\\ass\\assets\\images\\widget\\target.svg"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\component.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\component.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\fonts\\custom-font.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\fonts\\custom-font.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\layout-compact.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\layout-compact.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\layout-horizontal.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\layout-horizontal.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\layout-tab.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\layout-tab.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\ac-alert.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\ac-alert.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\ac-datepicker.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\ac-datepicker.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\ac-notification.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\ac-notification.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\ac-rangeslider.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\ac-rangeslider.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\ac-slider.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\ac-slider.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\ac-tour.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\ac-tour.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\ac-treeview.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\ac-treeview.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\calendar.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\calendar.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\canada.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\canada.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\chart-apex.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\chart-apex.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\dashboard-analytics.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\dashboard-analytics.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\dashboard-default.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\dashboard-default.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\form-masking-custom.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\form-masking-custom.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\form-validation.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\form-validation.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\iraq.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\iraq.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\italy.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\italy.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\map-vector.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\map-vector.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\page-croper.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\page-croper.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\russia.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\russia.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\spain.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\spain.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\us-aea-en.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\us-aea-en.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\us-lcc-en.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\us-lcc-en.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\us-merc-en.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\us-merc-en.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\us-mill-en.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\us-mill-en.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pages\\w-chart.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pages\\w-chart.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\pcoded.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\pcoded.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\Jarallax.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\Jarallax.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\apexcharts.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\apexcharts.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\autoFill.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\autoFill.bootstrap5.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\bootstrap-slider.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\bootstrap-slider.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\bootstrap-switch-button.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\bootstrap-switch-button.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\bouncer.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\bouncer.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\buttons.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\buttons.bootstrap5.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\buttons.colVis.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\buttons.colVis.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\buttons.html5.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\buttons.html5.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\buttons.print.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\buttons.print.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\choices.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\choices.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\ckeditor\\balloon\\ckeditor.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\ckeditor\\balloon\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\ckeditor\\classic\\ckeditor.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\ckeditor\\classic\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\ckeditor\\document\\ckeditor.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\ckeditor\\document\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\ckeditor\\inline\\ckeditor.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\ckeditor\\inline\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\clipboard.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\clipboard.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\croppr.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\croppr.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.autoFill.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.autoFill.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.bootstrap5.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.buttons.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.buttons.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.colReorder.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.colReorder.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.fixedColumns.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.fixedColumns.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.fixedHeader.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.fixedHeader.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.keyTable.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.keyTable.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.responsive.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.responsive.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.rowReorder.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.rowReorder.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dataTables.select.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dataTables.select.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\datepicker-full.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\datepicker-full.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dragula.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dragula.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\dropzone-amd-module.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\dropzone-amd-module.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\feather.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\feather.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\flatpickr.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\gmaps.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\gmaps.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\imask.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\imask.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\index.global.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\index.global.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\intro.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\intro.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\jsvectormap.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\jsvectormap.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\jszip.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\jszip.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\keyTable.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\keyTable.bootstrap5.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\module.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\module.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\notifier.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\notifier.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\nouislider.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\nouislider.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\pdfmake.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\pdfmake.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\popper.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\popper.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\prism.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\prism.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\quill.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\quill.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\responsive.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\responsive.bootstrap5.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\scroller.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\scroller.bootstrap5.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\simple-datatables.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\simple-datatables.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\simplebar.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\simplebar.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\simplemde.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\simplemde.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tiny-slider.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tiny-slider.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\CHANGELOG.md"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\README.md",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\README.md"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\bower.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\bower.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\composer.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\composer.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\icons\\default\\icons.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\icons\\default\\icons.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\icons\\default\\icons.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\icons\\default\\icons.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\icons\\default\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\icons\\default\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\license.txt",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\license.txt"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\models\\dom\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\models\\dom\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\models\\dom\\model.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\models\\dom\\model.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\models\\dom\\model.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\models\\dom\\model.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\package.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\package.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\accordion\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\accordion\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\accordion\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\accordion\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\accordion\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\accordion\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\advlist\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\advlist\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\advlist\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\advlist\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\advlist\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\advlist\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\anchor\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\anchor\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\anchor\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\anchor\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\anchor\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\anchor\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autolink\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autolink\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autolink\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autolink\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autolink\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autolink\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autoresize\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autoresize\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autoresize\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autoresize\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autoresize\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autoresize\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autosave\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autosave\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autosave\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autosave\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autosave\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\autosave\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\charmap\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\charmap\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\charmap\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\charmap\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\charmap\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\code\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\code\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\code\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\code\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\code\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\code\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\codesample\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\codesample\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\codesample\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\codesample\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\codesample\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\directionality\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\directionality\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\directionality\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\directionality\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\directionality\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\directionality\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojiimages.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojiimages.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojis.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojis.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojis.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\js\\emojis.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\emoticons\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\fullscreen\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\fullscreen\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\fullscreen\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\fullscreen\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\fullscreen\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\fullscreen\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\help\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\image\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\image\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\image\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\image\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\image\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\image\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\importcss\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\importcss\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\importcss\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\importcss\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\importcss\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\importcss\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\insertdatetime\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\insertdatetime\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\insertdatetime\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\insertdatetime\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\insertdatetime\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\insertdatetime\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\link\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\link\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\link\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\link\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\link\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\link\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\lists\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\lists\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\lists\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\lists\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\lists\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\lists\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\media\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\media\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\media\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\media\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\media\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\media\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\nonbreaking\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\nonbreaking\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\nonbreaking\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\nonbreaking\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\nonbreaking\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\nonbreaking\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\pagebreak\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\pagebreak\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\pagebreak\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\pagebreak\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\pagebreak\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\pagebreak\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\preview\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\preview\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\preview\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\preview\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\preview\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\preview\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\print\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\print\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\quickbars\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\quickbars\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\quickbars\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\quickbars\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\quickbars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\quickbars\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\save\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\save\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\save\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\save\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\save\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\save\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\searchreplace\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\searchreplace\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\searchreplace\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\searchreplace\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\searchreplace\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\searchreplace\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\table\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\table\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\table\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\table\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\table\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\table\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\template\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\template\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\template\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\template\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\template\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\template\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualblocks\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualblocks\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualblocks\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualblocks\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualblocks\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualblocks\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualchars\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualchars\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualchars\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualchars\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualchars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\visualchars\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\wordcount\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\wordcount\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\wordcount\\plugin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\wordcount\\plugin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\plugins\\wordcount\\plugin.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\plugins\\wordcount\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\dark\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\dark\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\dark\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\dark\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\dark\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\default\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\default\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\default\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\default\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\default\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\default\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\document\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\document\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\document\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\document\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\document\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\document\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\writer\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\writer\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\writer\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\writer\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\writer\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\content\\writer\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\themes\\silver\\index.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\themes\\silver\\index.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\themes\\silver\\theme.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\themes\\silver\\theme.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\themes\\silver\\theme.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\themes\\silver\\theme.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\tinymce.d.ts",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\tinymce.d.ts"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\tinymce.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\tinymce.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\type-ahead.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\type-ahead.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\uppy.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\uppy.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\vanillatree.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\vanillatree.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\vfs_fonts.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\vfs_fonts.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\wNumb.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\wNumb.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\world-merc.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\world-merc.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\world.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\world.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\js\\plugins\\wow.min.js",
+      "PackagePath": "staticwebassets\\ass\\assets\\js\\plugins\\wow.min.js"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\2500.txt",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\2500.txt"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\datatable.column.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\datatable.column.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\datatable.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\datatable.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\file-upload.php",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\file-upload.php"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\lazy.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\lazy.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\root.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\root.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\typehead\\countries.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\typehead\\countries.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\typehead\\movies.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\typehead\\movies.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\typehead\\nba.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\typehead\\nba.json"
+    },
+    {
+      "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\ass\\assets\\json\\typehead\\nhl.json",
+      "PackagePath": "staticwebassets\\ass\\assets\\json\\typehead\\nhl.json"
+    },
+    {
       "Id": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\wwwroot\\assets\\css\\icons\\tabler-icons\\fonts\\tabler-icons.eot",
       "PackagePath": "staticwebassets\\assets\\css\\icons\\tabler-icons\\fonts\\tabler-icons.eot"
     },

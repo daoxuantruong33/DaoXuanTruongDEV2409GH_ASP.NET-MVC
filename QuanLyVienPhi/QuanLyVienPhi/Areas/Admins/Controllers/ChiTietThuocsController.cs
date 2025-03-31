@@ -35,7 +35,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                                           .Skip((page - 1) * pageSize)
                                           .Take(pageSize)
                                           .ToListAsync();
-
+            TempData["CurrentPage"] = page;
             ViewData["CurrentPage"] = page;
             ViewData["TotalPages"] = (int)Math.Ceiling((double)totalRecords / pageSize);
             ViewData["SearchString"] = searchString;
@@ -178,9 +178,9 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                         throw;
                     }                    
 
-                }                    
-                return RedirectToAction(nameof(Index));
-
+                }
+                int currentPage = TempData["CurrentPage"] != null ? (int)TempData["CurrentPage"] : 1;
+                return RedirectToAction(nameof(Index), new { page = currentPage });
             }
             return View(chiTietThuoc);
         }
@@ -216,7 +216,8 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 _context.ChiTietThuocs.Remove(chitietthuoc);
                 _context.SaveChanges();
             }
-            return RedirectToAction("Index");
+            int currentPage = TempData["CurrentPage"] != null ? (int)TempData["CurrentPage"] : 1;
+            return RedirectToAction(nameof(Index), new { page = currentPage });
         }
 
         private bool ChiTietThuocExists(int id)

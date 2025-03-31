@@ -186,6 +186,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXRQaG9uZ3NcX0VkaXRQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ChiTietPhongs/_EditPartial_2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXRQaG9uZ3NcX0VkaXRQYXJ0aWFsXzIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/ChiTietThuocs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXENoaVRpZXRUaHVvY3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

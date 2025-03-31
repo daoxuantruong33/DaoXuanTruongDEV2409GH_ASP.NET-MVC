@@ -25,7 +25,7 @@ public partial class Bhyt
     [Display(Name = "Ngày Tạo")]
 
     public DateTime? CreatedDate { get; set; }
-    [Display(Name = "Cập Nhật Gần Đây")]
+    [Display(Name = "Cập Nhật Mới")]
 
     public DateTime? UpdatedDate { get; set; }
 

@@ -17,7 +17,7 @@ namespace QuanLyVienPhi
             builder.Services.AddHttpClient(); builder.Services.AddHttpContextAccessor();
             builder.Services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromSeconds(60);
+                options.IdleTimeout = TimeSpan.FromMinutes(6);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
                 options.Cookie.Name = "QuanLyVienPhi";

@@ -148,7 +148,8 @@
 <script>
     function loadModal(url) {
         $.get(url, function (data) {
-            $("#modal-content").html(data);
+             $("#modal-content").html("");
+            $("#modal-content").append(data);
             $("#modal-container").modal("show");
         });
     }
