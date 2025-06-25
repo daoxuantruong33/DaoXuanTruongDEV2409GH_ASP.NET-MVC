@@ -63,12 +63,32 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/ChiTietThuocs/Create
-        public IActionResult Create()
+        public IActionResult Create(int? id)
         {
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
             ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "TenThuoc");
+
+            if (id.HasValue)
+            {
+                var benhNhan = _context.BenhNhans.FirstOrDefault(b => b.BenhNhanId == id);
+                if (benhNhan == null) return NotFound();
+
+                var chiTietThuoc = new ChiTietThuoc
+                {
+                    BenhNhanId = benhNhan.BenhNhanId,
+                    Cccd = benhNhan.Cccd,
+                    CreatedDate = DateTime.Now,
+                    UpdatedDate = DateTime.Now
+                };
+
+                ViewData["BenhNhanHoTen"] = benhNhan.HoTen;
+
+                return View(chiTietThuoc);
+            }
+
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
             return View();
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -92,7 +112,6 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             ViewData["ThuocId"] = new SelectList(_context.Thuocs, "ThuocId", "TenThuoc", chiTietThuoc.ThuocId);
             return View(chiTietThuoc);
         }
-
 
         // GET: Admins/ChiTietThuocs/Edit/5
         public async Task<IActionResult> Edit(int? id)

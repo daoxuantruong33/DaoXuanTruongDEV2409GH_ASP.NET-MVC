@@ -1,0 +1,35 @@
+﻿@model QuanLyVienPhi.Models.Admin
+
+<div class="container mt-4">
+    <div class="card shadow-sm p-4">
+        <div class="row">
+            <dl class="col-md-6">
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.Username)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.Username)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.Password)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.Password)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.FullName)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.FullName)</dd>
+            </dl>
+
+            <dl class="col-md-6">
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.Phone)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.Phone)</dd>
+
+                <dt class="fw-bold text-nowrap">@Html.DisplayNameFor(model => model.Email)</dt>
+                <dd class="mb-3 ps-3 border p-2 rounded">@Html.DisplayFor(model => model.Email)</dd>
+            </dl>
+        </div>
+
+        <div class="text-center mt-4">
+            <a class="btn btn-primary me-2" asp-action="Edit" asp-route-id="@Model?.AdminId">
+                <i class="fas fa-edit"></i> Sửa
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </div>
+</div>

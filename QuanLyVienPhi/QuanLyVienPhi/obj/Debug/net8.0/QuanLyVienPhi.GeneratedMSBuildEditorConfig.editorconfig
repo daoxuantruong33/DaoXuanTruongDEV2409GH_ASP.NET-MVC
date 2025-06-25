@@ -46,6 +46,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEFkbWluc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Admins/_DetailsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEFkbWluc1xfRGV0YWlsc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/Admins/_EditPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEFkbWluc1xfRWRpdFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Devmaster/DaoXuanTruongDEV2409GH_ASP.NET-MVC/QuanLyVienPhi/QuanLyVienPhi/Areas/Admins/Views/BacSis/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zXFZpZXdzXEJhY1Npc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

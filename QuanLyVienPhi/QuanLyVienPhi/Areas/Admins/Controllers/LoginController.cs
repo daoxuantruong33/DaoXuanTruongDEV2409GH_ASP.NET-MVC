@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using QuanLyVienPhi.Areas.Admins.Models;
 using QuanLyVienPhi.Models;
-
+using System.Security.Cryptography;
+using System.Text;
 namespace QuanLyVienPhi.Areas.Admins.Controllers
 {
     [Area("Admins")]
@@ -28,8 +29,10 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             }
 
             // Xử lý logic đăng nhập
+            var pass = GetSHA26Hash(model.Password);
             var dataLogin = _context.Admins
-                .FirstOrDefault(x => x.Email == model.Email && x.Password == model.Password);
+            .Where(x => x.Email.Equals(model.Email) && x.Password.Equals(pass))
+            .FirstOrDefault();
 
             if (dataLogin != null)
             {
@@ -62,6 +65,14 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             HttpContext.Session.Remove("RoleId"); // Xóa session với key RoleId
 
             return RedirectToAction("Index"); // Chuyển hướng về trang đăng nhập
+        }
+        static string GetSHA26Hash(string input)
+        {
+            using (var sha256 = SHA256.Create()) // Sử dụng SHA256.Create() thay vì SHA256Managed()
+            {
+                var hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(input));
+                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+            }
         }
     }
 }

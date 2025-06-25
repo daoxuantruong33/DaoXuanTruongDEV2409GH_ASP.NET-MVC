@@ -19,13 +19,13 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/Bhyts
-        public async Task<IActionResult> Index(string searchString = "", int page = 1, int pageSize = 5)
+        public async Task<IActionResult> Index(string searchString , int page = 1, int pageSize = 5)
         {
             var bhytssQuery = _context.Bhyts.Include(b => b.BenhNhan).Include(b => b.DoiTuong).AsQueryable();
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                bhytssQuery = bhytssQuery.Where(a => a.SoTheBhyt.Contains(searchString));
+                bhytssQuery = bhytssQuery.Where(a => a.Cccd.Contains(searchString));
             }
 
             int totalRecords = await bhytssQuery.CountAsync();
@@ -60,10 +60,29 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             return PartialView("_DetailsPartial", bhyt);
         }
 
-        public IActionResult Create()
+        public IActionResult Create(int? id)
         {
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen"); // Chọn theo tên
-            ViewData["DoiTuongId"] = new SelectList(_context.DoiTuongs, "DoiTuongId", "DoiTuongId");
+            ViewData["BhytId"] = new SelectList(_context.Bhyts, "BhytId", "SoTheBhyt");
+
+            if (id.HasValue)
+            {
+                var benhNhan = _context.BenhNhans.FirstOrDefault(b => b.BenhNhanId == id);
+                if (benhNhan == null) return NotFound();
+
+                var bhyt = new Bhyt
+                {
+                    BenhNhanId = benhNhan.BenhNhanId,
+                    Cccd = benhNhan.Cccd,
+                    CreatedDate = DateTime.Now,
+                    UpdatedDate = DateTime.Now
+                };
+
+                ViewData["BenhNhanHoTen"] = benhNhan.HoTen;
+
+                return View(bhyt);
+            }
+
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
             return View();
         }
 

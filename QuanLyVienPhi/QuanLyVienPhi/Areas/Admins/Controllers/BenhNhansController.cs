@@ -45,7 +45,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                benhNhansQuery = benhNhansQuery.Where(a => a.HoTen.Contains(searchString));
+                benhNhansQuery = benhNhansQuery.Where(a => a.Cccd.Contains(searchString));
             }
 
             int totalRecords = await benhNhansQuery.CountAsync();
@@ -164,7 +164,20 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            var benhNhan = await _context.BenhNhans.FindAsync(id);
+            var benhNhan = await _context.BenhNhans
+                .Include(b => b.ChiTietPhongs)
+                .FirstOrDefaultAsync(b => b.BenhNhanId == id);
+
+            if (benhNhan == null)
+            {
+                return NotFound();
+            }
+
+            // Lấy ngày ra viện từ ngày kết thúc gần nhất của ChiTietPhongs
+            benhNhan.NgayRaVien = benhNhan.ChiTietPhongs
+                .OrderByDescending(cp => cp.NgayKetThuc)
+                .Select(cp => cp.NgayKetThuc)
+                .FirstOrDefault();
             if (benhNhan == null)
             {
                 return NotFound();
@@ -336,33 +349,48 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
-            var apiRequest = new ApiRequest();
-            apiRequest.acqId = Convert.ToInt32("970423");
-            //MessageBox.Show(apiRequest.acqId.ToString());
-            apiRequest.accountNo = ("06095317801");
-            apiRequest.accountName = "Dao Xuan Truong";
-            var amount =  _context.ChiTietThuocs.FirstOrDefault(x => x.BenhNhanId == id)?.TienThuoc ?? 0;
-            var tienPhong = _context.ChiTietPhongs.FirstOrDefault(x => x.BenhNhanId == id)?.TienPhong ?? 0;
-            var tienThuoc = _context.ChiTietThuocs
-                                     .Where(x => x.BenhNhanId == id)
-                                     .Sum(x => x.TienThuoc);
-            var tienDichvu = _context.ChiTietDichVus
-                                     .Where(x => x.BenhNhanId == id)
-                                     .Sum(x => x.GiaTien);  // Tính tổng tiền dịch vụ
 
+            var apiRequest = new ApiRequest
+            {
+                acqId = 970423,
+                accountNo = "06095317801",
+                accountName = "Dao Xuan Truong",
+                addInfo = "Chuyển khoản tiền viện phí",
+                format = "text",
+                template = "print"
+            };
+
+            // Tính tổng tiền cần thanh toán
+            var tienPhong = _context.ChiTietPhongs.FirstOrDefault(x => x.BenhNhanId == id)?.TienPhong ?? 0;
+            var tienThuoc = _context.ChiTietThuocs.Where(x => x.BenhNhanId == id).Sum(x => x.TienThuoc);
+            var tienDichvu = _context.ChiTietDichVus.Where(x => x.BenhNhanId == id).Sum(x => x.GiaTien);
             var miengiam = _context.Bhyts.FirstOrDefault(x => x.BenhNhanId == id)?.MienGiam ?? 0;
 
-
             apiRequest.amount = Convert.ToInt32((tienPhong + tienThuoc + tienDichvu) * (1 - miengiam / 100m));
-            apiRequest.addInfo = "Chuyển khoản tiền viện phí";
-            apiRequest.format = "text";
-            apiRequest.template = "print";
 
-            var img = CreateQRCode(apiRequest);
-            var file = img;
-            var fileName = _context.BenhNhans.FirstOrDefault(x => x.BenhNhanId == id).BenhNhanId.ToString() + "QRCode.jpg";
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot\\images\\imgQR", fileName);
-            img.Save(path, ImageFormat.Jpeg);
+            // Tạo QR code
+            using var img = CreateQRCode(apiRequest);  // Sử dụng using để đảm bảo giải phóng tài nguyên
+
+            if (img == null)
+            {
+                return BadRequest("Không tạo được QR code.");
+            }
+
+            // Tạo thư mục nếu chưa có
+            string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "imgQR");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+
+            // Lưu QR code vào file
+            string fileName = $"{id}_QRCode.jpg";
+            string path = Path.Combine(folderPath, fileName);
+
+            using (var fs = new FileStream(path, FileMode.Create))
+            {
+                img.Save(fs, ImageFormat.Jpeg);
+            }
 
             ViewBag.img = "/images/imgQR/" + fileName;
 
@@ -372,16 +400,32 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
 
 
 
-        public void GetListBank()
+
+        public async void GetListBank()
         {
             listBankData = new Bank();
-            using (WebClient client = new WebClient())
+
+            // Tạo HttpClient với khả năng bỏ qua kiểm tra chứng chỉ (chỉ dùng trong DEV)
+            HttpClientHandler handler = new HttpClientHandler
             {
-                var htmlData = client.DownloadData(URLBank);
-                var bankRawJson = Encoding.UTF8.GetString(htmlData);
+                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true // ⚠️ Dùng tạm trong DEV
+            };
 
-                listBankData = JsonConvert.DeserializeObject<Bank>(bankRawJson);
+            using (HttpClient client = new HttpClient(handler))
+            {
+                try
+                {
+                    var response = await client.GetAsync(URLBank);
+                    response.EnsureSuccessStatusCode(); // Throw nếu mã không phải 2xx
 
+                    var json = await response.Content.ReadAsStringAsync();
+                    listBankData = JsonConvert.DeserializeObject<Bank>(json);
+                }
+                catch (HttpRequestException ex)
+                {
+                    Console.WriteLine("Lỗi gọi API ngân hàng: " + ex.Message);
+                    // Bạn có thể log hoặc thông báo cho người dùng
+                }
             }
         }
 

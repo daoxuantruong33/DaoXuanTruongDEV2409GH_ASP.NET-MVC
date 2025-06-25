@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\views\\shared\\_preloader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\views\\shared\\_preloader.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\controllers\\benhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\controllers\\benhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\views\\benhnhans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\views\\benhnhans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\controllers\\benhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\controllers\\benhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\views\\chitietthuocs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\views\\chitietthuocs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|d:\\devmaster\\daoxuantruongdev2409gh_asp.net-mvc\\quanlyvienphi\\quanlyvienphi\\areas\\admins\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6CA4EDA-C0FB-47B5-B681-3604ACCD4311}|QuanLyVienPhi\\QuanLyVienPhi.csproj|solutionrelative:quanlyvienphi\\areas\\admins\\views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +34,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Preloader.cshtml",
-              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_Preloader.cshtml",
-              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_Preloader.cshtml",
-              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_Preloader.cshtml",
-              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_Preloader.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T10:34:51.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_SideBar.cshtml",
-              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_SideBar.cshtml",
-              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_SideBar.cshtml",
-              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_SideBar.cshtml",
-              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_SideBar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAACRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T10:34:49.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Admin.cshtml",
-              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\Admin.cshtml",
-              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\Admin.cshtml",
-              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\Admin.cshtml",
-              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\Admin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T10:34:47.533Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\BenhNhans\\Index.cshtml",
-              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Views\\BenhNhans\\Index.cshtml",
-              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\BenhNhans\\Index.cshtml",
-              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Views\\BenhNhans\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOsAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T10:01:32.601Z",
+              "Title": "BenhNhansController.cs",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Controllers\\BenhNhansController.cs",
+              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Controllers\\BenhNhansController.cs",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Controllers\\BenhNhansController.cs*",
+              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Controllers\\BenhNhansController.cs*",
+              "ViewState": "AgIAAFwBAAAAAAAAAAAswHEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T03:00:08.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "BenhNhansController.cs",
-              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Controllers\\BenhNhansController.cs",
-              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Controllers\\BenhNhansController.cs",
-              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Controllers\\BenhNhansController.cs",
-              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Controllers\\BenhNhansController.cs",
-              "ViewState": "AgIAAAIBAAAAAAAAAAAuwBIBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T10:00:20.466Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\ChiTietThuocs\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Views\\ChiTietThuocs\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\ChiTietThuocs\\Index.cshtml",
+              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Views\\ChiTietThuocs\\Index.cshtml",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAswHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T14:02:29.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\BenhNhans\\Index.cshtml",
+              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Views\\BenhNhans\\Index.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\BenhNhans\\Index.cshtml",
+              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Views\\BenhNhans\\Index.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAHYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T13:50:53.577Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_SideBar.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_SideBar.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_SideBar.cshtml",
+              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_SideBar.cshtml",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAH4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T13:49:22.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_NavBar.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_NavBar.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_NavBar.cshtml",
+              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\_NavBar.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T13:49:16.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\Admin.cshtml",
+              "RelativeDocumentMoniker": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\Admin.cshtml",
+              "ToolTip": "D:\\Devmaster\\DaoXuanTruongDEV2409GH_ASP.NET-MVC\\QuanLyVienPhi\\QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\Admin.cshtml",
+              "RelativeToolTip": "QuanLyVienPhi\\Areas\\Admins\\Views\\Shared\\Admin.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-08T13:49:11.575Z"
             }
           ]
         }

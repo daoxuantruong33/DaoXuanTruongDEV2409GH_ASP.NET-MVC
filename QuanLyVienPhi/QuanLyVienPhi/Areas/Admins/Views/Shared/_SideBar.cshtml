@@ -14,23 +14,30 @@
         <nav class="mt-3">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false" style="gap: 10px;">
                 <!-- Trang Chủ -->
-                 @if (HttpContextAccessor.HttpContext.Session.GetInt32("RoleId") == 1){
+               
 
                     <li class="nav-item">
-                        <a href="~/admins" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <a href="/admins/Dashboard" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
                             <i class="fa-solid fa-house-chimney"></i>&ensp;
                             <p>Trang Chủ</p>
                        </a>
                     </li>
-
-                   @*  <li class="nav-item">
+                <li class="nav-item">
+                    <a href="/admins/Benhnhans" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
+                        <i class="fa-solid fa-bed-pulse"></i>&ensp;
+                        <p>Bệnh nhân</p>
+                    </a>
+                </li>
+                @if (HttpContextAccessor.HttpContext.Session.GetInt32("RoleId") == 1)
+                {
+                    <li class="nav-item">
                         <a href="/admins/Admins" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
                             <i class="fa-solid fa-user" style="color: #333333;"></i>&ensp;
                             <p>Tài khoản Admin</p>
                         </a>
                     </li>
 
-                    <li class="nav-item">
+                     @*<li class="nav-item">
                         <a href="/admins/Bacsis" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
                             <i class="fa-solid fa-user-doctor" style="color: #333333;"></i>&ensp;
                             <p>Danh sách Bác Sĩ</p>
@@ -83,14 +90,14 @@
                             <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
                             <p>Dịch Vụ</p>
                         </a>
-                    </li>*@
+                    </li>
                     <li class="nav-item">
                         <a href="/admins/Giuongs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
                             <i class="fa-solid fa-money-bills" style="color: #333333;"></i>&ensp;
                             <p>Giường</p>
                         </a>
-                    </li> 
-                 }
+                </li>*@
+                }
                  
 
 
@@ -101,12 +108,7 @@
 
                 @if (roleId == 1 || roleId == 3)
                 {                
-                <li class="nav-item">
-                        <a href="/admins/Benhnhans" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
-                            <i class="fa-solid fa-bed-pulse"></i>&ensp;
-                            <p>Bệnh nhân</p>
-                        </a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a href="/admins/Bhyts" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">
                             <i class="fa-solid fa-file-medical"></i>&ensp;
@@ -122,7 +124,7 @@
                     var userRoleId = HttpContextAccessor.HttpContext.Session.GetInt32("RoleId");
                 }
 
-                @if (userRoleId == 1 || userRoleId == 2)
+                @if (userRoleId == 1 )
                 {
                 <li class="nav-item">
                     <a href="/admins/ChiTietPhongs" class="nav-link" style="color: #333333; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">

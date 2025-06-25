@@ -63,11 +63,30 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             return PartialView("_DetailsPartial", chiTietDichVu);
         }
 
-        // GET: Admins/ChiTietDichVus/Create
-        public IActionResult Create()
+        // GET: Admins/ChiTietThuocs/Create
+        public IActionResult Create(int? id)
         {
-            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
             ViewData["DichVuId"] = new SelectList(_context.DichVus, "DichVuId", "TenDichVu");
+
+            if (id.HasValue)
+            {
+                var benhNhan = _context.BenhNhans.FirstOrDefault(b => b.BenhNhanId == id);
+                if (benhNhan == null) return NotFound();
+
+                var chiTietDichVu = new ChiTietDichVu
+                {
+                    BenhNhanId = benhNhan.BenhNhanId,
+                    Cccd = benhNhan.Cccd,
+                    CreatedDate = DateTime.Now,
+                    UpdatedDate = DateTime.Now
+                };
+
+                ViewData["BenhNhanHoTen"] = benhNhan.HoTen;
+
+                return View(chiTietDichVu);
+            }
+
+            ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
             return View();
         }
 

@@ -22,7 +22,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         // GET: Admins/ChiTietPhongs
         public async Task<IActionResult> Index(string searchString, int page = 1, int pageSize = 5)
         {
-            var achitietphongsQuery = _context.ChiTietPhongs
+            var chitietphongsQuery = _context.ChiTietPhongs
                 .Include(c => c.BenhNhan)
                 .Include(c => c.Phong)
                 .Include(c => c.Giuong) // Thêm Include cho Giuong
@@ -30,11 +30,12 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                achitietphongsQuery = achitietphongsQuery.Where(a => a.Cccd.Contains(searchString));
+                chitietphongsQuery = chitietphongsQuery
+                    .Where(a => a.BenhNhan != null && a.BenhNhan.Cccd.Contains(searchString));
             }
 
-            int totalRecords = await achitietphongsQuery.CountAsync();
-            var ChiTietPhongs = await achitietphongsQuery.OrderBy(a => a.ChiTietPhongId)
+            int totalRecords = await chitietphongsQuery.CountAsync();
+            var ChiTietPhongs = await chitietphongsQuery.OrderBy(a => a.ChiTietPhongId)
                                           .Skip((page - 1) * pageSize)
                                           .Take(pageSize)
                                           .ToListAsync();
@@ -68,18 +69,49 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
         }
 
         // GET: Admins/ChiTietPhongs/Create
-        public IActionResult Create()
+        public IActionResult Create(int? id)
         {
+            // Lấy danh sách các lựa chọn cho các dropdown
             ViewData["BenhNhanId"] = new SelectList(_context.BenhNhans, "BenhNhanId", "HoTen");
-            ViewData["PhongId"] = new SelectList(_context.Phongs, "PhongId", "SoPhong");
             ViewData["GiuongId"] = new SelectList(_context.Giuongs, "GiuongId", "SoGiuong");
 
             // Lấy danh sách ID phòng và giá phòng
             var danhSachGiaPhong = _context.Phongs.ToDictionary(p => p.PhongId, p => p.TienPhongNgay);
             ViewBag.GiaPhongJson = System.Text.Json.JsonSerializer.Serialize(danhSachGiaPhong);
 
+            if (id.HasValue)
+            {
+                var benhNhan = _context.BenhNhans.FirstOrDefault(b => b.BenhNhanId == id);
+                if (benhNhan == null) return NotFound();
+
+                var chiTietPhong = new ChiTietPhong
+                {
+                    BenhNhanId = benhNhan.BenhNhanId,
+                    Cccd = benhNhan.Cccd,
+                    CreatedDate = DateTime.Now,
+                    UpdatedDate = DateTime.Now
+                };
+
+                // Truyền tên bệnh nhân vào ViewData
+                ViewData["BenhNhanHoTen"] = benhNhan.HoTen;
+
+                // Lấy thông tin khoa của bệnh nhân và truyền vào ViewData
+                var khoa = _context.Khoas.FirstOrDefault(k => k.KhoaId == benhNhan.KhoaId);
+                if (khoa != null)
+                {
+                    ViewData["KhoaTen"] = khoa.TenKhoa;
+
+                    // Lọc các phòng thuộc khoa này
+                    var danhSachPhongTheoKhoa = _context.Phongs.Where(p => p.KhoaId == khoa.KhoaId).ToList();
+                    ViewData["PhongId"] = new SelectList(danhSachPhongTheoKhoa, "PhongId", "SoPhong");
+                }
+
+                return View(chiTietPhong);
+            }
+
             return View();
         }
+
 
 
         // POST: Admins/ChiTietPhongs/Create
@@ -131,7 +163,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             var danhSachGiaPhong = _context.Phongs.ToDictionary(p => p.PhongId.ToString(), p => p.TienPhongNgay);
             ViewBag.GiaPhongJson = System.Text.Json.JsonSerializer.Serialize(danhSachGiaPhong);
 
-          
+
 
             return PartialView("_EditPartial", chiTietPhong);
         }

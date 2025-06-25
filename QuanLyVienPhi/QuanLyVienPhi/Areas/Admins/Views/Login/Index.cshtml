@@ -37,7 +37,7 @@
         body {
             background: url('https://digital.fpt.com/wp-content/uploads/2020/07/xetnghiemyte.jpg') no-repeat center center fixed;
             background-size: cover;
-            font-family: 'Poppins', sans-serif;
+            font-family: "SVN-Medium", sans-serif;
             color: #fff;
         }
 
@@ -47,7 +47,7 @@
             padding: 2rem;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
             margin: auto;
-            margin-top: 5rem;
+            margin-top: 17rem;
             width: 400px;
         }
 
@@ -74,7 +74,7 @@
             height: 50px;
             margin-bottom: 20px;
             border: 1px solid #dfe6e9;
-            font-size: 16px;
+            font-size: 18px;
             padding: 10px 15px;
         }
 
@@ -106,7 +106,7 @@
 
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="form-container">
-            <h2 class="text-center mb-4" style="color:black">Đăng nhập</h2>
+            <h2 class="text-center mb-4" style="color:black; font-size:35px">Đăng nhập</h2>
             <form asp-action="Index" method="post">
                 <!-- Email Input -->
                 <input asp-for="Email" type="email" class="custom-input form-control" placeholder="Email" required />
@@ -114,14 +114,14 @@
                 <!-- Password Input -->
                 <input asp-for="Password" type="password" class="custom-input form-control" placeholder="Mật khẩu" required />
 
-                <!-- Forgot Password -->
+               @*  <!-- Forgot Password -->
                 <div class="d-flex justify-content-between align-items-center">
                     <a href="#" class="text-body">Quên mật khẩu?</a>
-                </div>
+                </div> *@
 
                 <!-- Submit Button -->
                 <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-custom">Đăng nhập</button>
+                    <button type="submit" style="font-size:18px;" class="btn btn-custom">Đăng nhập</button>
                 </div>
 
               

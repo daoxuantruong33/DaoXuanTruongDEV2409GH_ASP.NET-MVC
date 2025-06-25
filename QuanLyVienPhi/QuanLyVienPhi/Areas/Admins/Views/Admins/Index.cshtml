@@ -44,10 +44,10 @@
                     <td>@Html.DisplayFor(modelItem => item.FullName)</td>
                     <td>@Html.DisplayFor(modelItem => item.Phone)</td>
                     <td>@Html.DisplayFor(modelItem => item.Email)</td>
-                    <td class="text-center">
-                        <a asp-action="Edit" asp-route-id="@item.AdminId" class="btn btn-outline btn-sm">Sửa</a>
-                        <a asp-action="Details" asp-route-id="@item.AdminId" class="btn btn-outline btn-sm">Chi tiết</a>
-                        <a asp-action="Delete" asp-route-id="@item.AdminId" class="btn btn-outline btn-sm">Xóa</a>
+                    <td>
+                        <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Edit", "Admins", new { id = item.AdminId })')">Sửa</a>
+                        <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Details", "Admins", new { id = item.AdminId })')">Chi Tiết</a>
+                        <a href="#" class="btn btn-outline btn-sm" onclick="confirmDelete('@Url.Action("Delete", new { id = item.AdminId })')">Xóa</a>
                     </td>
                 </tr>
             }
@@ -83,3 +83,69 @@
         </nav>
     </div>
 </div>
+<!-- Modal Xác nhận Xóa -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-body text-center">
+                <img src="~/dist/img/logo4.1.png" alt="Cảnh báo" width="150" class="mb-3">
+                <p>Bạn có chắc chắn muốn xóa không?</p>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary" style="color:#c82333; background-color:#fff; height:40px; border: 2px solid #c82333; border-radius: 8px;" data-bs-dismiss="modal">
+                    Thoát (Esc)
+                </button>
+                <button type="submit" class="btn btn-danger" id="confirmDeleteBtn">Xác nhận (Enter)</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">THÔNG TIN BỆNH NHÂN</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-content"></div>
+            <!-- Nội dung sẽ được tải bằng AJAX -->
+        </div>
+    </div>
+</div>
+<!-- Form ẩn để xóa -->
+<form id="deleteForm" method="post"></form>
+<script>
+    function loadModal(url) {
+        $.get(url, function (data) {
+            $("#modal-content").html(data);
+            $("#modal-container").modal("show");
+        });
+    }
+</script>
+<script>
+
+    function confirmDelete(deleteUrl) {
+        // Gán đường dẫn xóa vào nút "Xóa" trong modal
+        document.getElementById("confirmDeleteBtn").href = deleteUrl;
+        // Hiển thị modal
+        var deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
+        deleteModal.show();
+    }
+</script>
+<script>
+    function confirmDelete(deleteUrl) {
+        var form = document.getElementById("deleteForm");
+        form.action = deleteUrl;  // Cập nhật đường dẫn xóa vào form
+        form.innerHTML = '<input type="hidden" name="_method" value="POST">';  // Thêm input ẩn để gửi request
+
+        // Khi nhấn "Xóa" trong modal, tự động submit form
+        document.getElementById("confirmDeleteBtn").onclick = function () {
+            form.submit();
+        };
+
+        // Hiển thị modal
+        var deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
+        deleteModal.show();
+    }
+</script>

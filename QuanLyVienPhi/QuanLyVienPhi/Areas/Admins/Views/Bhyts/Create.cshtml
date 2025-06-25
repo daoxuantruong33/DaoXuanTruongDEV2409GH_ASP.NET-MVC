@@ -12,16 +12,30 @@
     <div class="col-md-8">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="BenhNhanId" class="control-label"></label>
-                <select asp-for="BenhNhanId" class="form-control" asp-items="ViewBag.BenhNhanId" id="BenhNhanId"></select>
-            </div>
+            @if (Model.BenhNhanId > 0)
+            {
+                <div class="form-group">
+                    <label>Tên bệnh nhân</label>
+                    <input type="text" class="form-control" value="@ViewData["BenhNhanHoTen"]" readonly />
+                </div>
 
-            <div class="form-group">
-                <label asp-for="Cccd" class="control-label"></label>
-                <input asp-for="Cccd" class="form-control" id="Cccd" readonly />
-                <span asp-validation-for="Cccd" class="text-danger"></span>
-            </div>
+                <input type="hidden" asp-for="BenhNhanId" />
+                <div class="form-group">
+                    <label asp-for="Cccd" class="control-label"></label>
+                    <input asp-for="Cccd" class="form-control" readonly />
+                </div>
+            }
+            else
+            {
+                <div class="form-group">
+                    <label asp-for="BenhNhanId" class="control-label"></label>
+                    <select asp-for="BenhNhanId" class="form-control" asp-items="ViewBag.BenhNhanId"></select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cccd" class="control-label"></label>
+                    <input asp-for="Cccd" class="form-control" readonly />
+                </div>
+            }
             <div class="form-group">
                 <label asp-for="SoTheBhyt" class="control-label"></label>
                 <input asp-for="SoTheBhyt" class="form-control" />

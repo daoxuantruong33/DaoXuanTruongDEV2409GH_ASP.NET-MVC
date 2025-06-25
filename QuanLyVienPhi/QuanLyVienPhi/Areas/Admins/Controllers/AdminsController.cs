@@ -56,7 +56,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
                 return NotFound();
             }
 
-            return View(admin);
+            return PartialView("_DetailsPartial", admin);
         }
 
         // GET: Admins/Admins/Create
@@ -94,7 +94,7 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             {
                 return NotFound();
             }
-            return View(admin);
+            return PartialView("_EditPartial", admin);
         }
 
         // POST: Admins/Admins/Edit/5
@@ -150,21 +150,19 @@ namespace QuanLyVienPhi.Areas.Admins.Controllers
             return View(admin);
         }
 
-        // POST: Admins/Admins/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        // POST: Admins/ChiTietDichVus/Delete/5
+        [HttpPost]
+        public IActionResult Delete(int id)
         {
-            var admin = await _context.Admins.FindAsync(id);
+            var admin = _context.Admins.Find(id);
             if (admin != null)
             {
                 _context.Admins.Remove(admin);
+                _context.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            int currentPage = TempData["CurrentPage"] != null ? (int)TempData["CurrentPage"] : 1;
+            return RedirectToAction(nameof(Index), new { page = currentPage });
         }
-
         private bool AdminExists(int id)
         {
             return _context.Admins.Any(e => e.AdminId == id);

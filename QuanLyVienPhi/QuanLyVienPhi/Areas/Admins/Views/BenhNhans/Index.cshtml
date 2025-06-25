@@ -1,8 +1,10 @@
 ﻿@model IEnumerable<QuanLyVienPhi.Models.BenhNhan>
+@using QuanLyVienPhi.Helpers
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
+    var roleId = Context.Session.GetInt32("RoleId");
 }
 
 <link rel="stylesheet" href="~/css/Index.css" />
@@ -14,14 +16,17 @@
         <div class="d-flex justify-content-between align-items-center" style="margin-bottom:1rem">
             <div class="d-flex gap-2" style="margin-top:1rem">
                 <form action="" method="get" class="d-flex align-items-center">
-                    <input type="text" name="name" id="keyword" class="form-control me-2" placeholder="Nhập tên cần tìm..." value="@ViewData["CurrentFilter"]">
+                    <input type="text" name="searchString" id="keyword" class="form-control me-2" placeholder="Nhập tên cần tìm..." value="@ViewData["CurrentFilter"]">
                     <button type="submit" style="width:2.4rem;height:2.4rem;background-color:#2c4964" class="btn btn-info">
                         <i class="bi bi-search"></i> <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
-                <button type="button" class="btn btn-info" style="background-color:#2c4964" onclick="location.href='@Url.Action("Create")'">
-                    Tạo mới
-                </button>
+                @if (RoleHelper.IsAdmin(roleId) || RoleHelper.IsThuNgan(roleId))
+                {
+                    <button type="button" class="btn btn-info" style="background-color:#2c4964" onclick="location.href='@Url.Action("Create")'">
+                        Tạo mới
+                    </button>
+                }
             </div>
         </div>
     </div>
@@ -29,136 +34,89 @@
     <table class="table table-hover border rounded shadow-sm">
         <thead class="table-dark">
             <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.HoTen)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NgaySinh)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.GioiTinh)
-            </th>
-                @*<th>
-                @Html.DisplayNameFor(model => model.DiaChi)
-            </th>
-             <th>
-                @Html.DisplayNameFor(model => model.DienThoai)
-            </th> 
-            <th>
-                @Html.DisplayNameFor(model => model.Cccd)
-            </th>
-             <th>
-                @Html.DisplayNameFor(model => model.NgayNhapVien)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NgayRaVien)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.BacSi)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Khoa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phong)
-            </th> *@
-            <th>
-                @Html.DisplayNameFor(model => model.TienPhong)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TienThuoc)
-            </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.TienDichVu)
-                </th>
-          @*   <th>
-                @Html.DisplayNameFor(model => model.TrangThaiThanhToan)
-            </th> *@
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.HoTen)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NgaySinh)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.GioiTinh)
-                </td>
-                    @*<td>
-                    @Html.DisplayFor(modelItem => item.DiaChi)
-                </td>
-                 <td>
-                    @Html.DisplayFor(modelItem => item.DienThoai)
-                </td> 
-                <td>
-                    @Html.DisplayFor(modelItem => item.Cccd)
-                </td>
-                 <td>
-                    @Html.DisplayFor(modelItem => item.NgayNhapVien)
-                </td>
-                <td>
-                    @{
-                        var chiTietPhongS = item.ChiTietPhongs.FirstOrDefault();
-                        if (chiTietPhongS != null)
+                <th>@Html.DisplayNameFor(model => model.HoTen)</th>
+                <th>@Html.DisplayNameFor(model => model.NgaySinh)</th>
+                <th>@Html.DisplayNameFor(model => model.GioiTinh)</th>
+                <th>@Html.DisplayNameFor(model => model.Cccd)</th>
+                <th>@Html.DisplayNameFor(model => model.TienPhong)</th>
+                <th>@Html.DisplayNameFor(model => model.TienThuoc)</th>
+                <th>@Html.DisplayNameFor(model => model.TienDichVu)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.HoTen)</td>
+                    <td>@Html.DisplayFor(modelItem => item.NgaySinh)</td>
+                    <td>@Html.DisplayFor(modelItem => item.GioiTinh)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Cccd)</td>
+                    <td>@(item.TienPhong.HasValue ? item.TienPhong.Value.ToString("N0") : "0")</td>
+                    <td>@(item.TienThuoc.HasValue ? item.TienThuoc.Value.ToString("N0") : "0")</td>
+                    <td>@(item.TienDichVu.HasValue ? item.TienDichVu.Value.ToString("N0") : "0")</td>
+                    <td>
+                        
+
+                        @if (RoleHelper.IsAdmin(roleId) || RoleHelper.IsThuNgan(roleId))
                         {
-                            @Html.DisplayFor(modelItem => chiTietPhongS.NgayKetThuc)
+                            <a asp-action="Invoice" asp-route-id="@item.BenhNhanId" class="btn btn-outline btn-sm" target="_blank">Hóa đơn</a>
+                            <a href="@Url.Action("Create", "Bhyts", new { id = item.BenhNhanId })" class="btn btn-outline btn-sm">BHYT</a>
+                            <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Edit", "BenhNhans", new { id = item.BenhNhanId })')">Sửa</a>
+                            
                         }
 
-                    }
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.BacSi.BacSiId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Khoa.KhoaId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Phong.PhongId)
-                </td> *@
-                    <td>
-                        @(item.TienPhong.HasValue ? item.TienPhong.Value.ToString("N0") : "0")
-                    </td>
-                    <td>
-                        @(item.TienThuoc.HasValue ? item.TienThuoc.Value.ToString("N0") : "0")
-                    </td>
-                    <td>
-                        @(item.TienDichVu.HasValue ? item.TienDichVu.Value.ToString("N0") : "0")
-                    </td>
-                @* <td>
-                    @Html.DisplayFor(modelItem => item.TrangThaiThanhToan)
-                </td> *@
-                <td>
-                        <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Edit", "BenhNhans", new { id = item.BenhNhanId })')">Sửa</a>
-                        <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Details", "BenhNhans", new { id = item.BenhNhanId })')">Chi tiết</a>
-                        <a href="#" class="btn btn-outline btn-sm"
-                           onclick="confirmDelete('@Url.Action("Delete", new { id = item.BenhNhanId })', @item.TienPhong, @item.TienThuoc, @item.TienDichVu)">
-                            Xóa
-                        </a>
-                        <a asp-action="Invoice" asp-route-id="@item.BenhNhanId" class="btn btn-outline btn-sm" target="_blank">Hóa đơn</a>
-                
-                        @if (!item.TrangThaiThanhToan)
+                        @if (RoleHelper.IsAdmin(roleId))
                         {
-                            <a asp-action="Invoice" asp-route-id="@item.BenhNhanId" class="btn btn-outline btn-sm">
-                            Thanh toán
-                        </a>
+                            <a href="#" class="btn btn-outline btn-sm" onclick="loadModal('@Url.Action("Details", "BenhNhans", new { id = item.BenhNhanId })')">Chi tiết</a>
+
+                            <a href="#" class="btn btn-outline btn-sm"
+                               onclick="confirmDelete('@Url.Action("Delete", new { id = item.BenhNhanId })', @item.TienPhong, @item.TienThuoc, @item.TienDichVu)">
+                                Xóa
+                            </a>
+
                         }
-                        else
+
+
+                        @if (!item.TrangThaiThanhToan && RoleHelper.IsThuNgan(roleId))
+                        {
+                            <a asp-action="Invoice" asp-route-id="@item.BenhNhanId" class="btn btn-outline btn-sm">Thanh toán</a>
+                        }
+                        else if (item.TrangThaiThanhToan && RoleHelper.IsThuNgan(roleId))
                         {
                             <span style="color:#2c4964 !important" class="text-success">Đã thanh toán</span>
                         }
-                
 
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                        @if (RoleHelper.IsBacSi(roleId))
+                        {
+                            bool daThanhToan = item.TrangThaiThanhToan;
+
+                            <a href="@Url.Action("Create", "Chitietthuocs", new { id = item.BenhNhanId })"
+                               class="btn btn-outline btn-sm @(daThanhToan ? "disabled opacity-50" : "")"
+                            @(daThanhToan ? "tabindex='-1' aria-disabled='true'" : "")>
+                                Cấp thuốc
+                            </a>
+
+                            <a href="@Url.Action("Create", "Chitietphongs", new { id = item.BenhNhanId })"
+                               class="btn btn-outline btn-sm @(daThanhToan ? "disabled opacity-50" : "")"
+                            @(daThanhToan ? "tabindex='-1' aria-disabled='true'" : "")>
+                                Cấp phòng
+                            </a>
+
+                            <a href="@Url.Action("Create", "Chitietdichvus", new { id = item.BenhNhanId })"
+                               class="btn btn-outline btn-sm @(daThanhToan ? "disabled opacity-50" : "")"
+                            @(daThanhToan ? "tabindex='-1' aria-disabled='true'" : "")>
+                                Cấp dịch vụ
+                            </a>
+                        }
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- PHÂN TRANG (giữ nguyên như cũ) -->
     <div class="d-flex justify-content-center mt-4">
         <nav aria-label="Pagination">
             <ul class="pagination shadow-none align-items-center gap-2">
@@ -189,6 +147,9 @@
         </nav>
     </div>
 </div>
+
+<!-- Các modal và script giữ nguyên -->
+
 
 
 

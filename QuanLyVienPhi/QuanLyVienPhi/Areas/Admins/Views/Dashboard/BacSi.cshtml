@@ -3,68 +3,381 @@
     Layout = "~/Areas/Admins/Views/Shared/Admin.cshtml";
 }
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mantis is made using Bootstrap 5 design framework. Download the free admin template & use it for your project.">
+    <meta name="keywords" content="Mantis, Dashboard UI Kit, Bootstrap 5, Admin Template, Admin Dashboard, CRM, CMS, Bootstrap Admin Template">
+    <meta name="author" content="CodedThemes">
+
+    <!-- [Favicon] icon -->
+    <link rel="icon" href="~/ass/assets/images/favicon.svg" type="image/x-icon"> <!-- [Google Font] Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" id="main-font-link">
+    <!-- [Tabler Icons] https://tablericons.com -->
+    <link rel="stylesheet" href="~/ass/assets/fonts/tabler-icons.min.css">
+    <!-- [Feather Icons] https://feathericons.com -->
+    <link rel="stylesheet" href="~/ass/assets/fonts/feather.css">
+    <!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="~/ass/assets/fonts/fontawesome.css">
+    <!-- [Material Icons] https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="~/ass/assets/fonts/material.css">
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="~/ass/assets/css/style.css" id="main-style-link">
+    <link rel="stylesheet" href="~/ass/assets/css/style-preset.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
 
 
-<!-- Small boxes (Stat box) -->
-<div class="row">
-    <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-info">
-            <div class="inner">
-                <h3>150</h3>
 
-                <p>Sản phẩm</p>
+<body data-pc-preset="preset-1" data-pc-direction="ltr" data-pc-theme="light">
+
+    <div class="pc-container">
+        <div class="pc-content">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="mb-2 f-w-400 text-muted">Tổng số bệnh nhân</h6>
+                                <h4 class="mb-3">@ViewBag.TotalBenhNhan <span class="badge bg-light-primary border border-primary"><i class="ti ti-trending-up"></i></span></h4>
+                                <p class="mb-0 text-muted text-sm">Dữ liệu được cập nhật từ hệ thống</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="mb-2 f-w-400 text-muted">Bệnh nhân đã thanh toán</h6>
+                                <h4 class="mb-3">@ViewBag.DaThanhToan <span class="badge bg-light-success border border-success"><i class="ti ti-trending-up"></i></span></h4>
+                                <p class="mb-0 text-muted text-sm">Dữ liệu được cập nhật từ hệ thống</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="mb-2 f-w-400 text-muted">Bệnh nhân chưa thanh toán</h6>
+                                <h4 class="mb-3">@ViewBag.ChuaThanhToan <span class="badge bg-light-warning border border-warning"><i class="ti ti-trending-down"></i></span></h4>
+                                <p class="mb-0 text-muted text-sm">Dữ liệu được cập nhật từ hệ thống</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="mb-2 f-w-400 text-muted">Tổng doanh thu</h6>
+                                <h4 class="mb-3">
+                                    @ViewBag.TongDoanhThu.ToString("N0") VNĐ
+                                    <span class="badge bg-light-danger border border-danger">
+                                        <i class="ti ti-trending-down"></i>
+                                    </span>
+                                </h4>
+                                <p class="mb-0 text-muted text-sm">Dữ liệu được cập nhật từ hệ thống</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Biểu đồ đường -->
+                        <div class="col-md-8">
+                            <h5 class="mb-3">Thống kê doanh thu tuần này</h5>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="mb-3">@ViewBag.DoanhThuTuanNay.ToString("C0")</h3>
+
+                                    <canvas id="income-overview-chart" height="300"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Biểu đồ tròn -->
+                        <div class="col-md-4">
+                            <h5 class="mb-3">Tỷ lệ chi phí</h5>
+                            <div class="card">
+                                <div class="card-body">
+                                    <canvas id="chiPhiChart" height="300"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h5 class="mb-3">Bệnh nhân gần đây</h5>
+                    <div class="card tbl-card">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-borderless mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID BỆNH NHÂN</th>
+                                            <th>BỆNH NHÂN</th>
+                                            <th>CCCD</th>
+                                            <th>TRẠNG THÁI</th>
+                                            <th class="text-end">TỔNG SỐ TIỀN</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var bn in ViewBag.DanhSachBenhNhan)
+                                        {
+                                            <tr>
+                                                <td><a href="#" class="text-muted">@bn.BenhNhanId</a></td>
+                                                <td>@bn.HoTen</td>
+                                                <td>@bn.CCCD</td>
+                                                <td>
+                                                    <span class="d-flex align-items-center gap-2">
+                                                        @if (bn.TrangThaiThanhToan) // Nếu true, nghĩa là đã thanh toán
+                                                        {
+                                                            <i class="fas fa-circle text-success f-10 m-r-5"></i>
+                                                            <span>Đã thanh toán</span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <i class="fas fa-circle text-warning f-10 m-r-5"></i>
+                                                            <span>Chưa thanh toán</span>
+                                                        }
+                                                    </span>
+                                                </td>
+
+                                                <td class="text-end">@bn.TongSoTien.ToString("C0")</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="icon">
-                <i class="ion ion-bag"></i>
-            </div>
-            <a href="#" class="small-box-footer">Chi tiết<i class="fas fa-arrow-circle-right"></i></a>
         </div>
-    </div>
-    <!-- ./col -->
-    <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-success">
-            <div class="inner">
-                <h3>53</h3>
 
-                <p>Bài viết tin tức</p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-        </div>
-    </div>
-    <!-- ./col -->
-    <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-warning">
-            <div class="inner">
-                <h3>44</h3>
+        <style>
+            /* Đặt chiều rộng và chiều cao cho biểu đồ */
+            #income-overview-chart {
+                width: 100% !important; /* Đảm bảo biểu đồ chiếm toàn bộ chiều rộng */
+                height: 380px !important; /* Chiều cao của biểu đồ */
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-                <p>Người dùng</p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-person-add"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-        </div>
-    </div>
-    <!-- ./col -->
-    <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-danger">
-            <div class="inner">
-                <h3>65</h3>
+        <script>
+            var labels = @Html.Raw(Json.Serialize(ViewBag.Labels)); // Labels từ ViewBag
+            var doanhThuData = @Html.Raw(Json.Serialize(ViewBag.DoanhThuData)); // Dữ liệu doanh thu từ ViewBag
 
-                <p>Liên hệ</p>
-            </div>
-            <div class="icon">
-                <i class="ion ion-pie-graph"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-        </div>
-    </div>
-    <!-- ./col -->
-</div>
+            // Kiểm tra dữ liệu trong console
+            console.log(labels);
+            console.log(doanhThuData);
+
+            // Tạo mảng ngày trong tuần
+            var currentDate = new Date();
+            var daysOfWeek = [];
+
+            // Tìm ngày đầu tuần (Thứ Hai)
+            var firstDayOfWeek = new Date(currentDate);
+            var dayOfWeek = currentDate.getDay();
+            if (dayOfWeek === 0) {
+                firstDayOfWeek.setDate(currentDate.getDate() - 6); // Nếu là Chủ Nhật, lùi về Thứ Hai tuần hiện tại
+            } else {
+                firstDayOfWeek.setDate(currentDate.getDate() - dayOfWeek + 1); // Bình thường: Lùi về Thứ Hai
+            }
+
+            // Tạo danh sách ngày trong tuần
+            for (let i = 0; i < 7; i++) {
+                let day = new Date(firstDayOfWeek); // Tạo bản sao của ngày đầu tuần
+                day.setDate(day.getDate() + i); // Cộng thêm số ngày để lấy đủ tuần
+                daysOfWeek.push(day.getDate() + '/' + (day.getMonth() + 1));
+            }
+
+            // Kiểm tra kết quả
+            console.log(daysOfWeek);
+
+
+            // Cấu hình biểu đồ với loại đường
+                      var chart = new Chart("income-overview-chart", {
+                type: 'line', // Thay đổi từ 'bar' thành 'line' để tạo biểu đồ đường
+                data: {
+                    labels: daysOfWeek,
+                    datasets: [{
+                        data: doanhThuData.split(",").map(x => parseFloat(x)), // Chuyển doanh thu thành mảng số
+                        borderColor: '#1ABC9C', // Màu đường
+                        backgroundColor: 'rgba(66, 165, 245, 0.2)', // Màu nền đường (chắc chắn sẽ có độ trong suốt)
+                        borderWidth: 3.3,
+                        pointBackgroundColor: '#fff', // Màu các điểm trên đường
+                        pointBorderColor: '#1ABC9C', // Màu viền điểm
+                        pointRadius: 6, // Kích thước điểm
+                        pointHoverBackgroundColor: '#1ABC9C', // Màu khi hover
+                        pointHoverBorderColor: '#1ABC9C', // Màu viền khi hover
+                        pointHoverRadius: 6, // Kích thước điểm khi hover
+                        fill: true, // Bật tính năng fill để tô màu dưới đường
+                        backgroundColor: 'rgba(66, 165, 245, 0.2)' // Màu nền dưới đường (có thể điều chỉnh độ trong suốt)
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return value.toLocaleString();
+                                }
+                            },
+                            grid: {
+                                color: '#e0e0e0',
+                                lineWidth: 0.5
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                autoSkip: true,
+                                maxRotation: 45,
+                                minRotation: 45
+                            },
+                            grid: {
+                                display: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    family: 'Arial',
+                                    size: 16
+                                },
+                                color: '#333',
+                                filter: function(legendItem, chartData) {
+                                    return false; // Không hiển thị label trong legend
+                                }
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0,0,0,0.8)',
+                            titleColor: 'white',
+                            bodyColor: 'white',
+                            footerColor: 'white',
+                            borderColor: '#42A5F5',
+                            borderWidth: 1
+                        }
+                    }
+                }
+            });
+
+        </script>
+
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var ctx = document.getElementById("chiPhiChart").getContext("2d");
+                var tiLeChiPhi = @Html.Raw(Json.Serialize(ViewBag.TiLeChiPhi));
+
+                // Dữ liệu từ ViewBag
+                var data = {
+                    labels: ["Tiền phòng", "Tiền thuốc", "Tiền dịch vụ"],
+                    datasets: [{
+                       data: [
+                            tiLeChiPhi["Tiền phòng"],
+                            tiLeChiPhi["Tiền thuốc"],
+                            tiLeChiPhi["Tiền dịch vụ"]
+                        ],
+                        backgroundColor: [
+                            "rgba(255, 99, 132, 0.8)",  // Hồng cam
+                            "rgba(54, 162, 235, 0.8)",  // Xanh dương nhạt
+                            "rgba(255, 206, 86, 0.8)"   // Vàng nhạt
+                        ],
+                        hoverBackgroundColor: [
+                            "rgba(255, 99, 132, 1)",
+                            "rgba(54, 162, 235, 1)",
+                            "rgba(255, 206, 86, 1)"
+                        ],
+                        borderColor: "rgba(255, 255, 255, 1)",
+                        borderWidth: 3,
+                        hoverBorderColor: "#333",
+                        hoverBorderWidth: 4,
+                        hoverOffset: 15  // Làm nổi lên khi hover
+                    }]
+                };
+
+                // Khởi tạo biểu đồ tròn với hiệu ứng nổi bật
+                new Chart(ctx, {
+                    type: "pie",
+                    data: data,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    font: {
+                                        size: 14,
+                                        family: "Arial, sans-serif"
+                                    },
+                                    color: "#222"
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: "Tỷ Lệ Chi Phí",
+                                font: {
+                                    size: 20,
+                                    family: "Arial, sans-serif",
+                                    weight: "bold"
+                                },
+                                color: "#222"
+                            },
+                            tooltip: {
+                                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                                titleFont: {
+                                    size: 14,
+                                    weight: "bold"
+                                },
+                                bodyFont: {
+                                    size: 13
+                                },
+                                padding: 10,
+                                cornerRadius: 8,
+                                callbacks: {
+                                    label: function (tooltipItem) {
+                                        let total = data.datasets[0].data.reduce((a, b) => a + b, 0);
+                                        let value = data.datasets[0].data[tooltipItem.dataIndex];
+                                        let percentage = ((value / total) * 100).toFixed(2) + "%";
+                                        return `${data.labels[tooltipItem.dataIndex]}: ${value} (${percentage})`;
+                                    }
+                                }
+                            }
+                        },
+                        animation: {
+                            animateScale: true,
+                            animateRotate: true
+                        }
+                    }
+                });
+            });
+        </script>
+
+
+        <script src="~/ass/assets/js/plugins/apexcharts.min.js"></script>
+        <script src="~/ass/assets/js/pages/dashboard-default.js"></script>
+        <script src="~/ass/assets/js/plugins/popper.min.js"></script>
+        <script src="~/ass/assets/js/plugins/simplebar.min.js"></script>
+        <script src="~/ass/assets/js/plugins/bootstrap.min.js"></script>
+        <script src="~/ass/assets/js/fonts/custom-font.js"></script>
+        <script src="~/ass/assets/js/pcoded.js"></script>
+        <script src="~/ass/assets/js/plugins/feather.min.js"></script>
+
+
+
+        <script>layout_change('light');</script>
+        <script>change_box_container('false');</script>
+        <script>layout_rtl_change('false');</script>
+        <script>preset_change("preset-1");</script>
+        <script>font_change("Public-Sans");</script>
+</body>
